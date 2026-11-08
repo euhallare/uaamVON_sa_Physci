@@ -98,7 +98,7 @@ def main():
         sections_path   = SECTIONS,
         meetings_path   = MEETINGS,
         curriculum_path = CURRICULUM,
-        year            = 2,
+        year            = 3,
         term            = "FS",
         track           = "SP",
         require_open_slot = False,   #tignan note above
