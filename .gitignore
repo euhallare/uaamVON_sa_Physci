@@ -16,5 +16,3 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
-
-auth.py
