@@ -221,3 +221,12 @@ __pycache__/
 .venv/
 *.token
 ```
+
+---
+
+## Authors
+
+- Hallare, Eu Dasein B.
+- Hernandez, John Denmark G.
+- Gevaña, Maria Eliza P.
+- Tipan, Jiro Kristofer T.
