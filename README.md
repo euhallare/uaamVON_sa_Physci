@@ -1,217 +1,218 @@
-# AMIS Scheduling CSP — CMSC 170 Project Toolkit
+# AMIS Student Schedule Builder — CMSC 170 Project
 
-Collect UPLB AMIS class data **once**, then build **two** CSP datasets from it:
+A **Constraint Satisfaction Problem (CSP)** that builds a conflict-free weekly
+class schedule for a UPLB student, using data scraped from AMIS.
 
-| Dataset | Problem | Variables | Values | Hard constraint |
-|---|---|---|---|---|
-| **A – Faculty** | Faculty course-load scheduler | class sections | instructors | one instructor can't teach two overlapping sections |
-| **B – Student** | Student schedule builder | curriculum slots (e.g. "CMSC 12") | LEC+LAB bundles | no two chosen bundles overlap |
+**Four methods implemented and benchmarked:**
 
-We pick A or B later. Nothing is wasted.
-
-## Files
-
-| File | What it is |
-|---|---|
-| `auth.py` | Opens a browser, you log in to AMIS, it returns a Bearer token |
-| `scrape.py` | READ-ONLY collector. Downloads class pages, strips instructor names, saves JSON |
-| `build_datasets.py` | Turns raw JSON into CSV/JSON datasets A and B (standard library only) |
-| `curriculum.csv` | BS CS 2018 flowchart (SP + Thesis tracks) used to build student instances |
-| `.gitignore` | Keeps login sessions and tokens out of GitHub |
-
-## Do you need to scrape at all?
-
-**Only one person needs to scrape.** Everyone else can skip to
-[Step 6](#step-6--build-the-datasets) if the scraped data is already in the repo
-(`data/raw/term_1261/`). It has instructor names removed, so it is safe to commit.
-
-If you do want to scrape yourself, follow every step below.
+| # | Method | Type |
+|---|---|---|
+| 1 | Backtracking with MRV + LCV | Systematic search |
+| 2 | Backtracking + Forward Checking (MRV + FC) | Systematic search |
+| 3 | Min-Conflicts | Local search |
+| 4 | Simulated Annealing | Local search |
 
 ---
 
-## Setup on Windows with WSL (what we used)
+## CSP Formulation
 
-Tested on: Windows + WSL2 + Ubuntu.
+| Element | Description |
+|---|---|
+| **Variable** | A curriculum slot (e.g. `Y3FS-1 → CMSC 124`) |
+| **Domain** | All LEC+LAB bundles for that course that are open and require no consent |
+| **Constraint** | No two assigned bundles may have overlapping meeting times |
 
-### Step 1 — Check WSL can show windows
+The solver targets **Year 2, First Semester, SP track** by default
+(change `year` and `term` in `evaluate.py`).
 
-`auth.py` opens a visible Chromium window so you can log in to AMIS. Open **Ubuntu**
-(Start menu) and run:
+---
 
-```bash
-echo $DISPLAY
+## Repository layout
+
+```
+.
+├── data/
+│   ├── curriculum.csv               BS CS 2018 flowchart (SP + Thesis tracks)
+│   ├── raw/term_1261/               Raw JSON pages from AMIS (read-only scrape)
+│   └── datasets/term_1261/
+│       ├── sections.csv             One row per class section (LEC or LAB)
+│       ├── meetings.csv             One row per (section, day); times in minutes after midnight
+│       ├── summary.json             Counts for the project page
+│       ├── faculty/                 Dataset A — faculty load (not used for this project)
+│       └── student/                 Dataset B — student scheduler
+│           ├── bundles.csv          LEC+LAB bundles a student can enlist in
+│           ├── coverage.csv         Which curriculum courses are offered this term
+│           └── instances.json       One CSP instance per curriculum term
+├── solver/
+│   ├── csp.py                       CSP class: loads data, builds domains, checks constraints
+│   ├── backtracking.py              Method 1 — MRV + LCV backtracking
+│   ├── forward_checking.py          Method 2 — MRV + Forward Checking
+│   ├── min_conflicts.py             Method 3 — Min-Conflicts local search
+│   ├── simulated_annealing.py       Method 4 — Simulated Annealing
+│   └── evaluate.py                  Runs all four methods and prints a comparison table
+├── scrape.py                        READ-ONLY AMIS collector (Playwright + requests)
+├── build_datasets.py                Turns raw JSON → CSV datasets (stdlib only)
+├── auth.py                          Grabs a Bearer token from a live browser session
+└── README.md
 ```
 
-- Prints `:0` (or similar) → good, continue.
-- Prints nothing → in **PowerShell** run `wsl --update` then `wsl --shutdown`,
-  reopen Ubuntu, and check again.
+---
 
-Also check you are on WSL **2** (PowerShell): `wsl -l -v` should show `VERSION 2`.
+## Reproducing the results
 
-### Step 2 — Make the project folder in Linux (not in `/mnt/c`)
+### Prerequisites
 
-Working inside `/mnt/c/...` is slow and can break the saved browser login.
+```
+Python 3.11+
+numpy          (arrays only — required by the solver)
+matplotlib     (plots — required if you generate figures)
+```
+
+The solver (`solver/`) uses **only** the Python standard library, NumPy, and
+Matplotlib. `requests` and `playwright` are only needed to re-scrape AMIS data,
+which you should not need to do — the processed CSVs are already in the repo.
+
+Install the solver dependencies:
+
+```bash
+pip install numpy matplotlib
+```
+
+### Run the benchmark
+
+```bash
+cd solver
+python evaluate.py
+```
+
+This prints a schedule for each method and a side-by-side comparison table:
+
+```
+  Method                              Nodes/Steps  BT/Restarts  Uphill    Time(s)  Solved
+  Backtracking (MRV + LCV)                ...          ...        —         ...      YES
+  Forward Checking (MRV + FC)             ...          ...        —         ...      YES
+  Min-Conflicts (Local Search)            ...          ...        —         ...      YES
+  Simulated Annealing                     ...          ...       ...        ...      YES
+```
+
+**Key parameters** (top of `evaluate.py`):
+
+| Parameter | Default | Meaning |
+|---|---|---|
+| `year` | `3` | Curriculum year (1–4) |
+| `term` | `"FS"` | First Semester (`FS`) or Second Semester (`SS`) |
+| `track` | `"SP"` | `SP` (Special Problem) or `TH` (Thesis) |
+| `require_open_slot` | `False` | `True` = only bundles with available seats |
+| `allow_consent` | `False` | `True` = include sections requiring D/I consent |
+
+---
+
+## Data collection (optional — skip if CSVs are already in the repo)
+
+The processed data is committed. You only need this section if you want to
+re-scrape or collect additional subjects.
+
+### Setup (Windows + WSL2)
+
+**Step 1 — Confirm WSL 2 and display forwarding**
+
+```bash
+# In PowerShell:
+wsl -l -v         # should show VERSION 2
+
+# In Ubuntu:
+echo $DISPLAY     # should print :0 or similar
+```
+
+If `$DISPLAY` is empty: run `wsl --update && wsl --shutdown` in PowerShell,
+reopen Ubuntu, and check again.
+
+**Step 2 — Work inside Linux, not `/mnt/c`**
 
 ```bash
 mkdir -p ~/amis_project && cd ~/amis_project
+cp /mnt/c/Users/<YOUR_WINDOWS_USERNAME>/Desktop/CMSC170/project/{auth.py,scrape.py,build_datasets.py} .
 ```
 
-Copy the project files in from Windows (change the path to wherever yours are;
-`ls /mnt/c/Users` shows the usernames):
+Or just `cd` into the cloned repo.
 
-```bash
-cp /mnt/c/Users/<WINDOWS_USERNAME>/Desktop/CMSC170/project/{auth.py,scrape.py,build_datasets.py,curriculum.csv} .
-ls
-```
-
-If you cloned the repo instead, just `cd` into the cloned folder.
-
-### Step 3 — Install Python and a virtual environment
+**Step 3 — Python environment**
 
 ```bash
 sudo apt update && sudo apt install -y python3 python3-venv python3-pip
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install requests playwright
-```
-
-Your prompt should now start with `(.venv)`.
-**Every new terminal needs `source .venv/bin/activate` again.**
-
-### Step 4 — Install the browser
-
-```bash
 playwright install --with-deps chromium
 ```
 
-This asks for your password and takes a few minutes. Leave the
-`# executable_path=...` line in `auth.py` commented out.
+Every new terminal needs `source .venv/bin/activate`.
 
-Test that a window opens:
-
-```bash
-python -c "from playwright.sync_api import sync_playwright as s; p=s().start(); b=p.chromium.launch(headless=False); pg=b.new_page(); pg.goto('https://example.com'); input('window visible? press Enter'); b.close(); p.stop()"
-```
-
-You should see a Chromium window with "Example Domain". Press Enter to close it.
-
-### Step 5 — Scrape
-
-Always run from the project folder, with `(.venv)` showing.
-
-**5a. Probe first (about 15 requests):**
+**Step 4 — Scrape**
 
 ```bash
+# Quick probe (~15 requests) — confirms the API works:
 python scrape.py --probe
-```
 
-A Chromium window opens. Log in to AMIS with Google if asked. You have about 60
-seconds. The window closes by itself and the terminal prints how the API behaves.
-
-What we found: for CMSC in term 1261 there are **267 sections**, and `items=50`
-works (6 pages instead of 14). The `ERROR` lines for `per_page`, `limit` and
-`size` are harmless (those are not real parameters).
-
-**5b. Real scrape (CMSC only):**
-
-```bash
+# CMSC only (267 sections, 6 pages):
 python scrape.py --items 50
-```
 
-Later, once the instructor has confirmed it is okay, to also get MATH, STAT, HK,
-NSTP and the GE subjects:
-
-```bash
+# All curriculum subjects (CMSC, MATH, STAT, HK, NSTP, GEs):
 python scrape.py --set curriculum --items 50
 ```
 
-Notes:
-- Raw pages are saved to `data/raw/term_1261/<SUBJECT>/page_NNNN.json`.
-- Ctrl+C is safe. Running again skips pages already saved.
-- It waits 1–2 s between requests and only sends GET requests. It never
-  enlists, bookmarks or changes anything in AMIS.
-- The token lasts about 30 minutes and refreshes automatically. After the first
-  login the window may flash open and close quickly.
-- Change the term with `--term <ID>` (we use `1261`).
+Raw pages are saved to `data/raw/term_1261/<SUBJECT>/page_NNNN.json`.
+Ctrl+C is safe — re-running skips already-saved pages.
+The script waits 1–2 s between requests and **never** enlists or modifies data.
 
-### Step 6 — Build the datasets
+**Step 5 — Build datasets**
 
 ```bash
 python build_datasets.py
 ```
 
-This only needs the standard library. Output goes to `data/datasets/term_1261/`.
-It prints a `=== SUMMARY ===` at the end (also saved in `summary.json`).
-
-### Step 7 — Look at the output
-
-```bash
-ls -R data/datasets
-explorer.exe data/datasets/term_1261     # opens the folder in Windows Explorer
-```
-
-```
-data/datasets/term_1261/
-├── sections.csv        one row per class section (LEC or LAB)
-├── meetings.csv        one row per (section, day) meeting; times in minutes after midnight
-├── summary.json        counts to quote on the project page
-├── faculty/            Dataset A
-│   ├── assignments.csv     who teaches what right now (real-life baseline)
-│   ├── instructors.csv     per-instructor load summary (faculty_id only)
-│   └── instance.json       the CSP: variables = sections, values = instructors
-└── student/            Dataset B
-    ├── bundles.csv         LEC+LAB bundles (what a student actually enlists in)
-    ├── coverage.csv        which curriculum courses exist this term
-    └── instances.json      one CSP instance per curriculum term (Y1-FS, Y1-SS, ...)
-```
+Output goes to `data/datasets/term_1261/`. Requires stdlib only.
 
 ---
 
-## Our results so far (term 1261, CMSC only)
+## Dataset summary (term 1261, CMSC only)
 
 | Item | Count |
 |---|---|
-| Rows scraped | 267 |
-| Sections (incl. 27 LEC parents found inside LAB rows) | 294 |
+| Raw rows scraped | 267 |
+| Total sections (incl. embedded LEC parents) | 294 |
 | LEC / LAB | 179 / 115 |
-| Sections with no meeting times | 130 |
-| Schedulable sections (faculty CSP variables) | 164 |
+| Sections with no meeting times (SP/thesis/practicum) | 130 |
+| Schedulable sections | 164 |
 | Instructors | 40 |
-| Baseline conflicts in the real assignment | 0 |
-| Student bundles / usable bundles | 267 / 137 |
-| Student instances (curriculum terms) | 10 |
+| Student bundles (total / usable) | 267 / 137 |
+| Curriculum instances (year-term combinations) | 10 |
 
-**The 130 sections with no meetings are expected.** They are CMSC 190 (Special
-Problem), CMSC 200, CMSC 300, CMSC 400 (thesis/research) and CMSC 198 (practicum).
-These have no fixed time, so they cannot clash and are left out of the CSP.
-
-Curriculum courses shown as "without offering" (MATH, STAT, HK, NSTP) are only
-missing because we scraped CMSC only. Some CMSC courses (e.g. 127, 128, 131, 137)
-may simply not be offered this semester.
+The 130 sections with no meetings are CMSC 190, 198, 200, 300, 400
+(research/practicum). They have no fixed time and are excluded from the CSP.
 
 ---
 
-## Troubleshooting
+## Libraries used and why
 
-| Problem | Fix |
-|---|---|
-| `Could not get a Bearer token` | Log in within ~60 s in the browser window, then run the command again |
-| Browser fails to launch | Run `playwright install --with-deps chromium` (don't skip `--with-deps`) |
-| No window appears | `echo $DISPLAY` must print `:0`; otherwise `wsl --update` and `wsl --shutdown` in PowerShell |
-| Google says "this browser may not be secure" | Run `playwright install chrome` and add `channel="chrome"` to the launch call in `auth.py` |
-| `ModuleNotFoundError: playwright` | You forgot `source .venv/bin/activate` |
-| `429` / "too many requests" | Stop, wait, and run again later. Do not remove the delays |
-| Token keeps expiring | Normal after ~30 min; the script refreshes it itself |
+| Library | Where | Why |
+|---|---|---|
+| `requests`, `playwright` | `scrape.py`, `auth.py` | HTTP requests and browser login to AMIS (data collection only) |
+| `csv`, `json`, `os`, `time`, `random`, `math` | everything else | Python stdlib — allowed by the project rules |
+| `numpy` | solver (future plots) | Arrays and linear algebra — allowed |
+| `matplotlib` | evaluation plots | Figures — allowed |
 
-Each person logs in with **their own** AMIS account. Use a different session folder
-per account if you switch accounts: `get_fresh_bearer_token("amis_session_name")`.
+`pandas`, `scikit-learn`, `tensorflow`, `pytorch`, `keras`, and similar
+ML/stats libraries are **not used anywhere** in the solver or preprocessing.
 
-## Privacy and safety
+---
 
-- Instructor names and user ids are removed in `scrape.py` before anything is
-  saved. Only the numeric `faculty_id` stays.
-- **Never commit `amis_session*/`, any token, or your own enlistment scripts
-  (`main.py`).** `.gitignore` covers these:
+## Privacy
+
+Instructor names and user IDs are removed in `scrape.py` before anything is
+saved. Only the numeric `faculty_id` is kept in the data.
+
+**Never commit** `amis_session*/`, any Bearer token, or personal enlistment
+scripts. These are covered by `.gitignore`:
 
 ```
 amis_session*/
@@ -220,28 +221,3 @@ __pycache__/
 .venv/
 *.token
 ```
-
-- The scraper only reads data. Do not run it at the same time as any enlistment
-  script.
-
-## For the project page (disclosure)
-
-State that:
-- the data was collected from AMIS with a read-only script using our own login,
-- instructor names were removed at scrape time,
-- AI assistance (Claude) was used to write the collection and preprocessing
-  scripts and this README, and every member can explain every line.
-
-`requests` and `playwright` are only used for *collecting* data. The algorithms we
-implement later must use only the standard library, NumPy and Matplotlib. Confirm
-with the instructor that using them for data collection is fine.
-
-## Known assumptions
-
-- Faculty "eligible instructors" for a section = instructors who already teach that
-  subject prefix this term (our assumption; AMIS has no expertise data). With CMSC
-  only, this makes every instructor eligible for every section, so we plan to
-  refine it (per course) or add more subjects.
-- Load = weekly meeting minutes (unit-based load is ambiguous).
-- Curriculum prerequisites in `curriculum.csv` were read off the flowchart arrows;
-  compare with the `prerequisites` column from AMIS and fix differences.
