@@ -1,0 +1,40 @@
+{
+ "term_id": 1252,
+ "n_sections": 1522,
+ "n_lec": 1234,
+ "n_lab": 288,
+ "n_without_meetings": 442,
+ "subjects": [
+  "AENG",
+  "ARTS",
+  "CMSC",
+  "COMM",
+  "ENG",
+  "ETHICS",
+  "HK",
+  "KAS",
+  "MATH",
+  "NSTP",
+  "PHILARTS",
+  "PI",
+  "STAT",
+  "STS",
+  "VEPI"
+ ],
+ "faculty_variables": 1080,
+ "faculty_instructors": 278,
+ "faculty_baseline_conflicts": 47,
+ "student_bundles": 1451,
+ "student_usable_bundles": 1011,
+ "student_instances": 10,
+ "curriculum_options_without_offering": [
+  "CMSC 124",
+  "CMSC 125",
+  "CMSC 130",
+  "CMSC 132",
+  "CMSC 150",
+  "CMSC 170",
+  "CMSC 198",
+  "HK 13"
+ ]
+}

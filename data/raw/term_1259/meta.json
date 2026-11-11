@@ -1,0 +1,26 @@
+{
+  "term_id": 1259,
+  "last_scrape_utc": "2026-11-11T13:33:31+00:00",
+  "source": "https://api-amis.uplb.edu.ph/api/students/classes",
+  "filters": {
+    "items": 20,
+    "section_like": null,
+    "class_status": null,
+    "status": "Active"
+  },
+  "note": "Instructor names removed at scrape time; only faculty_id kept.",
+  "rows_per_subject": {
+    "CMSC": 0,
+    "MATH": 0,
+    "STAT": 0,
+    "HK": 0,
+    "NSTP": 0,
+    "ETHICS": 0,
+    "STS": 0,
+    "ARTS": 0,
+    "KAS": 0,
+    "PI": 0,
+    "COMM": 0,
+    "ENG": 0
+  }
+}

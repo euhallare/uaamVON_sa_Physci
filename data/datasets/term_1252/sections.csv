@@ -1,0 +1,1523 @@
+class_id,course_id,course_code,subject,course_number,title,type,section,parent_class_id,units,max_size,active_size,facility_id,sem_offered,consent,acad_org,prerequisites,n_meetings,weekly_minutes,source
+568854,1775,AENG 201,AENG,201,Advanced Engineering Mathematics,LEC,CD,,3,10,0,AFBED_LR3,1s,I,LBIABE,PRE:(MATH 28); PRE:(MATH 28 or Equivalent),2,180,row
+568856,1775,AENG 201,AENG,201,Advanced Engineering Mathematics,LEC,E,,3,10,6,AFBED_LR3,1s,I,LBIABE,PRE:(MATH 28); PRE:(MATH 28 or Equivalent),2,180,row
+569014,1777,AENG 203,AENG,203,"Heat, Mass, and Momentum Transport",LEC,W,,3,10,1,AFBED_LR3,2s,I,LBIABE,,2,180,row
+569015,1779,AENG 205,AENG,205,Numerical Methods in Thermo-Fluid Engineering,LEC,Y,,3,10,5,AFBED_LR3,2s,I,LBIABE,PRE:(AENG 201),2,180,row
+568866,1780,AENG 225,AENG,225,Advanced Heat Transfer,LEC,U,,3,10,1,AFBED_LR3,2s,I,LBIABE,PRE:(ENSC 14a),2,180,row
+569074,1783,AENG 233,AENG,233,Agricultural Process Engineering,LAB,GH1L,568769,3,12,9,AFBED_LR3,2s,I,LBIABE,,1,180,row
+568769,1783,AENG 233,AENG,233,Agricultural Process Engineering,LEC,GH,,3,12,,AFBED_LR3,2s,I,LBIABE,,1,120,embedded_parent
+569090,1785,AENG 236,AENG,236,Physical Properties of Agricultural Materials,LAB,B1L,568770,3,10,11,PhysLab,2s,I,LBIABE,PRE:(AENG 233),1,180,row
+568770,1785,AENG 236,AENG,236,Physical Properties of Agricultural Materials,LEC,B,,3,10,,AFBED_LR3,2s,I,LBIABE,PRE:(AENG 233),2,120,embedded_parent
+569027,1786,AENG 237,AENG,237,Process Control in Agricultural Process Engineering,LEC,WX,,3,10,7,AFBED_LR3,2s,I,LBIABE,PRE:(AENG 270),1,180,row
+568990,1791,AENG 243,AENG,243,Soil and Water Conservation,LEC,V,,3,10,7,CEAT B-201,2s,I,LBIABE,,2,180,row
+568966,1792,AENG 244,AENG,244,Groundwater Hydrology,LEC,Y,,3,10,5,HL ConfRm2,2s,N,LBIABE,PRE:(ABE 71 and MATH 26); PRE:(ABE 57 and MATH 36); PRE:(ABE 71 and MATH 56); PRE:(ABE 57 and MATH 26),2,180,row
+568962,1794,AENG 247,AENG,247,Water Quality Control Engineering,LEC,G,,3,10,4,HL ConfRm2,2s,I,LBIABE,PRE:(LWRE 178); PRE:(ABE 177); PRE:(CHE 180),2,180,row
+573547,1795,AENG 248,AENG,248,Erosion and Sediment Transpor,LEC,F,,3,10,1,Follosco,1s,I,LBIABE,,2,180,row
+568961,1796,AENG 249,AENG,249,Statistical Hydrology,LEC,UV,,3,10,5,HL CONRM 2,1s,I,LBIABE,PRE:(ABE 57); PRE:(ABE 71),2,180,row
+569063,1798,AENG 261,AENG,261,Agricultural Machinery Design,LAB,GH1L,568776,4,10,7,ABC 167,2s,I,LBIABE,,1,360,row
+568776,1798,AENG 261,AENG,261,Agricultural Machinery Design,LEC,GH,,4,10,,ABC 163,2s,I,LBIABE,,1,120,embedded_parent
+569050,1800,AENG 263,AENG,263,Crop Establishment Engineering,LAB,T1L,568774,3,5,3,ABC 164,"1s,2s",N,LBIABE,PRE:(SOIL 1); PRE:(ABE 182); PRE:(ABE 145); PRE:(ABE 180),1,180,row
+568774,1800,AENG 263,AENG,263,Crop Establishment Engineering,LEC,T,,3,5,,ABC 167,"1s,2s",N,LBIABE,PRE:(SOIL 1); PRE:(ABE 182); PRE:(ABE 145); PRE:(ABE 180),2,120,embedded_parent
+568768,1802,AENG 265,AENG,265,Design of Harvesting and Threshing Machinery,LEC,EF,,3,10,2,ABC 167,2s,I,LBIABE,PRE:(ABE 74); PRE:(ABE 42),1,180,row
+569081,1803,AENG 266,AENG,266,Advanced Agricultural Energy and Power Engineering,LAB,BC1L,568762,3,5,8,ABC 165,2s,I,LBIABE,PRE:(ABE 63); PRE:(ABE 41),1,180,row
+568762,1803,AENG 266,AENG,266,Advanced Agricultural Energy and Power Engineering,LEC,BC,,3,5,,ABC 165,2s,I,LBIABE,PRE:(ABE 63); PRE:(ABE 41),1,120,embedded_parent
+569077,1804,AENG 270,AENG,270,Instrumentation for Engineering Research,LAB,T1L,568775,4,10,10,ABC 261,2s,N,LBIABE,PRE:(EE 1); PRE:(EE 1 or Equivalent),1,180,row
+568775,1804,AENG 270,AENG,270,Instrumentation for Engineering Research,LEC,T,,4,10,,ABC 164,2s,N,LBIABE,PRE:(EE 1); PRE:(EE 1 or Equivalent),2,180,embedded_parent
+568763,1805,AENG 290,AENG,290,Special Problems,SPR,BC,,0,10,5,HL CONRM 2,"1s,2s",I,LBIABE,,2,180,row
+568964,1805,AENG 290,AENG,290,Special Problems,SPR,EF,,0,5,0,ABC 163,"1s,2s",I,LBIABE,,1,180,row
+568967,1806,AENG 291,AENG,291,Special Topics,STO,CD,,0,10,10,ABC 164,"1s,2s",I,LBIABE,,1,180,row
+568965,1806,AENG 291,AENG,291,Special Topics,STO,W,,0,10,0,IABE Meeting Room,"1s,2s",I,LBIABE,,2,180,row
+588952,1806,AENG 291,AENG,291,Special Topics,STO,X,,0,10,2,AFBED LR3,"1s,2s",I,LBIABE,,2,180,row
+568672,1807,AENG 299,AENG,299,Graduate Seminar in Agricultural Engineering,LEC,Y,,1,10,10,AFBED_LR3,--,I,LBIABE,,1,60,row
+569025,1807,AENG 299,AENG,299,Graduate Seminar in Agricultural Engineering,SEM,UV,,1,10,9,AFBED_Conference Room,--,I,LBIABE,,1,60,row
+569017,1808,AENG 300,AENG,300,Master's Thesis,THE,A11,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568968,1808,AENG 300,AENG,300,Master's Thesis,THE,A13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568970,1808,AENG 300,AENG,300,Master's Thesis,THE,A14,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568786,1808,AENG 300,AENG,300,Master's Thesis,THE,A15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568978,1808,AENG 300,AENG,300,Master's Thesis,THE,A17,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568895,1808,AENG 300,AENG,300,Master's Thesis,THE,A18,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+589582,1808,AENG 300,AENG,300,Master's Thesis,THE,A19,,0,10,1,,"1s,2s,M",I,LBIABE,,0,0,row
+569001,1808,AENG 300,AENG,300,Master's Thesis,THE,A21,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568783,1808,AENG 300,AENG,300,Master's Thesis,THE,A22,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568957,1808,AENG 300,AENG,300,Master's Thesis,THE,A23,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568976,1808,AENG 300,AENG,300,Master's Thesis,THE,A24,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+568766,1808,AENG 300,AENG,300,Master's Thesis,THE,A25,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568782,1808,AENG 300,AENG,300,Master's Thesis,THE,A26,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568784,1808,AENG 300,AENG,300,Master's Thesis,THE,A27,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568977,1808,AENG 300,AENG,300,Master's Thesis,THE,A28,,0,5,5,,"1s,2s,M",I,LBIABE,,0,0,row
+568861,1808,AENG 300,AENG,300,Master's Thesis,THE,A29,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568797,1808,AENG 300,AENG,300,Master's Thesis,THE,A41,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568916,1808,AENG 300,AENG,300,Master's Thesis,THE,A44,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+569000,1808,AENG 300,AENG,300,Master's Thesis,THE,A45,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568973,1808,AENG 300,AENG,300,Master's Thesis,THE,A46,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568980,1808,AENG 300,AENG,300,Master's Thesis,THE,A47,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+569034,1808,AENG 300,AENG,300,Master's Thesis,THE,A48,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568804,1808,AENG 300,AENG,300,Master's Thesis,THE,B11,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568805,1808,AENG 300,AENG,300,Master's Thesis,THE,B13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569026,1808,AENG 300,AENG,300,Master's Thesis,THE,B14,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+568807,1808,AENG 300,AENG,300,Master's Thesis,THE,B15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568808,1808,AENG 300,AENG,300,Master's Thesis,THE,B16,,0,5,0,,"1s,2s,M",N,LBIABE,,0,0,row
+568989,1808,AENG 300,AENG,300,Master's Thesis,THE,B17,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568981,1808,AENG 300,AENG,300,Master's Thesis,THE,B18,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568896,1808,AENG 300,AENG,300,Master's Thesis,THE,B19,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568796,1808,AENG 300,AENG,300,Master's Thesis,THE,B21,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568795,1808,AENG 300,AENG,300,Master's Thesis,THE,B22,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568794,1808,AENG 300,AENG,300,Master's Thesis,THE,B23,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568793,1808,AENG 300,AENG,300,Master's Thesis,THE,B24,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568780,1808,AENG 300,AENG,300,Master's Thesis,THE,B25,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568798,1808,AENG 300,AENG,300,Master's Thesis,THE,B26,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568979,1808,AENG 300,AENG,300,Master's Thesis,THE,B27,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568778,1808,AENG 300,AENG,300,Master's Thesis,THE,B28,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568862,1808,AENG 300,AENG,300,Master's Thesis,THE,B29,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568974,1808,AENG 300,AENG,300,Master's Thesis,THE,B41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569018,1808,AENG 300,AENG,300,Master's Thesis,THE,B44,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568764,1808,AENG 300,AENG,300,Master's Thesis,THE,B45,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568963,1808,AENG 300,AENG,300,Master's Thesis,THE,B46,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+568960,1808,AENG 300,AENG,300,Master's Thesis,THE,B47,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569035,1808,AENG 300,AENG,300,Master's Thesis,THE,B48,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568958,1808,AENG 300,AENG,300,Master's Thesis,THE,C11,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568772,1808,AENG 300,AENG,300,Master's Thesis,THE,C13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568787,1808,AENG 300,AENG,300,Master's Thesis,THE,C14,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568773,1808,AENG 300,AENG,300,Master's Thesis,THE,C15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568809,1808,AENG 300,AENG,300,Master's Thesis,THE,C16,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568959,1808,AENG 300,AENG,300,Master's Thesis,THE,C17,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568810,1808,AENG 300,AENG,300,Master's Thesis,THE,C18,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568771,1808,AENG 300,AENG,300,Master's Thesis,THE,C19,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569022,1808,AENG 300,AENG,300,Master's Thesis,THE,C21,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568922,1808,AENG 300,AENG,300,Master's Thesis,THE,C22,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568767,1808,AENG 300,AENG,300,Master's Thesis,THE,C23,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569031,1808,AENG 300,AENG,300,Master's Thesis,THE,C24,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569023,1808,AENG 300,AENG,300,Master's Thesis,THE,C25,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568781,1808,AENG 300,AENG,300,Master's Thesis,THE,C26,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568777,1808,AENG 300,AENG,300,Master's Thesis,THE,C27,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+569004,1808,AENG 300,AENG,300,Master's Thesis,THE,C28,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568863,1808,AENG 300,AENG,300,Master's Thesis,THE,C29,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568972,1808,AENG 300,AENG,300,Master's Thesis,THE,C41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568909,1808,AENG 300,AENG,300,Master's Thesis,THE,C44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568785,1808,AENG 300,AENG,300,Master's Thesis,THE,C45,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568971,1808,AENG 300,AENG,300,Master's Thesis,THE,C46,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568779,1808,AENG 300,AENG,300,Master's Thesis,THE,C47,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569036,1808,AENG 300,AENG,300,Master's Thesis,THE,C48,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568897,1808,AENG 300,AENG,300,Master's Thesis,THE,D11,,0,5,1,,"1s,2s,M",C,LBIABE,,0,0,row
+568788,1808,AENG 300,AENG,300,Master's Thesis,THE,D13,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568791,1808,AENG 300,AENG,300,Master's Thesis,THE,D15,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568789,1808,AENG 300,AENG,300,Master's Thesis,THE,D17,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568790,1808,AENG 300,AENG,300,Master's Thesis,THE,D18,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568676,1808,AENG 300,AENG,300,Master's Thesis,THE,D21,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568910,1808,AENG 300,AENG,300,Master's Thesis,THE,D22,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568911,1808,AENG 300,AENG,300,Master's Thesis,THE,D23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568875,1808,AENG 300,AENG,300,Master's Thesis,THE,D41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568917,1808,AENG 300,AENG,300,Master's Thesis,THE,D44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568792,1808,AENG 300,AENG,300,Master's Thesis,THE,D45,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568969,1808,AENG 300,AENG,300,Master's Thesis,THE,D46,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568765,1808,AENG 300,AENG,300,Master's Thesis,THE,D47,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+569037,1808,AENG 300,AENG,300,Master's Thesis,THE,D48,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568983,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A13,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568811,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568988,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A17,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568996,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A21,,0,30,3,,"1s,2s,M",I,LBIABE,,0,0,row
+568985,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A22,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568806,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568800,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A24,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568799,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568801,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568908,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568986,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568802,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A46,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568984,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A47,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568982,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568833,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568987,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B17,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568997,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B21,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568992,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B22,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+568818,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568817,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568900,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568815,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568918,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568813,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568814,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568803,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568812,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568845,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568816,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568924,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568824,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C22,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568819,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568825,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568877,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568823,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568919,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568820,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568993,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C46,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568991,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C47,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+568832,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568835,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568834,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568838,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568841,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D22,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568870,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568886,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568879,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568885,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568920,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568843,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568876,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568887,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568836,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E13,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568891,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E15,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568837,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E17,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+568878,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568831,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E22,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568830,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568829,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568828,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568827,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568921,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E44,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568821,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568822,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+568826,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+577970,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,A1,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577971,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,A2,,3,28,28,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+577972,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,A3,,3,25,25,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+577973,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,A4,,3,25,25,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+577974,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B1,,3,28,27,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+577975,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B2,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577976,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B3,,3,28,22,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+577977,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B4,,3,25,25,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+577978,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,C1,,3,28,27,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+577979,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,C2,,3,28,25,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577980,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,C3,,3,28,26,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+577983,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,D1,,3,28,26,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+577984,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,D2,,3,28,26,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577985,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,D3,,3,28,27,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+577986,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,D4,,3,25,24,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+577982,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,D5,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+577987,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,E1,,3,28,26,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+577988,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,E2,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+585375,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,E3,,3,28,27,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+577989,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,F1,,3,28,28,CAS A1- GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+577990,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,F2,,3,25,21,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+577992,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,G,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577994,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,H,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+577995,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,S,,3,28,28,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+578000,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,T1,,3,28,28,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+578001,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,T2,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+578002,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,T3,,3,28,26,CAS A1- GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+578003,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,T4,,3,25,24,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+578006,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,U1,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+578007,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,U2,,3,28,24,CAS A1- GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+578008,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,U3,,3,28,27,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+578009,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,U4,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+578010,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,V1,,3,28,25,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+578011,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,V2,,3,25,23,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+578012,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,V3,,3,25,25,CAS B07,"1s,2s",N,LBDHUM,,2,180,row
+578014,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,W1,,3,28,28,CAS A2 201,"1s,2s",N,LBDHUM,,2,180,row
+578015,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,W2,,3,28,27,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+578016,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,W3,,3,28,25,CAS A1 - GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+578017,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,W4,,3,25,23,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+578018,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,W5,,3,25,24,CAS B07,"1s,2s",N,LBDHUM,,2,180,row
+578019,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,X1,,3,28,24,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+578020,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,X2,,3,28,28,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+578021,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,X3,,3,25,25,LITE ROOM 4,"1s,2s",N,LBDHUM,,2,180,row
+578022,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,X4,,3,28,0,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+578024,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,Y1,,3,28,28,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
+578025,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,Y2,,3,25,25,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+578028,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,Z,,3,25,25,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+578029,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,Z1,,3,28,1,CAS A1 GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+579931,549,CMSC 100,CMSC,100,Web Programming,LAB,C-1L,579930,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579932,549,CMSC 100,CMSC,100,Web Programming,LAB,C-2L,579930,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579933,549,CMSC 100,CMSC,100,Web Programming,LAB,C-3L,579930,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579934,549,CMSC 100,CMSC,100,Web Programming,LAB,C-4L,579930,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579918,549,CMSC 100,CMSC,100,Web Programming,LAB,U-1L,579917,3,19,18,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579919,549,CMSC 100,CMSC,100,Web Programming,LAB,U-2L,579917,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579920,549,CMSC 100,CMSC,100,Web Programming,LAB,U-3L,579917,3,19,18,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579921,549,CMSC 100,CMSC,100,Web Programming,LAB,U-4L,579917,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579922,549,CMSC 100,CMSC,100,Web Programming,LAB,U-5L,579917,3,19,15,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+579930,549,CMSC 100,CMSC,100,Web Programming,LEC,C,,3,76,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 22,2,120,embedded_parent
+579917,549,CMSC 100,CMSC,100,Web Programming,LEC,U,,3,95,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 22,2,120,embedded_parent
+579945,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-1L,579944,3,18,12,ICS PC2,"1s,2s,M",N,LBICS,,1,180,row
+579949,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-2L,579944,3,18,17,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579962,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-3L,579944,3,18,15,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579968,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-4L,579944,3,18,18,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579969,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-5L,579944,3,18,10,ICS PC2,"1s,2s,M",N,LBICS,,1,180,row
+579970,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,G-6L,579944,3,18,17,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579955,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,Y-1L,579954,3,18,16,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579956,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,Y-2L,579954,3,18,18,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579957,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,Y-3L,579954,3,18,17,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579958,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,Y-4L,579954,3,18,18,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579959,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,Y-5L,579954,3,18,18,PSC100,"1s,2s,M",N,LBICS,,1,180,row
+579944,543,CMSC 12,CMSC,12,Foundations of Computer Science,LEC,G,,3,108,,EAA LH,"1s,2s,M",N,LBICS,,2,120,embedded_parent
+579954,543,CMSC 12,CMSC,12,Foundations of Computer Science,LEC,Y,,3,90,,EAA LH,"1s,2s,M",N,LBICS,,2,120,embedded_parent
+584408,550,CMSC 123,CMSC,123,Data Structures,LAB,D-1L,584407,3,18,8,ICS PC4,"2s,M",N,LBICS,PRE:(CMSC 57 and CMSC 21),1,180,row
+584407,550,CMSC 123,CMSC,123,Data Structures,LEC,D,,3,18,,SMA LH,"2s,M",N,LBICS,PRE:(CMSC 57 and CMSC 21),1,120,embedded_parent
+584411,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST11L,584410,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584412,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST12L,584410,3,18,17,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584413,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST13L,584410,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584414,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST14L,584410,3,18,18,ICS PC5,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584415,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST15L,584410,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584416,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST16L,584410,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584418,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST21L,584417,3,18,16,ICS PC5,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584419,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST22L,584417,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584420,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST23L,584417,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584421,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST24L,584417,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584422,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST25L,584417,3,18,18,ICS PC4,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584423,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST26L,584417,3,18,18,ICS PC5,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584424,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST27L,584417,3,18,18,ICS PC5,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584425,553,CMSC 127,CMSC,127,File Processing and Database Systems,LAB,ST28L,584417,3,18,18,ICS PC5,2s,D,LBICS,PRE:(CMSC 22),1,180,row
+584410,553,CMSC 127,CMSC,127,File Processing and Database Systems,LEC,ST1,,3,108,,MMM LH,2s,N,LBICS,PRE:(CMSC 22),2,120,embedded_parent
+584417,553,CMSC 127,CMSC,127,File Processing and Database Systems,LEC,ST2,,3,144,,EAA LH,2s,N,LBICS,PRE:(CMSC 22),2,120,embedded_parent
+584636,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A1-1L,584635,3,20,13,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584637,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A1-2L,584635,3,20,20,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584638,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A1-3L,584635,3,20,20,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584639,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A1-4L,584635,3,20,20,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584640,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A1-5L,584635,3,20,20,ICS PC4,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584642,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-1L,584641,3,20,20,ICS PC4,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584643,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-2L,584641,3,20,19,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584644,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-3L,584641,3,20,19,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584645,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-4L,584641,3,20,20,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584646,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-5L,584641,3,20,0,ICS PC5,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584647,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-6L,584641,3,20,0,ICS PC4,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584648,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LAB,A2-7L,584641,3,20,0,ICS PC4,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+584635,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LEC,A1,,3,100,,MMM LH,2s,N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+584641,554,CMSC 128,CMSC,128,Introduction to Software Engineering,LEC,A2,,3,140,,EAA LH,2s,N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+584651,555,CMSC 129,CMSC,129,Principles of Compiler Design,LAB,CD-1L,584650,3,18,10,ICS PC8,2s,N,LBICS,PRE:CMSC 124,1,180,row
+584650,555,CMSC 129,CMSC,129,Principles of Compiler Design,LEC,CD,,3,18,,SMA LH,2s,N,LBICS,PRE:CMSC 124,1,120,embedded_parent
+584653,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,AB-1L,584652,3,20,20,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584654,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,AB-2L,584652,3,20,20,ICS PC8,1s,I,LBICS,PRE:(CMSC 21),1,180,row
+584655,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,AB-3L,584652,3,20,20,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584657,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,AB-4L,584652,3,20,20,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584658,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,AB-5L,584652,3,20,19,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584662,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,B-1L,584661,3,20,16,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584663,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,B-2L,584661,3,20,16,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584664,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,B-3L,584661,3,20,18,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584665,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,B-4L,584661,3,20,17,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584666,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LAB,B-5L,584661,3,20,14,ICS PC8,1s,N,LBICS,PRE:(CMSC 21),1,180,row
+584652,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LEC,AB,,3,100,,SMA LH,1s,N,LBICS,PRE:(CMSC 21),2,120,embedded_parent
+584661,557,CMSC 131,CMSC,131,Introduction to Computer Organization and Machine Level Programming,LEC,B,,3,100,,SMA LH,1s,N,LBICS,PRE:(CMSC 21),2,120,embedded_parent
+568380,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,AB-1L,568379,3,21,21,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568381,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,AB-2L,568379,3,20,20,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568382,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,AB-3L,568379,3,20,13,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568383,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,AB-4L,568379,3,20,20,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568384,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,AB-5L,568379,3,20,0,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568373,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-1L,568372,3,20,19,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568374,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-2L,568372,3,20,18,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568375,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-3L,568372,3,20,15,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568376,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-4L,568372,3,20,20,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568377,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-5L,568372,3,20,18,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568378,559,CMSC 137,CMSC,137,Data Communications and Networking,LAB,B-6L,568372,3,20,16,ICS PC9,1s,N,LBICS,PRE:CMSC 125,1,180,row
+568379,559,CMSC 137,CMSC,137,Data Communications and Networking,LEC,AB,,3,100,,EAA LH,1s,N,LBICS,PRE:CMSC 125,2,120,embedded_parent
+568372,559,CMSC 137,CMSC,137,Data Communications and Networking,LEC,B,,3,120,,EAA LH,1s,N,LBICS,PRE:CMSC 125,2,120,embedded_parent
+568371,560,CMSC 141,CMSC,141,Automata and Language Theory,LAB,W-1L,568370,3,18,18,ICS PC6,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+568370,560,CMSC 141,CMSC,141,Automata and Language Theory,LEC,W,,3,18,,SMA LH,"1s,2s",N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+569115,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,ST-1L,569114,3,19,19,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569116,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,ST-2L,569114,3,19,0,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569117,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,ST-3L,569114,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569118,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,ST-4L,569114,3,19,19,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569119,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,ST-5L,569114,3,19,17,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569121,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,T-1L,569120,3,19,19,ICS PC7,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569122,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,T-2L,569120,3,19,19,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569123,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,T-3L,569120,3,19,18,ICS PC7,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569124,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,T-4L,569120,3,19,19,ICS PC2,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569125,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LAB,T-5L,569120,3,19,17,ICS PC7,"1s,2s",N,LBICS,PRE:(CMSC 123),1,180,row
+569114,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LEC,ST,,3,95,,SMA LH,"1s,2s",N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+569120,561,CMSC 142,CMSC,142,Design and Analysis of Algorithms,LEC,T,,3,95,,SMA LH,"1s,2s",N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+569136,563,CMSC 161,CMSC,161,Interactive Computer Graphics,LAB,B-1L,569135,3,18,15,PSC100,2s,N,LBICS,PRE:(CMSC 123),1,180,row
+569135,563,CMSC 161,CMSC,161,Interactive Computer Graphics,LEC,B,,3,18,,MMM LH,2s,N,LBICS,PRE:(CMSC 123),2,120,embedded_parent
+589805,564,CMSC 165,CMSC,165,Digital Image Processing,LAB,GH-1L,589804,3,18,11,ICS PC2,1s,I,LBICS,PRE:(CMSC 123),1,180,row
+589804,564,CMSC 165,CMSC,165,Digital Image Processing,LEC,GH,,3,18,,EAA LH,1s,I,LBICS,PRE:(CMSC 123),1,120,embedded_parent
+579547,566,CMSC 172,CMSC,172,Robot Modelling,LAB,D-1L,579546,3,15,12,SMA LH,2s,N,LBICS,PRE:CMSC 123,1,180,row
+579546,566,CMSC 172,CMSC,172,Robot Modelling,LEC,D,,3,15,,SMA LH,2s,N,LBICS,PRE:CMSC 123,2,120,embedded_parent
+579925,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,GH-1L,579924,3,20,0,ICS PC9,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579926,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,GH-2L,579924,3,20,10,ICS PC9,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579927,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,GH-3L,579924,3,20,16,ICS PC9,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579928,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,GH-4L,579924,3,20,20,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579929,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,GH-5L,579924,3,20,19,PSC100,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579911,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-1L,579910,3,20,20,ICS PC9,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579912,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-2L,579910,3,20,20,ICS PC8,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579913,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-3L,579910,3,20,20,ICS PC8,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579914,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-4L,579910,3,20,19,ICS PC8,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579915,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-5L,579910,3,20,19,ICS PC8,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579916,567,CMSC 173,CMSC,173,Human-Computer Interaction,LAB,S-6L,579910,3,20,14,ICS PC5,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,180,row
+579924,567,CMSC 173,CMSC,173,Human-Computer Interaction,LEC,GH,,3,100,,SMA LH,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,1,120,embedded_parent
+579910,567,CMSC 173,CMSC,173,Human-Computer Interaction,LEC,S,,3,120,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 123 and STAT 101,2,120,embedded_parent
+579984,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-1L,579983,3,19,19,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579985,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-2L,579983,3,19,18,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579986,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-3L,579983,3,19,18,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579987,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-4L,579983,3,19,17,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579988,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-5L,579983,3,19,15,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579990,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-6L,579983,3,19,16,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579991,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,AB-7L,579983,3,19,18,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579994,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,CD-1L,579993,3,19,18,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579995,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,CD-2L,579993,3,19,19,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579996,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,CD-3L,579993,3,19,19,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579997,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,CD-4L,579993,3,19,19,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579998,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LAB,CD-5L,579993,3,19,19,ICS PC3,1s,N,LBICS,PRE:CMSC 132,1,180,row
+579983,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LEC,AB,,3,133,,EAA LH,1s,N,LBICS,PRE:CMSC 132,1,120,embedded_parent
+579993,568,CMSC 180,CMSC,180,Introduction to Parallel Computing,LEC,CD,,3,95,,EAA LH,1s,N,LBICS,PRE:CMSC 132,1,120,embedded_parent
+581821,569,CMSC 190,CMSC,190,Special Problems,SPR,A1,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581830,569,CMSC 190,CMSC,190,Special Problems,SPR,A10,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581831,569,CMSC 190,CMSC,190,Special Problems,SPR,A11,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581832,569,CMSC 190,CMSC,190,Special Problems,SPR,A12,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581833,569,CMSC 190,CMSC,190,Special Problems,SPR,A13,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581834,569,CMSC 190,CMSC,190,Special Problems,SPR,A14,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581835,569,CMSC 190,CMSC,190,Special Problems,SPR,A15,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581836,569,CMSC 190,CMSC,190,Special Problems,SPR,A16,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581837,569,CMSC 190,CMSC,190,Special Problems,SPR,A17,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581838,569,CMSC 190,CMSC,190,Special Problems,SPR,A18,,3,2,0,,"1s,2s",I,LBICS,,0,0,row
+581839,569,CMSC 190,CMSC,190,Special Problems,SPR,A19,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581822,569,CMSC 190,CMSC,190,Special Problems,SPR,A2,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581840,569,CMSC 190,CMSC,190,Special Problems,SPR,A20,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581823,569,CMSC 190,CMSC,190,Special Problems,SPR,A3,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581824,569,CMSC 190,CMSC,190,Special Problems,SPR,A4,,3,2,1,,"1s,2s",I,LBICS,,0,0,row
+581825,569,CMSC 190,CMSC,190,Special Problems,SPR,A5,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581826,569,CMSC 190,CMSC,190,Special Problems,SPR,A6,,3,2,3,,"1s,2s",I,LBICS,,0,0,row
+581827,569,CMSC 190,CMSC,190,Special Problems,SPR,A7,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581828,569,CMSC 190,CMSC,190,Special Problems,SPR,A8,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581829,569,CMSC 190,CMSC,190,Special Problems,SPR,A9,,3,2,2,,"1s,2s",I,LBICS,,0,0,row
+581841,569,CMSC 190,CMSC,190,Special Problems,SPR,B1,,3,10,6,,"1s,2s",I,LBICS,,0,0,row
+581850,569,CMSC 190,CMSC,190,Special Problems,SPR,B10,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581851,569,CMSC 190,CMSC,190,Special Problems,SPR,B11,,3,10,9,,"1s,2s",I,LBICS,,0,0,row
+581852,569,CMSC 190,CMSC,190,Special Problems,SPR,B12,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581853,569,CMSC 190,CMSC,190,Special Problems,SPR,B13,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581854,569,CMSC 190,CMSC,190,Special Problems,SPR,B14,,3,10,6,,"1s,2s",I,LBICS,,0,0,row
+581855,569,CMSC 190,CMSC,190,Special Problems,SPR,B15,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581856,569,CMSC 190,CMSC,190,Special Problems,SPR,B16,,3,10,2,,"1s,2s",I,LBICS,,0,0,row
+581857,569,CMSC 190,CMSC,190,Special Problems,SPR,B17,,3,10,2,,"1s,2s",I,LBICS,,0,0,row
+581858,569,CMSC 190,CMSC,190,Special Problems,SPR,B18,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581859,569,CMSC 190,CMSC,190,Special Problems,SPR,B19,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581842,569,CMSC 190,CMSC,190,Special Problems,SPR,B2,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581860,569,CMSC 190,CMSC,190,Special Problems,SPR,B20,,3,10,4,,"1s,2s",I,LBICS,,0,0,row
+581843,569,CMSC 190,CMSC,190,Special Problems,SPR,B3,,3,10,5,,"1s,2s",I,LBICS,,0,0,row
+581844,569,CMSC 190,CMSC,190,Special Problems,SPR,B4,,3,10,4,,"1s,2s",I,LBICS,,0,0,row
+581845,569,CMSC 190,CMSC,190,Special Problems,SPR,B5,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581846,569,CMSC 190,CMSC,190,Special Problems,SPR,B6,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581847,569,CMSC 190,CMSC,190,Special Problems,SPR,B7,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581848,569,CMSC 190,CMSC,190,Special Problems,SPR,B8,,3,10,10,,"1s,2s",I,LBICS,,0,0,row
+581849,569,CMSC 190,CMSC,190,Special Problems,SPR,B9,,3,10,11,,"1s,2s",I,LBICS,,0,0,row
+569126,570,CMSC 191,CMSC,191,Special Topics,LEC,EF,,3,17,17,ICS PC5,"1s,2s",I,LBICS,,1,180,row
+569127,570,CMSC 191,CMSC,191,Special Topics,LEC,EF2,,3,20,19,ICS PC2,"1s,2s",I,LBICS,,1,180,row
+589767,570,CMSC 191,CMSC,191,Special Topics,LEC,EF3,,3,20,20,MMM LH (D-308),"1s,2s",I,LBICS,,1,180,row
+569129,570,CMSC 191,CMSC,191,Special Topics,LEC,GH,,3,30,30,ICS PC1,"1s,2s",I,LBICS,,1,180,row
+573465,572,CMSC 199,CMSC,199,Undergraduate Seminar,SEM,AB,,1,20,18,MMM LH,"1s,2s",I,LBICS,,1,60,row
+587956,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A1,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587965,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A10,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587966,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A11,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587967,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A12,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587968,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A13,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587969,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A14,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587970,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A15,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587971,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A16,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587972,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A17,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587973,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A18,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587974,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A19,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587957,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A2,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587975,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A20,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587958,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A3,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587959,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A4,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587960,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A5,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587961,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A6,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587962,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A7,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587963,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A8,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+587964,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A9,,0,2,1,,"1s,2s",I,LBICS,,0,0,row
+587976,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C1,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587985,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C10,,0,3,2,,"1s,2s",I,LBICS,,0,0,row
+587986,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C11,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587987,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C12,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587988,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C13,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587990,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C14,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587991,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C15,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587992,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C16,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587993,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C17,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587994,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C18,,0,3,1,,"1s,2s",I,LBICS,,0,0,row
+587995,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C19,,0,3,2,,"1s,2s",I,LBICS,,0,0,row
+587977,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C2,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587996,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C20,,0,3,1,,"1s,2s",I,LBICS,,0,0,row
+587978,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C3,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587979,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C4,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587980,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C5,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587981,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C6,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587982,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C7,,0,3,2,,"1s,2s",I,LBICS,,0,0,row
+587983,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C8,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+587984,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C9,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+580000,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,AB-1L,579999,3,18,16,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580016,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,AB-2L,579999,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580017,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,AB-3L,579999,3,18,18,PSC100,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580018,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,AB-4L,579999,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580019,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,AB-5L,579999,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580023,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,T-1L,580022,3,18,18,PSC100,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580024,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,T-2L,580022,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580025,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,T-3L,580022,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580026,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,T-4L,580022,3,18,18,ICS PC2,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+580027,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,T-5L,580022,3,18,18,PSC100,"1s,2s",N,LBICS,PRE:CMSC 12,1,180,row
+579999,544,CMSC 21,CMSC,21,Fundamentals of Programming,LEC,AB,,3,90,,MMM LH,"1s,2s",N,LBICS,PRE:CMSC 12,2,120,embedded_parent
+580022,544,CMSC 21,CMSC,21,Fundamentals of Programming,LEC,T,,3,90,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 12,2,120,embedded_parent
+573466,2277,CMSC 214,CMSC,214,Programming Language Design Concepts,LEC,GH,,3,10,9,SMA LH,2s,I,LBICS,,1,180,row
+582602,545,CMSC 22,CMSC,22,Object-Oriented Programming,LAB,WX-1L,582601,3,20,20,ICS PC3,"1s,2s",N,LBICS,PRE:CMSC 12; PRE:(CMSC 11),1,180,row
+582603,545,CMSC 22,CMSC,22,Object-Oriented Programming,LAB,WX-2L,582601,3,20,20,ICS PC7,"1s,2s",N,LBICS,PRE:CMSC 12; PRE:(CMSC 11),1,180,row
+582604,545,CMSC 22,CMSC,22,Object-Oriented Programming,LAB,WX-3L,582601,3,20,20,ICS PC3,"1s,2s",N,LBICS,PRE:CMSC 12; PRE:(CMSC 11),1,180,row
+582605,545,CMSC 22,CMSC,22,Object-Oriented Programming,LAB,WX-4L,582601,3,20,20,ICS PC3,"1s,2s",N,LBICS,PRE:CMSC 12; PRE:(CMSC 11),1,180,row
+582601,545,CMSC 22,CMSC,22,Object-Oriented Programming,LEC,WX,,3,80,,SMA LH,"1s,2s",N,LBICS,PRE:CMSC 12; PRE:(CMSC 11),2,120,embedded_parent
+582627,546,CMSC 23,CMSC,23,Mobile Computing,LAB,CD-1L,582626,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+583487,546,CMSC 23,CMSC,23,Mobile Computing,LAB,CD-2L,582626,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+583488,546,CMSC 23,CMSC,23,Mobile Computing,LAB,CD-3L,582626,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+583489,546,CMSC 23,CMSC,23,Mobile Computing,LAB,CD-4L,582626,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+583490,546,CMSC 23,CMSC,23,Mobile Computing,LAB,CD-5L,582626,3,19,0,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582616,546,CMSC 23,CMSC,23,Mobile Computing,LAB,UV-1L,582615,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582617,546,CMSC 23,CMSC,23,Mobile Computing,LAB,UV-2L,582615,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582618,546,CMSC 23,CMSC,23,Mobile Computing,LAB,UV-3L,582615,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582619,546,CMSC 23,CMSC,23,Mobile Computing,LAB,UV-4L,582615,3,19,19,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582620,546,CMSC 23,CMSC,23,Mobile Computing,LAB,UV-5L,582615,3,19,18,ICS PC6,"1s,2s",N,LBICS,PRE:CMSC 22,1,180,row
+582626,546,CMSC 23,CMSC,23,Mobile Computing,LEC,CD,,3,95,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 22,2,120,embedded_parent
+582615,546,CMSC 23,CMSC,23,Mobile Computing,LEC,UV,,3,95,,EAA LH,"1s,2s",N,LBICS,PRE:CMSC 22,2,120,embedded_parent
+573467,3173,CMSC 241,CMSC,241,"Formal Languages, Automata Theory and Computations",LEC,YZ,,3,10,2,SMA LH,--,I,LBICS,,1,180,row
+573468,2281,CMSC 245,CMSC,245,Algorithms and Advanced Data Structures II,LEC,B,,3,10,10,ICS PC1,2s,I,LBICS,,2,180,row
+573470,2742,CMSC 265,CMSC,265,Advanced Digital Image Processing,LAB,EF-1L,573469,3,10,4,ICS PC1,2s,I,LBICS,,1,180,row
+573469,2742,CMSC 265,CMSC,265,Advanced Digital Image Processing,LEC,EF,,3,10,,ICS PC1,2s,I,LBICS,,1,120,embedded_parent
+573471,3049,CMSC 272,CMSC,272,Strategic Information Systems Development,LEC,YZ,,3,10,7,ICS PC1,2s,I,LBICS,,1,180,row
+569130,2112,CMSC 280,CMSC,280,Parallel Processing,LEC,CD,,3,10,1,ICS PC1,--,I,LBICS,,1,180,row
+569131,2114,CMSC 291,CMSC,291,Special Topics,LEC,YZ,,3,10,4,ICS PC1,--,I,LBICS,,1,180,row
+573478,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A1,,1,2,0,,S,I,LBICS,,0,0,row
+573479,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A2,,1,2,0,,S,I,LBICS,,0,0,row
+573480,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A3,,1,2,0,,S,I,LBICS,,0,0,row
+573481,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A4,,1,2,0,,S,I,LBICS,,0,0,row
+573482,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A5,,1,2,2,,S,I,LBICS,,0,0,row
+573483,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A6,,1,2,0,,S,I,LBICS,,0,0,row
+573484,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A7,,1,2,0,,S,I,LBICS,,0,0,row
+573485,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A8,,1,2,0,,S,I,LBICS,,0,0,row
+573486,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A9,,1,2,2,,S,I,LBICS,,0,0,row
+573487,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B1,,1,2,0,,S,I,LBICS,,0,0,row
+573488,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B2,,1,2,0,,S,I,LBICS,,0,0,row
+573489,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B3,,1,2,0,,S,I,LBICS,,0,0,row
+573490,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B4,,1,2,0,,S,I,LBICS,,0,0,row
+573491,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B5,,1,2,0,,S,I,LBICS,,0,0,row
+573492,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B6,,1,2,0,,S,I,LBICS,,0,0,row
+573493,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B7,,1,2,0,,S,I,LBICS,,0,0,row
+573494,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B8,,1,2,0,,S,I,LBICS,,0,0,row
+573495,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B9,,1,2,0,,S,I,LBICS,,0,0,row
+573496,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C1,,1,2,0,,S,I,LBICS,,0,0,row
+573497,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C2,,1,2,0,,S,I,LBICS,,0,0,row
+573498,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C3,,1,2,0,,S,I,LBICS,,0,0,row
+573499,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C4,,1,2,0,,S,I,LBICS,,0,0,row
+573500,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C5,,1,2,0,,S,I,LBICS,,0,0,row
+573501,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C6,,1,2,0,,S,I,LBICS,,0,0,row
+573502,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C7,,1,2,1,,S,I,LBICS,,0,0,row
+573503,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C8,,1,2,0,,S,I,LBICS,,0,0,row
+573504,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C9,,1,2,0,,S,I,LBICS,,0,0,row
+573506,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F1,,1,2,0,,S,I,LBICS,,0,0,row
+573507,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F2,,1,2,0,,S,I,LBICS,,0,0,row
+573505,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F3,,1,2,0,,S,I,LBICS,,0,0,row
+573508,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F4,,1,2,0,,S,I,LBICS,,0,0,row
+573509,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F5,,1,2,0,,S,I,LBICS,,0,0,row
+573510,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F6,,1,2,0,,S,I,LBICS,,0,0,row
+573511,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F7,,1,2,0,,S,I,LBICS,,0,0,row
+573512,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F8,,1,2,0,,S,I,LBICS,,0,0,row
+573513,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F9,,1,2,0,,S,I,LBICS,,0,0,row
+569132,2910,CMSC 341,CMSC,341,Advanced Theory of Computation,LEC,BC,,3,5,1,ICS GS Room,--,I,LBICS,,1,180,row
+573548,3171,CMSC 391,CMSC,391,Special Topics,LEC,BC,,1,5,2,ICS GS Room,--,I,LBICS,,1,180,row
+569133,2743,CMSC 399,CMSC,399,Graduate Seminar,SEM,B,,1,5,0,ICS PC1,S,I,LBICS,,1,60,row
+573514,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,A1,,1,2,2,,S,I,LBICS,,0,0,row
+573515,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,B1,,1,2,0,,S,I,LBICS,,0,0,row
+573516,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,C1,,1,2,0,,S,I,LBICS,,0,0,row
+573517,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,D1,,1,2,0,,S,I,LBICS,,0,0,row
+573518,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,F1,,1,2,0,,S,I,LBICS,,0,0,row
+573519,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,L1,,1,2,0,,S,I,LBICS,,0,0,row
+583504,547,CMSC 56,CMSC,56,Discrete Mathematical Structures in Computer Science I,LAB,E-1L,583503,3,18,9,MMM LH,"1s,2s",N,LBICS,,1,180,row
+583503,547,CMSC 56,CMSC,56,Discrete Mathematical Structures in Computer Science I,LEC,E,,3,18,,SMA LH,"1s,2s",N,LBICS,,2,120,embedded_parent
+579543,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,A-1L,579542,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579898,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,A-2L,579542,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579899,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,A-3L,579542,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579900,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,A-4L,579542,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579904,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,A-5L,579542,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579545,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,S-1L,579544,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579905,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,S-2L,579544,3,18,17,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579907,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,S-3L,579544,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579908,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,S-4L,579544,3,18,18,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579909,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,S-5L,579544,3,18,13,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,1,180,row
+579542,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LEC,A,,3,90,,SMA LH,"2s,M",N,LBICS,PRE:CMSC 56,2,120,embedded_parent
+579544,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LEC,S,,3,90,,SMA LH,"2s,M",N,LBICS,PRE:CMSC 56,2,120,embedded_parent
+578030,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,A1,,3,28,0,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578031,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,A2,,3,28,28,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578032,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,A3,,3,28,27,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578033,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,B1,,3,28,23,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578039,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,B2,,3,28,28,LITE Room 5,"1s,2s",N,LBDHUM,,2,180,row
+589924,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,B3,,3,25,0,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578034,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,C1,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578035,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,C2,,3,28,28,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578036,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,C3,,3,28,28,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578042,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,C4,,3,28,26,LITE Room 5,"1s,2s",N,LBDHUM,,2,180,row
+578043,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,C5,,3,28,28,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+578037,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,D1,,3,28,0,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578038,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,D2,,3,28,29,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+578051,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC1,,3,28,28,Annex 4,"1s,2s",N,LBDHUM,,2,180,row
+578096,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC10,,3,28,28,CDC LR2,"1s,2s",N,LBDHUM,,2,180,row
+578052,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC2,,3,28,28,CDC LR2,"1s,2s",N,LBDHUM,,2,180,row
+578053,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC3,,3,28,27,IMU,"1s,2s",N,LBDHUM,,2,180,row
+578056,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC4,,3,28,28,Annex 04,"1s,2s",N,LBDHUM,,2,180,row
+578057,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC5,,3,28,28,Annex 3,"1s,2s",N,LBDHUM,,2,180,row
+578071,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC6,,3,28,28,CDC LR2,"1s,2s",N,LBDHUM,,2,180,row
+578076,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC7,,3,28,27,CDC LR2,"1s,2s",N,LBDHUM,,2,180,row
+578081,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC8,,3,28,28,CDC Annex 01,"1s,2s",N,LBDHUM,,2,180,row
+578082,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC9,,3,28,28,CDC LR2,"1s,2s",N,LBDHUM,,2,180,row
+578040,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,E1,,3,28,18,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+578041,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,E2,,3,28,0,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578044,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,F1,,3,28,27,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+578045,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,F2,,3,28,24,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578046,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,F3,,3,28,27,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578048,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,G1,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578049,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,G2,,3,28,25,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578054,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,H1,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578055,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,H2,,3,28,28,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578058,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,S1,,3,28,23,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+578059,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,S2,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578060,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,S3,,3,28,25,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578061,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,S4,,3,28,28,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578062,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,T1,,3,28,28,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+578064,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,T3,,3,28,26,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578065,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,T4,,3,28,27,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578066,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,T5,,3,28,28,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+578050,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,T6,,3,28,25,CAS 106,"1s,2s",N,LBDHUM,,2,180,row
+578067,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,U1,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578068,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,U2,,3,28,19,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578069,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,U3,,3,28,28,LITE Room 4,"1s,2s",N,LBDHUM,,2,180,row
+578070,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,U4,,3,28,28,CAS 109,"1s,2s",N,LBDHUM,,2,180,row
+578072,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,V1,,3,28,27,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578073,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,V2,,3,28,27,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578074,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,V3,,3,28,27,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578077,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,W1,,3,28,27,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+578078,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,W2,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
+578079,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,W3,,3,28,11,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578083,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,X1,,3,28,28,CAS A200,"1s,2s",N,LBDHUM,,2,180,row
+578084,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,X2,,3,28,19,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578087,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Y1,,3,28,26,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578088,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Y2,,3,28,28,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578089,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Y3,,3,28,26,,"1s,2s",N,LBDHUM,,2,180,row
+578093,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Z1,,3,28,26,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+578094,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Z2,,3,28,28,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+578095,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Z3,,3,28,26,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+578366,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,A,,3,20,20,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+578367,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,B,,3,20,19,CAS 106,"1s,2s,M",N,LBDHUM,,2,180,row
+578368,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,C,,3,20,20,CAS 106,"1s,2s,M",N,LBDHUM,,2,180,row
+589506,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,C2,,3,20,19,CAS B10,"1s,2s,M",N,LBDHUM,,2,180,row
+578369,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,D,,3,20,19,CAS 108,"1s,2s,M",N,LBDHUM,,2,180,row
+578370,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,E,,3,20,17,CAS 106,"1s,2s,M",N,LBDHUM,,2,180,row
+589943,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,E2,,3,12,11,CAS B01,"1s,2s,M",N,LBDHUM,,2,180,row
+578371,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,F1,,3,20,19,CAS 108,"1s,2s,M",N,LBDHUM,,2,180,row
+578372,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,F2,,3,20,15,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+589507,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,F3,,3,20,21,CAS 106,"1s,2s,M",N,LBDHUM,,2,180,row
+578373,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,G,,3,20,20,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+578374,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,H,,3,20,20,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+578378,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,V,,3,20,20,CAS 110,"1s,2s,M",N,LBDHUM,,2,180,row
+589942,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,V2,,3,13,13,TCC 11,"1s,2s,M",N,LBDHUM,,2,180,row
+578380,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,W1,,3,20,17,CAS 107,"1s,2s,M",N,LBDHUM,,2,180,row
+578381,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,W2,,3,20,20,CAS 110,"1s,2s,M",N,LBDHUM,,2,180,row
+578383,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,X,,3,20,16,CAS 107,"1s,2s,M",N,LBDHUM,,2,180,row
+578386,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,Y1,,3,20,19,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+578387,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,Y2,,3,20,20,CAS 107,"1s,2s,M",N,LBDHUM,,2,180,row
+578390,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,Z,,3,20,20,CAS 109,"1s,2s,M",N,LBDHUM,,2,180,row
+578391,734,ENG 100,ENG,100,Rereading the Literary Canons,LEC,D,,3,20,19,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+578392,734,ENG 100,ENG,100,Rereading the Literary Canons,LEC,S,,3,20,20,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+578395,734,ENG 100,ENG,100,Rereading the Literary Canons,LEC,T,,3,20,20,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+578396,734,ENG 100,ENG,100,Rereading the Literary Canons,LEC,V,,3,20,16,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+578401,735,ENG 101,ENG,101,English Prose Styles,LEC,B,,3,18,18,LITE ROOM 4,1s,N,LBDHUM,PRE:(ENG 5); PRE:(ENG 100),2,180,row
+578402,735,ENG 101,ENG,101,English Prose Styles,LEC,X,,3,18,14,CAS B01,1s,N,LBDHUM,PRE:(ENG 5); PRE:(ENG 100),2,180,row
+578406,736,ENG 104,ENG,104,Argumentative Writing,LEC,B,,3,20,19,CAS 109,"1s,2s",N,LBDHUM,,2,180,row
+578407,736,ENG 104,ENG,104,Argumentative Writing,LEC,C,,3,20,19,CAS 109,"1s,2s",N,LBDHUM,,2,180,row
+578410,737,ENG 151,ENG,151,Critical Writing,LEC,E,,3,15,13,CAS A1 305,"1s,2s",N,LBDHUM,PRE:(ENG 5); PRE:(ENG 100),2,180,row
+578412,740,ENG 154,ENG,154,Science and Technology in Literature,LEC,B,,3,15,13,CAS B01,2s,I,LBDHUM,PRE:ENG 100,2,180,row
+578414,741,ENG 155,ENG,155,Writing Creative Nonfiction,LEC,T,,3,15,13,CAS B06,2s,N,LBDHUM,PRE:ENG 101,2,180,row
+578419,742,ENG 156,ENG,156,Mythology and Folklore,LEC,X,,3,15,13,CAS A1 305,2s,N,LBDHUM,PRE:ENG 100,2,180,row
+578421,743,ENG 157,ENG,157,Reading Young Adult Narratives,LEC,E,,3,15,14,CAS A1 306,2s,N,LBDHUM,,2,180,row
+578425,744,ENG 158,ENG,158,Playwriting,LEC,W,,3,15,14,Dean's Office Conference Room DECL Hall,2s,N,LBDHUM,PRE:ENG 100,2,180,row
+578426,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,A1,,3,25,19,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578427,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,A2,,3,25,24,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578428,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,A3,,3,25,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578429,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,B1,,3,25,24,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578430,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,B2,,3,25,24,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578431,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,B3,,3,25,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578433,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,C1,,3,25,25,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578434,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,C2,,3,25,24,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578436,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,C4,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578437,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,D1,,3,25,20,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578438,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,D2,,3,25,22,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578441,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,E1,,3,25,20,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578442,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,E2,,3,25,24,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578443,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,E3,,3,25,24,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578445,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,F1,,3,25,25,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+578446,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,F2,,3,25,17,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578447,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,F3,,3,25,25,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578448,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,F4,,3,25,24,CAS LITE Rm 4,"1s,2s",N,LBDHUM,,2,180,row
+578449,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,G1,,3,25,23,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578450,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,G2,,3,25,23,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578451,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,G3,,3,25,24,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+578452,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,G4,,3,25,22,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578453,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,H1,,3,25,24,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578454,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,H2,,3,25,25,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578456,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,S1,,3,25,25,CAS A2 202,"1s,2s",D,LBDHUM,,2,180,row
+578457,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,S2,,3,25,25,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578458,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,S3,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578460,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,T1,,3,27,27,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578461,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,T2,,3,25,21,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+578463,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,T4,,3,25,23,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578464,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,U1,,3,25,25,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578465,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,U2,,3,27,27,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578466,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,U3,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+585423,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,U4,,3,25,25,TCC 11,"1s,2s",N,LBDHUM,,2,180,row
+578467,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,V1,,3,25,25,CAS LITE Rm 4,"1s,2s",N,LBDHUM,,2,180,row
+578468,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,V2,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578469,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,V3,,3,25,24,CAS LITE Rm 5,"1s,2s",N,LBDHUM,,2,180,row
+578470,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,V4,,3,25,21,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+578471,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,W1,,3,25,22,CAS LITE Rm 4,"1s,2s",N,LBDHUM,,2,180,row
+578472,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,W2,,3,25,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+585412,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,W3,,3,25,25,CAS LITE Rm 5,"1s,2s",N,LBDHUM,,2,180,row
+578474,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,W4,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578476,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,X1,,3,25,25,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578477,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,X2,,3,25,25,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+578478,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,X3,,3,25,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578479,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,X4,,3,25,18,CAS LITE Rm 5,"1s,2s",N,LBDHUM,,2,180,row
+578480,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Y1,,3,25,23,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578473,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Y2,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+578482,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Y3,,3,25,24,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+578483,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z1,,3,25,23,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+578484,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z2,,3,25,25,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+578475,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z3,,3,25,25,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
+578747,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AB1,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578759,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AB20,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+578765,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AB47,,2,25,22,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578767,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AB50,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578746,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AB86,,2,25,24,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+578760,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC20,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+578748,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC3,,2,25,26,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578751,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC4,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578766,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC40,,2,25,25,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578768,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC50,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+589915,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC74,,2,25,25,LECTURE ROOM 2B,"1s,2s",N,LBDHK,,1,120,row
+578753,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,CD1,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578761,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,CD20,,2,25,24,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+578755,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,EF13,,2,25,23,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578754,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,EF14,,2,25,25,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578762,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,EF20,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+589268,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,EF60,,2,25,23,LECTURE ROOM 3A,"1s,2s",N,LBDHK,,1,120,row
+579124,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,FG16,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578764,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,FG31,,2,25,24,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578763,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,FG39,,2,25,25,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578769,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,FG50,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578756,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,GH60,,2,25,24,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578745,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,ST1,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578749,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,ST2,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578770,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,ST50,,2,25,24,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578750,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,TU2,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578771,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,TU50,,2,25,24,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578773,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,U5,,2,25,16,SWIMMING POOL AREA,"1s,2s",N,LBDHK,,2,120,row
+578752,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,WX1,,2,25,23,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578758,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,WX20,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+579125,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY15,,2,25,25,LR3A,"1s,2s",N,LBDHK,,1,120,row
+578775,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY16,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+578772,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY50,,2,25,25,LR2A,"1s,2s",N,LBDHK,,1,120,row
+577967,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY70,,2,25,23,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578743,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY71,,2,25,25,LR2B,"1s,2s",N,LBDHK,,1,120,row
+578757,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,XY9,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+578744,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,YZ85,,2,25,26,BRIDGE ROOM,"1s,2s",N,LBDHK,,1,120,row
+579973,814,HK 12,HK,12,Human Kinetics Activities,LAB,A10,,2,16,15,WEIGHT TRAINING,"1s,2s,M",N,LBDHK,,2,120,row
+580013,814,HK 12,HK,12,Human Kinetics Activities,LAB,A21,,2,20,20,DANCE AREA 1,"1s,2s,M",N,LBDHK,,2,120,row
+581788,814,HK 12,HK,12,Human Kinetics Activities,LAB,A6,,2,20,15,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+589236,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB21,,2,25,21,UPPERFIELD,"1s,2s,M",N,LBDHK,,1,120,row
+589235,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB22,,2,25,20,UPPERFIELD,"1s,2s,M",N,LBDHK,,1,120,row
+581813,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB25,,2,20,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579481,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB30,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580816,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB40,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580829,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB65,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580827,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB68,,2,20,15,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581791,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB7,,2,35,29,SWIMMING POOL AREA,"1s,2s,M",I,LBDHK,,1,120,row
+589134,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB8,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",I,LBDHK,,2,120,row
+579498,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB85,,2,20,19,LR3-B,"1s,2s,M",N,LBDHK,,1,120,row
+579500,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB9,,2,20,17,DANCE AREA 2,"1s,2s,M",N,LBDHK,,1,120,row
+580001,814,HK 12,HK,12,Human Kinetics Activities,LAB,AB90,,2,20,16,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580380,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC10,,2,20,20,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+589594,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC15,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580028,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC21,,2,20,19,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581812,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC25,,2,20,15,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580817,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC41,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580808,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC49,,2,20,19,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580384,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC5,,2,20,20,VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579977,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC55,,2,20,16,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581780,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC65,,2,16,16,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580826,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC66,,2,16,16,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581794,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC70,,2,16,14,DANCE AREA 2,"1s,2s,M",N,LBDHK,,1,120,row
+589031,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC71,,2,16,16,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579965,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC86,,2,20,20,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+579966,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC88,,2,20,22,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+580002,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC90,,2,20,17,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+583587,814,HK 12,HK,12,Human Kinetics Activities,LAB,C10,,2,18,17,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,2,120,row
+580819,814,HK 12,HK,12,Human Kinetics Activities,LAB,C60,,2,10,11,YOGA ROOM,"1s,2s,M",N,LBDHK,,2,120,row
+579972,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD10,,2,16,14,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580021,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD21,,2,20,17,DANCE AREA 1,"1s,2s,M",N,LBDHK,,1,120,row
+581808,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD25,,2,18,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580813,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD40,,2,20,16,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580830,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD65,,2,20,18,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580003,814,HK 12,HK,12,Human Kinetics Activities,LAB,CD90,,2,20,15,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580821,814,HK 12,HK,12,Human Kinetics Activities,LAB,D60,,2,16,16,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579493,814,HK 12,HK,12,Human Kinetics Activities,LAB,DE30,,2,20,16,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581779,814,HK 12,HK,12,Human Kinetics Activities,LAB,DE65,,2,20,20,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580820,814,HK 12,HK,12,Human Kinetics Activities,LAB,E60,,2,16,16,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579520,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF10,,2,20,18,DANCE AREA 2,"1s,2s,M",N,LBDHK,,1,120,row
+581809,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF25,,2,20,19,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581797,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF3,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579491,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF30,,2,20,18,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580811,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF40,,2,20,19,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581801,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF5,,2,16,15,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580004,814,HK 12,HK,12,Human Kinetics Activities,LAB,EF90,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581798,814,HK 12,HK,12,Human Kinetics Activities,LAB,FG3,,2,16,15,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581802,814,HK 12,HK,12,Human Kinetics Activities,LAB,FG4,,2,16,16,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581792,814,HK 12,HK,12,Human Kinetics Activities,LAB,FG70,,2,20,17,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580005,814,HK 12,HK,12,Human Kinetics Activities,LAB,FG90,,2,20,17,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579519,814,HK 12,HK,12,Human Kinetics Activities,LAB,G10,,2,16,10,YOGA ROOM,"1s,2s,M",N,LBDHK,,2,120,row
+580010,814,HK 12,HK,12,Human Kinetics Activities,LAB,G95,,2,20,11,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+581799,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH3,,2,20,18,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,2,120,row
+579523,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH30,,2,20,17,SWIMMING POOL,"1s,2s,M",N,LBDHK,,1,120,row
+579494,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH33,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579483,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH34,,2,20,18,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579528,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH35,,2,20,20,SWIMMING POOL,"1s,2s,M",N,LBDHK,,1,120,row
+579531,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH36,,2,20,18,SWIMMING POOL,"1s,2s,M",N,LBDHK,,1,120,row
+580381,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH5,,2,20,17,VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580385,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH6,,2,20,19,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580822,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH61,,2,20,16,DANCE AREA 1,"1s,2s,M",N,LBDHK,,1,120,row
+580011,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH89,,2,20,12,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580006,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH90,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580007,814,HK 12,HK,12,Human Kinetics Activities,LAB,GH95,,2,20,19,DANCE AREA 2,"1s,2s,M",N,LBDHK,,1,120,row
+579485,814,HK 12,HK,12,Human Kinetics Activities,LAB,S30,,2,20,18,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+581784,814,HK 12,HK,12,Human Kinetics Activities,LAB,S6,,2,20,11,DANCE AREA 2,"1s,2s,M",N,LBDHK,,2,120,row
+579948,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST10,,2,16,15,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579963,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST16,,2,20,20,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+580014,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST21,,2,20,18,DANCE AREA 1,"1s,2s,M",N,LBDHK,,1,120,row
+581810,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST25,,2,20,19,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579486,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST30,,2,20,17,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580814,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST40,,2,20,17,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580812,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST41,,2,20,15,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580825,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST65,,2,20,18,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580828,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST66,,2,20,18,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581785,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST7,,2,20,19,DANCE AREA 2,"1s,2s,M",N,LBDHK,,2,120,row
+579496,814,HK 12,HK,12,Human Kinetics Activities,LAB,ST85,,2,20,19,UPPERFIELD,"1s,2s,M",N,LBDHK,,1,120,row
+579517,814,HK 12,HK,12,Human Kinetics Activities,LAB,T1,,2,14,14,YOGA ROOM,"1s,2s,M",N,LBDHK,,2,120,row
+579950,814,HK 12,HK,12,Human Kinetics Activities,LAB,T3,,2,16,15,WEIGHT TRAINING AREA,"1s,2s,M",N,LBDHK,,2,120,row
+581782,814,HK 12,HK,12,Human Kinetics Activities,LAB,T6,,2,20,14,DANCE AREA 1,"1s,2s,M",N,LBDHK,,2,120,row
+579501,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU1,,2,16,16,TABLE TENNIS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+589593,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU15,,2,20,17,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579513,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU20,,2,20,20,BRIDGE ROOM,"1s,2s,M",N,LBDHK,,1,120,row
+580020,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU21,,2,20,19,DANCE AREA 1,"1s,2s,M",N,LBDHK,,1,120,row
+581804,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU25,,2,18,17,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581811,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU26,,2,20,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579534,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU4,,2,20,19,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580815,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU40,,2,20,14,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580809,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU41,,2,20,17,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579538,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU43,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579975,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU55,,2,20,18,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579978,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU56,,2,20,20,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580824,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU64,,2,20,19,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581781,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU65,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579967,814,HK 12,HK,12,Human Kinetics Activities,LAB,TU86,,2,20,19,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+579518,814,HK 12,HK,12,Human Kinetics Activities,LAB,U1,,2,14,13,YOGA ROOM,"1s,2s,M",N,LBDHK,,2,120,row
+581786,814,HK 12,HK,12,Human Kinetics Activities,LAB,U6,,2,20,15,DANCE AREA 2,"1s,2s,M",N,LBDHK,,2,120,row
+579964,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV16,,2,20,20,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+579515,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV20,,2,20,20,BRIDGE ROOM,"1s,2s,M",N,LBDHK,,1,120,row
+580015,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV21,,2,20,19,DANCE AREA 1,"1s,2s,M",N,LBDHK,,1,120,row
+581806,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV25,,2,18,15,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581814,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV26,,2,20,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580810,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV40,,2,20,15,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579537,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV43,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579535,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV45,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579982,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV5,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579976,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV55,,2,20,17,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579979,814,HK 12,HK,12,Human Kinetics Activities,LAB,UV56,,2,20,19,BASKETBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579980,814,HK 12,HK,12,Human Kinetics Activities,LAB,V5,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579981,814,HK 12,HK,12,Human Kinetics Activities,LAB,W6,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+582560,814,HK 12,HK,12,Human Kinetics Activities,LAB,WX25,,2,20,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,1,120,row
+580378,814,HK 12,HK,12,Human Kinetics Activities,LAB,WX3,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+580382,814,HK 12,HK,12,Human Kinetics Activities,LAB,WX4,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579516,814,HK 12,HK,12,Human Kinetics Activities,LAB,X1,,2,18,17,YOGA ROOM,"1s,2s,M",N,LBDHK,,2,120,row
+581787,814,HK 12,HK,12,Human Kinetics Activities,LAB,X6,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579960,814,HK 12,HK,12,Human Kinetics Activities,LAB,XY2,,2,20,13,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579961,814,HK 12,HK,12,Human Kinetics Activities,LAB,XY3,,2,20,17,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581795,814,HK 12,HK,12,Human Kinetics Activities,LAB,XY4,,2,20,19,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581800,814,HK 12,HK,12,Human Kinetics Activities,LAB,XY5,,2,16,12,BADMINTON COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579940,814,HK 12,HK,12,Human Kinetics Activities,LAB,XY55,,2,16,16,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+579952,814,HK 12,HK,12,Human Kinetics Activities,LAB,Y2,,2,18,12,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580008,814,HK 12,HK,12,Human Kinetics Activities,LAB,Y95,,2,20,18,BALLET AREA,"1s,2s,M",N,LBDHK,,2,120,row
+579953,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ2,,2,18,16,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,2,120,row
+580379,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ3,,2,20,17,BEACH VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+579489,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ30,,2,20,18,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579487,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ31,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579526,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ35,,2,20,20,SWIMMING POOL,"1s,2s,M",N,LBDHK,,1,120,row
+579530,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ36,,2,20,30,SWIMMING POOL,"1s,2s,M",N,LBDHK,,1,120,row
+580383,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ4,,2,20,19,BEACH VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
+581783,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ6,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+581790,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ7,,2,20,19,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,1,120,row
+579971,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ86,,2,20,20,LR3B,"1s,2s,M",N,LBDHK,,1,120,row
+580009,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ95,,2,20,19,BALLET AREA,"1s,2s,M",N,LBDHK,,2,120,row
+581796,814,HK 12,HK,12,Human Kinetics Activities,LAB,Z1,,2,20,17,VOLLEYBALL AREA,"1s,2s,M",N,LBDHK,,2,120,row
+585342,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,A,,3,35,35,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+584515,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,B1,,3,35,24,CAS 102,"1s,2s",N,LBDSS,,2,180,row
+584516,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,B2,,3,35,32,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+584517,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,C,,3,35,35,CAS 104,"1s,2s",N,LBDSS,,2,180,row
+585343,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,D1,,3,35,35,CAS 103,"1s,2s",N,LBDSS,,2,180,row
+584518,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,D2,,3,35,26,CAS B03,"1s,2s",N,LBDSS,,2,180,row
+584519,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,E,,3,35,27,CAS A1 GAL 1,"1s,2s",N,LBDSS,,2,180,row
+584520,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,F1,,3,35,28,CAS B03,"1s,2s",N,LBDSS,,2,180,row
+584521,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,F2,,3,35,35,CAS 103,"1s,2s",N,LBDSS,,2,180,row
+584522,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,G,,3,35,33,CAS A1 GAL 1,"1s,2s",N,LBDSS,,2,180,row
+584523,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,H,,3,35,32,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+585344,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,S1,,3,35,27,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+584524,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,S2,,3,35,33,CAS B03,"1s,2s",N,LBDSS,,2,180,row
+584525,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,T,,3,35,33,CAS A1 GAL 1,"1s,2s",N,LBDSS,,2,180,row
+584526,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,U,,3,35,35,CAS B03,"1s,2s",N,LBDSS,,2,180,row
+584527,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,V,,3,35,32,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+584528,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,W,,3,35,35,CAS 103,"1s,2s",N,LBDSS,,2,180,row
+584529,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,Y1,,3,35,34,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+584530,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,Y2,,3,35,23,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+584531,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,Z,,3,35,34,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+584532,822,KAS 4,KAS,4,(GE). Ang Kababaihan sa Kasaysayan ng Pilipinas,LEC,A,,3,35,34,CAS 101,"1s,2s,M",N,LBDSS,,2,180,row
+584533,822,KAS 4,KAS,4,(GE). Ang Kababaihan sa Kasaysayan ng Pilipinas,LEC,C,,3,35,32,CAS B03,"1s,2s,M",N,LBDSS,,2,180,row
+584534,822,KAS 4,KAS,4,(GE). Ang Kababaihan sa Kasaysayan ng Pilipinas,LEC,G,,3,35,33,CAS A2 102,"1s,2s,M",N,LBDSS,,2,180,row
+584536,822,KAS 4,KAS,4,(GE). Ang Kababaihan sa Kasaysayan ng Pilipinas,LEC,T,,3,35,35,CAS 101,"1s,2s,M",N,LBDSS,,2,180,row
+584535,822,KAS 4,KAS,4,(GE). Ang Kababaihan sa Kasaysayan ng Pilipinas,LEC,V,,3,35,31,CAS 101,"1s,2s,M",N,LBDSS,,2,180,row
+575102,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,B,,3,32,31,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575103,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,C1,,3,32,30,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575105,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,D1,,3,32,32,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575109,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,E1,,3,32,32,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575110,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,E2,,3,32,32,MB 309,"1s,2s",N,LBIMS,,2,180,row
+575111,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,F1,,3,32,32,MB 309,"1s,2s",N,LBIMS,,2,180,row
+575112,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,F2,,3,32,31,MB 304,"1s,2s",N,LBIMS,,2,180,row
+575116,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,T1,,3,32,32,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575120,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,U1,,3,32,32,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575121,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,U2,,3,0,0,MB 309,"1s,2s",N,LBIMS,,2,180,row
+575124,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,V1,,3,32,31,MB 309,"1s,2s",N,LBIMS,,2,180,row
+575125,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,V2,,3,32,32,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575127,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,V4,,3,0,0,MB 305,"1s,2s",N,LBIMS,,2,180,row
+575128,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,W1,,3,32,31,MB 309,"1s,2s",N,LBIMS,,2,180,row
+575129,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,W2,,3,32,32,MB 304,"1s,2s",N,LBIMS,,2,180,row
+575131,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,X,,3,32,29,MB 305,"1s,2s",N,LBIMS,,2,180,row
+575132,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,Y1,,3,32,32,MB 301,"1s,2s",N,LBIMS,,2,180,row
+575134,619,MATH 10,MATH,10,"(GE). Mathematics, Culture, and Society",LEC,Y3,,3,0,0,,"1s,2s",N,LBIMS,,2,180,row
+575327,628,MATH 101,MATH,101,Logic and Set Theory,CPT,T-1L,575187,3,20,16,MB 101B,"1s,2s",N,LBIMS,PRE:(MATH 27 and MATH 20); PRE:(MATH 27 and AMAT 19); PRE:(MATH 37 and MATH 20); PRE:(MATH 37 and AMAT 19),1,180,row
+575328,628,MATH 101,MATH,101,Logic and Set Theory,CPT,T-2L,575187,3,20,20,MB 103A,"1s,2s",N,LBIMS,PRE:(MATH 27 and MATH 20); PRE:(MATH 27 and AMAT 19); PRE:(MATH 37 and MATH 20); PRE:(MATH 37 and AMAT 19),1,180,row
+575329,628,MATH 101,MATH,101,Logic and Set Theory,LAB,T-3L,575187,3,0,0,MB 103A,"1s,2s",N,LBIMS,PRE:(MATH 27 and MATH 20); PRE:(MATH 27 and AMAT 19); PRE:(MATH 37 and MATH 20); PRE:(MATH 37 and AMAT 19),1,180,row
+575187,628,MATH 101,MATH,101,Logic and Set Theory,LEC,T,,3,40,,MB 100,"1s,2s",N,LBIMS,PRE:(MATH 27 and MATH 20); PRE:(MATH 27 and AMAT 19); PRE:(MATH 37 and MATH 20); PRE:(MATH 37 and AMAT 19),2,120,embedded_parent
+575188,629,MATH 103,MATH,103,Elementary Theory of Numbers,LEC,B,,3,30,30,MB 100,2s,N,LBIMS,PRE:MATH 101,2,180,row
+575189,629,MATH 103,MATH,103,Elementary Theory of Numbers,LEC,S,,3,0,0,,2s,N,LBIMS,PRE:MATH 101,2,180,row
+575190,630,MATH 111,MATH,111,Modern Algebra I,LEC,D,,3,30,15,MB 103A,"1s,2s",N,LBIMS,PRE:MATH 101,2,180,row
+575191,631,MATH 112,MATH,112,Modern Algebra II,LEC,U,,3,30,15,MB 101B,2s,N,LBIMS,PRE:MATH 111,2,180,row
+575192,632,MATH 115,MATH,115,Introduction to Coding Theory and Cryptography,LEC,F,,3,30,15,MB 101B,2s,N,LBIMS,PRE:MATH 111,2,180,row
+575193,633,MATH 120,MATH,120,Linear Algebra,LEC,C,,3,30,11,MB 101B,"1s,2s",I,LBIMS,PRE:MATH 111,2,180,row
+575322,3277,MATH 133,MATH,133,Euclidean and Non-Euclidean Geometry,LEC,E,,3,30,11,MB 101B,"1s,2s",N,LBIMS,,2,180,row
+575194,636,MATH 135,MATH,135,Projective Geometry,LEC,X,,3,30,12,MB 101A,"1s,2s",N,LBIMS,PRE:MATH 133 (NEW); PRE:MATH 133 (OLD); PRE:MATH 133 (NEW); PRE:MATH 133 (Old),2,180,row
+575195,637,MATH 138,MATH,138,Introductory Topology,LEC,Y,,3,30,28,MB 304,2s,N,LBIMS,PRE:MATH 38 and MATH 101,2,180,row
+575196,638,MATH 141,MATH,141,Introductory Combinatorics,LEC,E,,3,30,30,MB 305,2s,N,LBIMS,PRE:(MATH 38 and MATH 101); PRE:(MATH 38 and CMSC 56 and CMSC 57),2,180,row
+575197,640,MATH 151,MATH,151,Ordinary Differential Equations,LEC,U,,3,30,28,MB 100,"1s,2s",N,LBIMS,PRE:(MATH 38); PRE:(MATH 28),2,180,row
+575198,641,MATH 152,MATH,152,Partial Differential Equations,LEC,B,,3,30,0,MB 103A,2s,N,LBIMS,PRE:MATH 151,2,180,row
+575199,642,MATH 155,MATH,155,Advanced Calculus I,LEC,G,,3,30,27,MB 100,"1s,2s",I,LBIMS,PRE:(MATH 38 and MATH 101),2,180,row
+575200,643,MATH 156,MATH,156,Advanced Calculus II,LEC,X,,3,30,0,MB 302,2s,N,LBIMS,PRE:MATH 155,2,180,row
+575202,646,MATH 166,MATH,166,Complex Analysis II,LEC,D,,3,30,0,MB 309,2s,N,LBIMS,PRE:MATH 165,2,180,row
+575330,649,MATH 175,MATH,175,Numerical Analysis II,LAB,D-1L,575203,3,15,15,MB 102,2s,N,LBIMS,PRE:MATH 174,1,180,row
+575331,649,MATH 175,MATH,175,Numerical Analysis II,LAB,D-2L,575203,3,15,15,MB 102,2s,N,LBIMS,PRE:MATH 174,1,180,row
+575332,649,MATH 175,MATH,175,Numerical Analysis II,LAB,D-3L,575203,3,15,15,MB 102,2s,N,LBIMS,PRE:MATH 174,1,180,row
+575333,649,MATH 175,MATH,175,Numerical Analysis II,LAB,D-4L,575203,3,15,15,MB 102,2s,N,LBIMS,PRE:MATH 174,1,180,row
+575203,649,MATH 175,MATH,175,Numerical Analysis II,LEC,D,,3,60,,MB 100,2s,N,LBIMS,PRE:MATH 174,2,120,embedded_parent
+575135,620,MATH 18,MATH,18,College Geometry,LEC,F,,3,30,20,MB 308,"1s,2s",N,LBIMS,,2,180,row
+575204,650,MATH 181,MATH,181,Introduction to Probability Theory,LEC,T,,3,30,13,MB 103A,"1s,2s",N,LBIMS,PRE:(MATH 101 and MATH 28); PRE:(MATH 101 and MATH 38),2,180,row
+575205,651,MATH 182,MATH,182,Introduction to Stochastic Processes,LEC,B,,3,30,30,MB 101B,2s,N,LBIMS,PRE:(MATH 181); PRE:(STAT 144),2,180,row
+575207,651,MATH 182,MATH,182,Introduction to Stochastic Processes,LEC,E,,3,30,30,MB 103A,2s,N,LBIMS,PRE:(MATH 181); PRE:(STAT 144),2,180,row
+575206,651,MATH 182,MATH,182,Introduction to Stochastic Processes,LEC,U,,3,30,30,MB 104,2s,N,LBIMS,PRE:(MATH 181); PRE:(STAT 144),2,180,row
+575208,652,MATH 190,MATH,190,Special Problems,SPR,ALB,,3,6,3,,"1s,2s,M",I,LBIMS,,0,0,row
+575209,652,MATH 190,MATH,190,Special Problems,SPR,ALC,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575210,652,MATH 190,MATH,190,Special Problems,SPR,EOJ,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575211,652,MATH 190,MATH,190,Special Problems,SPR,GAC,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575212,652,MATH 190,MATH,190,Special Problems,SPR,GMA,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575213,652,MATH 190,MATH,190,Special Problems,SPR,HSP,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575214,652,MATH 190,MATH,190,Special Problems,SPR,JDP,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575215,652,MATH 190,MATH,190,Special Problems,SPR,JGT,,3,6,2,,"1s,2s,M",I,LBIMS,,0,0,row
+575216,652,MATH 190,MATH,190,Special Problems,SPR,JTL,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575217,652,MATH 190,MATH,190,Special Problems,SPR,KCE,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575219,652,MATH 190,MATH,190,Special Problems,SPR,LLF,,3,6,3,,"1s,2s,M",I,LBIMS,,0,0,row
+575220,652,MATH 190,MATH,190,Special Problems,SPR,MAF,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575221,652,MATH 190,MATH,190,Special Problems,SPR,MDD,,3,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575222,652,MATH 190,MATH,190,Special Problems,SPR,MDR,,3,6,3,,"1s,2s,M",I,LBIMS,,0,0,row
+575224,652,MATH 190,MATH,190,Special Problems,SPR,MTL,,3,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575225,652,MATH 190,MATH,190,Special Problems,SPR,NAE,,3,6,4,,"1s,2s,M",I,LBIMS,,0,0,row
+575218,652,MATH 190,MATH,190,Special Problems,SPR,PDG,,3,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575226,652,MATH 190,MATH,190,Special Problems,SPR,RRP,,3,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575227,652,MATH 190,MATH,190,Special Problems,SPR,VML,,3,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575228,654,MATH 192,MATH,192,Foundations of Mathematics,LEC,W,,3,30,31,MB 101B,2s,I,LBIMS,,2,180,row
+575229,655,MATH 195,MATH,195,Research Methods in Mathematics,LEC,CD,,3,25,25,MB 301,"1s,2s",N,LBIMS,PRE:MATH 38 and MATH 101,1,180,row
+575230,655,MATH 195,MATH,195,Research Methods in Mathematics,LEC,EF,,3,25,24,MB 302,"1s,2s",N,LBIMS,PRE:MATH 38 and MATH 101,1,180,row
+575231,657,MATH 199,MATH,199,Undergraduate Seminar,SEM,V,,3,20,14,MB 101B,"1s,2s",I,LBIMS,,1,60,row
+575136,621,MATH 20,MATH,20,The Landscape of Mathematics,LEC,W,,3,30,13,MB 101A,"1s,2s",N,LBIMS,,2,180,row
+575232,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ALB1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575233,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ALB2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575234,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ALB3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575235,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ECJ1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575236,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ECJ2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575237,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,ECJ3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575238,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,GAC1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575239,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,GAC2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575240,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,GAC3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575241,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,HSP1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575242,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,HSP2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575243,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,HSP3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575244,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JDP1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575245,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JDP2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575246,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JDP3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575247,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JTL1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575248,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JTL2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575249,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,JTL3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575259,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,NAE1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575260,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,NAE2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575261,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,NAE3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575262,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,VML1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575263,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,VML2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575264,658,MATH 200,MATH,200,Undergraduate Thesis,LEC,VML3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575250,658,MATH 200,MATH,200,Undergraduate Thesis,THE,LLF1,,0,10,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575251,658,MATH 200,MATH,200,Undergraduate Thesis,THE,LLF2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575252,658,MATH 200,MATH,200,Undergraduate Thesis,THE,LLF3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575253,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MDR1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575254,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MDR2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575255,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MDR3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575256,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MTL1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575257,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MTL2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575258,658,MATH 200,MATH,200,Undergraduate Thesis,THE,MTL3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575265,1681,MATH 213,MATH,213,Theory of Matrices,LEC,C,,3,10,2,MB 101A,"1s,2s",N,LBIMS,PRE:MATH 120,2,180,row
+575266,1685,MATH 222,MATH,222,Finite Geometries,LEC,W,,3,10,1,MB 103A,2s,N,LBIMS,PRE:MATH 211,2,180,row
+575267,1686,MATH 225,MATH,225,Topology,LEC,F,,3,10,8,MB 302,"1s,2s",N,LBIMS,PRE:( MATH 101),2,180,row
+575269,1688,MATH 231,MATH,231,Functions of a Complex Variable,LEC,G,,3,10,2,MB 103A,2s,N,LBIMS,PRE:MATH 155,2,180,row
+575270,1689,MATH 235,MATH,235,Functional Analysis,LEC,Y,,3,10,1,MB 303,2s,N,LBIMS,PRE:MATH 213,2,180,row
+575271,1690,MATH 243,MATH,243,Graph Theory and Applications,LEC,Z,,3,10,1,MB 101B,2s,N,LBIMS,,2,180,row
+575137,622,MATH 25,MATH,25,Fundamental Calculus,LEC,B,,3,32,31,MB 301,"1s,2s",N,LBIMS,,2,180,row
+575138,622,MATH 25,MATH,25,Fundamental Calculus,LEC,C1,,3,32,29,MB 301,"1s,2s",N,LBIMS,,2,180,row
+575139,622,MATH 25,MATH,25,Fundamental Calculus,LEC,C2,,3,32,31,MB 302,"1s,2s",N,LBIMS,,2,180,row
+575140,622,MATH 25,MATH,25,Fundamental Calculus,LEC,C3,,3,32,24,MB 303,"1s,2s",N,LBIMS,,2,180,row
+575141,622,MATH 25,MATH,25,Fundamental Calculus,LEC,U1,,3,32,28,MB 301,"1s,2s",N,LBIMS,,2,180,row
+575142,622,MATH 25,MATH,25,Fundamental Calculus,LEC,U2,,3,32,32,MB 101A,"1s,2s",N,LBIMS,,2,180,row
+575143,622,MATH 25,MATH,25,Fundamental Calculus,LEC,U3,,3,32,29,MB 303,"1s,2s",N,LBIMS,,2,180,row
+575144,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,B1,,3,32,31,MB 309,"1s,2s,M",N,LBIMS,,2,180,row
+575145,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,B2,,3,32,30,MB 303,"1s,2s,M",N,LBIMS,,2,180,row
+575146,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,C1,,3,32,32,MB 103A,"1s,2s,M",N,LBIMS,,2,180,row
+575147,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,C2,,3,32,32,MB 305,"1s,2s,M",N,LBIMS,,2,180,row
+575148,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,E,,3,32,32,MB 301,"1s,2s,M",N,LBIMS,,2,180,row
+575150,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,G,,3,32,30,MB 301,"1s,2s,M",N,LBIMS,,2,180,row
+575151,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,T,,3,0,0,MB 301,"1s,2s,M",N,LBIMS,,2,180,row
+575152,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,U,,3,32,32,MB 304,"1s,2s,M",N,LBIMS,,2,180,row
+575153,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,V1,,3,32,30,MB 301,"1s,2s,M",N,LBIMS,,2,180,row
+575155,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,W,,3,32,32,MB 307,"1s,2s,M",N,LBIMS,,2,180,row
+575156,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,W2,,3,0,0,MB 302,"1s,2s,M",N,LBIMS,,2,180,row
+575157,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,X1,,3,32,19,MB 301,"1s,2s,M",N,LBIMS,,2,180,row
+575159,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,B1,,3,32,32,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575160,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,B2,,3,32,32,MB 305,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575161,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,B3,,3,32,32,MB 307,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575162,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,D1,,3,32,30,MB 101A,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575163,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,D2,,3,32,32,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575164,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,D3,,3,32,31,MB 101B,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575165,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,E1,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575166,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,E2,,3,32,32,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575167,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,F1,,3,32,32,MB 307,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575168,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,F2,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575169,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,G1,,3,32,32,MB 302,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575170,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,G2,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+579901,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,G3,,3,32,32,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575171,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,T1,,3,32,33,MB 302,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575172,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,T2,,3,32,30,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575173,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,V1,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575174,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,V2,,3,32,30,MB 101A,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575175,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,W1,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575176,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,W2,,3,32,32,MB 305,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+579902,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,W3,,3,32,32,MB 302,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575177,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,X1,,3,32,32,MB 303,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575178,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,X2,,3,32,31,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+579903,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,X3,,3,32,31,MB 307,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575179,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,Y1,,3,32,32,MB 305,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575180,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,Y2,,3,32,32,MB 309,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575181,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,Y3,,3,32,32,MB 308,"1s,2s,M",N,LBIMS,PRE:MATH 27,2,180,row
+575272,1694,MATH 299,MATH,299,Graduate Seminar,SEM,B,,1,10,3,MB 302,"1s,2s",I,LBIMS,,1,60,row
+575273,1695,MATH 300,MATH,300,Master's Thesis,THE,ALB1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575274,1695,MATH 300,MATH,300,Master's Thesis,THE,ALB2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575275,1695,MATH 300,MATH,300,Master's Thesis,THE,ALB3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+588857,1695,MATH 300,MATH,300,Master's Thesis,THE,DSL1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588858,1695,MATH 300,MATH,300,Master's Thesis,THE,DSL2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588859,1695,MATH 300,MATH,300,Master's Thesis,THE,DSL3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575277,1695,MATH 300,MATH,300,Master's Thesis,THE,ECJ1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575278,1695,MATH 300,MATH,300,Master's Thesis,THE,ECJ2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575279,1695,MATH 300,MATH,300,Master's Thesis,THE,ECJ3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575280,1695,MATH 300,MATH,300,Master's Thesis,THE,ECJ6,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588860,1695,MATH 300,MATH,300,Master's Thesis,THE,GMA1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588861,1695,MATH 300,MATH,300,Master's Thesis,THE,GMA2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588862,1695,MATH 300,MATH,300,Master's Thesis,THE,GMA3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575281,1695,MATH 300,MATH,300,Master's Thesis,THE,HSP1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575282,1695,MATH 300,MATH,300,Master's Thesis,THE,HSP2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575283,1695,MATH 300,MATH,300,Master's Thesis,THE,HSP3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575284,1695,MATH 300,MATH,300,Master's Thesis,THE,JFR1,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575285,1695,MATH 300,MATH,300,Master's Thesis,THE,JFR2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575286,1695,MATH 300,MATH,300,Master's Thesis,THE,JFR3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588863,1695,MATH 300,MATH,300,Master's Thesis,THE,JTL1,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+588864,1695,MATH 300,MATH,300,Master's Thesis,THE,JTL2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575287,1695,MATH 300,MATH,300,Master's Thesis,THE,JTL3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575288,1695,MATH 300,MATH,300,Master's Thesis,THE,LLF1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575289,1695,MATH 300,MATH,300,Master's Thesis,THE,LLF2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575290,1695,MATH 300,MATH,300,Master's Thesis,THE,LLF3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575291,1695,MATH 300,MATH,300,Master's Thesis,THE,MAG1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575292,1695,MATH 300,MATH,300,Master's Thesis,THE,MAG2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575293,1695,MATH 300,MATH,300,Master's Thesis,THE,MAG3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+588865,1695,MATH 300,MATH,300,Master's Thesis,THE,MDD1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588866,1695,MATH 300,MATH,300,Master's Thesis,THE,MDD2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588867,1695,MATH 300,MATH,300,Master's Thesis,THE,MDD3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+588868,1695,MATH 300,MATH,300,Master's Thesis,THE,MVC1,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+588869,1695,MATH 300,MATH,300,Master's Thesis,THE,MVC2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575294,1695,MATH 300,MATH,300,Master's Thesis,THE,MVC3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575295,1695,MATH 300,MATH,300,Master's Thesis,THE,NAE1,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575296,1695,MATH 300,MATH,300,Master's Thesis,THE,NAE2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+588870,1695,MATH 300,MATH,300,Master's Thesis,THE,NAE3,,0,6,2,,"1s,2s,M",I,LBIMS,,0,0,row
+575297,1695,MATH 300,MATH,300,Master's Thesis,THE,VML1,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
+575298,1695,MATH 300,MATH,300,Master's Thesis,THE,VML2,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575299,1695,MATH 300,MATH,300,Master's Thesis,THE,VML3,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+575182,625,MATH 36,MATH,36,Mathematical Analysis I,LEC,DV,,5,25,12,MB 307,"1s,2s",N,LBIMS,,4,300,row
+575183,626,MATH 37,MATH,37,Mathematical Analysis II,LEC,X1,,3,30,29,MB 101B,"1s,2s",N,LBIMS,PRE:MATH 36,2,180,row
+575184,626,MATH 37,MATH,37,Mathematical Analysis II,LEC,X2,,3,30,30,MB 103A,"1s,2s",N,LBIMS,PRE:MATH 36,2,180,row
+575185,626,MATH 37,MATH,37,Mathematical Analysis II,LEC,X3,,3,30,30,MB 104,"1s,2s",N,LBIMS,PRE:MATH 36,2,180,row
+575186,627,MATH 38,MATH,38,Mathematical Analysis III,LEC,GY,,5,25,12,MB 104,"1s,2s",N,LBIMS,PRE:MATH 37,0,0,row
+568395,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AC10,,3,18,18,CAS 102,2s,N,LBOVCCA,,1,180,row
+568396,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AC11,,3,18,18,CAS 103,2s,N,LBOVCCA,,1,180,row
+568397,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AC12,,3,18,16,CAS 104,2s,N,LBOVCCA,,1,180,row
+568398,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AC13,,3,18,18,CAS 106,2s,N,LBOVCCA,,1,180,row
+568399,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AC14,,3,18,18,CAS BO7,2s,N,LBOVCCA,,1,180,row
+559428,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC1,,3,25,25,ASI B-127,2s,N,LBASI,,1,180,row
+559618,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC2,,3,25,25,LHKCB Extension Lobby,2s,N,LBASI,,1,180,row
+559556,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC3,,3,25,24,LHKCB Extension Lobby,2s,N,LBASI,,1,180,row
+559469,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC4,,3,25,25,FCN Open Lecture Hall,2s,N,LBASI,,1,180,row
+559367,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC5,,3,25,25,FCN Open Lecture Hall,2s,N,LBASI,,1,180,row
+579525,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC6,,3,25,23,IFST Annex D,2s,N,LBASI,,1,180,row
+579529,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGC7,,3,25,24,IWEP Audi,2s,N,LBASI,,1,180,row
+559659,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL1,,3,25,25,ASI B-127,2s,N,LBASI,,1,180,row
+559156,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL2,,3,25,25,ASI B-138,2s,N,LBASI,,1,180,row
+559636,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL3,,3,20,19,ASI - A119,2s,N,LBASI,,1,180,row
+559499,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL4,,3,25,21,ASI Lecture Hall,2s,N,LBASI,,1,180,row
+559607,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL5,,3,25,25,IWEP Audi,2s,N,LBASI,,1,180,row
+559639,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AGL6,,3,25,24,BS A109,2s,N,LBASI,,1,180,row
+568410,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL10,,3,18,18,MB 308,2s,N,LBOVCCA,,1,180,row
+568411,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL11,,3,18,18,CAS BO1,2s,N,LBOVCCA,,1,180,row
+568412,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL12,,3,18,18,CAS BO2,2s,N,LBOVCCA,,1,180,row
+568413,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL13,,3,18,18,MB 309,2s,N,LBOVCCA,,1,180,row
+589460,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL14,,3,18,18,BO3,2s,N,LBOVCCA,,1,180,row
+589461,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,AL15,,3,18,16,BO1,2s,N,LBOVCCA,,1,180,row
+568386,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC1,,3,18,17,LITE RM.4,2s,N,LBOVCCA,,1,180,row
+568387,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC2,,3,18,18,CAS 101,2s,N,LBOVCCA,,1,180,row
+568388,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC3,,3,18,17,CAS 102,2s,N,LBOVCCA,,1,180,row
+568389,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC4,,3,18,17,CAS 103,2s,N,LBOVCCA,,1,180,row
+568390,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC5,,3,18,18,CAS 104,2s,N,LBOVCCA,,1,180,row
+568391,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC6,,3,18,17,CAS 106,2s,N,LBOVCCA,,1,180,row
+568392,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC7,,3,18,18,CAS B10,2s,N,LBOVCCA,,1,180,row
+568393,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC8,,3,18,18,CAS 110,2s,N,LBOVCCA,,1,180,row
+568394,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASC9,,3,18,18,CAS 101,2s,N,LBOVCCA,,1,180,row
+568401,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL1,,3,18,18,CAS BO5,2s,N,LBOVCCA,,1,180,row
+568402,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL2,,3,18,17,CAS 109,2s,N,LBOVCCA,,1,180,row
+568403,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL3,,3,18,17,MB 308,2s,N,LBOVCCA,,1,180,row
+568404,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL4,,3,18,18,CAS BO6,2s,N,LBOVCCA,,1,180,row
+568405,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL5,,3,18,18,CAS BO2,2s,N,LBOVCCA,,1,180,row
+568406,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL6,,3,18,18,CAS BO3,2s,N,LBOVCCA,,1,180,row
+568407,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL7,,3,18,17,CAS BO4,2s,N,LBOVCCA,,1,180,row
+568408,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL8,,3,18,17,CAS 108,2s,N,LBOVCCA,,1,180,row
+568409,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ASL9,,3,18,17,CAS 109,2s,N,LBOVCCA,,1,180,row
+559095,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,DCC1,,3,25,25,CDC ANNEX2,2s,I,LBDDJ,,1,180,row
+559096,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,DCC2,,3,25,26,CDC ANNEX4,2s,I,LBDDJ,,1,180,row
+559097,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,DCL1,,3,25,25,CDC ANNEX3,2s,I,LBDDJ,,1,180,row
+559098,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,DCL2,,3,25,24,CDC ANNEX1,2s,I,LBDDJ,,1,180,row
+568631,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC1,,3,25,0,,2s,I,LBDAAE,,1,180,row
+585438,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC1,,3,20,18,ICOPED 28,2s,I,LBDAME,,1,180,row
+586320,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC3,,3,20,20,CEM 106,2s,I,LBDAME,,1,180,row
+586311,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC4,,3,20,19,CEM 102,2s,I,LBDEC,,1,180,row
+585439,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC5,,3,20,20,TBA,2s,I,LBDAAE,,1,180,row
+586252,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EMC6,,3,20,17,CEM 201,2s,I,LBDAAE,,1,180,row
+568635,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML1,,3,25,0,,2s,I,LBDAAE,,1,180,row
+585430,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML1,,3,26,26,ICOPED 30,2s,N,LBICOPED,,1,180,row
+568636,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML2,,3,25,0,,2s,I,LBDAAE,,1,180,row
+585431,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML2,,3,25,24,ICOPED 30,2s,N,LBICOPED,,1,180,row
+585472,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML3,,3,20,19,CEM 202,2s,I,LBDAME,,1,180,row
+568638,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML4,,3,25,0,,2s,I,LBDAAE,,1,180,row
+585441,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML4,,3,20,20,CEM 112,2s,I,LBDEC,,1,180,row
+586255,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,EML7,,3,20,19,CEM 203,2s,I,LBDAAE,,1,180,row
+585456,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC11,,3,25,18,ABC 162a,2s,I,LBDME,,1,180,row
+568926,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC12,,3,25,24,CEAT B-201,2s,I,LBIABE,,1,180,row
+585457,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC13,,3,25,20,TCC 22 (Maquiling),2s,I,LBDME,,1,180,row
+585575,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC14,,3,35,33,CE 101B,2s,D,LBDCE,,1,180,row
+569010,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC15,,3,25,25,AFBED_LR1,2s,I,LBIABE,,1,180,row
+588825,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC16,,3,25,25,IE 100,2s,I,LBDIE,,1,180,row
+584620,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC17,,3,25,25,ChE 5,2s,D,LBDCHE,,1,180,row
+586813,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC18,,3,25,23,IE 100,2s,I,LBDIE,,1,180,row
+588712,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENC19,,3,25,25,CEAT B-202,2s,I,LBDENSC,,1,180,row
+588814,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENL1,,3,25,24,EE 303,2s,I,LBDEE,,1,180,row
+584619,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENL2,,3,25,25,ChE 5,2s,D,LBDCHE,,1,180,row
+585574,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENL3,,3,30,30,CE 102,2s,D,LBDCE,,1,180,row
+588815,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENL4,,3,25,25,EE 303,2s,I,LBDEE,,1,180,row
+588713,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,ENL5,,3,25,25,CEAT B-205,2s,I,LBDENSC,,1,180,row
+585349,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRC1,,3,25,24,DFBS,2s,D,LBDSFFG,,1,180,row
+585350,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRC2,,3,25,25,DFPPS,2s,D,LBDSFFG,,1,180,row
+585351,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRC3,,3,25,25,IRNR,2s,D,LBDSFFG,,1,180,row
+585352,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRC4,,3,25,25,DFPPS,2s,D,LBDSFFG,,1,180,row
+585334,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRC5,,3,20,25,SFFG 14,2s,D,LBDSFFG,,1,180,row
+585335,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRL1,,3,25,25,SFFG 14,2s,D,LBDSFFG,,1,180,row
+585347,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRL2,,3,25,22,IRNR,2s,D,LBDSFFG,,1,180,row
+585348,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,FRL3,,3,25,25,DFBS,2s,D,LBDSFFG,,1,180,row
+562806,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEC1,,3,20,20,CLH,2s,N,LBDCERP,,1,180,row
+589227,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEC2,,3,20,20,CTL,2s,I,LBDHFDS,,1,180,row
+562803,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEC3,,3,30,30,TCC 5,2s,N,LBDSDS,,1,180,row
+560039,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEC4,,3,25,21,BALH 1,2s,N,LBIHNF,,1,180,row
+562808,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEL1,,3,30,28,CLH,2s,N,LBDCERP,,1,180,row
+589135,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEL2,,3,25,23,ALH,2s,I,LBDHFDS,,1,180,row
+562809,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEL3,,3,30,30,ACL (for confirmation),2s,N,LBDSDS,,1,180,row
+560040,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,HEL4,,3,25,25,BALH 2,2s,N,LBIHNF,,1,180,row
+587418,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,VMC,,3,50,50,DVCS ZOTC Rm - Gregorio San Agustin Hall,2s,D,LBDVCS,,1,180,row
+587317,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,VMC1,,3,50,48,CVM LR2,2s,D,LBDVCS,,1,180,row
+587415,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,VML,,3,40,41,DVCS ZOTC Rm - Gregorio San Agustin Hall,2s,D,LBDVCS,,1,180,row
+553578,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,AC10,,3,20,1,CAS 102,1s,D,LBOVCCA,PRE:NSTP 1,0,0,row
+559649,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,AGC8,,3,20,13,Animal Science Room 3,1s,N,LBASI,PRE:NSTP 1,1,180,row
+589946,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,AGL7,,3,0,0,ASI A-119,1s,N,LBASI,PRE:NSTP 1,1,180,row
+558751,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,RO2A,,3,100,61,,1s,N,LBDMST,PRE:NSTP 1,1,240,row
+558752,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,RO2B,,3,100,39,,1s,N,LBDMST,PRE:NSTP 1,1,240,row
+558753,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,RO2C,,3,100,45,,1s,N,LBDMST,PRE:NSTP 1,1,240,row
+558754,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,RO2D,,3,100,19,,1s,N,LBDMST,PRE:NSTP 1,1,240,row
+558755,2055,NSTP 2,NSTP,2,National Service Training Program II,LEC,RO2E,,3,100,2,,1s,N,LBDMST,PRE:NSTP 1,1,240,row
+586586,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,D,,3,28,27,CAS A1- GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+578536,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,X,,3,28,28,CAS A1- GAL 2,"1s,2s",N,LBDHUM,,2,180,row
+578537,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,Y,,3,28,26,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+578538,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,Z,,3,28,25,CAS A2 201,"1s,2s",N,LBDHUM,,2,180,row
+584428,828,PI 10,PI,10,The Life and Works of Rizal,LEC,A1,,3,35,32,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+584429,828,PI 10,PI,10,The Life and Works of Rizal,LEC,A2,,3,35,31,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+584430,828,PI 10,PI,10,The Life and Works of Rizal,LEC,A3,,3,35,25,CAS A2 103,"1s,2s,M",N,LBDSS,,2,180,row
+584431,828,PI 10,PI,10,The Life and Works of Rizal,LEC,B,,3,30,30,CAS A2 102,"1s,2s,M",N,LBDSS,,2,180,row
+584432,828,PI 10,PI,10,The Life and Works of Rizal,LEC,C1,,3,35,28,CAS A2 103,"1s,2s,M",N,LBDSS,,2,180,row
+584437,828,PI 10,PI,10,The Life and Works of Rizal,LEC,C2,,3,35,33,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
+584438,828,PI 10,PI,10,The Life and Works of Rizal,LEC,D1,,3,35,33,CAS A1 302,"1s,2s,M",N,LBDSS,,2,180,row
+584439,828,PI 10,PI,10,The Life and Works of Rizal,LEC,D2,,3,35,32,CAS A1 304,"1s,2s,M",N,LBDSS,,2,180,row
+584440,828,PI 10,PI,10,The Life and Works of Rizal,LEC,E1,,3,35,34,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+584441,828,PI 10,PI,10,The Life and Works of Rizal,LEC,E2,,3,35,33,CAS A2 102,"1s,2s,M",N,LBDSS,,2,180,row
+584457,828,PI 10,PI,10,The Life and Works of Rizal,LEC,F1,,3,35,33,CAS A1 304,"1s,2s,M",N,LBDSS,,2,180,row
+584458,828,PI 10,PI,10,The Life and Works of Rizal,LEC,F2,,3,35,34,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
+584459,828,PI 10,PI,10,The Life and Works of Rizal,LEC,G1,,3,35,35,CAS A1 302,"1s,2s,M",N,LBDSS,,2,180,row
+584460,828,PI 10,PI,10,The Life and Works of Rizal,LEC,G2,,3,35,27,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+584461,828,PI 10,PI,10,The Life and Works of Rizal,LEC,G3,,3,35,29,ICOPED 26,"1s,2s,M",N,LBDSS,,2,180,row
+584462,828,PI 10,PI,10,The Life and Works of Rizal,LEC,H,,3,35,34,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
+584469,828,PI 10,PI,10,The Life and Works of Rizal,LEC,S1,,3,35,35,CAS A1 302,"1s,2s,M",N,LBDSS,,2,180,row
+584470,828,PI 10,PI,10,The Life and Works of Rizal,LEC,S2,,3,35,34,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+584471,828,PI 10,PI,10,The Life and Works of Rizal,LEC,S3,,3,35,25,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+589950,828,PI 10,PI,10,The Life and Works of Rizal,LEC,S4,,3,35,19,CAS A2 103,"1s,2s,M",N,LBDSS,,2,180,row
+584472,828,PI 10,PI,10,The Life and Works of Rizal,LEC,T1,,3,35,28,CAS A2 102,"1s,2s,M",N,LBDSS,,2,180,row
+584473,828,PI 10,PI,10,The Life and Works of Rizal,LEC,T2,,3,35,34,CAS A1 304,"1s,2s,M",N,LBDSS,,2,180,row
+584474,828,PI 10,PI,10,The Life and Works of Rizal,LEC,U1,,3,35,27,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+584475,828,PI 10,PI,10,The Life and Works of Rizal,LEC,U2,,3,35,33,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
+584476,828,PI 10,PI,10,The Life and Works of Rizal,LEC,U3,,3,35,29,CAS 102,"1s,2s,M",N,LBDSS,,2,180,row
+589951,828,PI 10,PI,10,The Life and Works of Rizal,LEC,U4,,3,35,31,CAS 101,"1s,2s,M",N,LBDSS,,2,180,row
+584477,828,PI 10,PI,10,The Life and Works of Rizal,LEC,V1,,3,35,34,CAS A1 303,"1s,2s,M",N,LBDSS,,2,180,row
+584486,828,PI 10,PI,10,The Life and Works of Rizal,LEC,V2,,3,35,35,CAS A1 304,"1s,2s,M",N,LBDSS,,2,180,row
+584478,828,PI 10,PI,10,The Life and Works of Rizal,LEC,W1,,3,35,34,CAS A1 302,"1s,2s,M",N,LBDSS,,2,180,row
+584479,828,PI 10,PI,10,The Life and Works of Rizal,LEC,W2,,3,35,34,CAS B08,"1s,2s,M",N,LBDSS,,2,180,row
+584480,828,PI 10,PI,10,The Life and Works of Rizal,LEC,X1,,3,35,34,CAS A1 302,"1s,2s,M",N,LBDSS,,2,180,row
+584481,828,PI 10,PI,10,The Life and Works of Rizal,LEC,X2,,3,35,34,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+584482,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Y1,,3,35,34,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
+584483,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Y2,,3,35,33,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+584484,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Y3,,3,35,32,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+584485,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Z,,3,35,32,CAS A2 101,"1s,2s,M",N,LBDSS,,2,180,row
+586779,692,STAT 101,STAT,101,Statistical Methods,LAB,C1L,586777,3,16,14,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586780,692,STAT 101,STAT,101,Statistical Methods,LAB,C2L,586777,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586781,692,STAT 101,STAT,101,Statistical Methods,LAB,C3L,586777,3,16,15,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586782,692,STAT 101,STAT,101,Statistical Methods,LAB,C4L,586777,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586783,692,STAT 101,STAT,101,Statistical Methods,LAB,C5L,586777,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586785,692,STAT 101,STAT,101,Statistical Methods,LAB,CD1L,586784,3,16,14,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586786,692,STAT 101,STAT,101,Statistical Methods,LAB,CD2L,586784,3,16,15,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586789,692,STAT 101,STAT,101,Statistical Methods,LAB,CD3L,586784,3,16,16,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586791,692,STAT 101,STAT,101,Statistical Methods,LAB,CD4L,586784,3,16,17,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586792,692,STAT 101,STAT,101,Statistical Methods,LAB,CD5L,586784,3,16,16,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586794,692,STAT 101,STAT,101,Statistical Methods,LAB,EF1L,586793,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586795,692,STAT 101,STAT,101,Statistical Methods,LAB,EF2L,586793,3,16,13,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586796,692,STAT 101,STAT,101,Statistical Methods,LAB,EF3L,586793,3,16,16,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586797,692,STAT 101,STAT,101,Statistical Methods,LAB,EF4L,586793,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586798,692,STAT 101,STAT,101,Statistical Methods,LAB,EF5L,586793,3,16,15,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586800,692,STAT 101,STAT,101,Statistical Methods,LAB,EF6L,586793,3,16,14,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586806,692,STAT 101,STAT,101,Statistical Methods,LAB,ST1L,586804,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586807,692,STAT 101,STAT,101,Statistical Methods,LAB,ST2L,586804,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586808,692,STAT 101,STAT,101,Statistical Methods,LAB,ST3L,586804,3,16,15,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586810,692,STAT 101,STAT,101,Statistical Methods,LAB,ST4L,586804,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586812,692,STAT 101,STAT,101,Statistical Methods,LAB,ST5L,586804,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586814,692,STAT 101,STAT,101,Statistical Methods,LAB,ST6L,586804,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586817,692,STAT 101,STAT,101,Statistical Methods,LAB,V1L,586816,3,16,14,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586819,692,STAT 101,STAT,101,Statistical Methods,LAB,V2L,586816,3,16,14,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586821,692,STAT 101,STAT,101,Statistical Methods,LAB,V3L,586816,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586822,692,STAT 101,STAT,101,Statistical Methods,LAB,V4L,586816,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586823,692,STAT 101,STAT,101,Statistical Methods,LAB,V5L,586816,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586824,692,STAT 101,STAT,101,Statistical Methods,LAB,V6L,586816,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586826,692,STAT 101,STAT,101,Statistical Methods,LAB,WX1L,586825,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586831,692,STAT 101,STAT,101,Statistical Methods,LAB,WX2L,586825,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586832,692,STAT 101,STAT,101,Statistical Methods,LAB,WX3L,586825,3,16,15,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586833,692,STAT 101,STAT,101,Statistical Methods,LAB,WX4L,586825,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586837,692,STAT 101,STAT,101,Statistical Methods,LAB,WX5L,586825,3,16,13,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586777,692,STAT 101,STAT,101,Statistical Methods,LEC,C,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586784,692,STAT 101,STAT,101,Statistical Methods,LEC,CD,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586793,692,STAT 101,STAT,101,Statistical Methods,LEC,EF,,3,96,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586804,692,STAT 101,STAT,101,Statistical Methods,LEC,ST,,3,96,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586816,692,STAT 101,STAT,101,Statistical Methods,LEC,V,,3,96,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586825,692,STAT 101,STAT,101,Statistical Methods,LEC,WX,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586838,694,STAT 144,STAT,144,Introductory Statistical Theory I,LEC,C,,3,28,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:MATH 28,2,120,embedded_parent
+586839,694,STAT 144,STAT,144,Introductory Statistical Theory I,RCT,C1R,586838,3,14,11,INSTATLH,"1s,2s",D,LBINSTAT,PRE:MATH 28,1,60,row
+586840,694,STAT 144,STAT,144,Introductory Statistical Theory I,RCT,C2R,586838,3,14,12,INSTATLH,"1s,2s",D,LBINSTAT,PRE:MATH 28,1,60,row
+586841,695,STAT 145,STAT,145,Introductory Statistical Theory II,LEC,W,,3,70,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 144,2,120,embedded_parent
+586864,695,STAT 145,STAT,145,Introductory Statistical Theory II,RCT,W1R,586841,3,14,12,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 144,1,60,row
+586866,695,STAT 145,STAT,145,Introductory Statistical Theory II,RCT,W2R,586841,3,14,12,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 144,1,60,row
+586867,695,STAT 145,STAT,145,Introductory Statistical Theory II,RCT,W3R,586841,3,14,14,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 144,1,60,row
+586868,695,STAT 145,STAT,145,Introductory Statistical Theory II,RCT,W4R,586841,3,14,14,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 144,1,60,row
+586869,695,STAT 145,STAT,145,Introductory Statistical Theory II,RCT,W5R,586841,3,14,14,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 144,1,60,row
+586870,696,STAT 146,STAT,146,Introductory Statistical Theory III,LEC,E,,3,32,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,2,120,embedded_parent
+586871,696,STAT 146,STAT,146,Introductory Statistical Theory III,RCT,E1R,586870,3,16,12,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586872,696,STAT 146,STAT,146,Introductory Statistical Theory III,RCT,E2R,586870,3,16,15,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586873,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,LEC,X,,3,80,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,2,120,embedded_parent
+586885,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,RCT,X1R,586873,3,15,13,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586886,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,RCT,X2R,586873,3,15,11,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586887,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,RCT,X3R,586873,3,15,11,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586888,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,RCT,X4R,586873,3,15,15,PS C-312,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586889,697,STAT 147,STAT,147,Introduction to the Theory of Nonparametric Statistics,RCT,X5R,586873,3,15,15,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 145,1,60,row
+586891,699,STAT 151,STAT,151,Applied Regression and Correlation,LAB,AB1L,586890,3,16,15,PS C-307,2s,D,LBINSTAT,PRE:(STAT 101 and STAT 135),1,180,row
+586892,699,STAT 151,STAT,151,Applied Regression and Correlation,LAB,AB2L,586890,3,16,16,PS C-309,2s,D,LBINSTAT,PRE:(STAT 101 and STAT 135),1,180,row
+586893,699,STAT 151,STAT,151,Applied Regression and Correlation,LAB,AB3L,586890,3,16,12,PS C-309,2s,I,LBINSTAT,PRE:(STAT 101 and STAT 135),1,180,row
+586894,699,STAT 151,STAT,151,Applied Regression and Correlation,LAB,AB4L,586890,3,16,16,PS C-309,2s,D,LBINSTAT,PRE:(STAT 101 and STAT 135),1,180,row
+586895,699,STAT 151,STAT,151,Applied Regression and Correlation,LAB,AB5L,586890,3,16,14,PS C-312,2s,D,LBINSTAT,PRE:(STAT 101 and STAT 135),1,180,row
+586890,699,STAT 151,STAT,151,Applied Regression and Correlation,LEC,AB,,3,80,,INSTATLH,2s,D,LBINSTAT,PRE:(STAT 101 and STAT 135),2,120,embedded_parent
+586897,700,STAT 156,STAT,156,Introductory Time Series Analysis,LAB,WX1L,586896,3,16,15,PS C-309,2s,I,LBINSTAT,PRE:(STAT 135),1,180,row
+586898,700,STAT 156,STAT,156,Introductory Time Series Analysis,LAB,WX2L,586896,3,16,16,PS C-307,2s,I,LBINSTAT,PRE:(STAT 135),1,180,row
+586899,700,STAT 156,STAT,156,Introductory Time Series Analysis,LAB,WX3L,586896,3,16,15,PS C-309,2s,I,LBINSTAT,PRE:(STAT 135),1,180,row
+586900,700,STAT 156,STAT,156,Introductory Time Series Analysis,LAB,WX4L,586896,3,16,16,PS C-309,2s,I,LBINSTAT,PRE:(STAT 135),1,180,row
+586901,700,STAT 156,STAT,156,Introductory Time Series Analysis,LAB,WX5L,586896,3,16,15,PS C-309,2s,I,LBINSTAT,PRE:(STAT 135),1,180,row
+586896,700,STAT 156,STAT,156,Introductory Time Series Analysis,LEC,WX,,3,80,,INSTATLH,2s,I,LBINSTAT,PRE:(STAT 135),2,120,embedded_parent
+586903,701,STAT 157,STAT,157,Financial Risk Analysis,LAB,S1L,586902,3,16,16,PS C-307,"1s,2s",D,LBINSTAT,PRE:STAT 156,1,180,row
+586904,701,STAT 157,STAT,157,Financial Risk Analysis,LAB,S2L,586902,3,16,15,PS C-307,"1s,2s",D,LBINSTAT,PRE:STAT 156,1,180,row
+586905,701,STAT 157,STAT,157,Financial Risk Analysis,LAB,S3L,586902,3,16,16,PS C-306,"1s,2s",D,LBINSTAT,PRE:STAT 156,1,180,row
+586906,701,STAT 157,STAT,157,Financial Risk Analysis,LAB,S4L,586902,3,16,15,PS C-307,"1s,2s",D,LBINSTAT,PRE:STAT 156,1,180,row
+586907,701,STAT 157,STAT,157,Financial Risk Analysis,LAB,S5L,586902,3,16,16,PS C-307,"1s,2s",D,LBINSTAT,PRE:STAT 156,1,180,row
+586902,701,STAT 157,STAT,157,Financial Risk Analysis,LEC,S,,3,80,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 156,2,120,embedded_parent
+586909,702,STAT 162,STAT,162,Experimental Designs,LAB,E1L,586908,3,16,16,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586910,702,STAT 162,STAT,162,Experimental Designs,LAB,E2L,586908,3,16,16,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586911,702,STAT 162,STAT,162,Experimental Designs,LAB,E3L,586908,3,16,16,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586912,702,STAT 162,STAT,162,Experimental Designs,LAB,E4L,586908,3,16,16,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586913,702,STAT 162,STAT,162,Experimental Designs,LAB,E5L,586908,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586915,702,STAT 162,STAT,162,Experimental Designs,LAB,W1L,586914,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586916,702,STAT 162,STAT,162,Experimental Designs,LAB,W2L,586914,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586918,702,STAT 162,STAT,162,Experimental Designs,LAB,W3L,586914,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586919,702,STAT 162,STAT,162,Experimental Designs,LAB,W4L,586914,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586908,702,STAT 162,STAT,162,Experimental Designs,LEC,E,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586914,702,STAT 162,STAT,162,Experimental Designs,LEC,W,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586920,703,STAT 163,STAT,163,Survey Designs,LEC,U,,3,75,,INSTATLH,2s,D,LBINSTAT,PRE:STAT 144,2,120,embedded_parent
+586921,703,STAT 163,STAT,163,Survey Designs,RCT,U1R,586920,3,15,14,PS C-312,2s,D,LBINSTAT,PRE:STAT 144,1,60,row
+586922,703,STAT 163,STAT,163,Survey Designs,RCT,U2R,586920,3,15,15,PS C-312,2s,D,LBINSTAT,PRE:STAT 144,1,60,row
+586923,703,STAT 163,STAT,163,Survey Designs,RCT,U3R,586920,3,15,14,PS C-312,2s,D,LBINSTAT,PRE:STAT 144,1,60,row
+586924,703,STAT 163,STAT,163,Survey Designs,RCT,U4R,586920,3,15,15,PS C-312,2s,D,LBINSTAT,PRE:STAT 144,1,60,row
+586925,703,STAT 163,STAT,163,Survey Designs,RCT,U5R,586920,3,15,15,PS C-312,2s,D,LBINSTAT,PRE:STAT 144,1,60,row
+586927,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,AB1L,586926,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586928,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,AB2L,586926,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586929,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,AB3L,586926,3,16,15,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586930,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,AB4L,586926,3,16,16,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586931,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,AB5L,586926,3,16,14,PS C-305,"1s,2s",N,LBINSTAT,,1,180,row
+586933,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B1L,586932,3,16,15,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586934,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B2L,586932,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586935,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B3L,586932,3,16,14,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586936,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B4L,586932,3,16,15,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586937,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B5L,586932,3,16,15,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+589889,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LAB,B6L,586932,3,18,14,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586926,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LEC,AB,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586932,704,STAT 164,STAT,164,Statistics for the Biological Sciences,LEC,B,,3,80,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586939,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D1L,586938,3,16,16,PS C-307,"1s,2s",N,LBINSTAT,,1,180,row
+586940,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D2L,586938,3,16,13,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586941,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D3L,586938,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586942,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D4L,586938,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586943,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D5L,586938,3,16,14,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586944,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,D6L,586938,3,16,16,PS C-306,"1s,2s",N,LBINSTAT,,1,180,row
+586946,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S1L,586945,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586947,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S2L,586945,3,16,15,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586948,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S3L,586945,3,16,14,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586949,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S4L,586945,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586950,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S5L,586945,3,16,13,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586951,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S6L,586945,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586952,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,S7L,586945,3,16,13,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586954,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U1L,586953,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586955,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U2L,586953,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586956,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U3L,586953,3,16,15,PS C-304,"1s,2s",N,LBINSTAT,,1,180,row
+586957,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U4L,586953,3,16,16,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586958,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U5L,586953,3,16,15,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586959,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U6L,586953,3,16,15,PS C-312,"1s,2s",N,LBINSTAT,,1,180,row
+586960,706,STAT 166,STAT,166,Statistics for the Social Sciences,LAB,U7L,586953,3,16,16,PS C-309,"1s,2s",N,LBINSTAT,,1,180,row
+586938,706,STAT 166,STAT,166,Statistics for the Social Sciences,LEC,D,,3,96,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586945,706,STAT 166,STAT,166,Statistics for the Social Sciences,LEC,S,,3,112,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586953,706,STAT 166,STAT,166,Statistics for the Social Sciences,LEC,U,,3,112,,CAS A2 MPH1,"1s,2s",N,LBINSTAT,,2,120,embedded_parent
+586963,707,STAT 167,STAT,167,Statistical Quality Control,LAB,T1L,586961,3,16,16,PS C-307,2s,D,LBINSTAT,,1,180,row
+586962,707,STAT 167,STAT,167,Statistical Quality Control,LAB,T2L,586961,3,16,14,PS C-304,2s,D,LBINSTAT,,1,180,row
+586964,707,STAT 167,STAT,167,Statistical Quality Control,LAB,T3L,586961,3,16,15,PS C-307,2s,D,LBINSTAT,,1,180,row
+586965,707,STAT 167,STAT,167,Statistical Quality Control,LAB,T4L,586961,3,16,16,PS C-304,2s,D,LBINSTAT,,1,180,row
+586966,707,STAT 167,STAT,167,Statistical Quality Control,LAB,T5L,586961,3,16,14,PS C-307,2s,D,LBINSTAT,,1,180,row
+586961,707,STAT 167,STAT,167,Statistical Quality Control,LEC,T,,3,80,,INSTATLH,2s,D,LBINSTAT,,2,120,embedded_parent
+589888,708,STAT 168,STAT,168,Response Surface Methodology,LAB,UV1L,589887,3,16,12,PS C-304,"1s,2s",D,LBINSTAT,,1,180,row
+589887,708,STAT 168,STAT,168,Response Surface Methodology,LEC,UV,,3,16,,INSTATLH,"1s,2s",D,LBINSTAT,,2,120,embedded_parent
+586968,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V1L,586967,3,16,14,PS C-309,"1s,2s",D,LBINSTAT,,1,180,row
+586969,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V2L,586967,3,16,15,PS C-307,"1s,2s",D,LBINSTAT,,1,180,row
+586970,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V3L,586967,3,16,16,PS C-306,"1s,2s",D,LBINSTAT,,1,180,row
+586971,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V4L,586967,3,16,16,PS C-304,"1s,2s",D,LBINSTAT,,1,180,row
+586972,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V5L,586967,3,16,12,PS C-304,"1s,2s",D,LBINSTAT,,1,180,row
+586973,710,STAT 174,STAT,174,Introductory Biostatistics,LAB,V6L,586967,3,14,0,PS C-304,"1s,2s",D,LBINSTAT,,1,180,row
+586967,710,STAT 174,STAT,174,Introductory Biostatistics,LEC,V,,3,80,,INSTATLH,"1s,2s",D,LBINSTAT,,2,120,embedded_parent
+586975,713,STAT 182,STAT,182,Statistical Packages,LAB,T1L,586974,3,16,16,PS C-304,2s,D,LBINSTAT,PRE:(STAT 101),1,180,row
+586976,713,STAT 182,STAT,182,Statistical Packages,LAB,T2L,586974,3,16,16,PS C-304,2s,D,LBINSTAT,PRE:(STAT 101),1,180,row
+586977,713,STAT 182,STAT,182,Statistical Packages,LAB,T3L,586974,3,18,17,PS C-304,2s,D,LBINSTAT,PRE:(STAT 101),1,180,row
+586978,713,STAT 182,STAT,182,Statistical Packages,LAB,T4L,586974,3,16,16,PS C-304,2s,D,LBINSTAT,PRE:(STAT 101),1,180,row
+586979,713,STAT 182,STAT,182,Statistical Packages,LAB,T5L,586974,3,16,15,PS C-304,2s,D,LBINSTAT,PRE:(STAT 101),1,180,row
+586974,713,STAT 182,STAT,182,Statistical Packages,LEC,T,,3,80,,CAS A2 MPH1,2s,D,LBINSTAT,PRE:(STAT 101),2,120,embedded_parent
+586981,714,STAT 183,STAT,183,Introductory Data Analytics,LAB,B1L,586980,3,18,13,PS C-307,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,1,180,row
+586982,714,STAT 183,STAT,183,Introductory Data Analytics,LAB,B2L,586980,3,18,13,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,1,180,row
+586983,714,STAT 183,STAT,183,Introductory Data Analytics,LAB,B3L,586980,3,18,14,PS C-304,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,1,180,row
+586984,714,STAT 183,STAT,183,Introductory Data Analytics,LAB,B4L,586980,3,18,16,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,1,180,row
+586985,714,STAT 183,STAT,183,Introductory Data Analytics,LAB,"B5L,",586980,3,18,11,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,1,180,row
+586980,714,STAT 183,STAT,183,Introductory Data Analytics,LEC,B,,3,72,,INSTATLH,"1s,2s",D,LBINSTAT,PRE:STAT 151 and STAT 175 and CMSC 21,2,120,embedded_parent
+588027,715,STAT 190,STAT,190,Special Problems,SPR,A01,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588028,715,STAT 190,STAT,190,Special Problems,SPR,A02,,0,10,3,,"1s,2s",I,LBINSTAT,,0,0,row
+588029,715,STAT 190,STAT,190,Special Problems,SPR,A03,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588030,715,STAT 190,STAT,190,Special Problems,SPR,A04,,0,10,1,,"1s,2s",I,LBINSTAT,,0,0,row
+588031,715,STAT 190,STAT,190,Special Problems,SPR,A05,,0,10,1,,"1s,2s",I,LBINSTAT,,0,0,row
+588032,715,STAT 190,STAT,190,Special Problems,SPR,A06,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588033,715,STAT 190,STAT,190,Special Problems,SPR,A07,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588034,715,STAT 190,STAT,190,Special Problems,SPR,A08,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588035,715,STAT 190,STAT,190,Special Problems,SPR,A09,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588036,715,STAT 190,STAT,190,Special Problems,SPR,A10,,0,10,2,,"1s,2s",I,LBINSTAT,,0,0,row
+588037,715,STAT 190,STAT,190,Special Problems,SPR,A11,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588038,715,STAT 190,STAT,190,Special Problems,SPR,A12,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588039,715,STAT 190,STAT,190,Special Problems,SPR,A13,,0,10,0,,"1s,2s",I,LBINSTAT,,0,0,row
+588040,715,STAT 190,STAT,190,Special Problems,SPR,B01,,0,10,3,,"1s,2s",I,LBINSTAT,,0,0,row
+588041,715,STAT 190,STAT,190,Special Problems,SPR,B02,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+588042,715,STAT 190,STAT,190,Special Problems,SPR,B03,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+588043,715,STAT 190,STAT,190,Special Problems,SPR,B04,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+588044,715,STAT 190,STAT,190,Special Problems,SPR,B05,,0,10,8,,"1s,2s",I,LBINSTAT,,0,0,row
+588045,715,STAT 190,STAT,190,Special Problems,SPR,B06,,0,10,6,,"1s,2s",I,LBINSTAT,,0,0,row
+588046,715,STAT 190,STAT,190,Special Problems,SPR,B07,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+588047,715,STAT 190,STAT,190,Special Problems,SPR,B08,,0,10,4,,"1s,2s",I,LBINSTAT,,0,0,row
+588048,715,STAT 190,STAT,190,Special Problems,SPR,B09,,0,10,6,,"1s,2s",I,LBINSTAT,,0,0,row
+588049,715,STAT 190,STAT,190,Special Problems,SPR,B10,,0,10,7,,"1s,2s",I,LBINSTAT,,0,0,row
+588050,715,STAT 190,STAT,190,Special Problems,SPR,B11,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+588051,715,STAT 190,STAT,190,Special Problems,SPR,B12,,0,10,4,,"1s,2s",I,LBINSTAT,,0,0,row
+588052,715,STAT 190,STAT,190,Special Problems,SPR,B13,,0,10,5,,"1s,2s",I,LBINSTAT,,0,0,row
+586986,717,STAT 192.1,STAT,192.1,Statistical Consulting Laboratory,LAB,1L,,1,14,14,INSTATLH,"1s,2s",I,LBINSTAT,,1,180,row
+586987,717,STAT 192.1,STAT,192.1,Statistical Consulting Laboratory,LAB,2L,,1,14,12,INSTATLH,"1s,2s",I,LBINSTAT,,1,180,row
+586988,717,STAT 192.1,STAT,192.1,Statistical Consulting Laboratory,LAB,3L,,1,14,14,INSTAT RA2,"1s,2s",I,LBINSTAT,,1,180,row
+586989,717,STAT 192.1,STAT,192.1,Statistical Consulting Laboratory,LAB,4L,,1,14,10,INSTAT RA2,"1s,2s",I,LBINSTAT,,1,180,row
+586990,717,STAT 192.1,STAT,192.1,Statistical Consulting Laboratory,LAB,5L,,1,14,14,INSTAT RA2,"1s,2s",I,LBINSTAT,,1,180,row
+586991,719,STAT 199,STAT,199,Undergraduate Seminar,SEM,A1,,1,15,15,INSTATLH,"1s,2s",I,LBINSTAT,,1,60,row
+586992,719,STAT 199,STAT,199,Undergraduate Seminar,SEM,A2,,1,15,15,INSTATLH,"1s,2s",I,LBINSTAT,,1,60,row
+586993,719,STAT 199,STAT,199,Undergraduate Seminar,SEM,A3,,1,15,15,INSTATLH,"1s,2s",I,LBINSTAT,,1,60,row
+586994,1445,STAT 242,STAT,242,Statistical Theory II,LEC,CD,,3,10,6,INSTAT RA2,"1s,2s",N,LBINSTAT,PRE:STAT 241,1,180,row
+586995,1446,STAT 250,STAT,250,Multivariate Statistical Methods,LEC,EF,,3,10,4,INSTAT RA2,"1s,2s",I,LBINSTAT,PRE:(STAT 162 and MATH 120),1,180,row
+586996,1447,STAT 251,STAT,251,Linear Models I,LEC,W,,3,10,6,PS C-320,1s,I,LBINSTAT,PRE:(STAT 142 and STAT 235),1,180,row
+586998,1449,STAT 263,STAT,263,Sampling and Sample Surveys,LEC,YZ,,3,10,10,INSTATLH,"1s,2s",I,LBINSTAT,PRE:(STAT 141),1,180,row
+587001,1453,STAT 299,STAT,299,Graduate Seminar,SEM,S,,1,10,3,INSTAT RA2,"1s,2s",I,LBINSTAT,,1,60,row
+588873,1454,STAT 300,STAT,300,Master's Thesis,THE,A1,,0,10,2,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588874,1454,STAT 300,STAT,300,Master's Thesis,THE,A2,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588875,1454,STAT 300,STAT,300,Master's Thesis,THE,A3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588876,1454,STAT 300,STAT,300,Master's Thesis,THE,A4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588877,1454,STAT 300,STAT,300,Master's Thesis,THE,A5,,0,10,2,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588878,1454,STAT 300,STAT,300,Master's Thesis,THE,A6,,0,10,2,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588879,1454,STAT 300,STAT,300,Master's Thesis,THE,B1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588880,1454,STAT 300,STAT,300,Master's Thesis,THE,B2,,0,10,3,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588881,1454,STAT 300,STAT,300,Master's Thesis,THE,B3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588882,1454,STAT 300,STAT,300,Master's Thesis,THE,B4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588883,1454,STAT 300,STAT,300,Master's Thesis,THE,B5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588884,1454,STAT 300,STAT,300,Master's Thesis,THE,B6,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588885,1454,STAT 300,STAT,300,Master's Thesis,THE,C1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588886,1454,STAT 300,STAT,300,Master's Thesis,THE,C2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588887,1454,STAT 300,STAT,300,Master's Thesis,THE,C3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588888,1454,STAT 300,STAT,300,Master's Thesis,THE,C4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588889,1454,STAT 300,STAT,300,Master's Thesis,THE,C5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588890,1454,STAT 300,STAT,300,Master's Thesis,THE,C6,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588891,1454,STAT 300,STAT,300,Master's Thesis,THE,F1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588892,1454,STAT 300,STAT,300,Master's Thesis,THE,F2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588893,1454,STAT 300,STAT,300,Master's Thesis,THE,F3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588894,1454,STAT 300,STAT,300,Master's Thesis,THE,F4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588895,1454,STAT 300,STAT,300,Master's Thesis,THE,F5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588896,1454,STAT 300,STAT,300,Master's Thesis,THE,F6,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+587002,1456,STAT 342,STAT,342,Statistical Inference,LEC,F,,3,10,2,D407,"1s,2s",N,LBINSTAT,PRE:(STAT 341),1,180,row
+587003,1458,STAT 399,STAT,399,PhD Graduate Seminar,SEM,F,,3,10,1,INSTAT RA2,"1s,2s",I,LBINSTAT,,1,60,row
+588897,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A1,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588898,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588899,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588900,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A4,,0,10,3,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588901,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588902,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588903,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588904,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588905,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C1,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588906,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588907,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588908,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588909,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588910,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588911,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588912,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588913,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588914,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F2,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588915,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588916,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588917,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G1,,0,10,2,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588918,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588919,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+588920,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+586312,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,A,,3,35,35,CAS A1 302,"1s,2s",N,LBDSS,,2,180,row
+586313,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,B1,,3,35,35,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586314,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,B2,,3,35,35,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+586315,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,C1,,3,35,34,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586328,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,C2,,3,35,36,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+586329,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,D1,,3,35,35,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+586330,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,D2,,3,35,30,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
+586331,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E1,,3,35,33,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+586332,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E2,,3,35,34,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+586571,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E3,,3,35,35,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+589625,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E4,,3,35,31,CAS 104,"1s,2s",N,LBDSS,,2,180,row
+586572,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,F1,,3,35,35,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586573,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,F2,,3,35,32,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
+586574,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,F3,,3,35,35,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+586575,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,G1,,3,35,32,GS 201,"1s,2s",N,LBDSS,,2,180,row
+586576,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,G2,,3,35,33,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
+586577,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,G3,,3,35,32,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+586578,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,H1,,3,35,33,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586579,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,H2,,3,35,29,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
+586580,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,S1,,3,35,29,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+586581,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,S2,,3,35,33,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+586582,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,S3,,3,35,35,IWEP LECT. HALL,"1s,2s",N,LBDSS,,2,180,row
+586583,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,T1,,3,35,35,CAS A1 302,"1s,2s",N,LBDSS,,2,180,row
+586584,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,T2,,3,35,31,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+586585,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,T3,,3,35,34,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+586593,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,U1,,3,35,31,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+586594,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,U2,,3,35,33,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+586595,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,V1,,3,35,35,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
+586596,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,V2,,3,35,31,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586597,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,V3,,3,35,34,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+589626,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,V4,,3,35,35,CAS B03,"1s,2s",N,LBDSS,,2,180,row
+586602,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,W1,,3,35,33,IWEP AUDI,"1s,2s",N,LBDSS,,2,180,row
+586603,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,W2,,3,35,34,CAS 101,"1s,2s",N,LBDSS,,2,180,row
+586604,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,X1,,3,35,33,CAS A1 409,"1s,2s",N,LBDSS,,2,180,row
+586605,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,X2,,3,35,34,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+586606,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Y1,,3,35,27,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+586609,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Y2,,3,35,35,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+586610,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z1,,3,35,33,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+586611,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z2,,3,35,34,CAS A2 103,"1s,2s",N,LBDSS,,2,180,row
+586612,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z3,,3,35,35,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+588224,1346,VEPI 223,VEPI,223,Epidemiologic Approach in The Control of Infectious Animal Diseases,LAB,AB1L,,3,20,0,,"1s,M",N,LBDVPS,PRE:(VPH 121),1,180,row
+588223,1346,VEPI 223,VEPI,223,Epidemiologic Approach in The Control of Infectious Animal Diseases,LEC,AB,,3,20,0,,"1s,M",N,LBDVPS,PRE:(VPH 121),1,120,row
+588292,1347,VEPI 224,VEPI,224,Outbreak Investigation and Control,LAB,EF1L,588112,3,15,2,,"1s,2s",I,LBDVPS,PRE:(VPH 121),1,180,row
+588112,1347,VEPI 224,VEPI,224,Outbreak Investigation and Control,LEC,EF,,3,15,,,"1s,2s",I,LBDVPS,PRE:(VPH 121),1,120,embedded_parent
+588341,1348,VEPI 225,VEPI,225,Veterinary Risk Analysis,LAB,TBA1,588101,3,15,3,,"1s,2s",N,LBDVPS,,0,0,row
+588101,1348,VEPI 225,VEPI,225,Veterinary Risk Analysis,LEC,TBA,,3,15,,,"1s,2s",N,LBDVPS,,0,0,embedded_parent
+588355,1349,VEPI 226,VEPI,226,Veterinary Informatics,LAB,TBA,588102,3,15,1,,"1s,2s",N,LBDVPS,,0,0,row
+588102,1349,VEPI 226,VEPI,226,Veterinary Informatics,LEC,TB,,3,15,,,"1s,2s",N,LBDVPS,,0,0,embedded_parent
+588253,1350,VEPI 227,VEPI,227,Environmental Animal Health,LEC,TBA,,3,10,0,,2s,N,LBDVPS,,0,0,row
+588283,1352,VEPI 291,VEPI,291,Special Topics in Veterinary Epidemiology,LAB,1L,588103,3,25,0,,1s,N,LBDVPS,,1,180,row
+588103,1352,VEPI 291,VEPI,291,Special Topics in Veterinary Epidemiology,LEC,EF,,3,25,,,1s,N,LBDVPS,,1,120,embedded_parent
+588197,1353,VEPI 295,VEPI,295,Field Project in Veterinary Epidemiology,LAB,1L,,6,10,0,,2s,N,LBDVPS,,1,180,row
+588237,1353,VEPI 295,VEPI,295,Field Project in Veterinary Epidemiology,LAB,2L,,6,10,0,,2s,N,LBDVPS,,1,180,row
+588183,1353,VEPI 295,VEPI,295,Field Project in Veterinary Epidemiology,LAB,3L,,6,10,0,,2s,N,LBDVPS,,1,180,row
+588241,1353,VEPI 295,VEPI,295,Field Project in Veterinary Epidemiology,LAB,4L,,6,10,1,,2s,N,LBDVPS,,1,540,row
