@@ -1,0 +1,386 @@
+{
+ "description": "Student schedule CSP, one instance per curriculum term. Variables = curriculum slots; value = bundle_id from 'domain'; hard constraint = no two chosen bundles overlap. Meetings of every bundle are in 'bundle_meetings'.",
+ "bundle_meetings": {},
+ "instances": [
+  {
+   "instance_id": "Y1-FS",
+   "year": 1,
+   "term": "FS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y1FS-1",
+     "options": [
+      "CMSC 12"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y1FS-2",
+     "options": [
+      "CMSC 56"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y1FS-3",
+     "options": [
+      "MATH 27"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y1FS-6",
+     "options": [
+      "HK 11"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y1-SS",
+   "year": 1,
+   "term": "SS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y1SS-1",
+     "options": [
+      "CMSC 21"
+     ],
+     "prereqs": "CMSC 12",
+     "domain": []
+    },
+    {
+     "slot": "Y1SS-2",
+     "options": [
+      "CMSC 57"
+     ],
+     "prereqs": "CMSC 56",
+     "domain": []
+    },
+    {
+     "slot": "Y1SS-3",
+     "options": [
+      "MATH 28"
+     ],
+     "prereqs": "MATH 27",
+     "domain": []
+    },
+    {
+     "slot": "Y1SS-6",
+     "options": [
+      "HK 12",
+      "HK 13"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y2-FS",
+   "year": 2,
+   "term": "FS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y2FS-1",
+     "options": [
+      "CMSC 22"
+     ],
+     "prereqs": "CMSC 12",
+     "domain": []
+    },
+    {
+     "slot": "Y2FS-2",
+     "options": [
+      "CMSC 150"
+     ],
+     "prereqs": "CMSC 21 and (MATH 27 or MATH 36 or COI)",
+     "domain": []
+    },
+    {
+     "slot": "Y2FS-3",
+     "options": [
+      "CMSC 123"
+     ],
+     "prereqs": "CMSC 57",
+     "domain": []
+    },
+    {
+     "slot": "Y2FS-4",
+     "options": [
+      "CMSC 130"
+     ],
+     "prereqs": "CMSC 57",
+     "domain": []
+    },
+    {
+     "slot": "Y2FS-6",
+     "options": [
+      "HK 12",
+      "HK 13"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y2FS-7",
+     "options": [
+      "NSTP 1"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y2-SS",
+   "year": 2,
+   "term": "SS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y2SS-1",
+     "options": [
+      "CMSC 23"
+     ],
+     "prereqs": "CMSC 22",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-2",
+     "options": [
+      "CMSC 100"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-3",
+     "options": [
+      "CMSC 127"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-4",
+     "options": [
+      "CMSC 131"
+     ],
+     "prereqs": "CMSC 21 (dashed arrow in flowchart)",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-5",
+     "options": [
+      "STAT 101"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-6",
+     "options": [
+      "HK 12",
+      "HK 13"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y2SS-7",
+     "options": [
+      "NSTP 2"
+     ],
+     "prereqs": "NSTP 1",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y3-FS",
+   "year": 3,
+   "term": "FS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y3FS-1",
+     "options": [
+      "CMSC 124"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3FS-2",
+     "options": [
+      "CMSC 125"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3FS-3",
+     "options": [
+      "CMSC 141"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3FS-4",
+     "options": [
+      "CMSC 170"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3FS-5",
+     "options": [
+      "CMSC 132"
+     ],
+     "prereqs": "CMSC 131",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y3-MY",
+   "year": 3,
+   "term": "MY",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y3MY-1",
+     "options": [
+      "CMSC 198"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y3-SS",
+   "year": 3,
+   "term": "SS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y3SS-1",
+     "options": [
+      "CMSC 128"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3SS-2",
+     "options": [
+      "CMSC 142"
+     ],
+     "prereqs": "CMSC 123",
+     "domain": []
+    },
+    {
+     "slot": "Y3SS-3",
+     "options": [
+      "CMSC 137"
+     ],
+     "prereqs": "CMSC 125",
+     "domain": []
+    },
+    {
+     "slot": "Y3SS-4",
+     "options": [
+      "CMSC 173"
+     ],
+     "prereqs": "CMSC 123 and STAT 101 (dashed)",
+     "domain": []
+    },
+    {
+     "slot": "Y3SS-5",
+     "options": [
+      "CMSC 180"
+     ],
+     "prereqs": "CMSC 132",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y4-FS-SP",
+   "year": 4,
+   "term": "FS",
+   "track": "SP",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y4FS-1",
+     "options": [
+      "CMSC 190"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y4FS-2",
+     "options": [
+      "CMSC 199"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y4-FS-THESIS",
+   "year": 4,
+   "term": "FS",
+   "track": "THESIS",
+   "variables": [],
+   "unavailable_slots": [
+    {
+     "slot": "Y4FS-1",
+     "options": [
+      "CMSC 200"
+     ],
+     "prereqs": "",
+     "domain": []
+    },
+    {
+     "slot": "Y4FS-2",
+     "options": [
+      "CMSC 199"
+     ],
+     "prereqs": "",
+     "domain": []
+    }
+   ]
+  },
+  {
+   "instance_id": "Y4-SS",
+   "year": 4,
+   "term": "SS",
+   "track": "ALL",
+   "variables": [],
+   "unavailable_slots": []
+  }
+ ]
+}

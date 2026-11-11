@@ -1,0 +1,7 @@
+{
+ "description": "Faculty Course Load CSP. Variables = sections; value = faculty_id from 'domain'. Hard: one instructor cannot teach two overlapping sections. Soft: balance weekly_minutes across instructors. baseline_faculty is the real assignment (use as a reference, not as truth).",
+ "n_variables": 0,
+ "n_instructors": 0,
+ "mean_weekly_minutes": 0,
+ "variables": []
+}
