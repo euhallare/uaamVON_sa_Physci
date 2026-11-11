@@ -84,6 +84,45 @@ def print_comparison(results: list):
         print(f"  {r['method']:<35} {str(nodes):>11} {str(backs):>12} {str(uphill):>7} {t:>9} {solved:>7}")
     print(f"{'='*80}\n")
 
+    # ---- Recommendation ----
+    print("  RECOMMENDATION")
+    print(f"  {'-'*60}")
+
+    def is_exact(r):
+        return "nodes_explored" in r
+
+    solved_runs = [r for r in results if r["solution"] is not None]
+    if not solved_runs:
+        print("  No method found a valid schedule.")
+        print("  The problem may have no conflict-free solution.\n")
+        return
+
+    # Prefer exact methods (guaranteed to find a solution if one exists).
+    # Among them, fewest nodes first; time only breaks ties.
+    exact = [r for r in solved_runs if is_exact(r)]
+    pool = exact if exact else solved_runs
+    best = min(pool, key=lambda r: (r.get("nodes_explored", r.get("steps", 0)),
+                                    r["time_seconds"]))
+
+    print(f"  Best method : {best['method']}")
+    if exact:
+        print("  Reason      : exact (guaranteed to find a solution if one exists)")
+        print("                and explored the fewest nodes among exact methods.")
+    else:
+        print("  Reason      : only local search solved it; fewest steps chosen.")
+
+    # Show the fastest local search for reference, without recommending it
+    local = [r for r in solved_runs if not is_exact(r)]
+    if exact and local:
+        fastest_local = min(local, key=lambda r: r["steps"] if "steps" in r else 0)
+        print(f"  Note        : {fastest_local['method']} also solved it in "
+              f"{fastest_local.get('steps', '—')} steps, but local search")
+        print("                has no guarantee of finding a solution on every run.")
+
+    failed = [r["method"] for r in results if r["solution"] is None]
+    if failed:
+        print(f"  Failed      : {', '.join(failed)}")
+    print(f"{'='*80}\n")
 
 
 #Main
