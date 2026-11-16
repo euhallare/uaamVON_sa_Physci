@@ -284,13 +284,13 @@ def main():
         fallback = 0,
     )
 
-    # --- Figure 3: Backtracks / Restarts ---
+    # --- Figure 3: Pruned Values (Forward Checking) ---
     bar_chart(
         all_results, instance_labels,
-        metric   = "backtracks",
-        title    = "Backtracks / Restarts per Method",
-        ylabel   = "Count",
-        filename = "fig3_backtracks.png",
+        metric   = "pruned_values",
+        title    = "Domain Values Pruned by Forward Checking",
+        ylabel   = "Pruned Values",
+        filename = "fig3_pruned_values.png",
         fallback = 0,
     )
 
