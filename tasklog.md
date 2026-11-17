@@ -7,21 +7,23 @@
 
 Eu
 - helped brainstorm dataset and method ideas
-- helped write milestone 1 docs
+- wrote milestone 1 docs
 - created repo
-- scraped the data (cmsc only so far) in amis using api and get request
+- scraped the data for term 1261 (cmsc only so far) in amis using api and get request
 
 Denmark
 - helped brainstorm dataset and method ideas
-- write milestone 1 docs
+- wrote milestone 1 docs
+
 
 Eliza
 - helped brainstorm dataset and method ideas
-- write milestone 1 docs
+- wrote milestone 1 docs
+
 
 Jiro
 - helped brainstorm dataset and method ideas
-- write milestone 1 docs
+- wrte milestone 1 docs
 
 ---
 
@@ -31,14 +33,24 @@ Eu
 - pushed backtracking.py 
 - pushed csp.py
 - pushed evaluate.py
+- wrote updated README.md with instructions and guidelines
+- initial results code block
 
 Denmark
 - pushed min_conflicts.py
+- helped writing the milestone 2 docs
+- explanation for Train/test split or cross-validation plan
 
 Eliza
 - pushed simulated_annealing.py
+- started the milestone 2 docs
+- explanation of the Current Methods
+- explanation of Data Loading & Preprocessing Code
 
 Jiro
 - pushed forward_checking.py
+- scraped data for terms 1252-1260 (although not completely yet)
+- scraped data for GEs and HK
+- added recommendation section on evaluate.py
 
 ---
