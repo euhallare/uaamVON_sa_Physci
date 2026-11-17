@@ -1,54 +1,45 @@
 """
 plot_results.py — Generate comparison graphs for the AMIS Scheduler CSP project.
 
-Runs all 4 methods across multiple problem instances (Year 1, 2, 3 — FS, SP track)
-and saves bar charts comparing:
-  - nodes explored / steps taken
-  - time (seconds)
-  - backtracks / restarts
+Runs all 4 methods across multiple problem instances (Year 1, 2, 3 — FS)
+and saves bar charts comparing nodes explored, time, pruned values, and
+whether each method found a solution.
 
 Usage:
-    cd amis_project/solver
-    python plot_results.py
+    python plot_results.py                    # defaults: cmsc, FS, SP
+    python plot_results.py --deg-prog stat
+    python plot_results.py --deg-prog math --term SS --track TH
 
-Output: saves PNG figures to ../figures/ (created if it doesn't exist).
+Arguments:
+    --deg-prog   Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
+                 (default: cmsc)
+    --term       FS or SS (default: FS)
+    --track      Track code, e.g. SP or TH (default: SP)
+
+Output: saves PNG figures to ../figures/<deg_prog>/ (created if needed).
 """
 
+import argparse
 import os
 import sys
 import matplotlib
-matplotlib.use("Agg")  #i use Agg so it works without a display (WSL-friendly)
+matplotlib.use("Agg")  # WSL-friendly, no display needed
 import matplotlib.pyplot as plt
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(__file__))
 
-from csp import SchedulerCSP
+from csp import SchedulerCSP, DEG_PROG_MAP
 import backtracking
 import forward_checking
 import min_conflicts
 import simulated_annealing
 
 
-#paths
-BASE       = os.path.join(os.path.dirname(__file__), "..", "data")
-SECTIONS   = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
-MEETINGS   = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
-CURRICULUM = os.path.join(BASE, "curriculum.csv")
-
-FIGURES_DIR = os.path.join(os.path.dirname(__file__), "..", "figures")
-
-#i make sure the output folder exists
-if not os.path.exists(FIGURES_DIR):
-    os.makedirs(FIGURES_DIR)
-
-# which instances to test 
-#i vary year so we get different numbers of variables and domain sizes
-INSTANCES = [
-    {"year": 1, "term": "FS", "track": "SP", "label": "Y1 FS SP"},
-    {"year": 2, "term": "FS", "track": "SP", "label": "Y2 FS SP"},
-    {"year": 3, "term": "FS", "track": "SP", "label": "Y3 FS SP"},
-]
+# paths (relative to this file)
+BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
+SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
+MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
 
 METHOD_NAMES = [
     "Backtracking\n(MRV+LCV)",
@@ -60,14 +51,16 @@ METHOD_NAMES = [
 COLORS = ["#4C72B0", "#55A868", "#C44E52", "#8172B2"]
 
 
-def run_instance(cfg: dict) -> list:
-    #Run all 4 methods on one problem instance.
-    #Returns a list of result dicts, one per method.
+# ----------------------------------------------------------------- runners
+
+def run_instance(cfg: dict, deg_prog: str) -> list:
+    """Run all 4 methods on one problem instance. Returns list of result dicts."""
     print(f"\n  Loading: {cfg['label']}")
     csp = SchedulerCSP(
         sections_path     = SECTIONS,
         meetings_path     = MEETINGS,
-        curriculum_path   = CURRICULUM,
+        deg_prog          = deg_prog,
+        data_dir          = BASE,
         year              = cfg["year"],
         term              = cfg["term"],
         track             = cfg["track"],
@@ -117,9 +110,9 @@ def run_instance(cfg: dict) -> list:
     return results
 
 
+# ----------------------------------------------------------------- chart helpers
+
 def collect_metric(all_results: list, metric: str, fallback=0):
-    #all_results is a list of [r1, r2, r3, r4] per instance.
-    #Returns a dict: {method_index: [value_per_instance, ...]}
     data = {i: [] for i in range(4)}
     for instance_results in all_results:
         if not instance_results:
@@ -127,7 +120,6 @@ def collect_metric(all_results: list, metric: str, fallback=0):
                 data[i].append(0)
             continue
         for i, r in enumerate(instance_results):
-            # i handle the different key names across methods
             val = r.get(metric, fallback)
             if val == "—" or val is None:
                 val = fallback
@@ -137,39 +129,29 @@ def collect_metric(all_results: list, metric: str, fallback=0):
 
 def bar_chart(all_results: list, instance_labels: list,
               metric: str, title: str, ylabel: str,
-              filename: str, fallback=0, log_scale=False):
+              filename: str, figures_dir: str,
+              fallback=0, log_scale=False):
 
-    #i draw a grouped bar chart: one group per instance, one bar per method.
     data = collect_metric(all_results, metric, fallback)
-
     n_instances = len(instance_labels)
     n_methods   = 4
     x           = np.arange(n_instances)
-    width       = 0.18  # #i keep bars narrow so they fit without overlapping
+    width       = 0.18
     offsets     = np.linspace(-(n_methods - 1) / 2, (n_methods - 1) / 2, n_methods) * width
 
     fig, ax = plt.subplots(figsize=(max(7, 2.5 * n_instances), 5))
 
     for i in range(n_methods):
         values = data[i]
-        bars = ax.bar(
-            x + offsets[i],
-            values,
-            width,
-            label=METHOD_NAMES[i],
-            color=COLORS[i],
-            edgecolor="white",
-            linewidth=0.5,
-        )
-        #add the value label on top of each bar
+        bars = ax.bar(x + offsets[i], values, width,
+                      label=METHOD_NAMES[i], color=COLORS[i],
+                      edgecolor="white", linewidth=0.5)
         for bar, v in zip(bars, values):
             if v > 0:
-                ax.text(
-                    bar.get_x() + bar.get_width() / 2,
-                    bar.get_height() * 1.02,
-                    f"{v:.4f}" if v < 1 else f"{int(v)}",
-                    ha="center", va="bottom", fontsize=7.5,
-                )
+                ax.text(bar.get_x() + bar.get_width() / 2,
+                        bar.get_height() * 1.02,
+                        f"{v:.4f}" if v < 1 else f"{int(v)}",
+                        ha="center", va="bottom", fontsize=7.5)
 
     ax.set_title(title, fontsize=13, fontweight="bold", pad=12)
     ax.set_ylabel(ylabel, fontsize=11)
@@ -185,19 +167,18 @@ def bar_chart(all_results: list, instance_labels: list,
         ax.set_yscale("log")
 
     plt.tight_layout()
-    out = os.path.join(FIGURES_DIR, filename)
+    out = os.path.join(figures_dir, filename)
     plt.savefig(out, dpi=150)
     plt.close()
     print(f"  Saved: {out}")
 
 
-def solved_heatmap(all_results: list, instance_labels: list, filename: str):
-    #draw a simple grid showing SOLVED/NO for each (instance, method) pair.
+def solved_heatmap(all_results: list, instance_labels: list,
+                   filename: str, figures_dir: str):
     n_instances = len(instance_labels)
     n_methods   = 4
+    grid        = np.zeros((n_methods, n_instances))
 
-    #i build a 2D array: 1 = solved, 0 = not solved
-    grid = np.zeros((n_methods, n_instances))
     for col, instance_results in enumerate(all_results):
         if not instance_results:
             continue
@@ -208,13 +189,11 @@ def solved_heatmap(all_results: list, instance_labels: list, filename: str):
     cmap = matplotlib.colors.ListedColormap(["#e74c3c", "#2ecc71"])
     ax.imshow(grid, cmap=cmap, vmin=0, vmax=1, aspect="auto")
 
-    #label each cell
     for row in range(n_methods):
         for col in range(n_instances):
             text = "YES" if grid[row][col] == 1 else "NO"
             ax.text(col, row, text, ha="center", va="center",
-                    fontsize=11, fontweight="bold",
-                    color="white")
+                    fontsize=11, fontweight="bold", color="white")
 
     ax.set_xticks(range(n_instances))
     ax.set_xticklabels(instance_labels, fontsize=10)
@@ -224,24 +203,50 @@ def solved_heatmap(all_results: list, instance_labels: list, filename: str):
                  fontweight="bold", pad=10)
 
     plt.tight_layout()
-    out = os.path.join(FIGURES_DIR, filename)
+    out = os.path.join(figures_dir, filename)
     plt.savefig(out, dpi=150)
     plt.close()
     print(f"  Saved: {out}")
 
 
+# ----------------------------------------------------------------- main
+
 def main():
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--deg-prog", default="cmsc",
+                    choices=list(DEG_PROG_MAP),
+                    help="Degree program (default: cmsc)")
+    ap.add_argument("--term",  default="FS", choices=["FS", "SS"],
+                    help="Semester: FS or SS (default: FS)")
+    ap.add_argument("--track", default="SP",
+                    help="Track code e.g. SP or TH (default: SP)")
+    args = ap.parse_args()
+
+    deg = args.deg_prog.upper()
     print("=" * 55)
-    print("  plot_results.py — AMIS Scheduler CSP")
+    print(f"  plot_results.py — AMIS Scheduler CSP ({deg})")
     print("=" * 55)
 
-    #run all instances and collect results
-    all_results    = []
+    # figures go into figures/<deg_prog>/
+    figures_dir = os.path.join(os.path.dirname(__file__), "..", "figures", args.deg_prog)
+    os.makedirs(figures_dir, exist_ok=True)
+
+    # instances to test: vary year across the same term/track
+    instances = [
+        {"year": 1, "term": args.term, "track": args.track,
+         "label": f"Y1 {args.term} {args.track}"},
+        {"year": 2, "term": args.term, "track": args.track,
+         "label": f"Y2 {args.term} {args.track}"},
+        {"year": 3, "term": args.term, "track": args.track,
+         "label": f"Y3 {args.term} {args.track}"},
+    ]
+
+    all_results     = []
     instance_labels = []
 
-    for cfg in INSTANCES:
-        results = run_instance(cfg)
-        #only add the instance if it had variables to schedule
+    for cfg in instances:
+        results = run_instance(cfg, args.deg_prog)
         if results:
             all_results.append(results)
             instance_labels.append(cfg["label"])
@@ -250,81 +255,59 @@ def main():
         print("\nNo valid instances found. Check your data paths.")
         return
 
-    print(f"\nGenerating figures into: {os.path.abspath(FIGURES_DIR)}")
+    print(f"\nGenerating figures into: {os.path.abspath(figures_dir)}")
 
-    # --- Figure 1: Nodes Explored / Steps ---
-    # i use "nodes_explored" for exact methods, "steps" for local search
-    # collect_metric handles whichever key is present
-    bar_chart(
-        all_results, instance_labels,
-        metric   = "nodes_explored",
-        title    = "Nodes Explored / Steps per Method",
-        ylabel   = "Nodes / Steps",
-        filename = "fig1_nodes_explored.png",
-        fallback = 0,
-    )
-    # local search methods store steps, not nodes_explored — i patch after
-    # (simpler: just re-collect with "steps" and overlay)
-    bar_chart(
-        all_results, instance_labels,
-        metric   = "steps",
-        title    = "Steps Taken (Local Search Methods)",
-        ylabel   = "Steps",
-        filename = "fig1b_steps.png",
-        fallback = 0,
-    )
+    bar_chart(all_results, instance_labels,
+              metric="nodes_explored",
+              title=f"Nodes Explored / Steps per Method ({deg})",
+              ylabel="Nodes / Steps",
+              filename="fig1_nodes_explored.png",
+              figures_dir=figures_dir)
 
-    # --- Figure 2: Time (seconds) ---
-    bar_chart(
-        all_results, instance_labels,
-        metric   = "time_seconds",
-        title    = "Wall-Clock Time per Method",
-        ylabel   = "Time (seconds)",
-        filename = "fig2_time.png",
-        fallback = 0,
-    )
+    bar_chart(all_results, instance_labels,
+              metric="steps",
+              title=f"Steps Taken — Local Search ({deg})",
+              ylabel="Steps",
+              filename="fig1b_steps.png",
+              figures_dir=figures_dir)
 
-    # --- Figure 3: Pruned Values (Forward Checking) ---
-    bar_chart(
-        all_results, instance_labels,
-        metric   = "pruned_values",
-        title    = "Domain Values Pruned by Forward Checking",
-        ylabel   = "Pruned Values",
-        filename = "fig3_pruned_values.png",
-        fallback = 0,
-    )
+    bar_chart(all_results, instance_labels,
+              metric="time_seconds",
+              title=f"Wall-Clock Time per Method ({deg})",
+              ylabel="Time (seconds)",
+              filename="fig2_time.png",
+              figures_dir=figures_dir)
 
-    # --- Figure 4: Solved or not ---
-    solved_heatmap(all_results, instance_labels, "fig4_solved.png")
+    bar_chart(all_results, instance_labels,
+              metric="pruned_values",
+              title=f"Domain Values Pruned by Forward Checking ({deg})",
+              ylabel="Pruned Values",
+              filename="fig3_pruned_values.png",
+              figures_dir=figures_dir)
 
-    # --- Figure 5: Combined overview (nodes + time side by side) ---
+    solved_heatmap(all_results, instance_labels,
+                   filename="fig4_solved.png",
+                   figures_dir=figures_dir)
+
+    # Combined overview
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-    fig.suptitle("AMIS Scheduler CSP — Method Comparison Overview",
+    fig.suptitle(f"AMIS Scheduler CSP — Method Comparison ({deg})",
                  fontsize=14, fontweight="bold")
 
-    metrics = [
+    for metric, ylabel, ax in [
         ("nodes_explored", "Nodes Explored", axes[0]),
         ("time_seconds",   "Time (seconds)", axes[1]),
-    ]
-
-    for metric, ylabel, ax in metrics:
-        data = collect_metric(all_results, metric, fallback=0)
+    ]:
+        data        = collect_metric(all_results, metric, fallback=0)
         n_instances = len(instance_labels)
         x           = np.arange(n_instances)
         width       = 0.18
-        offsets     = np.linspace(-(3) / 2, 3 / 2, 4) * width
+        offsets     = np.linspace(-1.5, 1.5, 4) * width
 
         for i in range(4):
-            values = data[i]
-            ax.bar(
-                x + offsets[i],
-                values,
-                width,
-                label=METHOD_NAMES[i],
-                color=COLORS[i],
-                edgecolor="white",
-                linewidth=0.5,
-            )
+            ax.bar(x + offsets[i], data[i], width,
+                   label=METHOD_NAMES[i], color=COLORS[i],
+                   edgecolor="white", linewidth=0.5)
 
         ax.set_ylabel(ylabel, fontsize=11)
         ax.set_xticks(x)
@@ -336,7 +319,7 @@ def main():
         ax.spines["right"].set_visible(False)
 
     plt.tight_layout()
-    out = os.path.join(FIGURES_DIR, "fig5_overview.png")
+    out = os.path.join(figures_dir, "fig5_overview.png")
     plt.savefig(out, dpi=150)
     plt.close()
     print(f"  Saved: {out}")
@@ -345,7 +328,7 @@ def main():
     print("  fig1_nodes_explored.png  — exact methods: nodes tried")
     print("  fig1b_steps.png          — local search: steps taken")
     print("  fig2_time.png            — wall-clock time per method")
-    print("  fig3_backtracks.png      — backtracks / restarts")
+    print("  fig3_pruned_values.png   — domain values pruned by FC")
     print("  fig4_solved.png          — solved/not grid")
     print("  fig5_overview.png        — combined overview (nodes + time)")
 
