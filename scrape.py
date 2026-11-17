@@ -41,6 +41,12 @@ DELAY = (1.0, 2.0)              # random pause (seconds) between requests - be g
 SUBJECT_SETS = {
     # for testing
     "small": ["CMSC"],
+    # for scraping everything in one line
+    "all_curricula": [
+        "CMSC", "MATH", "STAT", "PHYS", "CHEM", "BIO", "BOT", "ZOO", 
+        "AGCH", "GEOL", "AGRI", "ECON", "AAE", "AMAT", "COMA", "ABME", 
+        "HK", "NSTP", "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"
+    ],
     # BS CS (2018)
     "cs": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
            "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
