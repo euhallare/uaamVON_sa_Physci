@@ -1,45 +1,48 @@
 """
-evaluate.py — Run all 3 CSP methods on the same problem instance
+evaluate.py — Run all 4 CSP methods on the same problem instance
               and print a comparison table.
 
 Usage:
-    cd amis_scheduler/solver
-    python evaluate.py
+    python evaluate.py                        # defaults: cmsc, year 3, FS, SP
+    python evaluate.py --deg-prog stat
+    python evaluate.py --deg-prog math --year 2 --term SS --track TH
 
-Defaults to Year 3, First Sem, SP track — a typical 3rd-year student
-who has completed all Y1 and Y2 requirements.
+Arguments:
+    --deg-prog   Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
+                 (default: cmsc)
+    --year       Curriculum year 1–4 (default: 3)
+    --term       FS or SS (default: FS)
+    --track      Track code, e.g. SP or TH (default: SP)
 """
 
-import sys
+import argparse
 import os
-import time
+import sys
 
-#Allow running from any directory
 sys.path.insert(0, os.path.dirname(__file__))
 
-from csp import SchedulerCSP
+from csp import SchedulerCSP, DEG_PROG_MAP
 import backtracking
 import forward_checking
 import min_conflicts
 import simulated_annealing
 
 
-#paths (relative to this file)
-BASE        = os.path.join(os.path.dirname(__file__), "..", "data")
-SECTIONS    = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
-MEETINGS    = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
-CURRICULUM  = os.path.join(BASE, "curriculum.csv")
+# paths (relative to this file)
+BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
+SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
+MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
 
 
+# ----------------------------------------------------------------- pretty printers
 
-#pretty printers
 DAY_ORDER = {"M": 0, "T": 1, "W": 2, "Th": 3, "F": 4, "S": 5}
+
 
 def fmt_meetings(meetings: list) -> str:
     """Format meeting blocks as a compact string, e.g. 'MWF 10:00-13:00'."""
     if not meetings:
         return "TBA"
-    #group by time range, collect days
     groups: dict = {}
     for day, s, e in meetings:
         key = (s, e)
@@ -97,12 +100,10 @@ def print_comparison(results: list):
         print("  The problem may have no conflict-free solution.\n")
         return
 
-    # Prefer exact methods (guaranteed to find a solution if one exists).
-    # Among them, fewest nodes first; time only breaks ties.
     exact = [r for r in solved_runs if is_exact(r)]
-    pool = exact if exact else solved_runs
-    best = min(pool, key=lambda r: (r.get("nodes_explored", r.get("steps", 0)),
-                                    r["time_seconds"]))
+    pool  = exact if exact else solved_runs
+    best  = min(pool, key=lambda r: (r.get("nodes_explored", r.get("steps", 0)),
+                                     r["time_seconds"]))
 
     print(f"  Best method : {best['method']}")
     if exact:
@@ -111,10 +112,9 @@ def print_comparison(results: list):
     else:
         print("  Reason      : only local search solved it; fewest steps chosen.")
 
-    # Show the fastest local search for reference, without recommending it
     local = [r for r in solved_runs if not is_exact(r)]
     if exact and local:
-        fastest_local = min(local, key=lambda r: r["steps"] if "steps" in r else 0)
+        fastest_local = min(local, key=lambda r: r.get("steps", 0))
         print(f"  Note        : {fastest_local['method']} also solved it in "
               f"{fastest_local.get('steps', '—')} steps, but local search")
         print("                has no guarantee of finding a solution on every run.")
@@ -125,22 +125,34 @@ def print_comparison(results: list):
     print(f"{'='*80}\n")
 
 
-#Main
+# ----------------------------------------------------------------- main
+
 def main():
-    # --- Problem instance ---
-    # A 3rd-year student in their First Semester, SP track.
-    # We allow sections that are full (require_open_slot=False) so the
-    # solver has enough domain values to be interesting; in a real
-    # deployment you'd set require_open_slot=True.
-    print("Loading CSP problem...")
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--deg-prog", default="cmsc",
+                    choices=list(DEG_PROG_MAP),
+                    help="Degree program (default: cmsc)")
+    ap.add_argument("--year",  type=int, default=3,
+                    help="Curriculum year 1–4 (default: 3)")
+    ap.add_argument("--term",  default="FS", choices=["FS", "SS"],
+                    help="Semester: FS or SS (default: FS)")
+    ap.add_argument("--track", default="SP",
+                    help="Track code e.g. SP or TH (default: SP)")
+    args = ap.parse_args()
+
+    print(f"Loading CSP problem — deg_prog={args.deg_prog.upper()}, "
+          f"year={args.year}, term={args.term}, track={args.track} ...")
+
     csp = SchedulerCSP(
         sections_path   = SECTIONS,
         meetings_path   = MEETINGS,
-        curriculum_path = CURRICULUM,
-        year            = 3,
-        term            = "FS",
-        track           = "SP",
-        require_open_slot = False,   #tignan note above
+        deg_prog        = args.deg_prog,
+        data_dir        = BASE,
+        year            = args.year,
+        term            = args.term,
+        track           = args.track,
+        require_open_slot = False,
         allow_consent     = False,
     )
     csp.summary()
@@ -151,7 +163,7 @@ def main():
 
     results = []
 
-    # --- Method 1: Backtracking (MRV + LCV) ---
+    # Method 1: Backtracking (MRV + LCV)
     print("Running Method 1: Backtracking (MRV + LCV)...")
     r1 = backtracking.solve(csp)
     results.append(r1)
@@ -159,7 +171,7 @@ def main():
           f"{'SOLVED' if r1['solution'] else 'NO SOLUTION'}")
     print_solution(csp, r1["solution"])
 
-    # --- Method 2: Forward Checking ---
+    # Method 2: Forward Checking
     print("\nRunning Method 2: Forward Checking (MRV + FC)...")
     r2 = forward_checking.solve(csp)
     results.append(r2)
@@ -167,7 +179,7 @@ def main():
           f"{'SOLVED' if r2['solution'] else 'NO SOLUTION'}")
     print_solution(csp, r2["solution"])
 
-    # --- Method 3: Min-Conflicts ---
+    # Method 3: Min-Conflicts
     print("\nRunning Method 3: Min-Conflicts (Local Search)...")
     r3 = min_conflicts.solve(csp, max_steps=50_000, max_restarts=30)
     results.append(r3)
@@ -176,7 +188,7 @@ def main():
           f"{'SOLVED' if r3['solution'] else f'NO SOLUTION ({fc} conflicts remain)'}")
     print_solution(csp, r3["solution"])
 
-    # --- Method 4: Simulated Annealing ---
+    # Method 4: Simulated Annealing
     print("\nRunning Method 4: Simulated Annealing...")
     r4 = simulated_annealing.solve(csp, max_steps=50_000, max_restarts=20)
     results.append(r4)
@@ -185,7 +197,6 @@ def main():
           f"{'SOLVED' if r4['solution'] else f'NO SOLUTION ({fc} conflicts remain)'}")
     print_solution(csp, r4["solution"])
 
-    #comparison table
     print_comparison(results)
 
 
