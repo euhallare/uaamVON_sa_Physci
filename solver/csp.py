@@ -7,15 +7,47 @@ Terminology used throughout:
              standalone courses (no LAB) have lab_class_id = None
   meeting  — one timed block: (day, start_min, end_min)
   schedule — a dict {slot_name: bundle} representing a full or partial solution
+
+Degree programs supported (--deg-prog / deg_prog parameter):
+  cmsc, stat, math, amat, ap, chem, agch, bio
+Each maps to data/curriculum_<deg_prog>.csv.
 """
 
 import csv
+import os
 import time
 from typing import Optional
 
 
+# Mapping from deg_prog key -> curriculum filename stem
+DEG_PROG_MAP = {
+    "cmsc":  "curriculum_cmsc.csv",
+    "stat":  "curriculum_stat.csv",
+    "math":  "curriculum_math.csv",
+    "amat":  "curriculum_amat.csv",
+    "ap":    "curriculum_ap.csv",
+    "chem":  "curriculum_chem.csv",
+    "agch":  "curriculum_agch.csv",
+    "bio":   "curriculum_bio.csv",
+}
 
-#1.  Raw data loaders
+
+def resolve_curriculum_path(deg_prog: str, data_dir: str) -> str:
+    """
+    Given a deg_prog key (e.g. 'cmsc') and the data/ directory,
+    return the full path to the matching curriculum CSV.
+    Raises ValueError for unknown keys.
+    """
+    key = deg_prog.strip().lower()
+    if key not in DEG_PROG_MAP:
+        raise ValueError(
+            f"Unknown deg_prog '{deg_prog}'. "
+            f"Choose one of: {', '.join(sorted(DEG_PROG_MAP))}"
+        )
+    return os.path.join(data_dir, DEG_PROG_MAP[key])
+
+
+# ----------------------------------------------------------------- loaders
 
 def load_sections(path: str) -> dict:
     """
@@ -61,18 +93,20 @@ def load_curriculum(path: str) -> list:
     return rows
 
 
+# ----------------------------------------------------------------- bundle builder
 
-#2.  Bundle builder
 def build_bundles(sections: dict, meetings: dict) -> dict:
     """
     Returns {course_code: [bundle, ...]} where each bundle is:
       {
-        "lec_id":   int,
-        "lab_id":   int | None,
-        "section":  str,          # e.g. "C" for LEC, "C-1L" for the LAB
-        "meetings": [(day, s, e), ...],   # combined LEC + LAB meeting blocks
+        "lec_id":        int,
+        "lab_id":        int | None,
+        "lec_section":   str,
+        "lab_section":   str | None,
+        "meetings":      [(day, s, e), ...],   # combined LEC + LAB meeting blocks
         "has_open_slot": bool,
-        "consent":  str,          # 'N', 'D', or 'I'
+        "consent":       str,                  # 'N', 'D', or 'I'
+        "units":         int,
       }
 
     Strategy:
@@ -81,7 +115,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
       - For standalone courses (LEC only, SEM, SPR, etc.): the LEC itself is
         a bundle with lab_id = None.
     """
-    #Index LAB rows by their parent (LEC) id
+    # Index LAB rows by their parent (LEC) id
     labs_by_lec: dict = {}
     for cid, sec in sections.items():
         if sec["type"] == "LAB":
@@ -92,12 +126,12 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
 
     for cid, sec in sections.items():
         if sec["source"] != "row":
-            continue  #skip embedded_parent duplicates
+            continue  # skip embedded_parent duplicates
 
         course = sec["course_code"]
 
         if sec["type"] == "LAB":
-            # --- LAB-based bundle ---
+            # LAB-based bundle
             lec_id = sec["parent_class_id"]
             lec = sections.get(lec_id)
             if lec is None:
@@ -107,11 +141,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
             lab_meetings = meetings.get(cid, [])
             combined = lec_meetings + lab_meetings
 
-            #Open slot: LAB must have room; LEC capacity is shared so we
-            #just require the LAB to be not full (LEC over-enrollment is
-            #the registrar's problem, not ours).
             lab_open = sec["active_size"] < sec["max_size"] if sec["max_size"] > 0 else False
-            #consent: take the stricter of LEC vs LAB (usually same)
             consent = sec["consent"] if sec["consent"] not in ("", "N") else lec["consent"]
 
             bundle = {
@@ -127,12 +157,9 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
             bundles.setdefault(course, []).append(bundle)
 
         elif sec["type"] not in ("LAB",) and sec["parent_class_id"] is None:
-            #Standalone bundle (LEC, SEM, SPR, THE, PRA) ---
-            # Skip thesis/SPR/PRA — not schedulable in a timetable sense
+            # Standalone bundle (LEC, SEM, etc.) — skip non-schedulable types
             if sec["type"] in ("THE", "SPR", "PRA"):
                 continue
-            #Skip consent-required courses for the student scheduler
-            #(they can't self-enlist anyway)
             lec_meetings = meetings.get(cid, [])
             lec_open = sec["active_size"] < sec["max_size"] if sec["max_size"] > 0 else False
             consent = sec["consent"]
@@ -152,8 +179,8 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
     return bundles
 
 
+# ----------------------------------------------------------------- conflict checker
 
-#3.  Conflict checker
 def meetings_overlap(m1: list, m2: list) -> bool:
     """
     Returns True if any meeting block in m1 overlaps with any in m2.
@@ -167,23 +194,37 @@ def meetings_overlap(m1: list, m2: list) -> bool:
     return False
 
 
-# 4.  CSP Problem class
+# ----------------------------------------------------------------- CSP class
+
 class SchedulerCSP:
     """
-    Variables  : curriculum slot names for the target year/term
+    Variables  : curriculum slot names for the target year/term/track
                  e.g. ["Y3FS-1", "Y3FS-2", ..., "Y3FS-6"]
 
     Domains    : for each variable, a list of valid bundles
                  (open, no consent, correct course code)
 
     Constraints: binary — no two assigned bundles may have overlapping meetings
+
+    Parameters
+    ----------
+    sections_path   : path to datasets/term_XXXX/sections.csv
+    meetings_path   : path to datasets/term_XXXX/meetings.csv
+    curriculum_path : explicit path to a curriculum CSV (takes priority over deg_prog)
+    deg_prog        : degree program key, e.g. 'cmsc', 'stat', 'math' — used to
+                      auto-resolve the curriculum path when curriculum_path is None.
+                      Requires data_dir to be set correctly.
+    data_dir        : root data/ directory; used only when deg_prog is given
+                      (default: two levels up from this file, i.e. ../data/)
     """
 
     def __init__(
         self,
         sections_path: str,
         meetings_path: str,
-        curriculum_path: str,
+        curriculum_path: Optional[str] = None,
+        deg_prog: Optional[str] = None,
+        data_dir: Optional[str] = None,
         year: int = 3,
         term: str = "FS",
         track: str = "SP",
@@ -198,13 +239,27 @@ class SchedulerCSP:
         self.require_open = require_open_slot
         self.allow_consent = allow_consent
 
-        #Load raw data
+        # Resolve curriculum path
+        if curriculum_path is None:
+            if deg_prog is None:
+                raise ValueError(
+                    "Provide either curriculum_path or deg_prog."
+                )
+            if data_dir is None:
+                # default: data/ folder two levels above this file
+                data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+            curriculum_path = resolve_curriculum_path(deg_prog, data_dir)
+
+        self.deg_prog = (deg_prog or "").lower()
+        self.curriculum_path = curriculum_path
+
+        # Load raw data
         sections = load_sections(sections_path)
         meetings = load_meetings(meetings_path)
         curriculum = load_curriculum(curriculum_path)
         all_bundles = build_bundles(sections, meetings)
 
-        #Build variables and domains
+        # Build variables and domains
         self.variables: list = []
         self.domains: dict = {}       # slot_name -> [bundle, ...]
         self.slot_courses: dict = {}  # slot_name -> course_code (for display)
@@ -218,24 +273,22 @@ class SchedulerCSP:
                 continue
 
             slot = row["slot"]
-            #options can be "CMSC 124" or "HK 12|HK 13" (pick any)
+            # options can be "CMSC 124" or "HK 12|HK 13" (pick any)
             options = [o.strip() for o in row["options"].split("|")]
 
-            #Skip GE / ELECTIVE / NSTP / PE slots — not in CMSC data (CURRENTLY, LALAGYAN KO NA LANG)
+            # Skip GE / ELECTIVE / NSTP slots — not in dataset
             if any(o in ("GE", "ELECTIVE", "NSTP") for o in options):
                 continue
-            #PE: skip HK courses (not in dataset)
+            # Skip PE slots (HK courses)
             if row["kind"] == "PE":
                 continue
 
-            #Gather all bundles for this slot across all option codes
+            # Gather all bundles for this slot across all option codes
             valid_bundles = []
             for course_code in options:
                 for b in all_bundles.get(course_code, []):
-                    #Filter: consent
                     if not allow_consent and b["consent"] in ("D", "I"):
                         continue
-                    #Filter: open slot
                     if require_open_slot and not b["has_open_slot"]:
                         continue
                     valid_bundles.append(b)
@@ -245,8 +298,7 @@ class SchedulerCSP:
                 self.domains[slot] = valid_bundles
                 self.slot_courses[slot] = "/".join(options)
 
-        #Pre-compute neighbors (all pairs — fully connected graph since
-        #any two courses can conflict in time)
+        # Pre-compute neighbors (fully connected — any two courses can conflict)
         self.neighbors: dict = {
             v: [u for u in self.variables if u != v]
             for v in self.variables
@@ -278,8 +330,9 @@ class SchedulerCSP:
         return count
 
     def summary(self):
+        deg = f" ({self.deg_prog.upper()})" if self.deg_prog else ""
         print(f"\n{'='*55}")
-        print(f"  AMIS Scheduler CSP  —  Year {self.year}, Term {self.term}, Track {self.track}")
+        print(f"  AMIS Scheduler CSP{deg}  —  Year {self.year}, Term {self.term}, Track {self.track}")
         print(f"{'='*55}")
         print(f"  Variables : {len(self.variables)}")
         for v in self.variables:
