@@ -39,10 +39,47 @@ DEFAULT_TERM_ID = 1261          # current term; change with --term
 DELAY = (1.0, 2.0)              # random pause (seconds) between requests - be gentle
 
 SUBJECT_SETS = {
+    # for testing
     "small": ["CMSC"],
-    # every subject prefix that appears in the BS CS (2018) flowchart
-    "curriculum": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
-                   "ARTS", "KAS", "PI", "COMM", "ENG"],
+    # for scraping everything in one line
+    "all_curricula": [
+        "CMSC", "MATH", "STAT", "PHYS", "CHEM", "BIO", "BOT", "ZOO", 
+        "AGCH", "GEOL", "AGRI", "ECON", "AAE", "AMAT", "COMA", "ABME", 
+        "HK", "NSTP", "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"
+    ],
+    # BS CS (2018)
+    "cs": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
+           "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+           
+    # BS STAT (2018)
+    "stat": ["STAT", "BIO", "MATH", "CMSC", "ECON", "ABME",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+
+    # BS MATH (2018)
+    "math": ["MATH", "CMSC", "STAT", "PHYS", "HK", "NSTP", "ETHICS", "STS",
+             "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+
+    # BS APPLIED MATH (2018)
+    "appmath": ["MATH", "CMSC", "STAT", "PHYS", "ECON", "HK", "NSTP", "ETHICS", "STS",
+                "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+
+    # BS APPLIED PHYSICS (2018)
+    "appphysics": ["PHYS", "MATH", "CMSC", "HK", "NSTP", "ETHICS", "STS",
+                   "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+
+    # BS CHEM (2018)
+    "chem": ["CHEM", "MATH", "MCB", "PHYS", "GEOL", "STAT", "CMSC", "AMAT", "NSTP", 
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+
+    # BS AGRI CHEM (2018)
+    "agrichem": ["CHEM", "AGCH", "MATH", "MCB", "PHYS", "BIO", "AGRI", "BOT", 
+                 "ECON", "AAE", "STAT", "CMSC", "AMAT", "NSTP", 
+                 "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+
+    # BS BIO (2021)
+    "bio": ["BIO", "CHEM", "MATH", "BOT", "ZOO", "PHYS", "STAT", 
+            "COMA", "ABME", "NSTP", "ETHICS", "STS", "ARTS", 
+            "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
 }
 
 # Keys removed everywhere in the JSON before saving (instructor identity).

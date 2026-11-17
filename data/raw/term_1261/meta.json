@@ -1,6 +1,6 @@
 {
   "term_id": 1261,
-  "last_scrape_utc": "2026-11-11T14:43:12+00:00",
+  "last_scrape_utc": "2026-11-17T12:29:18+00:00",
   "source": "https://api-amis.uplb.edu.ph/api/students/classes",
   "filters": {
     "items": 20,
@@ -21,6 +21,21 @@
     "KAS": 27,
     "PI": 43,
     "COMM": 52,
-    "ENG": 213
+    "ENG": 213,
+    "BIO": 288,
+    "CHEM": 251,
+    "BOT": 67,
+    "ZOO": 54,
+    "PHYS": 83,
+    "COMA": 403,
+    "ABME": 72,
+    "HIST": 28,
+    "ECON": 181,
+    "MCB": 112,
+    "GEOL": 0,
+    "AMAT": 77,
+    "AGCH": 0,
+    "AGRI": 209,
+    "AAE": 115
   }
 }
