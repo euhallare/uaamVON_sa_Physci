@@ -118,7 +118,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
     # Index LAB rows by their parent (LEC) id
     labs_by_lec: dict = {}
     for cid, sec in sections.items():
-        if sec["type"] == "LAB":
+        if sec["type"] in ("LAB", "RCT", "CPT"):
             pid = sec["parent_class_id"]
             labs_by_lec.setdefault(pid, []).append(sec)
 
@@ -130,7 +130,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
 
         course = sec["course_code"]
 
-        if sec["type"] == "LAB":
+        if sec["type"] in ("LAB", "RCT", "CPT"):
             # LAB-based bundle
             lec_id = sec["parent_class_id"]
             lec = sections.get(lec_id)
@@ -156,9 +156,9 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
             }
             bundles.setdefault(course, []).append(bundle)
 
-        elif sec["type"] not in ("LAB",) and sec["parent_class_id"] is None:
-            # Standalone bundle (LEC, SEM, etc.) — skip non-schedulable types
-            if sec["type"] in ("THE", "SPR", "PRA"):
+        elif sec["type"] not in ("LAB", "RCT", "CPT") and sec["parent_class_id"] is None:
+            #Standalone bundle (LEC, SEM, etc.) — skip non-schedulable types
+            if sec["type"] in ("THE", "SPR", "PRA", "DSR", "STO"):
                 continue
             lec_meetings = meetings.get(cid, [])
             lec_open = sec["active_size"] < sec["max_size"] if sec["max_size"] > 0 else False
@@ -179,7 +179,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
     return bundles
 
 
-# ----------------------------------------------------------------- conflict checker
+#conflict checker
 
 def meetings_overlap(m1: list, m2: list) -> bool:
     """
@@ -194,8 +194,7 @@ def meetings_overlap(m1: list, m2: list) -> bool:
     return False
 
 
-# ----------------------------------------------------------------- CSP class
-
+#CSP class
 class SchedulerCSP:
     """
     Variables  : curriculum slot names for the target year/term/track
@@ -239,27 +238,33 @@ class SchedulerCSP:
         self.require_open = require_open_slot
         self.allow_consent = allow_consent
 
-        # Resolve curriculum path
+        #non-CMSC programs require dept consent for their own core courses.
+        #auto-enable so users don't need --allow-consent every time.
+        self.deg_prog = (deg_prog or "").lower()
+        if not allow_consent and self.deg_prog not in ("cmsc", ""):
+            allow_consent = True
+            self.allow_consent = True
+
+        #resolve curriculum path
         if curriculum_path is None:
             if deg_prog is None:
                 raise ValueError(
                     "Provide either curriculum_path or deg_prog."
                 )
             if data_dir is None:
-                # default: data/ folder two levels above this file
+                #default: data/folder two levels above this file
                 data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
             curriculum_path = resolve_curriculum_path(deg_prog, data_dir)
 
-        self.deg_prog = (deg_prog or "").lower()
         self.curriculum_path = curriculum_path
 
-        # Load raw data
+        #load raw data
         sections = load_sections(sections_path)
         meetings = load_meetings(meetings_path)
         curriculum = load_curriculum(curriculum_path)
         all_bundles = build_bundles(sections, meetings)
 
-        # Build variables and domains
+        #Build variables and domains
         self.variables: list = []
         self.domains: dict = {}       # slot_name -> [bundle, ...]
         self.slot_courses: dict = {}  # slot_name -> course_code (for display)
@@ -273,17 +278,17 @@ class SchedulerCSP:
                 continue
 
             slot = row["slot"]
-            # options can be "CMSC 124" or "HK 12|HK 13" (pick any)
+            #options can be "CMSC 124" or "HK 12|HK 13" (pick any)
             options = [o.strip() for o in row["options"].split("|")]
 
-            # Skip GE / ELECTIVE / NSTP slots — not in dataset
+            #Skip GE / ELECTIVE / NSTP slots — not in dataset
             if any(o in ("GE", "ELECTIVE", "NSTP") for o in options):
                 continue
-            # Skip PE slots (HK courses)
+            #Skip PE slots (HK courses)
             if row["kind"] == "PE":
                 continue
 
-            # Gather all bundles for this slot across all option codes
+            #Gather all bundles for this slot across all option codes
             valid_bundles = []
             for course_code in options:
                 for b in all_bundles.get(course_code, []):
@@ -298,11 +303,14 @@ class SchedulerCSP:
                 self.domains[slot] = valid_bundles
                 self.slot_courses[slot] = "/".join(options)
 
-        # Pre-compute neighbors (fully connected — any two courses can conflict)
+        #Pre-compute neighbors (fully connected — any two courses can conflict)
         self.neighbors: dict = {
             v: [u for u in self.variables if u != v]
             for v in self.variables
         }
+
+        #Keep curriculum rows for diagnostics in summary()
+        self._curriculum_rows = curriculum
 
     def is_consistent(self, slot: str, bundle: dict, assignment: dict) -> bool:
         """
@@ -333,9 +341,37 @@ class SchedulerCSP:
         deg = f" ({self.deg_prog.upper()})" if self.deg_prog else ""
         print(f"\n{'='*55}")
         print(f"  AMIS Scheduler CSP{deg}  —  Year {self.year}, Term {self.term}, Track {self.track}")
+        print(f"  allow_consent={self.allow_consent}")
         print(f"{'='*55}")
         print(f"  Variables : {len(self.variables)}")
         for v in self.variables:
             d = self.domains[v]
             print(f"    {v:12s}  ({self.slot_courses[v]:20s})  {len(d):3d} bundles")
+
+        #report slots that were silently dropped (no bundles found)
+        dropped = []
+        for row in self._curriculum_rows:
+            if int(row["year"]) != self.year:
+                continue
+            if row["term"] != self.term:
+                continue
+            if row["track"] not in ("ALL", self.track):
+                continue
+            slot = row["slot"]
+            if slot in self.variables:
+                continue
+            options = [o.strip() for o in row["options"].split("|")]
+            if any(o in ("GE", "ELECTIVE", "NSTP") for o in options):
+                continue
+            if row["kind"] == "PE":
+                continue
+            dropped.append((slot, "/".join(options)))
+
+        if dropped:
+            print(f"\n  WARNING — {len(dropped)} slot(s) dropped (no bundles in dataset):")
+            for s, c in dropped:
+                print(f"    {s:12s}  {c}")
+            print("  Fix: correct the course code in the curriculum CSV,")
+            print("       or scrape + rebuild datasets for the missing subject.")
+
         print(f"{'='*55}\n")
