@@ -7,14 +7,15 @@ whether each method found a solution.
 
 Usage:
     python plot_results.py                    # defaults: cmsc, FS, SP
-    python plot_results.py --deg-prog stat
-    python plot_results.py --deg-prog math --term SS --track TH
+    python plot_results.py --deg-prog stat --allow-consent
+    python plot_results.py --deg-prog math --term SS --track TH --allow-consent
 
 Arguments:
-    --deg-prog   Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
-                 (default: cmsc)
-    --term       FS or SS (default: FS)
-    --track      Track code, e.g. SP or TH (default: SP)
+    --deg-prog        Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
+                      (default: cmsc)
+    --term            FS or SS (default: FS)
+    --track           Track code, e.g. SP or TH (default: SP)
+    --allow-consent   Include sections requiring D/I consent (needed for non-CMSC programs)
 
 Output: saves PNG figures to ../figures/<deg_prog>/ (created if needed).
 """
@@ -36,7 +37,7 @@ import min_conflicts
 import simulated_annealing
 
 
-# paths (relative to this file)
+#paths (relative to this file)
 BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
 SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
 MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
@@ -53,7 +54,7 @@ COLORS = ["#4C72B0", "#55A868", "#C44E52", "#8172B2"]
 
 # ----------------------------------------------------------------- runners
 
-def run_instance(cfg: dict, deg_prog: str) -> list:
+def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
     """Run all 4 methods on one problem instance. Returns list of result dicts."""
     print(f"\n  Loading: {cfg['label']}")
     csp = SchedulerCSP(
@@ -65,7 +66,7 @@ def run_instance(cfg: dict, deg_prog: str) -> list:
         term              = cfg["term"],
         track             = cfg["track"],
         require_open_slot = False,
-        allow_consent     = False,
+        allow_consent     = allow_consent,
     )
 
     n_vars = len(csp.variables)
@@ -221,11 +222,15 @@ def main():
                     help="Semester: FS or SS (default: FS)")
     ap.add_argument("--track", default="SP",
                     help="Track code e.g. SP or TH (default: SP)")
+    ap.add_argument("--allow-consent", action="store_true",
+                    help="Include sections requiring D/I consent "
+                        "(auto-enabled for non-CMSC programs)")
     args = ap.parse_args()
 
     deg = args.deg_prog.upper()
     print("=" * 55)
     print(f"  plot_results.py — AMIS Scheduler CSP ({deg})")
+    print(f"  allow_consent={args.allow_consent}")
     print("=" * 55)
 
     # figures go into figures/<deg_prog>/
@@ -246,7 +251,7 @@ def main():
     instance_labels = []
 
     for cfg in instances:
-        results = run_instance(cfg, args.deg_prog)
+        results = run_instance(cfg, args.deg_prog, allow_consent=args.allow_consent)
         if results:
             all_results.append(results)
             instance_labels.append(cfg["label"])
