@@ -29,6 +29,10 @@ DEG_PROG_MAP = {
     "chem":  "curriculum_chem.csv",
     "agch":  "curriculum_agch.csv",
     "bio":   "curriculum_bio.csv",
+    "mst":   "curriculum_mst.csv",
+    "soc":   "curriculum_soc.csv",
+    "phlo":  "curriculum_phlo.csv",
+    "coma":  "curriculum_coma.csv",
 }
 
 
