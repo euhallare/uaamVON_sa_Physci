@@ -1,18 +1,21 @@
 """
+DOCUMENTATION FOR evaluate.py
+
 evaluate.py — Run all 4 CSP methods on the same problem instance
               and print a comparison table.
 
 Usage:
-    python evaluate.py                        # defaults: cmsc, year 3, FS, SP
-    python evaluate.py --deg-prog stat
-    python evaluate.py --deg-prog math --year 2 --term SS --track TH
+    python evaluate.py #defaults: cmsc, year 3, FS, SP
+    python evaluate.py --deg-prog stat --allow-consent
+    python evaluate.py --deg-prog math --year 2 --term SS --track TH --allow-consent
 
 Arguments:
-    --deg-prog   Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
-                 (default: cmsc)
-    --year       Curriculum year 1–4 (default: 3)
-    --term       FS or SS (default: FS)
-    --track      Track code, e.g. SP or TH (default: SP)
+    --deg-prog        Degree program: cmsc, stat, math, amat, ap, chem, agch, bio
+                      (default: cmsc)
+    --year            Curriculum year 1–4 (default: 3)
+    --term            FS or SS (default: FS)
+    --track           Track code, e.g. SP or TH (default: SP)
+    --allow-consent   Include sections requiring D/I consent (needed for non-CMSC programs)
 """
 
 import argparse
@@ -28,13 +31,12 @@ import min_conflicts
 import simulated_annealing
 
 
-# paths (relative to this file)
+#paths (relative to this file)
 BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
 SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
 MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
 
 
-# ----------------------------------------------------------------- pretty printers
 
 DAY_ORDER = {"M": 0, "T": 1, "W": 2, "Th": 3, "F": 4, "S": 5}
 
@@ -87,7 +89,7 @@ def print_comparison(results: list):
         print(f"  {r['method']:<35} {str(nodes):>11} {str(backs):>12} {str(uphill):>7} {t:>9} {solved:>7}")
     print(f"{'='*80}\n")
 
-    # ---- Recommendation ----
+    #Recommendation
     print("  RECOMMENDATION")
     print(f"  {'-'*60}")
 
@@ -125,11 +127,14 @@ def print_comparison(results: list):
     print(f"{'='*80}\n")
 
 
-# ----------------------------------------------------------------- main
+#main function
 
 def main():
+    #argparse setup
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    
+    #arguments
     ap.add_argument("--deg-prog", default="cmsc",
                     choices=list(DEG_PROG_MAP),
                     help="Degree program (default: cmsc)")
@@ -139,21 +144,25 @@ def main():
                     help="Semester: FS or SS (default: FS)")
     ap.add_argument("--track", default="SP",
                     help="Track code e.g. SP or TH (default: SP)")
+    ap.add_argument("--allow-consent", action="store_true",
+                    help="Include sections requiring D/I consent "
+                        "(auto-enabled for non-CMSC programs)")
     args = ap.parse_args()
 
     print(f"Loading CSP problem — deg_prog={args.deg_prog.upper()}, "
-          f"year={args.year}, term={args.term}, track={args.track} ...")
+          f"year={args.year}, term={args.term}, track={args.track}, "
+          f"allow_consent={args.allow_consent} ...")
 
     csp = SchedulerCSP(
-        sections_path   = SECTIONS,
-        meetings_path   = MEETINGS,
-        deg_prog        = args.deg_prog,
-        data_dir        = BASE,
-        year            = args.year,
-        term            = args.term,
-        track           = args.track,
+        sections_path     = SECTIONS,
+        meetings_path     = MEETINGS,
+        deg_prog          = args.deg_prog,
+        data_dir          = BASE,
+        year              = args.year,
+        term              = args.term,
+        track             = args.track,
         require_open_slot = False,
-        allow_consent     = False,
+        allow_consent     = args.allow_consent,
     )
     csp.summary()
 
