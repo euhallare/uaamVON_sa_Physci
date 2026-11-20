@@ -1,9 +1,4 @@
-# Name: John Denmark G. Hernandez
-# Student No.: 2024-03039
-# Course and Section: CMSC 170 EF-1L
-# Exercise: Project Milestone 3 - curriculum CSV checker
-# AI Use: Written with help from Claude (Anthropic); I can explain every line.
-# Handout: Lab Project Guidelines - code rules (stdlib only), milestone deliverables
+
 
 import csv
 import os
