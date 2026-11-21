@@ -39,47 +39,44 @@ DEFAULT_TERM_ID = 1261          # current term; change with --term
 DELAY = (1.0, 2.0)              # random pause (seconds) between requests - be gentle
 
 SUBJECT_SETS = {
-    # for testing
     "small": ["CMSC"],
-    # for scraping everything in one line
-    "all_curricula": [
-        "CMSC", "MATH", "STAT", "PHYS", "CHEM", "BIO", "BOT", "ZOO", 
-        "AGCH", "GEOL", "AGRI", "ECON", "AAE", "AMAT", "COMA", "ABME", 
-        "HK", "NSTP", "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"
-    ],
-    # BS CS (2018)
     "cs": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
            "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
-           
-    # BS STAT (2018)
-    "stat": ["STAT", "BIO", "MATH", "CMSC", "ECON", "ABME",
-             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
 
-    # BS MATH (2018)
-    "math": ["MATH", "CMSC", "STAT", "PHYS", "HK", "NSTP", "ETHICS", "STS",
-             "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+    "amat": ["AMAT", "MATH", "STAT", "BIO", "CHEM", "PHYS", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "COMA"],
 
-    # BS APPLIED MATH (2018)
-    "appmath": ["MATH", "CMSC", "STAT", "PHYS", "ECON", "HK", "NSTP", "ETHICS", "STS",
-                "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+    "ap": ["APHY", "PHYS", "MATH", "CHEM", "HK", "NSTP",
+           "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "COMA"],
 
-    # BS APPLIED PHYSICS (2018)
-    "appphysics": ["PHYS", "MATH", "CMSC", "HK", "NSTP", "ETHICS", "STS",
-                   "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+    "bio": ["BIO", "BOT", "ZOO", "MCB", "CHEM", "MATH", "STAT", "PHYS", "ABME",
+            "HK", "NSTP", "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "COMA"],
 
-    # BS CHEM (2018)
-    "chem": ["CHEM", "MATH", "MCB", "PHYS", "GEOL", "STAT", "CMSC", "AMAT", "NSTP", 
-             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+    "chem": ["CHEM", "MCB", "MATH", "PHYS", "STAT", "CMSC", "AMAT", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM"],
 
-    # BS AGRI CHEM (2018)
-    "agrichem": ["CHEM", "AGCH", "MATH", "MCB", "PHYS", "BIO", "AGRI", "BOT", 
-                 "ECON", "AAE", "STAT", "CMSC", "AMAT", "NSTP", 
-                 "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+    "agch": ["CHEM", "ACHEM", "AGRI", "AAE", "BIO", "BOT", "MCB", "PHYS", "MATH",
+             "STAT", "CMSC", "AMAT", "ECON", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM"],
 
-    # BS BIO (2021)
-    "bio": ["BIO", "CHEM", "MATH", "BOT", "ZOO", "PHYS", "STAT", 
-            "COMA", "ABME", "NSTP", "ETHICS", "STS", "ARTS", 
-            "KAS", "HIST", "PI", "COMM", "ENG", "HK"],
+    "math": ["MATH", "AMAT", "STAT", "BIO", "CHEM", "PHYS", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "COMA"],
+
+    "stat": ["STAT", "MATH", "CMSC", "BIO", "ECON", "ABME", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
+
+    "mst": ["MST", "BIO", "CHEM", "PHYS", "MATH", "AMAT", "APHY", "BOT", "ZOO", "MCB",
+            "STAT", "CMSC", "EDUC", "DEVC", "SPCM", "HFDS", "HK", "NSTP",
+            "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM", "COMA"],
+
+    "coma": ["COMA", "HUM", "SPCM", "THEA", "ENG", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM"],
+
+    "phlo": ["PHLO", "ECON", "POSC", "HK", "NSTP",
+             "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM"],
+
+    "soc": ["SOC", "ANTH", "PSY", "POSC", "ECON", "AERS", "STAT", "HK", "NSTP",
+            "ETHICS", "STS", "ARTS", "KAS", "HIST", "PI", "COMM"],
 }
 
 # Keys removed everywhere in the JSON before saving (instructor identity).
