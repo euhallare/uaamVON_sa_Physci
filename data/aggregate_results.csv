@@ -59,3 +59,15 @@ chem,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.0006147000021883287,,True
 chem,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,7.929999992484227e-05,15,True
 chem,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,5,6.829999620094895e-05,,True
 chem,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,6,2.5199995434377342e-05,,True
+cmsc,1,FS,SP,Backtracking,Y1 FS SP,5,41,,0.008637999999336898,,True
+cmsc,1,FS,SP,Forward Checking,Y1 FS SP,5,5,,0.00016769999638199806,61,True
+cmsc,1,FS,SP,Min-Conflicts,Y1 FS SP,5,,2,8.440000237897038e-05,,True
+cmsc,1,FS,SP,Simulated Annealing,Y1 FS SP,5,,38,0.0002162000018870458,,True
+cmsc,2,FS,SP,Backtracking,Y2 FS SP,6,15,,0.002938099998573307,,True
+cmsc,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.0002900000035879202,29,True
+cmsc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,3,0.0001886000027297996,,True
+cmsc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,30,0.00021579999884124845,,True
+cmsc,3,FS,SP,Backtracking,Y3 FS SP,6,11,,0.009201900000334717,,True
+cmsc,3,FS,SP,Forward Checking,Y3 FS SP,6,6,,0.00029429999995045364,56,True
+cmsc,3,FS,SP,Min-Conflicts,Y3 FS SP,6,,2,0.0002645999993546866,,True
+cmsc,3,FS,SP,Simulated Annealing,Y3 FS SP,6,,22,0.00020759999461006373,,True
