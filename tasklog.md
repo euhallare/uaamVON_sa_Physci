@@ -86,6 +86,7 @@ Denmark
 Eliza
 - ran the results for the figures in each degprog: agch, amat, ap, bio, chem, math, stat, coma, mst, phlo, and soc
 - helped in making the PPT presentation
+- added and pushed aggregate_results.py 
 
 Jiro
 - scraped the courses of the last degprogs we added: coma, mst, phlo, and soc
