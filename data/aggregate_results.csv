@@ -95,3 +95,7 @@ math,3,FS,SP,Backtracking,Y3 FS SP,5,7,,0.002707500000269647,,True
 math,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.0002129999998032872,19,True
 math,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,2,7.269999969139462e-05,,True
 math,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,1,3.400000014153193e-05,,True
+mst,1,FS,SP,Backtracking,Y1 FS SP,6,17,,0.009424899999885383,,True
+mst,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.00017319999960818677,18,True
+mst,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,3,8.179999986168696e-05,,True
+mst,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,2.3800000235496555e-05,,True
