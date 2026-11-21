@@ -123,3 +123,15 @@ soc,3,FS,SP,Backtracking,Y3 FS SP,3,3,,6.639999992330559e-05,,True
 soc,3,FS,SP,Forward Checking,Y3 FS SP,3,3,,3.890000016326667e-05,0,True
 soc,3,FS,SP,Min-Conflicts,Y3 FS SP,3,,1,1.8900000213761814e-05,,True
 soc,3,FS,SP,Simulated Annealing,Y3 FS SP,3,,1,2.0899999981338624e-05,,True
+stat,1,FS,SP,Backtracking,Y1 FS SP,6,37,,0.021504800000002433,,True
+stat,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.000324099999943428,74,True
+stat,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,5,0.0004894999997304694,,True
+stat,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,7,8.900000011635711e-05,,True
+stat,2,FS,SP,Backtracking,Y2 FS SP,6,12,,0.0061928999998599465,,True
+stat,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.00021030000016253325,43,True
+stat,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,3,0.0004109999999855063,,True
+stat,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,3,4.649999982575537e-05,,True
+stat,3,FS,SP,Backtracking,Y3 FS SP,5,7,,0.003154500000164262,,True
+stat,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.00026130000014745747,29,True
+stat,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,3,0.00025629999981902074,,True
+stat,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,1,6.369999982780428e-05,,True
