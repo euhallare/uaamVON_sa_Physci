@@ -47,3 +47,15 @@ bio,3,FS,SP,Backtracking,Y3 FS SP,5,28,,0.009512600001471583,,True
 bio,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.000523599999723956,52,True
 bio,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,1,5.579999560723081e-05,,True
 bio,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,9,0.00015929999790387228,,True
+chem,1,FS,SP,Backtracking,Y1 FS SP,6,29,,0.04564589999790769,,True
+chem,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0005289000037009828,63,True
+chem,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,5.1700000767596066e-05,,True
+chem,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,3.149999974993989e-05,,True
+chem,2,FS,SP,Backtracking,Y2 FS SP,4,7,,0.00026500000240048394,,True
+chem,2,FS,SP,Forward Checking,Y2 FS SP,4,4,,5.059999966761097e-05,9,True
+chem,2,FS,SP,Min-Conflicts,Y2 FS SP,4,,1,1.720000000204891e-05,,True
+chem,2,FS,SP,Simulated Annealing,Y2 FS SP,4,,31,0.00013100000069243833,,True
+chem,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.0006147000021883287,,True
+chem,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,7.929999992484227e-05,15,True
+chem,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,5,6.829999620094895e-05,,True
+chem,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,6,2.5199995434377342e-05,,True
