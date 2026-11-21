@@ -1,0 +1,1019 @@
+.
+├── README.md
+├── __pycache__
+│   └── auth.cpython-312.pyc
+├── amis_session
+│   ├── BrowserMetrics
+│   │   └── BrowserMetrics-6ADC5342-3BE5.pma
+│   ├── Default
+│   │   ├── Account Web Data
+│   │   ├── Account Web Data-journal
+│   │   ├── Accounts
+│   │   │   └── Avatar Images
+│   │   │       └── 117630654769193521772
+│   │   ├── Affiliation Database
+│   │   ├── Affiliation Database-journal
+│   │   ├── AutofillAiModelCache
+│   │   │   ├── LOCK
+│   │   │   └── LOG
+│   │   ├── AutofillStrikeDatabase
+│   │   │   ├── LOCK
+│   │   │   └── LOG
+│   │   ├── BookmarkMergedSurfaceOrdering
+│   │   ├── BudgetDatabase
+│   │   │   ├── LOCK
+│   │   │   └── LOG
+│   │   ├── Cache
+│   │   │   ├── Cache_Data
+│   │   │   │   ├── 048b28b1c46ed218_0
+│   │   │   │   ├── 0547f9e8d3d43d0d_0
+│   │   │   │   ├── 06151e00e4682daa_0
+│   │   │   │   ├── 10020387d7e142c5_0
+│   │   │   │   ├── 117ba6737c07f763_0
+│   │   │   │   ├── 186b49b8ab6058b2_0
+│   │   │   │   ├── 1e965149fe3a9853_0
+│   │   │   │   ├── 216756e54647f595_0
+│   │   │   │   ├── 30dfc2b91be768f7_0
+│   │   │   │   ├── 30f00d1703d8bb1c_0
+│   │   │   │   ├── 31143f154bf1d579_0
+│   │   │   │   ├── 31d6a744e5ae73f0_0
+│   │   │   │   ├── 366f2e307875d667_0
+│   │   │   │   ├── 38716ebfe4916311_0
+│   │   │   │   ├── 397d23b9c93d1753_0
+│   │   │   │   ├── 39871a561fa914c1_0
+│   │   │   │   ├── 3d349aa2a1c303f5_0
+│   │   │   │   ├── 4a5dbbdf75d819f2_0
+│   │   │   │   ├── 4dda7147f10c6300_0
+│   │   │   │   ├── 4f2d2911302cc2ae_0
+│   │   │   │   ├── 55915efa828e25d3_0
+│   │   │   │   ├── 5d361c32f091e62f_0
+│   │   │   │   ├── 66dd93abb990dd9d_0
+│   │   │   │   ├── 6c53f23e1911ba3f_0
+│   │   │   │   ├── 7071fc134df83c6f_0
+│   │   │   │   ├── 74c41a3f6fc0beb2_0
+│   │   │   │   ├── 75a018066c885108_0
+│   │   │   │   ├── 7dd5bd5170639336_0
+│   │   │   │   ├── 804327c85ddcaa06_0
+│   │   │   │   ├── 8aad04f69e2250ee_0
+│   │   │   │   ├── 8e907c118e303632_0
+│   │   │   │   ├── 8f0ca3a57f56bdcb_0
+│   │   │   │   ├── 938765647e84b2c5_0
+│   │   │   │   ├── 940dd4f93d1fb7b4_0
+│   │   │   │   ├── 95c34ca61b96374b_0
+│   │   │   │   ├── 95f197bb674447de_0
+│   │   │   │   ├── 97be2a5de0844a4d_0
+│   │   │   │   ├── 9db999c444866c7c_0
+│   │   │   │   ├── 9f8a5168a05f2fc6_0
+│   │   │   │   ├── ad8caea71953be51_0
+│   │   │   │   ├── b008e9a53ad4d961_0
+│   │   │   │   ├── b55942d407213452_0
+│   │   │   │   ├── bb955bde4d8c4184_0
+│   │   │   │   ├── beb88d32e58448c1_0
+│   │   │   │   ├── c1458e62e62a8a6e_0
+│   │   │   │   ├── c285ba160af8c0f2_0
+│   │   │   │   ├── c7d5b5ee9afbc3a3_0
+│   │   │   │   ├── c91535b9e9d62ac9_0
+│   │   │   │   ├── caf6cebe57c576e7_0
+│   │   │   │   ├── d05f8e8472730445_0
+│   │   │   │   ├── d26de9321e8868d6_0
+│   │   │   │   ├── d580b288922f807e_0
+│   │   │   │   ├── d834967bdff7cc07_0
+│   │   │   │   ├── e3858a6721eeb201_0
+│   │   │   │   ├── e8c51aa33f14b865_0
+│   │   │   │   ├── e9c459daf228fccd_0
+│   │   │   │   ├── ec3025bb4cf2c01c_0
+│   │   │   │   ├── f2347facc1e193e7_0
+│   │   │   │   ├── f3faacaeb6434dd8_0
+│   │   │   │   ├── f536d18bbc6028a2_0
+│   │   │   │   ├── f6bbef860ffd0d75_0
+│   │   │   │   ├── f99ad9917c585442_0
+│   │   │   │   ├── fc3a5ebcdb476393_0
+│   │   │   │   ├── index
+│   │   │   │   └── index-dir
+│   │   │   │       └── the-real-index
+│   │   │   └── No_Vary_Search
+│   │   │       ├── journal.baj
+│   │   │       └── snapshot.baf
+│   │   ├── ClientCertificates
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── Code Cache
+│   │   │   ├── js
+│   │   │   │   ├── 01fdbe28bf6ea6a0_0
+│   │   │   │   ├── 0bb22c2eee17e439_0
+│   │   │   │   ├── 1065c3f356ebd4ee_0
+│   │   │   │   ├── 25f846253926b960_0
+│   │   │   │   ├── 2efcc23a143bd029_0
+│   │   │   │   ├── 34a77a635f4108a5_0
+│   │   │   │   ├── 3ed04afd9700a685_0
+│   │   │   │   ├── 502dd2ee2d6b660a_0
+│   │   │   │   ├── 57422f04d7f8cf88_0
+│   │   │   │   ├── 5aeae6337830cfee_0
+│   │   │   │   ├── 6146f595cffb70d9_0
+│   │   │   │   ├── 62229c60a08caa06_0
+│   │   │   │   ├── 62f35897f5b4916e_0
+│   │   │   │   ├── 6659c7b86c34f8ba_0
+│   │   │   │   ├── 6acd47c74add308a_0
+│   │   │   │   ├── 6db0e1bc4813f796_0
+│   │   │   │   ├── 7a7f429ea964415c_0
+│   │   │   │   ├── 7eb9e0d33d52e6d5_0
+│   │   │   │   ├── 8705d5e723594d71_0
+│   │   │   │   ├── 89b3afa96653e8d5_0
+│   │   │   │   ├── 8dce2fa379be0f00_0
+│   │   │   │   ├── 916f44b690e2cc57_0
+│   │   │   │   ├── 98554c024bf2c7ba_0
+│   │   │   │   ├── 99f34aa63e4ecfe7_0
+│   │   │   │   ├── aa79068e185772db_0
+│   │   │   │   ├── aeba676313a3d8ed_0
+│   │   │   │   ├── bcc246d0d67e6f1f_0
+│   │   │   │   ├── cce9a743b1f93665_0
+│   │   │   │   ├── dc6ed2ef0e2d8873_0
+│   │   │   │   ├── e3da864eecc867d0_0
+│   │   │   │   ├── f6a6549e3d5a29ad_0
+│   │   │   │   ├── fc73d24aefc0195b_0
+│   │   │   │   ├── index
+│   │   │   │   └── index-dir
+│   │   │   │       └── the-real-index
+│   │   │   └── wasm
+│   │   │       ├── index
+│   │   │       └── index-dir
+│   │   │           └── the-real-index
+│   │   ├── Cookies
+│   │   ├── Cookies-journal
+│   │   ├── DIPS
+│   │   ├── DawnGraphiteCache
+│   │   │   ├── data_0
+│   │   │   ├── data_1
+│   │   │   ├── data_2
+│   │   │   ├── data_3
+│   │   │   └── index
+│   │   ├── DawnWebGPUCache
+│   │   │   ├── data_0
+│   │   │   ├── data_1
+│   │   │   ├── data_2
+│   │   │   ├── data_3
+│   │   │   └── index
+│   │   ├── Extension Rules
+│   │   │   ├── 000003.log
+│   │   │   ├── CURRENT
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── MANIFEST-000001
+│   │   ├── Extension Scripts
+│   │   │   ├── 000003.log
+│   │   │   ├── CURRENT
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── MANIFEST-000001
+│   │   ├── Extension State
+│   │   │   ├── 000003.log
+│   │   │   ├── CURRENT
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   ├── LOG.old
+│   │   │   └── MANIFEST-000001
+│   │   ├── Favicons
+│   │   ├── Favicons-journal
+│   │   ├── GPUCache
+│   │   │   ├── data_0
+│   │   │   ├── data_1
+│   │   │   ├── data_2
+│   │   │   ├── data_3
+│   │   │   └── index
+│   │   ├── History
+│   │   ├── History-journal
+│   │   ├── LOCK
+│   │   ├── LOG
+│   │   ├── LOG.old
+│   │   ├── Local Storage
+│   │   │   └── leveldb
+│   │   │       ├── 000003.log
+│   │   │       ├── CURRENT
+│   │   │       ├── LOCK
+│   │   │       ├── LOG
+│   │   │       ├── LOG.old
+│   │   │       └── MANIFEST-000001
+│   │   ├── Login Data
+│   │   ├── Login Data For Account
+│   │   ├── Login Data For Account-journal
+│   │   ├── Login Data-journal
+│   │   ├── MediaDeviceSalts
+│   │   ├── MediaDeviceSalts-journal
+│   │   ├── Network Action Predictor
+│   │   ├── Network Action Predictor-journal
+│   │   ├── Network Persistent State
+│   │   ├── PersistentOriginTrials
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── Preferences
+│   │   ├── PreferredApps
+│   │   ├── README
+│   │   ├── Reporting and NEL
+│   │   ├── Reporting and NEL-journal
+│   │   ├── SCT Auditing Pending Reports
+│   │   ├── Secure Preferences
+│   │   ├── Segmentation Platform
+│   │   │   ├── SegmentInfoDB
+│   │   │   │   ├── LOCK
+│   │   │   │   ├── LOG
+│   │   │   │   └── LOG.old
+│   │   │   ├── SignalDB
+│   │   │   │   ├── LOCK
+│   │   │   │   ├── LOG
+│   │   │   │   └── LOG.old
+│   │   │   └── SignalStorageConfigDB
+│   │   │       ├── LOCK
+│   │   │       ├── LOG
+│   │   │       └── LOG.old
+│   │   ├── ServerCertificate
+│   │   ├── ServerCertificate-journal
+│   │   ├── Session Storage
+│   │   │   ├── 000003.log
+│   │   │   ├── CURRENT
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── MANIFEST-000001
+│   │   ├── Sessions
+│   │   │   ├── Session_13437297620900023
+│   │   │   ├── Session_13437297732603614
+│   │   │   ├── Tabs_13437297646492247
+│   │   │   └── Tabs_13437297732632069
+│   │   ├── Sessions_Encrypted
+│   │   │   ├── Session_13437297620900460
+│   │   │   ├── Session_13437297732603813
+│   │   │   ├── Tabs_13437297646493763
+│   │   │   └── Tabs_13437297732632243
+│   │   ├── Shared Dictionary
+│   │   │   ├── cache
+│   │   │   │   ├── index
+│   │   │   │   └── index-dir
+│   │   │   │       └── the-real-index
+│   │   │   ├── db
+│   │   │   └── db-journal
+│   │   ├── Shortcuts
+│   │   ├── Shortcuts-journal
+│   │   ├── Site Characteristics Database
+│   │   │   ├── 000003.log
+│   │   │   ├── CURRENT
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   ├── LOG.old
+│   │   │   └── MANIFEST-000001
+│   │   ├── Sync Data
+│   │   │   └── LevelDB
+│   │   │       ├── 000003.log
+│   │   │       ├── CURRENT
+│   │   │       ├── LOCK
+│   │   │       ├── LOG
+│   │   │       ├── LOG.old
+│   │   │       └── MANIFEST-000001
+│   │   ├── Top Sites
+│   │   ├── Top Sites-journal
+│   │   ├── TransportSecurity
+│   │   ├── Trust Tokens
+│   │   ├── Trust Tokens-journal
+│   │   ├── Web Data
+│   │   ├── Web Data-journal
+│   │   ├── WebStorage
+│   │   │   ├── QuotaManager
+│   │   │   └── QuotaManager-journal
+│   │   ├── blob_storage
+│   │   │   └── d61ea37e-c2db-4594-95cc-677ce54d7903
+│   │   ├── chrome_cart_db
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── commerce_subscription_db
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── declarative_performance_observer.db
+│   │   ├── declarative_performance_observer.db-journal
+│   │   ├── discount_infos_db
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── discounts_db
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   ├── heavy_ad_intervention_opt_out.db
+│   │   ├── heavy_ad_intervention_opt_out.db-journal
+│   │   ├── parcel_tracking_db
+│   │   │   ├── LOCK
+│   │   │   ├── LOG
+│   │   │   └── LOG.old
+│   │   └── shared_proto_db
+│   │       ├── 000003.log
+│   │       ├── CURRENT
+│   │       ├── LOCK
+│   │       ├── LOG
+│   │       ├── LOG.old
+│   │       ├── MANIFEST-000001
+│   │       └── metadata
+│   │           ├── 000003.log
+│   │           ├── CURRENT
+│   │           ├── LOCK
+│   │           ├── LOG
+│   │           ├── LOG.old
+│   │           └── MANIFEST-000001
+│   ├── GPUPersistentCache
+│   │   └── GPUCache
+│   │       └── YF5VMOBI52WA3DFF427RKLTHQJGSGYDU
+│   │           ├── cache.db
+│   │           └── cache.db-wal
+│   ├── Last Version
+│   ├── Local State
+│   ├── NativeMessagingHosts
+│   ├── OptimizationGuideModelsManifest
+│   ├── Safe Browsing
+│   ├── Variations
+│   ├── component_crx_cache
+│   │   └── metadata.json
+│   ├── extensions_crx_cache
+│   │   └── metadata.json
+│   └── segmentation_platform
+│       └── ukm_db
+├── auth.py
+├── build_datasets.py
+├── data
+│   ├── curriculum_agch.csv
+│   ├── curriculum_amat.csv
+│   ├── curriculum_ap.csv
+│   ├── curriculum_bio.csv
+│   ├── curriculum_chem.csv
+│   ├── curriculum_cmsc.csv
+│   ├── curriculum_math.csv
+│   ├── curriculum_stat.csv
+│   ├── datasets
+│   │   ├── term_1252
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1253
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1254
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1255
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1256
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1257
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1258
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1259
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   ├── term_1260
+│   │   │   ├── faculty
+│   │   │   │   ├── assignments.csv
+│   │   │   │   ├── instance.json
+│   │   │   │   └── instructors.csv
+│   │   │   ├── meetings.csv
+│   │   │   ├── sections.csv
+│   │   │   ├── student
+│   │   │   │   ├── bundles.csv
+│   │   │   │   ├── coverage.csv
+│   │   │   │   └── instances.json
+│   │   │   └── summary.json
+│   │   └── term_1261
+│   │       ├── faculty
+│   │       │   ├── assignments.csv
+│   │       │   ├── instance.json
+│   │       │   └── instructors.csv
+│   │       ├── meetings.csv
+│   │       ├── sections.csv
+│   │       ├── student
+│   │       │   ├── bundles.csv
+│   │       │   ├── coverage.csv
+│   │       │   └── instances.json
+│   │       └── summary.json
+│   └── raw
+│       ├── term_1252
+│       │   ├── ARTS
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   └── page_0003.json
+│       │   ├── CMSC
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   ├── page_0008.json
+│       │   │   ├── page_0009.json
+│       │   │   ├── page_0010.json
+│       │   │   ├── page_0011.json
+│       │   │   ├── page_0012.json
+│       │   │   ├── page_0013.json
+│       │   │   └── page_0014.json
+│       │   ├── COMM
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   └── page_0003.json
+│       │   ├── ENG
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   ├── page_0008.json
+│       │   │   ├── page_0009.json
+│       │   │   ├── page_0010.json
+│       │   │   └── page_0011.json
+│       │   ├── ETHICS
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   └── page_0003.json
+│       │   ├── HK
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   ├── page_0008.json
+│       │   │   └── page_0009.json
+│       │   ├── KAS
+│       │   │   ├── page_0001.json
+│       │   │   └── page_0002.json
+│       │   ├── MATH
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   ├── page_0008.json
+│       │   │   ├── page_0009.json
+│       │   │   └── page_0010.json
+│       │   ├── NSTP
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   └── page_0006.json
+│       │   ├── PI
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   └── page_0003.json
+│       │   ├── STAT
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   ├── page_0008.json
+│       │   │   ├── page_0009.json
+│       │   │   ├── page_0010.json
+│       │   │   └── page_0011.json
+│       │   ├── STS
+│       │   │   ├── page_0001.json
+│       │   │   └── page_0002.json
+│       │   └── meta.json
+│       ├── term_1253
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   ├── page_0007.json
+│       │   │   └── page_0008.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   ├── page_0003.json
+│       │   │   ├── page_0004.json
+│       │   │   ├── page_0005.json
+│       │   │   ├── page_0006.json
+│       │   │   └── page_0007.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   ├── page_0001.json
+│       │   │   └── page_0002.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   ├── page_0001.json
+│       │   │   ├── page_0002.json
+│       │   │   └── page_0003.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1254
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1255
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1256
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1257
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1258
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1259
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       ├── term_1260
+│       │   ├── ARTS
+│       │   │   └── page_0001.json
+│       │   ├── CMSC
+│       │   │   └── page_0001.json
+│       │   ├── COMM
+│       │   │   └── page_0001.json
+│       │   ├── ENG
+│       │   │   └── page_0001.json
+│       │   ├── ETHICS
+│       │   │   └── page_0001.json
+│       │   ├── HK
+│       │   │   └── page_0001.json
+│       │   ├── KAS
+│       │   │   └── page_0001.json
+│       │   ├── MATH
+│       │   │   └── page_0001.json
+│       │   ├── NSTP
+│       │   │   └── page_0001.json
+│       │   ├── PI
+│       │   │   └── page_0001.json
+│       │   ├── STAT
+│       │   │   └── page_0001.json
+│       │   ├── STS
+│       │   │   └── page_0001.json
+│       │   └── meta.json
+│       └── term_1261
+│           ├── AAE
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   └── page_0006.json
+│           ├── ABME
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
+│           ├── AGCH
+│           │   └── page_0001.json
+│           ├── AGRI
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   └── page_0011.json
+│           ├── AMAT
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
+│           ├── ARTS
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
+│           ├── BIO
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   ├── page_0011.json
+│           │   ├── page_0012.json
+│           │   ├── page_0013.json
+│           │   ├── page_0014.json
+│           │   └── page_0015.json
+│           ├── BOT
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
+│           ├── CHEM
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   ├── page_0011.json
+│           │   ├── page_0012.json
+│           │   └── page_0013.json
+│           ├── CMSC
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   └── page_0006.json
+│           ├── COMA
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   ├── page_0011.json
+│           │   ├── page_0012.json
+│           │   ├── page_0013.json
+│           │   ├── page_0014.json
+│           │   ├── page_0015.json
+│           │   ├── page_0016.json
+│           │   ├── page_0017.json
+│           │   ├── page_0018.json
+│           │   ├── page_0019.json
+│           │   ├── page_0020.json
+│           │   └── page_0021.json
+│           ├── COMM
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
+│           ├── ECON
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   └── page_0010.json
+│           ├── ENG
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   └── page_0011.json
+│           ├── ETHICS
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
+│           ├── GEOL
+│           │   └── page_0001.json
+│           ├── HIST
+│           │   ├── page_0001.json
+│           │   └── page_0002.json
+│           ├── HK
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   └── page_0010.json
+│           ├── KAS
+│           │   ├── page_0001.json
+│           │   └── page_0002.json
+│           ├── MATH
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   ├── page_0011.json
+│           │   └── page_0012.json
+│           ├── MCB
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   └── page_0006.json
+│           ├── NSTP
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   └── page_0005.json
+│           ├── PHYS
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   └── page_0005.json
+│           ├── PI
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
+│           ├── STAT
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   └── page_0011.json
+│           ├── STS
+│           │   ├── page_0001.json
+│           │   └── page_0002.json
+│           ├── ZOO
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
+│           └── meta.json
+├── figures
+│   ├── fig1_nodes_explored.png
+│   ├── fig1b_steps.png
+│   ├── fig2_time.png
+│   ├── fig3_backtracks.png
+│   ├── fig3_pruned_values.png
+│   ├── fig4_solved.png
+│   └── fig5_overview.png
+├── scrape.py
+├── solver
+│   ├── __pycache__
+│   │   ├── backtracking.cpython-312.pyc
+│   │   ├── csp.cpython-312.pyc
+│   │   ├── forward_checking.cpython-312.pyc
+│   │   ├── min_conflicts.cpython-312.pyc
+│   │   └── simulated_annealing.cpython-312.pyc
+│   ├── backtracking.py
+│   ├── csp.py
+│   ├── evaluate.py
+│   ├── forward_checking.py
+│   ├── min_conflicts.py
+│   ├── plot_results.py
+│   └── simulated_annealing.py
+├── tasklog.md
+└── tree.txt
+
+242 directories, 775 files

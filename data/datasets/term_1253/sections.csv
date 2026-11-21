@@ -1,0 +1,409 @@
+class_id,course_id,course_code,subject,course_number,title,type,section,parent_class_id,units,max_size,active_size,facility_id,sem_offered,consent,acad_org,prerequisites,n_meetings,weekly_minutes,source
+596107,2933,AENG 200,AENG,200,Undergraduate Thesis,THE,A29,,1,30,0,,--,I,LBIABE,,0,0,row
+595964,1808,AENG 300,AENG,300,Master's Thesis,THE,A11,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595965,1808,AENG 300,AENG,300,Master's Thesis,THE,A13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595966,1808,AENG 300,AENG,300,Master's Thesis,THE,A14,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595967,1808,AENG 300,AENG,300,Master's Thesis,THE,A15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595968,1808,AENG 300,AENG,300,Master's Thesis,THE,A17,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595969,1808,AENG 300,AENG,300,Master's Thesis,THE,A18,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595970,1808,AENG 300,AENG,300,Master's Thesis,THE,A21,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595971,1808,AENG 300,AENG,300,Master's Thesis,THE,A22,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595972,1808,AENG 300,AENG,300,Master's Thesis,THE,A23,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595973,1808,AENG 300,AENG,300,Master's Thesis,THE,A24,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595974,1808,AENG 300,AENG,300,Master's Thesis,THE,A25,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595975,1808,AENG 300,AENG,300,Master's Thesis,THE,A26,,0,5,0,,"1s,2s,M",,LBIABE,,0,0,row
+595976,1808,AENG 300,AENG,300,Master's Thesis,THE,A27,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595977,1808,AENG 300,AENG,300,Master's Thesis,THE,A28,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595978,1808,AENG 300,AENG,300,Master's Thesis,THE,A41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595979,1808,AENG 300,AENG,300,Master's Thesis,THE,A44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595980,1808,AENG 300,AENG,300,Master's Thesis,THE,A45,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595981,1808,AENG 300,AENG,300,Master's Thesis,THE,A46,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+595982,1808,AENG 300,AENG,300,Master's Thesis,THE,A47,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595983,1808,AENG 300,AENG,300,Master's Thesis,THE,B11,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+595984,1808,AENG 300,AENG,300,Master's Thesis,THE,B13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595985,1808,AENG 300,AENG,300,Master's Thesis,THE,B14,,0,5,5,,"1s,2s,M",I,LBIABE,,0,0,row
+595986,1808,AENG 300,AENG,300,Master's Thesis,THE,B15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595987,1808,AENG 300,AENG,300,Master's Thesis,THE,B17,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+595988,1808,AENG 300,AENG,300,Master's Thesis,THE,B18,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595989,1808,AENG 300,AENG,300,Master's Thesis,THE,B21,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595990,1808,AENG 300,AENG,300,Master's Thesis,THE,B22,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595991,1808,AENG 300,AENG,300,Master's Thesis,THE,B23,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595992,1808,AENG 300,AENG,300,Master's Thesis,THE,B24,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595993,1808,AENG 300,AENG,300,Master's Thesis,THE,B25,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595994,1808,AENG 300,AENG,300,Master's Thesis,THE,B26,,0,5,0,,"1s,2s,M",,LBIABE,,0,0,row
+595995,1808,AENG 300,AENG,300,Master's Thesis,THE,B27,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+595996,1808,AENG 300,AENG,300,Master's Thesis,THE,B28,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595997,1808,AENG 300,AENG,300,Master's Thesis,THE,B41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+595998,1808,AENG 300,AENG,300,Master's Thesis,THE,B44,,0,10,2,,"1s,2s,M",I,LBIABE,,0,0,row
+595999,1808,AENG 300,AENG,300,Master's Thesis,THE,B45,,0,5,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596000,1808,AENG 300,AENG,300,Master's Thesis,THE,B46,,0,5,3,,"1s,2s,M",I,LBIABE,,0,0,row
+596001,1808,AENG 300,AENG,300,Master's Thesis,THE,B47,,0,5,2,,"1s,2s,M",I,LBIABE,,0,0,row
+596002,1808,AENG 300,AENG,300,Master's Thesis,THE,C11,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596003,1808,AENG 300,AENG,300,Master's Thesis,THE,C13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596004,1808,AENG 300,AENG,300,Master's Thesis,THE,C14,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596005,1808,AENG 300,AENG,300,Master's Thesis,THE,C15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596006,1808,AENG 300,AENG,300,Master's Thesis,THE,C17,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596007,1808,AENG 300,AENG,300,Master's Thesis,THE,C18,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596008,1808,AENG 300,AENG,300,Master's Thesis,THE,C21,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596009,1808,AENG 300,AENG,300,Master's Thesis,THE,C22,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596010,1808,AENG 300,AENG,300,Master's Thesis,THE,C23,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596011,1808,AENG 300,AENG,300,Master's Thesis,THE,C24,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596012,1808,AENG 300,AENG,300,Master's Thesis,THE,C25,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596013,1808,AENG 300,AENG,300,Master's Thesis,THE,C26,,0,5,0,,"1s,2s,M",,LBIABE,,0,0,row
+596014,1808,AENG 300,AENG,300,Master's Thesis,THE,C27,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596015,1808,AENG 300,AENG,300,Master's Thesis,THE,C28,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596016,1808,AENG 300,AENG,300,Master's Thesis,THE,C41,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596017,1808,AENG 300,AENG,300,Master's Thesis,THE,C44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596018,1808,AENG 300,AENG,300,Master's Thesis,THE,C45,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596019,1808,AENG 300,AENG,300,Master's Thesis,THE,C46,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596020,1808,AENG 300,AENG,300,Master's Thesis,THE,C47,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596021,1808,AENG 300,AENG,300,Master's Thesis,THE,D11,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596022,1808,AENG 300,AENG,300,Master's Thesis,THE,D13,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596023,1808,AENG 300,AENG,300,Master's Thesis,THE,D15,,0,5,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596024,1808,AENG 300,AENG,300,Master's Thesis,THE,D17,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596025,1808,AENG 300,AENG,300,Master's Thesis,THE,D18,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596026,1808,AENG 300,AENG,300,Master's Thesis,THE,D41,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596027,1808,AENG 300,AENG,300,Master's Thesis,THE,D44,,0,10,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596028,1808,AENG 300,AENG,300,Master's Thesis,THE,D45,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596029,1808,AENG 300,AENG,300,Master's Thesis,THE,D46,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596030,1808,AENG 300,AENG,300,Master's Thesis,THE,D47,,0,5,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596031,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A13,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596032,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596033,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596034,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A21,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+596035,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A22,,0,30,2,,"1s,2s,M",I,LBIABE,,0,0,row
+596036,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596037,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596038,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596039,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596040,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596041,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596042,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A46,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596043,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,A47,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596044,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B13,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596045,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596046,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B17,,0,30,3,,"1s,2s,M",I,LBIABE,,0,0,row
+596047,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596048,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B22,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596049,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596050,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B24,,0,30,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596051,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596052,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596053,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596054,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B45,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596055,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B46,,0,10,1,,"1s,2s,M",I,LBIABE,,0,0,row
+596056,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,B47,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596057,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596058,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596059,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596060,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596061,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C22,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596062,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596063,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596064,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596065,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596066,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596067,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596068,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596069,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,C47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596070,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596071,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596072,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596073,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D21,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596074,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D22,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596075,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D23,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596076,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D24,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596077,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D25,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596078,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D26,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596079,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D44,,0,10,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596080,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596081,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596082,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,D47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596083,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E13,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596084,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E15,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596085,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E17,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+596086,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E44,,0,10,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596087,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E45,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596088,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E46,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596089,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E47,,0,30,0,,"1s,2s,M",C,LBIABE,,0,0,row
+596289,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B,,3,25,24,LITE ROOM 4,"1s,2s",N,LBDHUM,,6,630,row
+596290,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,C,,3,25,24,LITE ROOM 4,"1s,2s",N,LBDHUM,,6,630,row
+596291,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,G,,3,25,25,LITE ROOM 4,"1s,2s",N,LBDHUM,,6,630,row
+596292,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,H,,3,25,22,LITE ROOM 4,"1s,2s",N,LBDHUM,,6,630,row
+592251,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,U-1L,592250,3,18,18,PSC100,"1s,2s,M",N,LBICS,,3,630,row
+592252,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,U-2L,592250,3,18,18,ICS PC2,"1s,2s,M",N,LBICS,,3,630,row
+592253,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,U-3L,592250,3,18,17,ICS PC3,"1s,2s,M",N,LBICS,,3,630,row
+592255,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,WX-1L,592254,3,18,17,PSC100,"1s,2s,M",N,LBICS,,3,630,row
+592256,543,CMSC 12,CMSC,12,Foundations of Computer Science,LAB,WX-2L,592254,3,18,18,ICS PC2,"1s,2s,M",N,LBICS,,3,630,row
+592250,543,CMSC 12,CMSC,12,Foundations of Computer Science,LEC,U,,3,54,,SMA LH,"1s,2s,M",N,LBICS,,4,420,embedded_parent
+592254,543,CMSC 12,CMSC,12,Foundations of Computer Science,LEC,WX,,3,36,,SMA LH,"1s,2s,M",N,LBICS,,4,420,embedded_parent
+591809,569,CMSC 190,CMSC,190,Special Problems,SPR,A1,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591818,569,CMSC 190,CMSC,190,Special Problems,SPR,A10,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591819,569,CMSC 190,CMSC,190,Special Problems,SPR,A11,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591820,569,CMSC 190,CMSC,190,Special Problems,SPR,A12,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591821,569,CMSC 190,CMSC,190,Special Problems,SPR,A13,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591822,569,CMSC 190,CMSC,190,Special Problems,SPR,A14,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591823,569,CMSC 190,CMSC,190,Special Problems,SPR,A15,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591824,569,CMSC 190,CMSC,190,Special Problems,SPR,A16,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591825,569,CMSC 190,CMSC,190,Special Problems,SPR,A17,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591826,569,CMSC 190,CMSC,190,Special Problems,SPR,A18,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591827,569,CMSC 190,CMSC,190,Special Problems,SPR,A19,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591810,569,CMSC 190,CMSC,190,Special Problems,SPR,A2,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591828,569,CMSC 190,CMSC,190,Special Problems,SPR,A20,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591811,569,CMSC 190,CMSC,190,Special Problems,SPR,A3,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591812,569,CMSC 190,CMSC,190,Special Problems,SPR,A4,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591813,569,CMSC 190,CMSC,190,Special Problems,SPR,A5,,3,5,1,,"1s,2s",I,LBICS,,0,0,row
+591814,569,CMSC 190,CMSC,190,Special Problems,SPR,A6,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591815,569,CMSC 190,CMSC,190,Special Problems,SPR,A7,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591816,569,CMSC 190,CMSC,190,Special Problems,SPR,A8,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591817,569,CMSC 190,CMSC,190,Special Problems,SPR,A9,,3,5,0,,"1s,2s",I,LBICS,,0,0,row
+591829,569,CMSC 190,CMSC,190,Special Problems,SPR,B1,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591838,569,CMSC 190,CMSC,190,Special Problems,SPR,B10,,3,10,1,,"1s,2s",I,LBICS,,0,0,row
+591839,569,CMSC 190,CMSC,190,Special Problems,SPR,B11,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591840,569,CMSC 190,CMSC,190,Special Problems,SPR,B12,,3,10,1,,"1s,2s",I,LBICS,,0,0,row
+591841,569,CMSC 190,CMSC,190,Special Problems,SPR,B13,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591842,569,CMSC 190,CMSC,190,Special Problems,SPR,B14,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591843,569,CMSC 190,CMSC,190,Special Problems,SPR,B15,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591844,569,CMSC 190,CMSC,190,Special Problems,SPR,B16,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591845,569,CMSC 190,CMSC,190,Special Problems,SPR,B17,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591846,569,CMSC 190,CMSC,190,Special Problems,SPR,B18,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591847,569,CMSC 190,CMSC,190,Special Problems,SPR,B19,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591830,569,CMSC 190,CMSC,190,Special Problems,SPR,B2,,3,10,1,,"1s,2s",I,LBICS,,0,0,row
+591848,569,CMSC 190,CMSC,190,Special Problems,SPR,B20,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591831,569,CMSC 190,CMSC,190,Special Problems,SPR,B3,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591832,569,CMSC 190,CMSC,190,Special Problems,SPR,B4,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591833,569,CMSC 190,CMSC,190,Special Problems,SPR,B5,,3,10,1,,"1s,2s",I,LBICS,,0,0,row
+591834,569,CMSC 190,CMSC,190,Special Problems,SPR,B6,,3,10,1,,"1s,2s",I,LBICS,,0,0,row
+591835,569,CMSC 190,CMSC,190,Special Problems,SPR,B7,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591836,569,CMSC 190,CMSC,190,Special Problems,SPR,B8,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+591837,569,CMSC 190,CMSC,190,Special Problems,SPR,B9,,3,10,0,,"1s,2s",I,LBICS,,0,0,row
+592222,571,CMSC 198,CMSC,198,Practicum,PRA,AR1,,3,20,18,,M,I,LBICS,,0,0,row
+592231,571,CMSC 198,CMSC,198,Practicum,PRA,AR10,,3,20,16,,M,I,LBICS,,0,0,row
+592232,571,CMSC 198,CMSC,198,Practicum,PRA,AR11,,3,20,1,,M,I,LBICS,,0,0,row
+592233,571,CMSC 198,CMSC,198,Practicum,PRA,AR12,,3,20,20,,M,I,LBICS,,0,0,row
+592234,571,CMSC 198,CMSC,198,Practicum,PRA,AR13,,3,10,0,,M,I,LBICS,,0,0,row
+592235,571,CMSC 198,CMSC,198,Practicum,PRA,AR14,,3,10,0,,M,I,LBICS,,0,0,row
+592236,571,CMSC 198,CMSC,198,Practicum,PRA,AR15,,3,10,0,,M,I,LBICS,,0,0,row
+592237,571,CMSC 198,CMSC,198,Practicum,PRA,AR16,,3,10,0,,M,I,LBICS,,0,0,row
+592238,571,CMSC 198,CMSC,198,Practicum,PRA,AR17,,3,10,0,,M,I,LBICS,,0,0,row
+592239,571,CMSC 198,CMSC,198,Practicum,PRA,AR18,,3,10,0,,M,I,LBICS,,0,0,row
+592223,571,CMSC 198,CMSC,198,Practicum,PRA,AR2,,3,20,20,,M,I,LBICS,,0,0,row
+592224,571,CMSC 198,CMSC,198,Practicum,PRA,AR3,,3,20,18,,M,I,LBICS,,0,0,row
+592225,571,CMSC 198,CMSC,198,Practicum,PRA,AR4,,3,10,0,,M,I,LBICS,,0,0,row
+592226,571,CMSC 198,CMSC,198,Practicum,PRA,AR5,,3,20,20,,M,I,LBICS,,0,0,row
+592227,571,CMSC 198,CMSC,198,Practicum,PRA,AR6,,3,10,0,,M,I,LBICS,,0,0,row
+592228,571,CMSC 198,CMSC,198,Practicum,PRA,AR7,,3,20,18,,M,I,LBICS,,0,0,row
+592229,571,CMSC 198,CMSC,198,Practicum,PRA,AR8,,3,20,0,,M,I,LBICS,,0,0,row
+592230,571,CMSC 198,CMSC,198,Practicum,PRA,AR9,,3,20,20,,M,I,LBICS,,0,0,row
+591849,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A1,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591858,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A10,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591859,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A11,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591860,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A12,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591861,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A13,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591862,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A14,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591863,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A15,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591864,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A16,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591865,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A17,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591866,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A18,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591867,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A19,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591850,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A2,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591868,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A20,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591851,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A3,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591852,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A4,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591853,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A5,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591854,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A6,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591855,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A7,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591856,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A8,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591857,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,A9,,0,2,0,,"1s,2s",I,LBICS,,0,0,row
+591869,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C1,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591878,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C10,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591879,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C11,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591880,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C12,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591881,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C13,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591882,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C14,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591883,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C15,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591884,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C16,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591885,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C17,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591886,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C18,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591887,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C19,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591870,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C2,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591888,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C20,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591871,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C3,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591872,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C4,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591873,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C5,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591874,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C6,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591875,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C7,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591876,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C8,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+591877,573,CMSC 200,CMSC,200,Undergraduate Thesis,THE,C9,,0,3,0,,"1s,2s",I,LBICS,,0,0,row
+592266,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,V-1L,592265,3,18,13,ICS PC4,"1s,2s",N,LBICS,PRE:CMSC 12,3,630,row
+592267,544,CMSC 21,CMSC,21,Fundamentals of Programming,LAB,V-2L,592265,3,18,16,ICS PC5,"1s,2s",N,LBICS,PRE:CMSC 12,3,630,row
+592265,544,CMSC 21,CMSC,21,Fundamentals of Programming,LEC,V,,3,36,,MMM LH,"1s,2s",N,LBICS,PRE:CMSC 12,4,420,embedded_parent
+591889,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A1,,1,2,0,,S,I,LBICS,,0,0,row
+591890,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A2,,1,2,0,,S,I,LBICS,,0,0,row
+591891,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A3,,1,2,0,,S,I,LBICS,,0,0,row
+591892,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A4,,1,2,0,,S,I,LBICS,,0,0,row
+591893,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A5,,1,2,0,,S,I,LBICS,,0,0,row
+591894,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A6,,1,2,0,,S,I,LBICS,,0,0,row
+591895,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A7,,1,2,0,,S,I,LBICS,,0,0,row
+591896,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A8,,1,2,0,,S,I,LBICS,,0,0,row
+591897,3050,CMSC 300,CMSC,300,Master'sThesis,THE,A9,,1,2,0,,S,I,LBICS,,0,0,row
+591898,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B1,,1,2,0,,S,I,LBICS,,0,0,row
+591899,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B2,,1,2,0,,S,I,LBICS,,0,0,row
+591900,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B3,,1,2,0,,S,I,LBICS,,0,0,row
+591901,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B4,,1,2,0,,S,I,LBICS,,0,0,row
+591902,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B5,,1,2,0,,S,I,LBICS,,0,0,row
+591903,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B6,,1,2,0,,S,I,LBICS,,0,0,row
+591904,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B7,,1,2,0,,S,I,LBICS,,0,0,row
+591905,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B8,,1,2,0,,S,I,LBICS,,0,0,row
+591906,3050,CMSC 300,CMSC,300,Master'sThesis,THE,B9,,1,2,0,,S,I,LBICS,,0,0,row
+591907,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C1,,1,2,0,,S,I,LBICS,,0,0,row
+591908,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C2,,1,2,0,,S,I,LBICS,,0,0,row
+591909,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C3,,1,2,0,,S,I,LBICS,,0,0,row
+591910,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C4,,1,2,0,,S,I,LBICS,,0,0,row
+591911,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C5,,1,2,0,,S,I,LBICS,,0,0,row
+591912,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C6,,1,2,0,,S,I,LBICS,,0,0,row
+591913,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C7,,1,2,0,,S,I,LBICS,,0,0,row
+591914,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C8,,1,2,0,,S,I,LBICS,,0,0,row
+591915,3050,CMSC 300,CMSC,300,Master'sThesis,THE,C9,,1,2,0,,S,I,LBICS,,0,0,row
+591916,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F1,,1,2,0,,S,C,LBICS,,0,0,row
+591917,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F2,,1,2,0,,S,C,LBICS,,0,0,row
+591918,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F3,,1,2,0,,S,C,LBICS,,0,0,row
+591919,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F4,,1,2,0,,S,C,LBICS,,0,0,row
+591920,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F5,,1,2,0,,S,C,LBICS,,0,0,row
+591921,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F6,,1,2,0,,S,C,LBICS,,0,0,row
+591922,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F7,,1,2,0,,S,C,LBICS,,0,0,row
+591923,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F8,,1,2,0,,S,C,LBICS,,0,0,row
+591924,3050,CMSC 300,CMSC,300,Master'sThesis,THE,F9,,1,2,0,,S,C,LBICS,,0,0,row
+591925,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,A1,,1,2,0,,S,I,LBICS,,0,0,row
+591926,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,B1,,1,2,0,,S,I,LBICS,,0,0,row
+591927,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,C1,,1,2,0,,S,I,LBICS,,0,0,row
+591928,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,D1,,1,2,0,,S,I,LBICS,,0,0,row
+591929,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,F1,,1,2,0,,S,I,LBICS,,0,0,row
+591930,2569,CMSC 400,CMSC,400,Doctoral Dissertation,THE,L1,,1,2,0,,S,I,LBICS,,0,0,row
+592258,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LAB,W-1L,592257,3,18,4,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,3,630,row
+592257,548,CMSC 57,CMSC,57,Discrete Mathematical Structures in Computer Science II,LEC,W,,3,18,,MMM LH,"2s,M",N,LBICS,PRE:CMSC 56,4,420,embedded_parent
+597645,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,DC1,,3,25,24,CDC Lecture Room 1,"1s,2s",N,LBDHUM,,6,630,row
+594883,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,EF,,3,25,25,CDC Graduate Room,"1s,2s",N,LBDDJ,,6,630,row
+594884,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,FG,,3,25,25,CDC Graduate Room,"1s,2s",N,LBDDJ,,6,630,row
+596327,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,G,,3,25,24,LITE ROOM 5,"1s,2s",N,LBDHUM,,6,630,row
+596329,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,H,,3,25,21,LITE ROOM 5,"1s,2s",N,LBDHUM,,6,630,row
+596348,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,B1,,3,15,14,CAS 302,"1s,2s,M",N,LBDHUM,,6,630,row
+596349,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,B2,,3,15,14,MB309,"1s,2s,M",N,LBDHUM,,6,630,row
+596353,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,C,,3,15,14,MB309,"1s,2s,M",N,LBDHUM,,6,630,row
+596354,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,G1,,3,15,14,CAS 302,"1s,2s,M",N,LBDHUM,,6,630,row
+596355,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,G2,,3,15,14,MB307,"1s,2s,M",N,LBDHUM,,6,630,row
+596538,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,H,,3,15,14,MB309,"1s,2s,M",N,LBDHUM,,6,630,row
+596356,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,B,,3,25,25,MB307,"1s,2s",N,LBDHUM,,6,630,row
+596357,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,C,,3,25,24,MB307,"1s,2s",N,LBDHUM,,6,630,row
+597904,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,G,,3,25,33,MB309,"1s,2s",N,LBDHUM,,6,630,row
+590992,813,HK 11,HK,11,Wellness and Basic Injury Management,LAB,DW2,,2,25,23,LECTURE ROOM 2B,"1s,2s",N,LBDHK,,4,420,row
+590929,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,AS1,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,4,420,row
+590925,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC1,,2,25,25,LECTURE ROOM 3A,"1s,2s",N,LBDHK,,4,420,row
+590930,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC2,,2,25,24,BRIDGE ROOM,"1s,2s",N,LBDHK,,4,420,row
+590932,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,BC4,,2,25,25,LECTURE ROOM 2A,"1s,2s",N,LBDHK,,4,420,row
+590926,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,CU2,,2,25,25,LECTURE ROOM 3A,"1s,2s",N,LBDHK,,4,420,row
+590931,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,CU3,,2,25,25,BRIDGE ROOM,"1s,2s",N,LBDHK,,4,420,row
+590933,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,CU4,,2,25,25,LECTURE ROOM 2A,"1s,2s",N,LBDHK,,4,420,row
+590927,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,DW1,,2,25,25,LECTURE ROOM 2B,"1s,2s",N,LBDHK,,4,420,row
+590934,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,DW4,,2,25,24,LECTURE ROOM 2A,"1s,2s",N,LBDHK,,4,420,row
+590928,813,HK 11,HK,11,Wellness and Basic Injury Management,LEC,EY1,,2,25,25,LECTURE ROOM 2B,"1s,2s",N,LBDHK,,4,420,row
+590935,814,HK 12,HK,12,Human Kinetics Activities,LAB,AS1,,2,16,15,BADMINTON COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590984,814,HK 12,HK,12,Human Kinetics Activities,LAB,AS2,,2,25,25,UPPERFIELD,"1s,2s,M",N,LBDHK,,4,420,row
+590986,814,HK 12,HK,12,Human Kinetics Activities,LAB,AS3,,2,25,24,DANCE AREA 1,"1s,2s,M",N,LBDHK,,4,420,row
+590990,814,HK 12,HK,12,Human Kinetics Activities,LAB,AS4,,2,20,16,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590978,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC1,,2,25,24,DANCE AREA 1,"1s,2s,M",N,LBDHK,,4,420,row
+590985,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC2,,2,20,20,SWIMMING POOL AREA,"1s,2s,M",N,LBDHK,,4,420,row
+595085,814,HK 12,HK,12,Human Kinetics Activities,LAB,BC3,,2,20,20,LECTURE ROOM 3B,"1s,2s,M",I,LBDHK,,4,420,row
+590937,814,HK 12,HK,12,Human Kinetics Activities,LAB,CU2,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590976,814,HK 12,HK,12,Human Kinetics Activities,LAB,CU3,,2,25,21,BALLET AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590979,814,HK 12,HK,12,Human Kinetics Activities,LAB,DW2,,2,16,13,BADMINTON COURT,"1s,2s,M",N,LBDHK,,4,420,row
+595086,814,HK 12,HK,12,Human Kinetics Activities,LAB,DW9,,2,20,21,LECTURE ROOM 3B,"1s,2s,M",I,LBDHK,,4,420,row
+590969,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY1,,2,20,17,VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590972,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY2,,2,25,24,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590975,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY3,,2,25,23,BALLET AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590980,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY4,,2,16,15,BADMINTON COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590982,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY5,,2,32,32,SWIMMING POOL AREA,"1s,2s,M",D,LBDHK,,4,420,row
+590987,814,HK 12,HK,12,Human Kinetics Activities,LAB,EY6,,2,20,20,WEIGHTS ROOM,"1s,2s,M",N,LBDHK,,4,420,row
+590936,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY1,,2,25,26,SWIMMING POOL REST AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590970,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY2,,2,20,18,BEACH VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590973,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY3,,2,25,25,MARTIAL ARTS AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590977,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY4,,2,25,20,BALLET AREA,"1s,2s,M",N,LBDHK,,4,420,row
+590981,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY5,,2,16,14,BADMINTON COURT,"1s,2s,M",N,LBDHK,,4,420,row
+590983,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY6,,2,30,31,SWIMMING POOL AREA,"1s,2s,M",D,LBDHK,,4,420,row
+590988,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY7,,2,25,24,DANCE AREA 1,"1s,2s,M",N,LBDHK,,4,420,row
+590989,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY8,,2,25,19,UPPERFIELD,"1s,2s,M",N,LBDHK,,4,420,row
+590991,814,HK 12,HK,12,Human Kinetics Activities,LAB,GY9,,2,25,21,SWIMMING POOL REST AREA,"1s,2s,M",N,LBDHK,,4,420,row
+595602,656,MATH 198,MATH,198,Practicum,PRA,JGT,,3,15,11,,M,I,LBIMS,,0,0,row
+595603,656,MATH 198,MATH,198,Practicum,PRA,RRP,,3,15,15,,M,I,LBIMS,,0,0,row
+595595,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,B,,3,30,30,MB 301,"1s,2s,M",N,LBIMS,,6,630,row
+595596,623,MATH 27,MATH,27,Analytic Geometry and Calculus II,LEC,E,,3,30,25,MB 301,"1s,2s,M",N,LBIMS,,6,630,row
+595597,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,B1,,3,30,25,MB 302,"1s,2s,M",N,LBIMS,PRE:MATH 27,6,630,row
+595598,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,B2,,3,30,30,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,6,630,row
+595600,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,E1,,3,30,29,MB 302,"1s,2s,M",N,LBIMS,PRE:MATH 27,6,630,row
+595599,624,MATH 28,MATH,28,Analytic Geometry and Calculus III,LEC,E2,,3,30,28,MB 304,"1s,2s,M",N,LBIMS,PRE:MATH 27,6,630,row
+595601,626,MATH 37,MATH,37,Mathematical Analysis II,LEC,B,,3,25,13,MB 303,"1s,2s",N,LBIMS,PRE:MATH 36,6,630,row
+595547,828,PI 10,PI,10,The Life and Works of Rizal,LEC,A,,3,35,31,CAS 101,"1s,2s,M",N,LBDSS,,6,630,row
+595548,828,PI 10,PI,10,The Life and Works of Rizal,LEC,B1,,3,35,34,CAS 102,"1s,2s,M",N,LBDSS,,6,630,row
+595611,828,PI 10,PI,10,The Life and Works of Rizal,LEC,B2,,3,35,32,CAS 101,"1s,2s,M",N,LBDSS,,6,630,row
+597856,828,PI 10,PI,10,The Life and Works of Rizal,LEC,B3,,3,35,31,CAS B03,"1s,2s,M",N,LBDSS,,6,630,row
+596676,828,PI 10,PI,10,The Life and Works of Rizal,LEC,C1,,3,35,32,CAS 102,"1s,2s,M",N,LBDSS,,6,630,row
+595549,828,PI 10,PI,10,The Life and Works of Rizal,LEC,C2,,3,35,31,CEM 105,"1s,2s,M",N,LBDSS,,6,630,row
+597857,828,PI 10,PI,10,The Life and Works of Rizal,LEC,E,,3,35,31,CAS B03,"1s,2s,M",N,LBDSS,,6,630,row
+596231,718,STAT 198,STAT,198,Practicum,PRA,AR1,,3,20,17,,M,I,LBINSTAT,,0,0,row
+596232,718,STAT 198,STAT,198,Practicum,PRA,AR2,,3,20,19,,M,I,LBINSTAT,,0,0,row
+596233,718,STAT 198,STAT,198,Practicum,PRA,AR3,,3,20,20,,M,I,LBINSTAT,,0,0,row
+596234,718,STAT 198,STAT,198,Practicum,PRA,AR4,,3,20,20,,M,I,LBINSTAT,,0,0,row
+596239,1454,STAT 300,STAT,300,Master's Thesis,THE,A1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596240,1454,STAT 300,STAT,300,Master's Thesis,THE,A2,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596274,1454,STAT 300,STAT,300,Master's Thesis,THE,A3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596275,1454,STAT 300,STAT,300,Master's Thesis,THE,A4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596276,1454,STAT 300,STAT,300,Master's Thesis,THE,A5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596277,1454,STAT 300,STAT,300,Master's Thesis,THE,A6,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596241,1454,STAT 300,STAT,300,Master's Thesis,THE,B1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596242,1454,STAT 300,STAT,300,Master's Thesis,THE,B2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596293,1454,STAT 300,STAT,300,Master's Thesis,THE,B3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596294,1454,STAT 300,STAT,300,Master's Thesis,THE,B4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596295,1454,STAT 300,STAT,300,Master's Thesis,THE,B5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596296,1454,STAT 300,STAT,300,Master's Thesis,THE,B6,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596243,1454,STAT 300,STAT,300,Master's Thesis,THE,C1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596244,1454,STAT 300,STAT,300,Master's Thesis,THE,C2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596298,1454,STAT 300,STAT,300,Master's Thesis,THE,C3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596299,1454,STAT 300,STAT,300,Master's Thesis,THE,C4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596300,1454,STAT 300,STAT,300,Master's Thesis,THE,C5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596301,1454,STAT 300,STAT,300,Master's Thesis,THE,C6,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596245,1454,STAT 300,STAT,300,Master's Thesis,THE,F1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596246,1454,STAT 300,STAT,300,Master's Thesis,THE,F2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596302,1454,STAT 300,STAT,300,Master's Thesis,THE,F3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596303,1454,STAT 300,STAT,300,Master's Thesis,THE,F4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596304,1454,STAT 300,STAT,300,Master's Thesis,THE,F5,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596305,1454,STAT 300,STAT,300,Master's Thesis,THE,F6,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596247,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A1,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596248,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596308,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596309,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,A4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596249,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596250,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596311,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596312,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,B4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596251,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C1,,0,10,1,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596252,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596315,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596316,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,C4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596253,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596254,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596318,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596319,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,D4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596255,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596256,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596322,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596323,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,F4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596257,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G1,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596258,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G2,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596324,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G3,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596325,1459,STAT 400,STAT,400,Doctoral Dissertation,DSR,G4,,0,10,0,,"1s,2s,M",I,LBINSTAT,,0,0,row
+596661,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,C,,3,35,35,CAS 102,"1s,2s",N,LBDSS,,6,630,row
+596662,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,D1,,3,35,32,CAS 101,"1s,2s",N,LBDSS,,6,630,row
+596664,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,D2,,3,35,34,CAS 102,"1s,2s",N,LBDSS,,6,630,row
+596665,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E1,,3,35,35,CAS 101,"1s,2s",N,LBDSS,,6,630,row
+596666,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,E2,,3,35,35,CAS 102,"1s,2s",N,LBDSS,,6,630,row
+596667,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,F,,3,35,33,Old GS Multipurpose Hall,"1s,2s",N,LBDSS,,6,630,row
