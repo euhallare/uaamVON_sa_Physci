@@ -111,3 +111,15 @@ phlo,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.00011750000021493179,,True
 phlo,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,6.660000008196221e-05,1,True
 phlo,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,1,3.4899999718618346e-05,,True
 phlo,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,1,2.9299999823706457e-05,,True
+soc,1,FS,SP,Backtracking,Y1 FS SP,6,26,,0.024498400000084075,,True
+soc,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0005059000000073866,32,True
+soc,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,6.849999999758438e-05,,True
+soc,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,7.970000024215551e-05,,True
+soc,2,FS,SP,Backtracking,Y2 FS SP,6,9,,0.009444499999972322,,True
+soc,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.0003501999999571126,53,True
+soc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,4,0.0005492000000231201,,True
+soc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,17,0.00024730000041017774,,True
+soc,3,FS,SP,Backtracking,Y3 FS SP,3,3,,6.639999992330559e-05,,True
+soc,3,FS,SP,Forward Checking,Y3 FS SP,3,3,,3.890000016326667e-05,0,True
+soc,3,FS,SP,Min-Conflicts,Y3 FS SP,3,,1,1.8900000213761814e-05,,True
+soc,3,FS,SP,Simulated Annealing,Y3 FS SP,3,,1,2.0899999981338624e-05,,True
