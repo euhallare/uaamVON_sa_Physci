@@ -1,6 +1,6 @@
 {
   "term_id": 1261,
-  "last_scrape_utc": "2026-11-17T12:29:18+00:00",
+  "last_scrape_utc": "2026-11-21T04:38:20+00:00",
   "source": "https://api-amis.uplb.edu.ph/api/students/classes",
   "filters": {
     "items": 20,
@@ -36,6 +36,21 @@
     "AMAT": 77,
     "AGCH": 0,
     "AGRI": 209,
-    "AAE": 115
+    "AAE": 115,
+    "APHY": 68,
+    "ACHEM": 0,
+    "MST": 114,
+    "EDUC": 9,
+    "DEVC": 290,
+    "SPCM": 14,
+    "HFDS": 67,
+    "HUM": 208,
+    "THEA": 9,
+    "PHLO": 66,
+    "POSC": 6,
+    "SOC": 150,
+    "ANTH": 5,
+    "PSY": 8,
+    "AERS": 50
   }
 }

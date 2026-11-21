@@ -389,6 +389,56 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 598939,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E45,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
 598941,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E46,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
 598936,1809,AENG 400,AENG,400,Doctoral Dissertation,THE,E47,,0,30,0,,"1s,2s,M",I,LBIABE,,0,0,row
+608839,1113,AERS 141,AERS,141,Community Survey and Program Planning,LEC,F,,3,15,15,ASI B-138,1s,I,LBASI,,2,180,row
+608840,1114,AERS 142,AERS,142,Concepts and Processes in Agricultural and Natural Resources Knowledge Systems,LEC,W,,3,15,15,ASI B-127,1s,I,LBASI,PRE:(AGRI 61); PRE:(DEVC 10),2,180,row
+608843,1116,AERS 160,AERS,160,Rural Sociology,LEC,C,,3,10,11,ASI B-138,"1s,2s",I,LBASI,,2,180,row
+608841,1116,AERS 160,AERS,160,Rural Sociology,LEC,U,,3,20,20,ASI B-138,"1s,2s",I,LBASI,,2,180,row
+608842,1116,AERS 160,AERS,160,Rural Sociology,LEC,X,,3,20,18,ASI B-138,"1s,2s",I,LBASI,,2,180,row
+608844,1117,AERS 190,AERS,190,Special Problems,SPR,ADG3,,3,10,0,TBA,"1s,2s",I,LBASI,,0,0,row
+608845,1117,AERS 190,AERS,190,Special Problems,SPR,RFD3,,3,10,0,TBA,"1s,2s",I,LBASI,,0,0,row
+608846,1117,AERS 190,AERS,190,Special Problems,SPR,SBM3,,3,10,0,TBA,"1s,2s",I,LBASI,,0,0,row
+608850,1119,AERS 198,AERS,198,Practicum,PRA,ADG3,,3,10,0,TBA,"1s,2s,M",I,LBASI,,0,0,row
+608851,1119,AERS 198,AERS,198,Practicum,PRA,MBP3,,3,10,0,TBA,"1s,2s,M",I,LBASI,,0,0,row
+608848,1119,AERS 198,AERS,198,Practicum,PRA,RFD3,,3,10,0,TBA,"1s,2s,M",I,LBASI,,0,0,row
+608847,1119,AERS 198,AERS,198,Practicum,PRA,RSB3,,3,10,0,TBA,"1s,2s,M",I,LBASI,,0,0,row
+608849,1119,AERS 198,AERS,198,Practicum,PRA,SBM3,,3,10,0,TBA,"1s,2s,M",I,LBASI,,0,0,row
+608852,1120,AERS 199,AERS,199,Undergraduate Seminar,SEM,RSB1,,1,10,3,TBA,--,I,LBASI,,0,0,row
+608859,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,ADG1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608860,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,ADG3,,0,10,2,,"1s,2s,M",I,LBASI,,0,0,row
+608861,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,MBP1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608862,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,MBP3,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608855,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,RFD1,,0,10,1,,"1s,2s,M",I,LBASI,,0,0,row
+608856,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,RFD3,,0,10,1,,"1s,2s,M",I,LBASI,,0,0,row
+608857,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,RSB1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608858,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,RSB3,,0,10,3,,"1s,2s,M",I,LBASI,,0,0,row
+608853,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,SBM1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608854,1121,AERS 200,AERS,200,Undergraduate Thesis,THE,SBM3,,0,10,3,,"1s,2s,M",I,LBASI,,0,0,row
+608869,1122,AERS 200a,AERS,200a,Major Practice,PRA,ADG1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608870,1122,AERS 200a,AERS,200a,Major Practice,PRA,ADG3,,0,10,1,,"1s,2s,M",I,LBASI,,0,0,row
+608871,1122,AERS 200a,AERS,200a,Major Practice,PRA,MBP1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608872,1122,AERS 200a,AERS,200a,Major Practice,PRA,MBP3,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608865,1122,AERS 200a,AERS,200a,Major Practice,PRA,RFD1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608866,1122,AERS 200a,AERS,200a,Major Practice,PRA,RFD3,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608867,1122,AERS 200a,AERS,200a,Major Practice,PRA,RSB1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608868,1122,AERS 200a,AERS,200a,Major Practice,PRA,RSB3,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608863,1122,AERS 200a,AERS,200a,Major Practice,PRA,SBM1,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+608864,1122,AERS 200a,AERS,200a,Major Practice,PRA,SBM3,,0,10,0,,"1s,2s,M",I,LBASI,,0,0,row
+614956,2011,AERS 265,AERS,265,Sociology of Development,LEC,PSAE,,3,10,4,ASI B-126,1s,I,LBASI,,1,180,row
+608873,2011,AERS 265,AERS,265,Sociology of Development,LEC,TV,,3,20,15,ASI B-127,1s,I,LBASI,,1,180,row
+608874,2012,AERS 267,AERS,267,Perspectives in Community Analysis,LEC,EF,,3,15,8,ASI B-126,1s,I,LBASI,,1,180,row
+608875,2013,AERS 281,AERS,281,Theory Construction,LEC,BD,,3,15,11,ASI B-126,1s,I,LBASI,,1,180,row
+608876,2014,AERS 282,AERS,282,Social Research Design,LEC,EF,,3,15,9,ASI B-127,"1s,2s",I,LBASI,,1,180,row
+608878,2014,AERS 282,AERS,282,Social Research Design,LEC,H,,3,15,10,ASI B-127,"1s,2s",I,LBASI,,1,180,row
+608877,2014,AERS 282,AERS,282,Social Research Design,LEC,TV,,3,15,14,ASI B-127,"1s,2s",I,LBASI,,1,180,row
+608879,2017,AERS 299,AERS,299,Graduate Seminar,SEM,ADG1,,1,5,1,TBA,"1s,2s",I,LBASI,,0,0,row
+608884,2018,AERS 300,AERS,300,Master's Thesis,THE,RFD1,,0,5,2,,"1s,2s,M",I,LBASI,,0,0,row
+608885,2018,AERS 300,AERS,300,Master's Thesis,THE,RFD2,,0,5,0,,"1s,2s,M",I,LBASI,,0,0,row
+608886,2018,AERS 300,AERS,300,Master's Thesis,THE,RFD3,,0,5,0,,"1s,2s,M",I,LBASI,,0,0,row
+608887,2018,AERS 300,AERS,300,Master's Thesis,THE,RFD6,,0,5,0,,"1s,2s,M",I,LBASI,,0,0,row
+608880,2018,AERS 300,AERS,300,Master's Thesis,THE,SBM1,,0,5,1,,"1s,2s,M",I,LBASI,,0,0,row
+608881,2018,AERS 300,AERS,300,Master's Thesis,THE,SBM2,,0,5,1,,"1s,2s,M",I,LBASI,,0,0,row
+608882,2018,AERS 300,AERS,300,Master's Thesis,THE,SBM3,,0,5,0,,"1s,2s,M",I,LBASI,,0,0,row
+608883,2018,AERS 300,AERS,300,Master's Thesis,THE,SBM6,,0,5,0,,"1s,2s,M",I,LBASI,,0,0,row
 597907,1095,AGRI 11,AGRI,11,Introduction to Agriculture,LEC,G,,1,75,68,ASLH1,"1s,2s",N,LBASI,,1,60,row
 597908,1095,AGRI 11,AGRI,11,Introduction to Agriculture,LEC,Y,,1,75,67,ASLH1,"1s,2s",N,LBASI,,1,60,row
 606488,1185,AGRI 111,AGRI,111,Introduction to Farming Systems,LAB,B1L,604896,3,15,13,ICROPS 200,"1s,2s",I,LBICROPS,PRE:AGRI 22 and AGRI 32,1,180,row
@@ -726,6 +776,84 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 602620,1872,AMAT 400,AMAT,400,Dissertation,DSR,NAE3,,0,6,1,,"1s,2s,M",I,LBIMS,,0,0,row
 602621,1872,AMAT 400,AMAT,400,Dissertation,DSR,NAE4,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
 602622,1872,AMAT 400,AMAT,400,Dissertation,DSR,NAE6,,0,6,0,,"1s,2s,M",I,LBIMS,,0,0,row
+608954,816,ANTH 10,ANTH,10,Introduction to Social and Cultural Anthropology,LEC,A,,3,30,27,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+608955,816,ANTH 10,ANTH,10,Introduction to Social and Cultural Anthropology,LEC,F,,3,30,30,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+608956,816,ANTH 10,ANTH,10,Introduction to Social and Cultural Anthropology,LEC,W,,3,30,27,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+608958,817,ANTH 120,ANTH,120,Economic Anthropology,LEC,W,,3,30,25,CAS B03,1s,N,LBDSS,,2,180,row
+608960,820,ANTH 150,ANTH,150,Anthropology of Food and Eating,LEC,B,,3,30,30,CAS A1 409,1s,N,LBDSS,,2,180,row
+609573,599,APHY 10.1,APHY,10.1,Programming in Physics,LAB,1L,,1,15,15,PS C-203,1s,N,LBIoP,,1,180,row
+609574,599,APHY 10.1,APHY,10.1,Programming in Physics,LAB,2L,,1,15,15,PS C-203,1s,N,LBIoP,,1,180,row
+614965,599,APHY 10.1,APHY,10.1,Programming in Physics,LAB,3L,,1,15,15,PS C-203,1s,N,LBIoP,,1,180,row
+609725,600,APHY 101,APHY,101,Physics in Scientific Instruments,LAB,S1L,609575,3,20,20,PS C-206,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1) ,1,180,row
+609726,600,APHY 101,APHY,101,Physics in Scientific Instruments,LAB,S2L,609575,3,20,20,PS C-206,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1) ,1,180,row
+609575,600,APHY 101,APHY,101,Physics in Scientific Instruments,LEC,S,,3,40,,PSLH B,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1) ,2,120,embedded_parent
+609727,601,APHY 102,APHY,102,Physics of Electronic Devices,LAB,E1L,609576,3,15,14,PS C-206,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1),1,180,row
+609728,601,APHY 102,APHY,102,Physics of Electronic Devices,LAB,E2L,609576,3,15,15,PS C-206,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1),1,180,row
+609576,601,APHY 102,APHY,102,Physics of Electronic Devices,LEC,E,,3,30,,PS C-101,1s,N,LBIoP,PRE:(PHYS 72 (NEW) and PHYS 72.1); PRE:(PHYS 102); PRE:(PHYS 72 (OLD) and PHYS 72.1),2,120,embedded_parent
+609729,604,APHY 105,APHY,105,Microprocessor-based Instrumentation,LAB,B1L,609577,3,10,9,PS C-203,1s,N,LBIoP,PRE:APHY 101 and APHY 104,1,180,row
+609577,604,APHY 105,APHY,105,Microprocessor-based Instrumentation,LEC,B,,3,10,,PS C-203,1s,N,LBIoP,PRE:APHY 101 and APHY 104,2,120,embedded_parent
+609730,609,APHY 140,APHY,140,Modeling and Simulation in Environmental Physics,LAB,EF1L,609579,3,15,1,PS C-203,"1s,2s",N,LBIoP,PRE:PHYS 115  (OLD); PRE:PHYS 115 (NEW); PRE:PHYS 115 (NEW); PRE:PHYS 115 (OLD),1,180,row
+609579,609,APHY 140,APHY,140,Modeling and Simulation in Environmental Physics,LEC,EF,,3,15,,PS C-203,"1s,2s",N,LBIoP,PRE:PHYS 115  (OLD); PRE:PHYS 115 (NEW); PRE:PHYS 115 (NEW); PRE:PHYS 115 (OLD),1,120,embedded_parent
+609580,612,APHY 155,APHY,155,Computational Modelling in Surface Physics,LEC,G,,3,15,15,PS C-203,1s,N,LBIoP,PRE:(PHYS 141),2,180,row
+609731,613,APHY 160,APHY,160,Microscopy and Spectroscopy for Materials Characterization,LAB,AB1L,609581,3,15,15,PS C-203,1s,N,LBIoP,PRE:(PHYS 72) (NEW); PRE:(PHYS 104); PRE:(PHYS 72) (OLD),1,180,row
+609581,613,APHY 160,APHY,160,Microscopy and Spectroscopy for Materials Characterization,LEC,AB,,3,15,,PS C-203,1s,N,LBIoP,PRE:(PHYS 72) (NEW); PRE:(PHYS 104); PRE:(PHYS 72) (OLD),2,120,embedded_parent
+609582,614,APHY 190,APHY,190,Special Problems,SPR,ABP,,3,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609584,614,APHY 190,APHY,190,Special Problems,SPR,AFP,,3,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609583,614,APHY 190,APHY,190,Special Problems,SPR,AGT,,3,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+613846,614,APHY 190,APHY,190,Special Problems,SPR,ALA,,3,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+614260,614,APHY 190,APHY,190,Special Problems,SPR,APA,,3,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+613896,614,APHY 190,APHY,190,Special Problems,SPR,ASP,,3,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+614628,614,APHY 190,APHY,190,Special Problems,SPR,DBP,,3,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609585,614,APHY 190,APHY,190,Special Problems,SPR,EAB,,3,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+614261,614,APHY 190,APHY,190,Special Problems,SPR,ECC,,3,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609587,614,APHY 190,APHY,190,Special Problems,SPR,IRC,,3,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609589,614,APHY 190,APHY,190,Special Problems,SPR,JFB,,3,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609588,614,APHY 190,APHY,190,Special Problems,SPR,LML,,3,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+614078,614,APHY 190,APHY,190,Special Problems,SPR,MAA,,3,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+614189,614,APHY 190,APHY,190,Special Problems,SPR,MPM,,3,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609590,614,APHY 190,APHY,190,Special Problems,SPR,RRV,,3,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+614968,615,APHY 191,APHY,191,Special Topics,LEC,A,,3,10,4,PSLH B,2s,I,LBIoP,,2,180,row
+614966,617,APHY 199,APHY,199,Undergraduate Seminar,SEM,E,,1,8,8,PS C-214,2s,N,LBIoP,,1,60,row
+609593,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ABP1,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609594,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ABP3,,0,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+614079,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ADV3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609595,618,APHY 200,APHY,200,Undergraduate Thesis,THE,AFP3,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609597,618,APHY 200,APHY,200,Undergraduate Thesis,THE,AGT3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609598,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ALA3,,0,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+609596,618,APHY 200,APHY,200,Undergraduate Thesis,THE,APA1,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609599,618,APHY 200,APHY,200,Undergraduate Thesis,THE,APA3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609600,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ASP3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609601,618,APHY 200,APHY,200,Undergraduate Thesis,THE,CNP3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+614923,618,APHY 200,APHY,200,Undergraduate Thesis,THE,DBP1,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+613897,618,APHY 200,APHY,200,Undergraduate Thesis,THE,DBP3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609605,618,APHY 200,APHY,200,Undergraduate Thesis,THE,EAB3,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609606,618,APHY 200,APHY,200,Undergraduate Thesis,THE,ECC3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609608,618,APHY 200,APHY,200,Undergraduate Thesis,THE,FDV3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609609,618,APHY 200,APHY,200,Undergraduate Thesis,THE,IRC3,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609613,618,APHY 200,APHY,200,Undergraduate Thesis,THE,JFB3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609603,618,APHY 200,APHY,200,Undergraduate Thesis,THE,LML3,,0,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+609602,618,APHY 200,APHY,200,Undergraduate Thesis,THE,MAA3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609604,618,APHY 200,APHY,200,Undergraduate Thesis,THE,MPM1,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609614,618,APHY 200,APHY,200,Undergraduate Thesis,THE,MPM3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609615,618,APHY 200,APHY,200,Undergraduate Thesis,THE,MUH1,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609616,618,APHY 200,APHY,200,Undergraduate Thesis,THE,MUH3,,0,6,3,,"1s,2s,M",I,LBIoP,,0,0,row
+614468,618,APHY 200,APHY,200,Undergraduate Thesis,THE,RCM1,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609617,618,APHY 200,APHY,200,Undergraduate Thesis,THE,RCM3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+614190,618,APHY 200,APHY,200,Undergraduate Thesis,THE,RFB3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609618,618,APHY 200,APHY,200,Undergraduate Thesis,THE,RRV3,,0,6,2,,"1s,2s,M",I,LBIoP,,0,0,row
+609715,3478,APHY 201,APHY,201,The Practice of Applied Physics,LEC,G,,3,12,1,PS C-200c,"1s,2s,M",N,LBIoP,,1,60,row
+609723,3522,APHY 215.1,APHY,215.1,Computational Techniques for Physical Systems Laboratory,LAB,1L,,1,12,7,PS C-204,"1s,2s,M",N,LBIoP,,1,180,row
+609716,3481,APHY 216,APHY,216,Computational Methods for Materials Science,LEC,WX,,3,12,7,PS C-101,"1s,2s,M",N,LBIoP,,1,180,row
+609722,3521,APHY 231,APHY,231,Applied Electromagnetism,LEC,Y,,3,12,9,PS C-200c,"1s,2s,M",N,LBIoP,,2,180,row
+609724,3572,APHY 255,APHY,255,Complex Systems,LEC,H,,3,12,4,PS C-200c,"1st, 2nd and Midyear",N,LBIoP,,2,180,row
+609850,3573,APHY 291,APHY,291,Special Topics,LEC,G,,0,12,6,New GS Building - Lecture Room 202,"1st, 2nd and Midyear",I,LBIoP,,2,180,row
+609852,3482,APHY 299,APHY,299,Graduate Research Seminar,SEM,Y,,1,12,2,PS D-405,"1s,2s,M",I,LBIoP,,1,60,row
+609860,3569,APHY 300,APHY,300,Master's Thesis,THE,ABP2,,6,6,1,,"1st, 2nd and Midyear",I,LBIoP,,0,0,row
+609861,3569,APHY 300,APHY,300,Master's Thesis,THE,MUH2,,6,6,1,,"1st, 2nd and Midyear",I,LBIoP,,0,0,row
+609717,3483,APHY 400,APHY,400,Doctoral Dissertation,THE,ABP3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+614469,3483,APHY 400,APHY,400,Doctoral Dissertation,THE,MUH1,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
+609718,3483,APHY 400,APHY,400,Doctoral Dissertation,THE,MUH3,,0,6,0,,"1s,2s,M",I,LBIoP,,0,0,row
+609719,3483,APHY 400,APHY,400,Doctoral Dissertation,THE,RRV3,,0,6,1,,"1s,2s,M",I,LBIoP,,0,0,row
 609387,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,A,,3,28,25,CAS A2- 201,"1s,2s",N,LBDHUM,,2,180,row
 609388,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B1,,3,28,28,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
 609389,720,ARTS 1,ARTS,1,(GE). Critical Perspectives in the Arts,LEC,B2,,3,28,28,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
@@ -2169,6 +2297,317 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 608824,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,X1,,3,28,28,CAS B06,"1s,2s",N,LBDHUM,,2,180,row
 608825,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,X2,,3,28,26,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
 608826,721,COMM 10,COMM,10,(GE). Critical Perspectives in Communication,LEC,Z1,,3,28,27,CAS B04,"1s,2s",N,LBDHUM,,2,180,row
+598022,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,A,,3,35,33,CDC ANNEX1,"1s,2s",N,LBDDJ,,2,180,row
+598019,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,B1,,3,35,32,CDC ANNEX1,"1s,2s",N,LBDDJ,,2,180,row
+598020,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,B2,,3,35,33,CDC RM212B,"1s,2s",N,LBDDJ,,2,180,row
+598021,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,G,,3,40,33,CDC DECIMU,"1s,2s",N,LBDDJ,,2,180,row
+598025,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,S,,3,35,33,CDC ANNEX4,"1s,2s",N,LBDDJ,,2,180,row
+598027,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,T,,3,35,31,CDC ANNEX4,"1s,2s",N,LBDDJ,,2,180,row
+598032,382,DEVC 10,DEVC,10,Introduction to Development Communication,LEC,Y,,3,35,29,CDC ANNEX1,"1s,2s",N,LBDDJ,,2,180,row
+611031,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,B,,3,28,27,CDC ANNEX4,"1s,2s",N,LBDEC,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+611030,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,C,,3,20,0,Graduate School,"1s,2s",N,LBDEC,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+598056,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,G,,3,28,28,CDC ANNEX4,"1s,2s",N,LBDDBT,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+598057,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,T1,,3,28,14,DEC IMU,"1s,2s",N,LBDDBT,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+598058,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,T2,,3,28,28,CDC RM212B,"1s,2s",N,LBDDBT,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+611032,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,T3,,3,28,0,CDC ANNEX1,"1s,2s",N,LBDEC,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+598059,390,DEVC 101,DEVC,101,Introduction to Communication Theory,LEC,Y,,3,28,28,DEC IMU,"1s,2s",N,LBDDBT,PRE:DEVC 10; PRE:DEVC 10,2,180,row
+598305,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,E-1L,598062,3,18,18,CDC GRAD RM,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+598306,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,E-2L,598062,3,18,16,CDC ANNEX2,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+598307,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,E-3L,598062,3,18,18,CDC RM212B,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+598308,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,E-4L,598062,3,18,12,CDC RM209A,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+611034,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,V-1L,611033,3,18,18,CDC ANNEX2,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+611035,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,V-2L,611033,3,18,17,RM 209A,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+611036,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,V-3L,611033,3,18,16,CDC RM212B,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+611037,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LAB,V-4L,611033,3,18,18,CDC ANNEX4,"1s,2s",N,LBDEC,PRE:(DEVC 40),1,180,row
+598062,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LEC,E,,3,72,,CDC LR1,"1s,2s",N,LBDEC,PRE:(DEVC 40),2,120,embedded_parent
+611033,391,DEVC 103,DEVC,103,Visual and Audiovisual Media Production,LEC,V,,3,72,,CDC LR1,"1s,2s",N,LBDEC,PRE:(DEVC 40),2,120,embedded_parent
+598277,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,CD-1L,598033,3,15,12,CDC RM 209A,"1s,2s",N,LBDDBT,,1,180,row
+598278,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,CD-2L,598033,3,15,13,CDC RM 209A,"1s,2s",N,LBDDBT,,1,180,row
+598279,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,CD-3L,598033,3,15,14,CDC RM 209A,"1s,2s",N,LBDDBT,,1,180,row
+598280,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,CD-4L,598033,3,15,12,CDC RM 209A,"1s,2s",N,LBDSC,,1,180,row
+598281,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,D-1L,598034,3,20,19,CDC RM212B,"1s,2s",N,LBDDBT,,1,180,row
+598282,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,D-2L,598034,3,20,16,CDC ANNEX3,"1s,2s",N,LBDDBT,,1,180,row
+598283,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,D-3L,598034,3,20,18,CDC ANNEX3,"1s,2s",N,LBDDBT,,1,180,row
+598755,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,S-1L,598036,3,20,14,CDC ANNEX2,"1s,2s",N,LBDDBT,,1,180,row
+598756,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,S-2L,598036,3,18,14,CDC GRAD RM,"1s,2s",N,LBDDBT,,1,180,row
+598757,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,S-3L,598036,3,20,19,CDC LR2,"1s,2s",N,LBDDBT,,1,180,row
+598284,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,UV-1L,598035,3,20,19,CDC LR2,"1s,2s",N,LBDDBT,,1,180,row
+598285,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,UV-2L,598035,3,18,17,CDC ANNEX3,"1s,2s",N,LBDDBT,,1,180,row
+598286,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LAB,UV-3L,598035,3,18,18,CDC DEC - IMU,"1s,2s",N,LBDDBT,,1,180,row
+598033,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LEC,CD,,3,60,,CDC LR1,"1s,2s",N,LBDDBT,,2,120,embedded_parent
+598034,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LEC,D,,3,60,,CDC LR1,"1s,2s",N,LBDDBT,,2,120,embedded_parent
+598036,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LEC,S,,3,58,,CDC LR1,"1s,2s",N,LBDDBT,,2,120,embedded_parent
+598035,383,DEVC 11,DEVC,11,Introduction to Media Writing for Development,LEC,UV,,3,56,,CDC LR1,"1s,2s",N,LBDDBT,,2,120,embedded_parent
+598312,392,DEVC 125,DEVC,125,Writing and Reporting for Development,LAB,C-4L,598063,3,18,17,CDC ANNEX2,"1s,2s",N,LBDDJ,PRE:DEVC 20 and DEVC 30,1,180,row
+598309,392,DEVC 125,DEVC,125,Writing and Reporting for Development,LAB,C1L,598063,3,18,11,CDC GRAD RM,"1s,2s",N,LBDDJ,PRE:DEVC 20 and DEVC 30,1,180,row
+598310,392,DEVC 125,DEVC,125,Writing and Reporting for Development,LAB,C2L,598063,3,18,18,CDC ANNEX2,"1s,2s",N,LBDDJ,PRE:DEVC 20 and DEVC 30,1,180,row
+598311,392,DEVC 125,DEVC,125,Writing and Reporting for Development,LAB,C3L,598063,3,18,0,CDC ANNEX2,"1s,2s",N,LBDDBT,PRE:DEVC 20 and DEVC 30,1,180,row
+598063,392,DEVC 125,DEVC,125,Writing and Reporting for Development,LEC,C,,3,72,,CDC LR1,"1s,2s",N,LBDDJ,PRE:DEVC 20 and DEVC 30,2,120,embedded_parent
+598315,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H1-1L,598065,3,20,20,CDC ANNEX3,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+598316,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H1-2L,598065,3,20,20,CDC IMU,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+598317,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H1-3L,598065,3,20,20,CDC IMU,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+599317,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H1-4L,598065,3,20,20,TCC 11,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+598318,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H2-1L,598066,3,20,13,CDC ANNEX4,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+598319,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H2-2L,598066,3,20,20,CDC ANNEX4,1s,N,LBDDJ,PRE:DEVC 125,1,360,row
+598321,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H2-4L,598066,3,20,19,CDC ANNEX4,1s,N,LBDEC,PRE:DEVC 125,1,360,row
+614926,393,DEVC 126,DEVC,126,Participatory Development Journalism,LAB,H2-5L,598066,3,24,24,CDC ANNEX4,1s,I,LBDDJ,PRE:DEVC 125,1,360,row
+598065,393,DEVC 126,DEVC,126,Participatory Development Journalism,LEC,H1,,3,80,,CDC LR1,1s,N,LBDDJ,PRE:DEVC 125,1,60,embedded_parent
+598066,393,DEVC 126,DEVC,126,Participatory Development Journalism,LEC,H2,,3,80,,CDC LR1,1s,N,LBDDJ,PRE:DEVC 125,1,60,embedded_parent
+598322,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,B-3L,598068,3,18,18,CDC ANNEX1,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598323,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,B-4L,598068,3,18,17,CDC ANNEX2,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598325,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,B1L,598068,3,18,18,CDC LR2,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598326,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,B2L,598068,3,18,17,CDC ANNEX1,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598324,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,T-3L,598069,3,18,17,CDC LR2,1s,N,LBDDBT,PRE:DEVC 125,1,180,row
+598327,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,T1L,598069,3,18,17,CDC ANNEX2,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598328,394,DEVC 127,DEVC,127,Data Journalism for Development,LAB,T2L,598069,3,18,18,CDC ANNEX2,1s,N,LBDDJ,PRE:DEVC 125,1,180,row
+598068,394,DEVC 127,DEVC,127,Data Journalism for Development,LEC,B,,3,72,,CDC LR1,1s,N,LBDDJ,PRE:DEVC 125,2,120,embedded_parent
+598069,394,DEVC 127,DEVC,127,Data Journalism for Development,LEC,T,,3,54,,CDC LR1,1s,N,LBDDJ,PRE:DEVC 125,2,120,embedded_parent
+614783,396,DEVC 135,DEVC,135,Multi-media Materials Planning and Design,LAB,B-3L,598070,3,20,20,CDC ANNEX3,"1s,2s",I,LBDDBT,PRE:DEVC 103,1,180,row
+598329,396,DEVC 135,DEVC,135,Multi-media Materials Planning and Design,LAB,B1L,598070,3,20,20,CDC ANNEX02,"1s,2s",N,LBDDBT,PRE:DEVC 103,1,180,row
+598330,396,DEVC 135,DEVC,135,Multi-media Materials Planning and Design,LAB,B2L,598070,3,20,20,CDC IMU,"1s,2s",N,LBDDBT,PRE:DEVC 103,1,180,row
+598070,396,DEVC 135,DEVC,135,Multi-media Materials Planning and Design,LEC,B,,3,40,,CDC LR2,"1s,2s",N,LBDDBT,PRE:DEVC 103,2,120,embedded_parent
+611044,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,AB-1L,598071,3,20,20,CDC RM 209A,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+611045,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,AB-2L,598071,3,20,20,CDC RM212B,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+598333,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,ST-1L,598072,3,20,20,CDC RM 209A,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+598334,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,ST-2L,598072,3,20,18,CDC ANNEX4,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+598335,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,T-1L,598073,3,20,20,CDC GRAD,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+598336,398,DEVC 144,DEVC,144,Media-based Learning Systems,LAB,T-2L,598073,3,20,14,CDC GRAD RM,"1s,2s",N,LBDEC,PRE:DEVC 135,1,180,row
+598071,398,DEVC 144,DEVC,144,Media-based Learning Systems,LEC,AB,,3,40,,CDC GRAD RM,"1s,2s",N,LBDEC,PRE:DEVC 135,2,120,embedded_parent
+598072,398,DEVC 144,DEVC,144,Media-based Learning Systems,LEC,ST,,3,40,,CDC GRAD,"1s,2s",N,LBDEC,PRE:DEVC 135,2,120,embedded_parent
+598073,398,DEVC 144,DEVC,144,Media-based Learning Systems,LEC,T,,3,40,,CDC GRAD,"1s,2s",N,LBDEC,PRE:DEVC 135,2,120,embedded_parent
+611047,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST11L,611046,3,18,18,CDC ANNEX1,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611048,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST12L,611046,3,18,18,CDC ANNEX1,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611049,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST13L,611046,3,18,16,CDC ANNEX1,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611051,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST21L,611050,3,18,17,CDC ANNEX1,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611052,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST22L,611050,3,18,18,CDC ANNEX2,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611055,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST23L,611050,3,18,18,CDC ANNEX2,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611056,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LAB,ST24L,611050,3,18,8,CDC ANNEX2,1s,N,LBDEC,PRE:DEVC 144,2,360,row
+611046,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LEC,ST1,,3,54,,CDC LR1,1s,N,LBDEC,PRE:DEVC 144,1,60,embedded_parent
+611050,399,DEVC 145,DEVC,145,Distance Learning Systems in Development Communication Practice,LEC,ST2,,3,72,,CDC LR1,1s,N,LBDEC,PRE:DEVC 144,1,60,embedded_parent
+598078,400,DEVC 153,DEVC,153,Managing Information for Development,LEC,E,,3,45,45,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 50,2,180,row
+598079,400,DEVC 153,DEVC,153,Managing Information for Development,LEC,G,,3,45,44,CDC GRAD RM,"1s,2s",N,LBDSC,PRE:DEVC 50,2,180,row
+598080,400,DEVC 153,DEVC,153,Managing Information for Development,LEC,Y,,3,45,45,CDC LR1,"1s,2s",N,LBDSC,PRE:DEVC 50,2,180,row
+598081,400,DEVC 153,DEVC,153,Managing Information for Development,LEC,Z,,3,45,45,CDC LR1,"1s,2s",N,LBDSC,PRE:DEVC 50,2,180,row
+611029,401,DEVC 154,DEVC,154,Communicating Science for Development,LAB,U1L,611028,3,15,13,CDC RM212B,2s,I,LBDSC,,1,180,row
+598345,401,DEVC 154,DEVC,154,Communicating Science for Development,LAB,U2L,611028,3,15,13,CDC RM212B,2s,I,LBDSC,,1,180,row
+611028,401,DEVC 154,DEVC,154,Communicating Science for Development,LEC,U,,3,30,,CDC LR2,2s,I,LBDSC,,2,120,embedded_parent
+611022,403,DEVC 180,DEVC,180,Communication Campaigns and Programs,LEC,G,,3,30,30,CDC RM212B,"1s,2s",I,LBDSC,,2,180,row
+598083,403,DEVC 180,DEVC,180,Communication Campaigns and Programs,LEC,H,,3,30,13,CDC GRADRM,"1s,2s",I,LBDSC,,2,180,row
+598085,404,DEVC 195,DEVC,195,Introduction to Communication Research,LEC,B,,3,30,16,CDC DECIMU,"1s,2s",N,LBDSC,PRE:STAT 166,2,180,row
+598086,404,DEVC 195,DEVC,195,Introduction to Communication Research,LEC,U,,3,30,14,TCC 11,"1s,2s",N,LBDSC,PRE:STAT 166,2,180,row
+599321,3364,DEVC 198,DEVC,198,Undergraduate Research in Development Communication,LEC,AB,,3,25,8,CDC ANNEX2,"1s,2s,S",I,LBDDJ,,1,180,row
+613850,3364,DEVC 198,DEVC,198,Undergraduate Research in Development Communication,THE,WBD3,,3,30,1,,"1s,2s,S",C,LBDSC,,0,0,row
+598088,406,DEVC 199,DEVC,199,Undergraduate Seminar,SEM,C,,1,25,25,TCC 06,"1s,2s",N,LBDSC,PRE:DEVC 195,1,60,row
+598089,406,DEVC 199,DEVC,199,Undergraduate Seminar,SEM,EF,,1,25,23,TCC 06,"1s,2s",N,LBDSC,PRE:DEVC 195,1,60,row
+598037,384,DEVC 20,DEVC,20,Fundamentals of Development Journalism,LEC,G,,3,30,30,CDC LR1,"1s,2s",N,LBDDJ,PRE:(DEVC 11),2,180,row
+598092,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,ADM1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598093,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,ADM3,,0,30,1,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598094,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,ATL1,,0,30,1,,S,C,LBDSC,PRE:DEVC 195,0,0,row
+598095,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,ATL3,,0,30,5,,S,C,LBDSC,PRE:DEVC 195,0,0,row
+598098,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,CMG1,,0,30,0,,S,C,LBDEC,PRE:DEVC 195,0,0,row
+598099,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,CMG3,,0,30,4,,S,C,LBDEC,PRE:DEVC 195,0,0,row
+598100,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,DLB1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598101,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,DLB3,,0,30,3,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598102,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EDL1,,0,30,1,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598103,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EDL3,,0,30,6,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598104,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EGC1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598105,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EGC3,,0,30,12,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598106,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EMP1,,0,30,1,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598107,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,EMP3,,0,30,4,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598108,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,GPG1,,0,30,0,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598109,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,GPG3,,0,30,4,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598110,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,GSM1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598111,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,GSM3,,0,30,7,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+599330,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,HCC1,,0,30,0,,S,C,LBDSC,PRE:DEVC 195,0,0,row
+599331,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,HCC3,,0,30,2,,S,C,LBDSC,PRE:DEVC 195,0,0,row
+598112,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JBE1,,0,30,0,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598113,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JBE3,,0,30,9,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598114,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JCB1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598115,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JCB3,,0,30,5,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598116,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JDR1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598117,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,JDR3,,0,30,5,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+599328,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,KGC1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+599329,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,KGC3,,0,30,3,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598120,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LAC1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598121,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LAC3,,0,30,6,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598122,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LBC1,,0,30,0,,S,C,LBDEC,PRE:DEVC 195,0,0,row
+598123,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LBC3,,0,30,4,,S,C,LBDEC,PRE:DEVC 195,0,0,row
+598124,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LPO1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598125,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,LPO3,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598126,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MBO1,,0,30,1,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598127,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MBO3,,0,30,4,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598130,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MMC1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598131,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MMC3,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598132,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MOM1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598133,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MOM3,,0,30,5,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598134,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MTD1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598135,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MTD3,,0,30,8,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598136,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MTM1,,0,30,3,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598137,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,MTM3,,0,30,8,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598138,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,OCL1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598139,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,OCL3,,0,30,6,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598140,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,PAC1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598141,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,PAC3,,0,30,3,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598142,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,PME1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598143,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,PME3,,0,30,7,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598144,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RAD1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598145,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RAD3,,0,30,9,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598146,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RAE1,,0,30,1,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598147,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RAE3,,0,30,9,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598148,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RBV1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598149,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RBV3,,0,30,8,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598150,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RDC1,,0,30,1,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598151,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RDC3,,0,30,6,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598152,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RFF1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598153,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RFF3,,0,30,10,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+613835,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RIG1,,0,30,0,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+613834,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RIG3,,0,30,3,,S,C,LBDDBT,PRE:DEVC 195,0,0,row
+598154,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RMQ1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598155,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RMQ3,,0,30,4,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598156,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RVT1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598157,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,RVT3,,0,30,5,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598160,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,TTM1,,0,30,0,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598161,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,TTM3,,0,30,6,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598162,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,WBD1,,0,30,2,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598163,407,DEVC 200,DEVC,200,Undergraduate Thesis,THE,WBD3,,0,30,8,,S,C,LBDDJ,PRE:DEVC 195,0,0,row
+598166,1495,DEVC 202,DEVC,202,Communication Theory in Development Communication,LEC,BD,,3,15,5,Room 201B,"1s,2s",N,LBDDJ,,1,180,row
+598168,1496,DEVC 205,DEVC,205,Communication and Development,LEC,EF,,3,15,4,Room 201B,"1s,2s",I,LBDEC,,1,180,row
+598170,1496,DEVC 205,DEVC,205,Communication and Development,LEC,WX,,3,15,4,Room 201B,"1s,2s",I,LBDEC,,1,180,row
+598171,1497,DEVC 208,DEVC,208,Communication Approaches in Development Communication Programs,LEC,TV,,3,15,6,Room 201B,"1s,2s",I,LBDDBT,PRE:(DEVC 202),1,180,row
+598172,1499,DEVC 215,DEVC,215,Communication and Culture,LEC,WX,,3,15,4,Room 200A,1s,I,LBDEC,,1,180,row
+598173,1500,DEVC 230,DEVC,230,Educational Communication Systems,LEC,WX,,3,15,5,Room 201B,1s,I,LBDEC,,1,180,row
+598175,1503,DEVC 290,DEVC,290,Special Problems,SPR,EGC2,,0,15,3,,"1s,2s",I,LBDEC,,0,0,row
+598176,1503,DEVC 290,DEVC,290,Special Problems,SPR,GSM2,,0,15,0,,"1s,2s",I,LBDSC,,0,0,row
+611071,1503,DEVC 290,DEVC,290,Special Problems,SPR,LAC2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598178,1503,DEVC 290,DEVC,290,Special Problems,SPR,MOM2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598179,1503,DEVC 290,DEVC,290,Special Problems,SPR,PAC2,,0,15,0,,"1s,2s",I,LBDDJ,,0,0,row
+611073,1503,DEVC 290,DEVC,290,Special Problems,SPR,RAD2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598180,1503,DEVC 290,DEVC,290,Special Problems,SPR,RDC2,,0,15,2,,"1s,2s",I,LBDEC,,0,0,row
+611074,1503,DEVC 290,DEVC,290,Special Problems,SPR,RPFF2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598181,1503,DEVC 290,DEVC,290,Special Problems,SPR,RVT2,,0,15,0,,"1s,2s",I,LBDSC,,0,0,row
+598183,1503,DEVC 290,DEVC,290,Special Problems,SPR,TTM2,,0,15,0,,"1s,2s",I,LBDDBT,,0,0,row
+611072,1503,DEVC 290,DEVC,290,Special Problems,SPR,WBD2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598184,1504,DEVC 291,DEVC,291,Special Topics,STO,EF,,0,15,2,Room 200A,"1s,2s",I,LBDDJ,,1,120,row
+598185,1504,DEVC 291,DEVC,291,Special Topics,STO,YZ,,0,15,2,Graduate School,"1s,2s",I,LBDSC,,1,120,row
+598186,1505,DEVC 295,DEVC,295,Development Communication Research,LEC,BD,,3,15,4,Room 201B,"1s,2s",N,LBDSC,PRE:DEVC 202,1,180,row
+598187,1506,DEVC 299,DEVC,299,Graduate Seminar in Development Communication,SEM,UV,,1,15,4,CDC RM200A,"1s,2s",N,LBDDBT,,1,60,row
+598040,385,DEVC 30,DEVC,30,Fundamentals of Community Broadcasting,LEC,T,,3,30,1,CDC ANNEX3,"1s,2s",N,LBDDBT,PRE:(DEVC 11),2,180,row
+598039,385,DEVC 30,DEVC,30,Fundamentals of Community Broadcasting,LEC,W,,3,30,25,CDC GRAD RM,"1s,2s",N,LBDDBT,PRE:(DEVC 11),2,180,row
+598189,1507,DEVC 300,DEVC,300,Master's Thesis,THE,BGF1,,0,30,1,,"1s,2s,M",I,LBDDBT,,0,0,row
+598190,1507,DEVC 300,DEVC,300,Master's Thesis,THE,BGF2,,0,30,0,,"1s,2s,M",I,LBDDBT,,0,0,row
+598191,1507,DEVC 300,DEVC,300,Master's Thesis,THE,BGF3,,0,30,0,,"1s,2s,M",I,LBDDBT,,0,0,row
+598192,1507,DEVC 300,DEVC,300,Master's Thesis,THE,BGF6,,0,30,0,,"1s,2s,M",C,LBDDBT,,0,0,row
+598193,1507,DEVC 300,DEVC,300,Master's Thesis,THE,EGC1,,0,30,3,,"1s,2s,M",I,LBDDJ,,0,0,row
+598194,1507,DEVC 300,DEVC,300,Master's Thesis,THE,EGC2,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598195,1507,DEVC 300,DEVC,300,Master's Thesis,THE,EGC3,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598196,1507,DEVC 300,DEVC,300,Master's Thesis,THE,EGC6,,0,30,1,,"1s,2s,M",C,LBDDJ,,0,0,row
+598197,1507,DEVC 300,DEVC,300,Master's Thesis,THE,GSM1,,0,30,4,,"1s,2s,M",I,LBDDJ,,0,0,row
+598198,1507,DEVC 300,DEVC,300,Master's Thesis,THE,GSM2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598199,1507,DEVC 300,DEVC,300,Master's Thesis,THE,GSM3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598200,1507,DEVC 300,DEVC,300,Master's Thesis,THE,GSM6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598201,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MCT1,,0,30,5,,"1s,2s,M",I,LBDDJ,,0,0,row
+598202,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MCT2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598203,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MCT3,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598204,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MCT6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598205,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MOM1,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598206,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MOM2,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598207,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MOM3,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598208,1507,DEVC 300,DEVC,300,Master's Thesis,THE,MOM6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598209,1507,DEVC 300,DEVC,300,Master's Thesis,THE,PAC1,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598210,1507,DEVC 300,DEVC,300,Master's Thesis,THE,PAC2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598211,1507,DEVC 300,DEVC,300,Master's Thesis,THE,PAC3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598212,1507,DEVC 300,DEVC,300,Master's Thesis,THE,PAC6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+611638,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RAD1,,0,15,0,,"1s,2s,M",N,LBDEC,,0,0,row
+611639,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RAD2,,0,15,0,,"1s,2s,M",N,LBDEC,,0,0,row
+611640,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RAD3,,0,15,0,,"1s,2s,M",N,LBDEC,,0,0,row
+611641,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RAD6,,0,15,0,,"1s,2s,M",I,LBDEC,,0,0,row
+598213,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RDC1,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598214,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RDC2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598215,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RDC3,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598216,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RDC6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+611023,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RFF1,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+611024,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RFF2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+611025,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RFF3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+611027,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RFF6,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598217,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RVT1,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598218,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RVT2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598219,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RVT3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598220,1507,DEVC 300,DEVC,300,Master's Thesis,THE,RVT6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598221,1507,DEVC 300,DEVC,300,Master's Thesis,THE,SBJ1,,0,30,3,,"1s,2s,M",I,LBDDJ,,0,0,row
+598222,1507,DEVC 300,DEVC,300,Master's Thesis,THE,SBJ2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598223,1507,DEVC 300,DEVC,300,Master's Thesis,THE,SBJ3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598224,1507,DEVC 300,DEVC,300,Master's Thesis,THE,SBJ6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598225,1507,DEVC 300,DEVC,300,Master's Thesis,THE,TTM1,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598226,1507,DEVC 300,DEVC,300,Master's Thesis,THE,TTM2,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598227,1507,DEVC 300,DEVC,300,Master's Thesis,THE,TTM3,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598228,1507,DEVC 300,DEVC,300,Master's Thesis,THE,TTM6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598229,1507,DEVC 300,DEVC,300,Master's Thesis,THE,WBD1,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598230,1507,DEVC 300,DEVC,300,Master's Thesis,THE,WBD2,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598231,1507,DEVC 300,DEVC,300,Master's Thesis,THE,WBD3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598232,1507,DEVC 300,DEVC,300,Master's Thesis,THE,WBD6,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598233,1508,DEVC 310,DEVC,310,Theorizing in Development Communication,LEC,EF,,3,15,5,Graduate School,"1s,2s",I,LBDDJ,PRE:(DEVC 202),1,180,row
+598234,1509,DEVC 311,DEVC,311,Organizational Communication and Leadership in Development,LEC,EF,,3,15,1,Room 201B,1s,I,LBDDBT,,1,180,row
+598235,1510,DEVC 320,DEVC,320,Communication Systems Policies and Planning,LEC,BD,,3,15,3,Room 200A,"1s,2s",N,LBDSC,PRE:DEVC 311,1,180,row
+598236,1511,DEVC 363,DEVC,363,Public Communication of Science,LEC,TV,,3,15,4,Room 200A,"1s,2s",I,LBDDJ,,1,180,row
+598238,1512,DEVC 390,DEVC,390,Special Problems,SPR,EGC2,,0,30,1,,"1s,2s",I,LBDEC,,0,0,row
+614331,1512,DEVC 390,DEVC,390,Special Problems,SPR,MCT2,,0,30,1,,"1s,2s",I,LBDDBT,,0,0,row
+611076,1512,DEVC 390,DEVC,390,Special Problems,SPR,MOM2,,0,15,0,,"1s,2s",I,LBDEC,,0,0,row
+598240,1512,DEVC 390,DEVC,390,Special Problems,SPR,PAC2,,0,30,0,,"1s,2s",I,LBDDJ,,0,0,row
+598242,1512,DEVC 390,DEVC,390,Special Problems,SPR,TTM2,,0,15,1,,"1s,2s",I,LBDEVC,,0,0,row
+598243,1513,DEVC 391,DEVC,391,Special Topics,STO,WX,,0,15,6,Room 200A,"1s,2s",I,LBDEC,,1,120,row
+614590,1515,DEVC 399,DEVC,399,Graduate Seminar,SEM,EGC,,1,15,1,CDC Conference Room,"1s,2s",N,LBDEC,,1,60,row
+598245,1515,DEVC 399,DEVC,399,Graduate Seminar,SEM,UV,,1,15,1,Room 201B,"1s,2s",N,LBDDBT,,1,60,row
+598041,386,DEVC 40,DEVC,40,Fundamentals of Educational Communication and Technology,LEC,X,,3,30,29,CDC LR1,"1s,2s",I,LBDEC,PRE:(DEVC 11),2,180,row
+598042,386,DEVC 40,DEVC,40,Fundamentals of Educational Communication and Technology,LEC,Y,,3,30,28,CDC GRAD,"1s,2s",I,LBDEC,PRE:(DEVC 11),2,180,row
+598246,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,BGF1,,0,30,2,,"1s,2s,M",I,LBDDBT,,0,0,row
+598247,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,BGF12,,0,30,0,,"1s,2s,M",C,LBDDBT,,0,0,row
+598248,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,BGF3,,0,30,0,,"1s,2s,M",I,LBDDBT,,0,0,row
+598249,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,BGF4,,0,30,0,,"1s,2s,M",I,LBDDBT,,0,0,row
+614696,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,BGF6,,0,30,1,,"1s,2s,M",I,LBDDBT,,0,0,row
+598251,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,CST1,,0,30,0,,"1s,2s,M",N,LBDDJ,,0,0,row
+598252,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,EGC1,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598253,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,EGC12,,0,30,0,,"1s,2s,M",C,LBDEC,,0,0,row
+598254,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,EGC3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598255,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,EGC4,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598257,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,MCT1,,0,30,7,,"1s,2s,M",I,LBDDJ,,0,0,row
+598258,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,MCT3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598259,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,MCT4,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+614941,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,MCT6,,0,20,1,,"1s,2s,M",I,LBDDBT,,0,0,row
+598261,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,PAC1,,0,30,2,,"1s,2s,M",I,LBDDJ,,0,0,row
+598264,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,PAC12,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598262,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,PAC3,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598263,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,PAC4,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598265,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,SBJ1,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598268,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,SBJ12,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598266,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,SBJ3,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598267,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,SBJ4,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+614629,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,SBJ6,,0,30,1,,"1s,2s,M",I,LBDDJ,,0,0,row
+598269,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,TTM1,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+598272,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,TTM12,,0,30,0,,"1s,2s,M",C,LBDDJ,,0,0,row
+598270,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,TTM3,,0,30,3,,"1s,2s,M",I,LBDDJ,,0,0,row
+598271,1516,DEVC 400,DEVC,400,Doctoral Dissertation,LEC,TTM4,,0,30,0,,"1s,2s,M",I,LBDDJ,,0,0,row
+611642,1516,DEVC 400,DEVC,400,Doctoral Dissertation,THE,MCT12,,0,30,0,,"1s,2s,M",C,LBDDBT,,0,0,row
+598043,387,DEVC 50,DEVC,50,Introduction to Science Communication,LEC,F,,3,30,29,CDC LR1,"1s,2s",I,LBDSC,PRE:(DEVC 11),2,180,row
+598291,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB11L,598045,3,18,18,CDC RM209A,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+611004,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB12L,598045,3,18,18,TCC 06,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+610991,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB13L,598045,3,18,18,ROOM 209A,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+610992,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB14L,598045,3,18,18,ROOM 209A,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+611008,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB21L,610993,3,18,18,TCC 06,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+611012,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB22L,610993,3,18,18,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+611015,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB23L,610993,3,18,18,GRAD ROOM,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+611018,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,AB24L,610993,3,18,18,CDC ANNEX 03,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+598296,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,ST1L,598047,3,18,17,CDC RM212B,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+598297,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,ST2L,598047,3,18,18,CDC RM212B,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+598298,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LAB,ST3L,598047,3,18,18,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 10,1,180,row
+598045,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LEC,AB1,,3,72,,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 10,2,120,embedded_parent
+610993,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LEC,AB2,,3,72,,CDC LR1,"1s,2s",N,LBDSC,PRE:DEVC 10,2,120,embedded_parent
+598047,388,DEVC 70,DEVC,70,Interpersonal Communication in Development,LEC,ST,,3,54,,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 10,2,120,embedded_parent
+598048,389,DEVC 80,DEVC,80,Communication and Society,LEC,G,,3,30,19,CDC LR2,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
+598054,389,DEVC 80,DEVC,80,Communication and Society,LEC,H,,3,30,30,CDC IMU,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
+598052,389,DEVC 80,DEVC,80,Communication and Society,LEC,Y1,,3,30,30,CDC ANNEX3,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
+598053,389,DEVC 80,DEVC,80,Communication and Society,LEC,Y2,,3,30,30,CDC ANNEX4,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
+598055,389,DEVC 80,DEVC,80,Communication and Society,LEC,Z2,,3,45,45,DEC-IMU,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
+611021,389,DEVC 80,DEVC,80,Communication and Society,LEC,Z4,,3,45,22,CDC GRADRM,"1s,2s",N,LBDSC,PRE:DEVC 10,2,180,row
 600590,349,ECON 101,ECON,101,Intermediate Macroeconomic Theory,LEC,T,,3,161,,REDREC,"1s,2s",N,LBDE,PRE:ECON 11,2,120,embedded_parent
 600767,349,ECON 101,ECON,101,Intermediate Macroeconomic Theory,RCT,T-1R,600590,3,23,23,CEM 111,"1s,2s",N,LBDE,PRE:ECON 11,1,60,row
 600768,349,ECON 101,ECON,101,Intermediate Macroeconomic Theory,RCT,T-2R,600590,3,23,23,CEM 111,"1s,2s",N,LBDE,PRE:ECON 11,1,60,row
@@ -2358,6 +2797,15 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 600726,1559,ECON 300,ECON,300,Master'sThesis,THE,D,,0,10,0,,"1s,2s,M",C,LBDE,,0,0,row
 600727,1560,ECON 399,ECON,399,Graduate Seminar in Economics,SEM,F,,1,5,1,CEM 107,"1s,2s",D,LBDE,,1,60,row
 600728,1561,ECON 400,ECON,400,Doctoral dissertation,DSR,A06,,0,5,1,,"1s,2s,M",N,LBDE,,0,0,row
+608772,2594,EDUC 102,EDUC,102,Theories and Principles of Education,LEC,F,,3,40,30,,1s,I,LBIGRD,,2,180,row
+608773,2594,EDUC 102,EDUC,102,Theories and Principles of Education,LEC,T,,3,30,27,,1s,I,LBIGRD,,2,180,row
+608768,2311,EDUC 111,EDUC,111,Educational Psychology,LEC,B,,3,30,25,,1s,I,LBIGRD,,2,180,row
+608769,2311,EDUC 111,EDUC,111,Educational Psychology,LEC,C,,3,30,24,,1s,I,LBIGRD,,2,180,row
+614379,2311,EDUC 111,EDUC,111,Educational Psychology,LEC,X,,3,25,22,,1s,I,LBIGRD,,2,180,row
+612465,2439,EDUC 122,EDUC,122,Principles and Strategies of Teaching,LEC,T,,3,20,13,,1s,I,LBIGRD,,2,180,row
+608771,2439,EDUC 122,EDUC,122,Principles and Strategies of Teaching,LEC,U,,3,15,14,,1s,I,LBIGRD,,2,180,row
+608759,2144,EDUC 144,EDUC,144,Evaluation of Learning Outcomes,LEC,E,,3,30,28,,1s,I,LBIGRD,,2,180,row
+608817,2144,EDUC 144,EDUC,144,Evaluation of Learning Outcomes,LEC,F,,3,20,20,,1s,I,LBIGRD,,2,180,row
 614782,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,A1,,3,20,20,CAS 108,"1s,2s,M",N,LBDHUM,,2,180,row
 609445,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,C,,3,20,20,CAS 110,"1s,2s,M",N,LBDHUM,,2,180,row
 609446,733,ENG 10,ENG,10,Writing of Scientific Papers,LEC,D1,,3,20,20,CAS 107,"1s,2s,M",N,LBDHUM,,2,180,row
@@ -2439,6 +2887,74 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 609286,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z1,,3,25,24,CAS B09,"1s,2s",N,LBDHUM,,2,180,row
 609386,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z2,,3,25,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
 609290,745,ETHICS 1,ETHICS,1,(GE). Ethics and Moral Reasoning in Everyday Life,LEC,Z3,,3,25,26,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+597721,86,HFDS 101,HFDS,101,Family and the Environment,LEC,E,,3,25,21,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597722,86,HFDS 101,HFDS,101,Family and the Environment,LEC,F,,3,25,24,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+597723,86,HFDS 101,HFDS,101,Family and the Environment,LEC,G,,3,25,23,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+597724,86,HFDS 101,HFDS,101,Family and the Environment,LEC,W1,,3,20,20,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597725,86,HFDS 101,HFDS,101,Family and the Environment,LEC,W2,,3,25,24,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+597726,87,HFDS 105,HFDS,105,Family Dynamics,LEC,A,,3,25,24,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+597727,87,HFDS 105,HFDS,105,Family Dynamics,LEC,D,,3,25,25,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+597728,88,HFDS 110,HFDS,110,Migration,LEC,D,,3,15,15,DHFDS GRAD,"1s,2s",N,LBDHFDS,PRE:SOC 140,2,180,row
+597729,89,HFDS 115,HFDS,115,Family and Community Resource Management,LEC,T,,3,25,20,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+597730,89,HFDS 115,HFDS,115,Family and Community Resource Management,LEC,U,,3,25,24,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+597731,90,HFDS 124,HFDS,124,Housing,LEC,F,,3,20,7,DHFDS GRAD,2s,N,LBDHFDS,PRE:HFDS 101,2,180,row
+597732,91,HFDS 130,HFDS,130,Human Physiology,LEC,C1,,3,25,25,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+597733,91,HFDS 130,HFDS,130,Human Physiology,LEC,C2,,3,20,18,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597734,91,HFDS 130,HFDS,130,Human Physiology,LEC,D1,,3,25,22,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+597735,91,HFDS 130,HFDS,130,Human Physiology,LEC,D2,,3,20,16,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597736,91,HFDS 130,HFDS,130,Human Physiology,LEC,E1,,3,15,15,DHFDS GRAD,"1s,2s",N,LBDHFDS,,2,180,row
+597737,91,HFDS 130,HFDS,130,Human Physiology,LEC,E2,,3,20,17,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597739,92,HFDS 135,HFDS,135,Child Development,LEC,U,,3,20,11,ALH,"1s,2s",N,LBDHFDS,PRE:HUME 107,2,180,row
+597740,94,HFDS 145,HFDS,145,Adult Development,LEC,Y,,3,20,7,ACL,2s,N,LBDHFDS,PRE:HUME 107,2,180,row
+597741,95,HFDS 150,HFDS,150,Elderly Development,LEC,A,,3,15,0,DHFDS GRAD,1s,I,LBDHFDS,PRE:HUME 107 and Senior Standing,2,60,row
+597742,96,HFDS 155,HFDS,155,Human Sexuality,LEC,Y,,3,25,14,ALH,"1s,2s",I,LBDHFDS,,2,180,row
+597743,96,HFDS 155,HFDS,155,Human Sexuality,LEC,Z,,3,25,15,CTL,"1s,2s",I,LBDHFDS,,2,180,row
+597744,97,HFDS 160,HFDS,160,Personality Theories,LEC,C,,3,15,14,DHFDS GRAD,"1s,2s",I,LBDHFDS,,2,180,row
+597745,98,HFDS 165,HFDS,165,Behavior Change,LEC,B,,3,15,13,DHFDS GRAD,"1s,2s",I,LBDHFDS,,2,180,row
+597746,99,HFDS 170,HFDS,170,Guidance and Counseling Techniques,LEC,X,,3,25,24,CTL,1s,N,LBDHFDS,,2,180,row
+597747,99,HFDS 170,HFDS,170,Guidance and Counseling Techniques,LEC,Z,,3,15,12,ACL,1s,N,LBDHFDS,,2,180,row
+597855,100,HFDS 175,HFDS,175,Child Development Programs,LAB,AB1L,597748,3,20,4,ALH,2s,N,LBDHFDS,PRE:HUME 107,1,180,row
+597748,100,HFDS 175,HFDS,175,Child Development Programs,LEC,AB,,3,20,,ALH,2s,N,LBDHFDS,PRE:HUME 107,2,120,embedded_parent
+597749,101,HFDS 180,HFDS,180,Early Childhood Curriculum,LEC,Y,,3,15,3,DHFDS GRAD,1s,N,LBDHFDS,PRE:HFDS 135,2,180,row
+597750,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB1,,0,5,2,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597751,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB10,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597753,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB12,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597755,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB14,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597757,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB2,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597758,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB3,,0,5,2,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597759,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB4,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597760,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB5,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597761,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB6,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597762,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB7,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597763,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB8,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597764,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AB9,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597765,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC1,,0,5,2,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597766,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC10,,0,5,5,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597768,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC12,,0,5,5,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597770,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC14,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597772,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC2,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597773,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC3,,0,5,4,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597774,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC4,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597775,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC5,,0,5,3,TBA,"1s,2s,M",I,LBDHFDS,,0,0,row
+597776,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC6,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597777,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC7,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597778,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC8,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597779,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AC9,,0,5,2,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597780,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD1,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597781,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD10,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597783,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD12,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597785,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD14,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597787,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD2,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597788,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD3,,0,5,0,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597789,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD4,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597790,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD5,,0,5,2,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597791,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD6,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597792,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD7,,0,5,1,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597793,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD8,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597794,102,HFDS 200,HFDS,200,Undergraduate Thesis,LEC,AD9,,0,5,3,,"1s,2s,M",I,LBDHFDS,,0,0,row
+597795,102,HFDS 200,HFDS,200,Undergraduate Thesis,THE,AE1,,0,5,0,TBA,"1s,2s,M",I,LBDHFDS,,0,0,row
+597796,103,HFDS 221,HFDS,221,Family Behavior,LEC,AR,,3,25,6,TBA,1s,I,LBDHFDS,,0,0,row
+597797,105,HFDS 231,HFDS,231,Family Management,LEC,AR,,3,15,5,,1s,I,LBDHFDS,,0,0,row
 609305,2642,HIST 1,HIST,1,Philippine History,LEC,A,,3,35,29,CAS 104,S,N,LBDSS,,2,180,row
 609306,2642,HIST 1,HIST,1,Philippine History,LEC,B1,,3,35,29,CAS 101,S,N,LBDSS,,2,180,row
 609307,2642,HIST 1,HIST,1,Philippine History,LEC,B2,,3,40,32,102,S,N,LBDSS,,2,180,row
@@ -2656,6 +3172,221 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 607570,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ7,,2,25,25,Dance Area 2,"1s,2s,M",N,LBDHK,,1,120,row
 607574,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ8,,2,25,25,BEACH VOLLEYBALL COURT,"1s,2s,M",N,LBDHK,,1,120,row
 607575,814,HK 12,HK,12,Human Kinetics Activities,LAB,YZ9,,2,25,25,Dance Area 2,"1s,2s,M",N,LBDHK,,1,120,row
+610744,753,HUM 100,HUM,100,Critical Theories,LEC,B,,3,20,17,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+610745,753,HUM 100,HUM,100,Critical Theories,LEC,G,,3,20,18,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+610748,753,HUM 100,HUM,100,Critical Theories,LEC,S,,3,20,15,CAS B07,"1s,2s",N,LBDHUM,,2,180,row
+610746,753,HUM 100,HUM,100,Critical Theories,LEC,V,,3,20,17,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+610747,753,HUM 100,HUM,100,Critical Theories,LEC,W,,3,20,18,CAS B07,"1s,2s",N,LBDHUM,,2,180,row
+611873,754,HUM 101,HUM,101,Visual Culture,LEC,B,,3,25,25,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+611874,754,HUM 101,HUM,101,Visual Culture,LEC,T,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+609503,755,HUM 102,HUM,102,New Media Art,LAB,1L,609502,3,30,25,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+609504,755,HUM 102,HUM,102,New Media Art,LAB,2L,609502,3,30,26,CAS B10,"1s,2s",N,LBDHUM,,2,180,row
+609502,755,HUM 102,HUM,102,New Media Art,LEC,ST,,3,60,,CAS A2 201,"1s,2s",N,LBDHUM,,1,120,embedded_parent
+609516,756,HUM 104,HUM,104,Culture and Arts Management,LEC,V,,3,25,25,CAS A1 GAL 2,"1s,2s",N,LBDHUM,PRE:(SOC 100); PRE:(HUM 100),2,180,row
+609517,756,HUM 104,HUM,104,Culture and Arts Management,LEC,X,,3,25,24,CAS A2 201,"1s,2s",N,LBDHUM,PRE:(SOC 100); PRE:(HUM 100),2,180,row
+609507,757,HUM 170,HUM,170,Philippine Art and Society,LEC,F,,3,25,23,CAS B05,"1s,2s",N,LBDHUM,,2,180,row
+609508,757,HUM 170,HUM,170,Philippine Art and Society,LEC,Z,,3,25,25,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+614786,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,A,,3,25,22,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609564,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,B,,3,25,24,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+614787,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,B2,,3,25,20,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+614788,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,C,,3,25,19,CAS MPH2 B,"1s,2s",N,LBDHUM,,2,180,row
+609565,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,D1,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+609566,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,D2,,3,25,22,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+609567,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,E1,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+609741,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,E2,,3,25,24,CAS A1 306,"1s,2s",N,LBDHUM,,2,180,row
+609742,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,H1,,3,25,24,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+609743,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,H2,,3,25,23,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+609744,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,T,,3,25,25,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+609749,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,U,,3,25,25,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+609750,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,Y,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+609751,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,Z1,,3,25,17,CAS B01,"1s,2s",N,LBDHUM,,2,180,row
+609752,752,HUM 3,HUM,3,"(GE). Reading Film, TV, and the Internet",LEC,Z2,,3,25,25,CAS A1 305,"1s,2s",N,LBDHUM,,2,180,row
+597798,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,B,,3,20,18,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+602742,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,E,,3,25,22,TCC-02,"1s,2s",I,LBDCERP,,2,180,row
+602743,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,F,,3,25,24,TCC-02,"1s,2s",I,LBDCERP,,2,180,row
+597800,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,S1,,3,25,23,CTL,"1s,2s",N,LBDHFDS,,2,180,row
+607103,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,U1,,3,31,28,SDS MLH,"1s,2s",I,LBDSDS,,2,180,row
+602744,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,U2,,3,25,23,TCC-01,"1s,2s",I,LBDCERP,,2,180,row
+607104,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,V,,3,35,34,SDS MLH,"1s,2s",I,LBDSDS,,2,180,row
+607518,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,W,,3,25,19,TCC-01,"1s,2s",I,LBDCERP,,2,180,row
+607098,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,X,,3,25,16,TCC-04,"1s,2s",I,LBDCERP,,2,180,row
+614368,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,X2,,3,25,25,,"1s,2s",N,LBDHFDS,,2,180,row
+614369,107,HUME 100,HUME,100,Introduction to Human Ecology,LEC,Y,,3,20,19,TCC 14,"1s,2s",N,LBDHFDS,,2,180,row
+602809,124,HUME 105,HUME,105,Humans and Their Environment,LEC,G,,3,25,20,CLH,"1s,2s",I,LBDCERP,PRE:HUME 100,2,180,row
+602810,124,HUME 105,HUME,105,Humans and Their Environment,LEC,T,,3,25,17,TCC-01,"1s,2s",I,LBDCERP,PRE:HUME 100,2,180,row
+602811,124,HUME 105,HUME,105,Humans and Their Environment,LEC,U,,3,25,24,CERP AVR,"1s,2s",I,LBDCERP,PRE:HUME 100,2,180,row
+597803,108,HUME 107,HUME,107,Principles of Human Development,LEC,B,,3,25,20,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597804,108,HUME 107,HUME,107,Principles of Human Development,LEC,T,,3,20,19,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597805,108,HUME 107,HUME,107,Principles of Human Development,LEC,V,,3,25,21,ACL,"1s,2s",N,LBDHFDS,,2,180,row
+597806,108,HUME 107,HUME,107,Principles of Human Development,LEC,X,,3,20,14,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597807,108,HUME 107,HUME,107,Principles of Human Development,LEC,Y,,3,20,19,ALH,"1s,2s",N,LBDHFDS,,2,180,row
+597808,109,HUME 110,HUME,110,Ecology and Value Systems,LEC,E,,3,25,15,ACL,"1s,2s",N,LBDHFDS,PRE:HUME 105 and BIO 150,2,180,row
+597809,109,HUME 110,HUME,110,Ecology and Value Systems,LEC,T1,,3,25,21,CTL,"1s,2s",N,LBDHFDS,PRE:HUME 105 and BIO 150,2,180,row
+597810,109,HUME 110,HUME,110,Ecology and Value Systems,LEC,T2,,3,15,0,DHFDS GRAD,"1s,2s",N,LBDHFDS,PRE:HUME 105 and BIO 150,2,180,row
+597811,109,HUME 110,HUME,110,Ecology and Value Systems,LEC,U,,3,20,20,CTL,"1s,2s",N,LBDHFDS,PRE:HUME 105 and BIO 150,2,180,row
+602813,125,HUME 111,HUME,111,Human Ecological Perspectives in Development,LEC,C,,3,25,24,CLH,1s,I,LBDCERP,PRE:(HUME 105),2,180,row
+602815,125,HUME 111,HUME,111,Human Ecological Perspectives in Development,LEC,E,,3,25,16,TCC-01,1s,I,LBDCERP,PRE:(HUME 105),2,180,row
+602816,125,HUME 111,HUME,111,Human Ecological Perspectives in Development,LEC,F,,3,25,17,TCC-01,1s,I,LBDCERP,PRE:(HUME 105),2,180,row
+602817,125,HUME 111,HUME,111,Human Ecological Perspectives in Development,LEC,G,,3,25,22,TCC-01,1s,I,LBDCERP,PRE:(HUME 105),2,180,row
+602819,125,HUME 111,HUME,111,Human Ecological Perspectives in Development,LEC,Y,,3,25,24,TCC-01,1s,I,LBDCERP,PRE:(HUME 105),2,180,row
+607156,143,HUME 112,HUME,112,Sustainability Science,LEC,T,,3,25,23,TCC 5,"1s,2s",D,LBDSDS,,2,180,row
+607157,143,HUME 112,HUME,112,Sustainability Science,LEC,W,,3,20,18,CHEREC,"1s,2s",D,LBDSDS,,2,180,row
+607158,143,HUME 112,HUME,112,Sustainability Science,LEC,X,,3,20,20,SDS MLH,"1s,2s",D,LBDSDS,,2,180,row
+607183,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,CD1L,607159,3,14,13,SDS LAB,"1s,2s",N,LBDSDS,,1,180,row
+607184,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,CD2L,607159,3,10,9,SDS LAB,"1s,2s",N,LBDSDS,,1,180,row
+607185,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,T1L,607160,3,10,10,TCC 5,"1s,2s",D,LBDSDS,,1,180,row
+607186,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,T2L,607160,3,10,10,TCC 5,"1s,2s",D,LBDSDS,,1,180,row
+607189,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,U11L,607162,3,10,10,TCC 12,"1s,2s",N,LBDSDS,,1,180,row
+607191,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,U12L,607162,3,10,10,TCC 12,"1s,2s",N,LBDSDS,,1,180,row
+607192,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,UV1L,610758,3,10,10,SDS LAB,"1s,2s",D,LBDSDS,,1,180,row
+607193,144,HUME 113,HUME,113,Community Study in Human Welfare,LAB,UV2L,610758,3,10,11,SDS LAB,"1s,2s",D,LBDSDS,,1,180,row
+607159,144,HUME 113,HUME,113,Community Study in Human Welfare,LEC,CD,,3,20,,CHEREC,"1s,2s",N,LBDSDS,,1,120,embedded_parent
+607160,144,HUME 113,HUME,113,Community Study in Human Welfare,LEC,T,,3,20,,SDS LAB,"1s,2s",D,LBDSDS,,2,120,embedded_parent
+607162,144,HUME 113,HUME,113,Community Study in Human Welfare,LEC,U1,,3,20,,CHEREC,"1s,2s",N,LBDSDS,,2,120,embedded_parent
+610758,144,HUME 113,HUME,113,Community Study in Human Welfare,LEC,UV,,3,20,,TCC 4,"1s,2s",D,LBDSDS,,2,120,embedded_parent
+602821,126,HUME 114,HUME,114,Material and Energy Flows,LEC,D,,3,25,23,DCERP Conf Rm,"1s,2s",N,LBDCERP,,2,180,row
+602823,126,HUME 114,HUME,114,Material and Energy Flows,LEC,Y,,3,25,24,CERP AVR,"1s,2s",N,LBDCERP,,2,180,row
+615005,126,HUME 114,HUME,114,Material and Energy Flows,LEC,Y-2,,3,20,11,,"1s,2s",D,LBDCERP,,2,180,row
+614944,126,HUME 114,HUME,114,Material and Energy Flows,LEC,Y2,,3,20,6,Old GS Bldg,"1s,2s",D,LBDCERP,,2,180,row
+602842,145,HUME 115,HUME,115,Social Policies,LEC,B,,3,20,0,,"1s,2s",I,LBDCERP,,2,180,row
+607165,145,HUME 115,HUME,115,Social Policies,LEC,B1,,3,30,28,CHEREC,"1s,2s",I,LBDSDS,,2,180,row
+607164,145,HUME 115,HUME,115,Social Policies,LEC,D,,3,30,30,TCC 5,"1s,2s",I,LBDSDS,,2,180,row
+597813,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,A,,3,25,24,CTL,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+597814,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,C,,3,25,25,ACL,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+597815,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,H,,3,20,19,ALH,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+597816,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,U,,3,15,15,DHFDS GRAD,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+597817,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,V1,,3,20,20,ALH,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+597818,110,HUME 122,HUME,122,Human Needs and the Built Environment,LEC,V2,,3,25,25,CTL,"1s,2s",N,LBDHFDS,PRE:HUME 100,2,180,row
+607108,127,HUME 123,HUME,123,Climate Change Adaptation and Disaster Risk Reduction in Human Ecosystems,LEC,E,,3,20,20,CHEREC,"1s,2s",I,LBDSDS,PRE:(HUME 100),2,180,row
+602824,127,HUME 123,HUME,123,Climate Change Adaptation and Disaster Risk Reduction in Human Ecosystems,LEC,F,,3,25,22,CERP AVR,"1s,2s",I,LBDCERP,PRE:(HUME 100),2,180,row
+602826,127,HUME 123,HUME,123,Climate Change Adaptation and Disaster Risk Reduction in Human Ecosystems,LEC,V,,3,25,24,TCC-01,"1s,2s",I,LBDCERP,PRE:(HUME 100),2,180,row
+607109,127,HUME 123,HUME,123,Climate Change Adaptation and Disaster Risk Reduction in Human Ecosystems,LEC,W,,3,20,20,SDS MLH,"1s,2s",I,LBDSDS,PRE:(HUME 100),2,180,row
+602827,127,HUME 123,HUME,123,Climate Change Adaptation and Disaster Risk Reduction in Human Ecosystems,LEC,W1,,3,25,25,DCERP Conf Rm,"1s,2s",I,LBDCERP,PRE:(HUME 100),2,180,row
+602830,128,HUME 124,HUME,124,Environmental Health,LEC,G,,3,25,23,DCERP Conf Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),2,180,row
+602831,128,HUME 124,HUME,124,Environmental Health,LEC,W1,,3,25,25,CERP AVR,"1s,2s",I,LBDCERP,PRE:(HUME 105),2,180,row
+602896,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,D1L,602832,3,15,12,Geomatics Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602897,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,D2L,602832,3,15,13,Geomatics Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602898,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,D3L,602832,3,15,14,Geomatics Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602899,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,Y1L,602833,3,15,11,Geomatics Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602900,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,Y2L,602833,3,15,13,Geomatics Room,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602901,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LAB,Y3L,602833,3,15,11,Geomatics Rm,"1s,2s",I,LBDCERP,PRE:(HUME 105),1,180,row
+602832,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LEC,D,,3,45,,CHE MPH,"1s,2s",I,LBDCERP,PRE:(HUME 105),2,120,embedded_parent
+602833,129,HUME 125,HUME,125,Human Ecological Systems Mapping,LEC,Y,,3,45,,CHE MPH,"1s,2s",I,LBDCERP,PRE:(HUME 105),2,120,embedded_parent
+602834,130,HUME 190,HUME,190,Special Problems,SPR,Y,,0,10,0,,"1s,2s",D,LBDCERP,,2,180,row
+602835,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,B,,3,15,14,DCERP Conf Rm,1s,I,LBDCERP,,2,180,row
+602836,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,D,,3,15,14,CLH,1s,I,LBDCERP,,2,180,row
+602837,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,E,,3,15,13,TCC-05,1s,I,LBDCERP,,2,180,row
+602838,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,U,,3,15,15,CLH,1s,I,LBDCERP,,2,180,row
+602839,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,V,,3,15,15,CLH,1s,I,LBDCERP,,2,180,row
+602841,132,HUME 195,HUME,195,Research Methods in Human Ecology,LEC,X,,3,15,15,CERP AVR,1s,I,LBDCERP,,2,180,row
+597819,111,HUME 199,HUME,199,Seminar in Human Ecology,SEM,GH1F,,1,25,14,,"1s,2s",I,LBDHFDS,,0,0,row
+612910,111,HUME 199,HUME,199,Seminar in Human Ecology,SEM,GH2F,,1,25,8,,"1s,2s",I,LBDHFDS,,0,0,row
+602845,3275,HUME 199,HUME,199,Seminar in Human Ecology,SEM,Y,,1,15,8,CLH,"1s,2s",I,LBDCERP,,1,60,row
+607168,3276,HUME 199,HUME,199,Seminar in Human Ecology,SEM,YZ,,1,15,10,SDS LAB,"1s,2s",I,LBDSDS,,1,120,row
+612911,112,HUME 200a,HUME,200a,Supervised Field Experience,PRA,AFD1,,0,15,10,,"1s,2s",I,LBDHFDS,,0,0,row
+612912,112,HUME 200a,HUME,200a,Supervised Field Experience,PRA,AFD2,,0,15,5,,"1s,2s",I,LBDHFDS,,0,0,row
+602745,112,HUME 200a,HUME,200a,Supervised Field Experience,PRA,AR1,,0,10,7,TBA,"1s,2s",I,LBDCERP,,0,0,row
+602746,112,HUME 200a,HUME,200a,Supervised Field Experience,PRA,AR2,,0,10,0,TBA,"1s,2s",I,LBDCERP,,0,0,row
+607106,112,HUME 200a,HUME,200a,Supervised Field Experience,PRA,AR5,,0,15,7,,"1s,2s",I,LBDSDS,,0,0,row
+603461,81,HUME 290,HUME,290,Special Problems,SPR,AAB3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+613781,81,HUME 290,HUME,290,Special Problems,SPR,ACC3,,0,10,3,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603462,81,HUME 290,HUME,290,Special Problems,SPR,ADF3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603463,81,HUME 290,HUME,290,Special Problems,SPR,ADJ3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603464,81,HUME 290,HUME,290,Special Problems,SPR,ARB3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603465,81,HUME 290,HUME,290,Special Problems,SPR,CBJ3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603466,81,HUME 290,HUME,290,Special Problems,SPR,LMA3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603467,81,HUME 290,HUME,290,Special Problems,SPR,LSA3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603468,81,HUME 290,HUME,290,Special Problems,SPR,MMT3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+603469,81,HUME 290,HUME,290,Special Problems,SPR,MRN3,,0,20,0,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+613996,81,HUME 290,HUME,290,Special Problems,SPR,PAB3,,0,10,1,TBA,"1s,2s,M",I,LBIHNF,,0,0,row
+610731,82,HUME 291,HUME,291,Special Topics,FLD,AR1,,0,10,4,TBA,"1s,2s, M",I,LBIHNF,,0,0,row
+603470,82,HUME 291,HUME,291,Special Topics,STO,AAB3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603471,82,HUME 291,HUME,291,Special Topics,STO,ADF3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603472,82,HUME 291,HUME,291,Special Topics,STO,ADJ3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603473,82,HUME 291,HUME,291,Special Topics,STO,AMB3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603474,82,HUME 291,HUME,291,Special Topics,STO,ARB3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603475,82,HUME 291,HUME,291,Special Topics,STO,CAS,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603476,82,HUME 291,HUME,291,Special Topics,STO,CBJ3,,0,10,1,,"1s,2s, M",I,LBIHNF,,0,0,row
+603477,82,HUME 291,HUME,291,Special Topics,STO,CVB3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603478,82,HUME 291,HUME,291,Special Topics,STO,E3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603479,82,HUME 291,HUME,291,Special Topics,STO,G3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603480,82,HUME 291,HUME,291,Special Topics,STO,I3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603481,82,HUME 291,HUME,291,Special Topics,STO,IUD3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603482,82,HUME 291,HUME,291,Special Topics,STO,JPP3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603483,82,HUME 291,HUME,291,Special Topics,STO,LMA3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603484,82,HUME 291,HUME,291,Special Topics,STO,LSA3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603485,82,HUME 291,HUME,291,Special Topics,STO,MMT3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603486,82,HUME 291,HUME,291,Special Topics,STO,MRN3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603487,82,HUME 291,HUME,291,Special Topics,STO,RBM3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603488,82,HUME 291,HUME,291,Special Topics,STO,SFA3,,0,10,0,,"1s,2s, M",I,LBIHNF,,0,0,row
+603489,83,HUME 299,HUME,299,Graduate Seminar,SEM,AR1,,1,10,5,TBA,S,I,LBIHNF,,0,0,row
+603490,83,HUME 299,HUME,299,Graduate Seminar,SEM,AR2,,1,10,2,TBA,S,I,LBIHNF,,0,0,row
+603491,83,HUME 299,HUME,299,Graduate Seminar,SEM,AR3,,1,10,5,TBA,S,I,LBIHNF,,0,0,row
+597720,83,HUME 299,HUME,299,Graduate Seminar,SEM,ARFD,,1,15,2,,S,I,LBDHFDS,,0,0,row
+603492,84,HUME 300,HUME,300,Master's Thesis,THE,AAB1,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603493,84,HUME 300,HUME,300,Master's Thesis,THE,AAB2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603494,84,HUME 300,HUME,300,Master's Thesis,THE,AAB3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603495,84,HUME 300,HUME,300,Master's Thesis,THE,ADF1,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603496,84,HUME 300,HUME,300,Master's Thesis,THE,ADF2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603497,84,HUME 300,HUME,300,Master's Thesis,THE,ADF3,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603498,84,HUME 300,HUME,300,Master's Thesis,THE,ADJ1,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603499,84,HUME 300,HUME,300,Master's Thesis,THE,ADJ2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603500,84,HUME 300,HUME,300,Master's Thesis,THE,ADJ3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+597825,3317,HUME 300,HUME,300,Master's Thesis,THE,ARA1,,0,10,1,,"1s,2s,S",I,LBDHFDS,,0,0,row
+603501,84,HUME 300,HUME,300,Master's Thesis,THE,ARB1,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+597829,3317,HUME 300,HUME,300,Master's Thesis,THE,ARB1,,0,10,1,,"1s,2s,S",N,LBDHFDS,,0,0,row
+603502,84,HUME 300,HUME,300,Master's Thesis,THE,ARB2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+614780,3317,HUME 300,HUME,300,Master's Thesis,THE,ARB2,,0,5,1,,"1s,2s,S",N,LBDHFDS,,0,0,row
+603503,84,HUME 300,HUME,300,Master's Thesis,THE,ARB3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+613704,3273,HUME 300,HUME,300,Master's Thesis,THE,ARB3,,0,5,1,,"1s,2s,S",N,LBDHFDS,,0,0,row
+597833,3317,HUME 300,HUME,300,Master's Thesis,THE,ARC1,,0,10,2,,"1s,2s,S",N,LBDHFDS,,0,0,row
+597834,3317,HUME 300,HUME,300,Master's Thesis,THE,ARC2,,0,10,1,,"1s,2s,S",N,LBDHFDS,,0,0,row
+615000,3273,HUME 300,HUME,300,Master's Thesis,THE,ARC3,,0,10,1,,"1s,2s,S",N,LBDHFDS,,0,0,row
+603504,84,HUME 300,HUME,300,Master's Thesis,THE,CBJ1,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603505,84,HUME 300,HUME,300,Master's Thesis,THE,CBJ2,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603506,84,HUME 300,HUME,300,Master's Thesis,THE,CBJ3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603507,84,HUME 300,HUME,300,Master's Thesis,THE,LMA1,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603508,84,HUME 300,HUME,300,Master's Thesis,THE,LMA2,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603509,84,HUME 300,HUME,300,Master's Thesis,THE,LMA3,,0,20,2,,"1s,2s,S",I,LBIHNF,,0,0,row
+603510,84,HUME 300,HUME,300,Master's Thesis,THE,LSA1,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603511,84,HUME 300,HUME,300,Master's Thesis,THE,LSA2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603512,84,HUME 300,HUME,300,Master's Thesis,THE,LSA3,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603513,84,HUME 300,HUME,300,Master's Thesis,THE,MMT1,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603514,84,HUME 300,HUME,300,Master's Thesis,THE,MMT2,,0,20,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603515,84,HUME 300,HUME,300,Master's Thesis,THE,MMT3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603516,84,HUME 300,HUME,300,Master's Thesis,THE,MRN1,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603517,84,HUME 300,HUME,300,Master's Thesis,THE,MRN2,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603518,84,HUME 300,HUME,300,Master's Thesis,THE,MRN3,,0,20,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+612925,3273,HUME 300,HUME,300,Master's Thesis,THE,TBA,,0,10,0,,"1s,2s,S",N,LBDHFDS,,0,0,row
+603519,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,AAB1,,0,10,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603520,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,AAB3,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603521,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,AAB4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603522,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,AAB6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603523,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ADF1,,0,10,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603524,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ADF3,,0,10,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603525,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ADF4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603526,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ADF6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603527,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ARB1,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603528,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ARB3,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603529,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ARB4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603530,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,ARB6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603531,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,CBJ1,,0,10,3,,"1s,2s,S",I,LBIHNF,,0,0,row
+603532,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,CBJ3,,0,10,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603533,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,CBJ4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603534,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,CBJ6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603535,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LMA1,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+614699,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LMA12,,0,10,1,TBA,"1s,2s,S",I,LBIHNF,,0,0,row
+603536,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LMA3,,0,10,2,,"1s,2s,S",I,LBIHNF,,0,0,row
+603537,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LMA4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603538,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LMA6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603539,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LSA1,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603540,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LSA3,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603541,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LSA4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603542,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,LSA6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603543,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,MMT1,,0,10,1,,"1s,2s,S",I,LBIHNF,,0,0,row
+603544,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,MMT3,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603545,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,MMT4,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
+603546,85,HUME 400,HUME,400,Doctoral Dissertation,DSR,MMT6,,0,10,0,,"1s,2s,S",I,LBIHNF,,0,0,row
 609482,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,A1,,3,40,29,CAS A2 101,"1s,2s",N,LBDSS,,2,180,row
 609485,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,A2,,3,40,34,CAS A1 GAL 1,"1s,2s",N,LBDSS,,2,180,row
 609487,821,KAS 1,KAS,1,(GE). Kasaysayan ng Pilipinas,LEC,C1,,3,35,30,CAS 101,"1s,2s",N,LBDSS,,2,180,row
@@ -3023,6 +3754,122 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 599972,1712,MCB 400,MCB,400,Doctoral Dissertation,THE,MRO3,,0,10,1,,"1s,2s",I,LBIBS,,0,0,row
 599973,1712,MCB 400,MCB,400,Doctoral Dissertation,THE,MRO4,,0,10,0,,"1s,2s",N,LBIBS,,0,0,row
 599974,1712,MCB 400,MCB,400,Doctoral Dissertation,THE,MRO6,,0,10,0,,"1s,2s",C,LBIBS,,0,0,row
+599661,872,MST 101a,MST,101a,Field Study I,FLD,AB1,,1,12,10,UPRHS,1s,N,LBIBS,,1,180,row
+599662,872,MST 101a,MST,101a,Field Study I,FLD,AB2,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599663,872,MST 101a,MST,101a,Field Study I,FLD,AB3,,1,12,1,UPRHS,1s,N,LBIBS,,1,180,row
+599664,872,MST 101a,MST,101a,Field Study I,FLD,AB4,,1,12,10,UPRHS,1s,N,LBIBS,,1,180,row
+599665,872,MST 101a,MST,101a,Field Study I,FLD,AB5,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599666,872,MST 101a,MST,101a,Field Study I,FLD,AB6,,1,12,11,UPRHS,1s,N,LBIBS,,1,180,row
+599667,872,MST 101a,MST,101a,Field Study I,FLD,AB7,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+607836,872,MST 101a,MST,101a,Field Study I,FLD,AB8,,1,12,10,UPRHS,1s,N,LBIBS,,1,180,row
+599668,874,MST 101c,MST,101c,Field Study III,FLD,CD1,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599669,874,MST 101c,MST,101c,Field Study III,FLD,CD2,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599670,874,MST 101c,MST,101c,Field Study III,FLD,CD3,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599671,874,MST 101c,MST,101c,Field Study III,FLD,CD4,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+599672,874,MST 101c,MST,101c,Field Study III,FLD,CD5,,1,12,12,UPRHS,1s,N,LBIBS,,1,180,row
+600561,876,MST 123,MST,123,The Teaching of Mathematics and Science,LAB,AB1L,599673,5,25,22,,2s,N,LBIBS,PRE:(MST 40 and EDUC 122); PRE:(DEVC 40 and EDUC 122),1,180,row
+600562,876,MST 123,MST,123,The Teaching of Mathematics and Science,LAB,AB2L,599673,5,25,25,MB 102,2s,N,LBIBS,PRE:(MST 40 and EDUC 122); PRE:(DEVC 40 and EDUC 122),1,180,row
+599673,876,MST 123,MST,123,The Teaching of Mathematics and Science,LEC,AB,,5,50,,CAS A1 404,2s,N,LBIBS,PRE:(MST 40 and EDUC 122); PRE:(DEVC 40 and EDUC 122),2,240,embedded_parent
+599680,877,MST 190,MST,190,Special Problems,SPR,AABP,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599675,877,MST 190,MST,190,Special Problems,SPR,ABHF,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599676,877,MST 190,MST,190,Special Problems,SPR,AGB,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599677,877,MST 190,MST,190,Special Problems,SPR,ALBD,,3,6,1,,"1s,2s",I,LBIBS,,0,0,row
+599678,877,MST 190,MST,190,Special Problems,SPR,ALC,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599679,877,MST 190,MST,190,Special Problems,SPR,ALN,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599697,877,MST 190,MST,190,Special Problems,SPR,CMNP,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599681,877,MST 190,MST,190,Special Problems,SPR,CVM,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599682,877,MST 190,MST,190,Special Problems,SPR,EFOF,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599674,877,MST 190,MST,190,Special Problems,SPR,EOJ,,3,4,0,,"1s,2s",I,LBIBS,,0,0,row
+599683,877,MST 190,MST,190,Special Problems,SPR,EVSG,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599684,877,MST 190,MST,190,Special Problems,SPR,FINDV,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599685,877,MST 190,MST,190,Special Problems,SPR,GMA,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599686,877,MST 190,MST,190,Special Problems,SPR,IAFL,,3,6,4,,"1s,2s",I,LBIBS,,0,0,row
+599687,877,MST 190,MST,190,Special Problems,SPR,JAFB,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599688,877,MST 190,MST,190,Special Problems,SPR,JMGT,,3,6,1,,"1s,2s",I,LBIBS,,0,0,row
+599689,877,MST 190,MST,190,Special Problems,SPR,JMTL,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599690,877,MST 190,MST,190,Special Problems,SPR,JVRP,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599692,877,MST 190,MST,190,Special Problems,SPR,LACD,,3,6,4,,"1s,2s",I,LBIBS,,0,0,row
+599691,877,MST 190,MST,190,Special Problems,SPR,LLF,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599693,877,MST 190,MST,190,Special Problems,SPR,MADR,,3,6,1,,"1s,2s",I,LBIBS,,0,0,row
+599694,877,MST 190,MST,190,Special Problems,SPR,MAOT,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599695,877,MST 190,MST,190,Special Problems,SPR,MCMB,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599696,877,MST 190,MST,190,Special Problems,SPR,MUH,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599699,877,MST 190,MST,190,Special Problems,SPR,RDCM,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599700,877,MST 190,MST,190,Special Problems,SPR,RKEG,,3,12,8,,"1s,2s",I,LBIBS,,0,0,row
+599701,877,MST 190,MST,190,Special Problems,SPR,RLMA,,3,6,2,,"1s,2s",I,LBIBS,,0,0,row
+599703,877,MST 190,MST,190,Special Problems,SPR,RMA,,3,6,0,,"1s,2s",I,LBIBS,,0,0,row
+599698,877,MST 190,MST,190,Special Problems,SPR,RMLRV,,3,6,1,,"1s,2s",I,LBIBS,,0,0,row
+599704,877,MST 190,MST,190,Special Problems,SPR,RTB,,3,6,5,,"1s,2s",I,LBIBS,,0,0,row
+614391,877,MST 190,MST,190,Special Problems,SPR,VML,,3,6,1,,"1s,2s",I,LBIMSP,,0,0,row
+599706,878,MST 191,MST,191,Special Topics,STO,Y,,3,30,26,CAS A1 404,"1s,2s",I,LBIBS,,2,180,row
+600563,879,MST 195,MST,195,Research Methodologies in Education,LAB,EF1L,599707,3,25,12,CAS A1 404,"1s,2s,M",N,LBIBS,PRE:STAT 166,1,180,row
+599707,879,MST 195,MST,195,Research Methodologies in Education,LEC,EF,,3,25,,CAS A1 403,"1s,2s,M",N,LBIBS,PRE:STAT 166,2,120,embedded_parent
+599708,880,MST 199,MST,199,Undergraduate Seminar,LEC,F1,,1,12,5,MBBLH,"1s,2s",I,LBIBS,,1,60,row
+599709,880,MST 199,MST,199,Undergraduate Seminar,LEC,F2,,1,12,11,MB 307,"1s,2s",I,LBIBS,,1,60,row
+599715,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,AABP,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599711,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,ABHF,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599712,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,AGB,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599713,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,ALBD,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599714,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,ALC,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599710,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,ALN,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599733,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,CMNP,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599716,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,CVM,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599717,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,EFOF,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599737,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,EOJ,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599718,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,EVSG,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599719,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,FINDV,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599720,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,GMA,,3,6,1,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599721,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,IAFL,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599722,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,JAFB,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599723,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,JMGT,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599724,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,JMTL,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599725,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,JVRP,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599727,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,LACD,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599726,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,LLF,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599728,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,MADR,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599729,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,MAOT,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599730,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,MCMB,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599731,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,MUH,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599732,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,NJAE,,3,6,1,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599734,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,RDCM,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599735,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,RKEG,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599736,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,RLMA,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599738,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,RMA,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599739,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,RTB,,3,6,1,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599740,881,MST 200a,MST,200a,Student Teaching I (on campus),PRA,VML,,3,6,0,,"1s,2s",I,LBIBS,PRE:MST 123 and MST 101d,0,0,row
+599764,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,AABP,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599742,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,ABHF,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599743,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,AGB,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599744,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,ALBD,,3,4,3,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+614257,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,ALC,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+613832,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,ALN,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599746,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,AODJ,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599745,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,CMNP,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599747,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,CVM,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599748,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,EFOF,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599741,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,EOJ,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599749,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,EVSG,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599750,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,FINDV,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599751,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,GMA,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599752,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,IAFL,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599753,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,JAFB,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599754,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,JMGT,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599755,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,JMTL,,3,4,3,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599756,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,JVRP,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599758,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,LACD,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599757,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,LLF,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599759,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,MADR,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599760,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,MAOT,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599761,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,MCMB,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599762,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,MUH,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599763,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,NJAE,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599765,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RDCM,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599766,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RKEG,,3,10,10,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599767,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RLMA,,3,4,2,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599768,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RLRV,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599769,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RMA,,3,4,0,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599770,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,RTB,,3,4,4,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
+599771,882,MST 200b,MST,200b,Student Teaching II (off campus),LEC,VML,,3,4,1,,"1s,2s",I,LBIBS,PRE:MST 200a,0,0,row
 591765,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,RO1A,,3,200,97,,2s,N,LBDMST,,1,240,row
 591766,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,RO1B,,3,200,104,,2s,N,LBDMST,,1,240,row
 591767,3107,NSTP 1,NSTP,1,National Service Training Program I,LEC,RO1C,,3,200,10,,2s,N,LBDMST,,1,240,row
@@ -3117,6 +3964,72 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 609309,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,D,,3,28,26,CAS A2 201,"1s,2s",N,LBDHUM,,2,180,row
 609310,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,X,,3,28,23,CAS A1 Gal 2,"1s,2s",N,LBDHUM,,2,180,row
 609311,758,PHILARTS 1,PHILARTS,1,(GE). Philippine Arts and Culture,LEC,Y,,3,28,22,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+609758,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,B,,3,25,25,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609759,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,S,,3,25,22,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609760,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,T1,,3,25,24,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+609761,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,T2,,3,25,25,CAS MPH2 B,"1s,2s",N,LBDHUM,,2,180,row
+609772,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,U,,3,25,24,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609773,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,V,,3,25,20,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609774,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,W,,3,25,20,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+614793,760,PHLO 1,PHLO,1,(GE). Understanding Philosophy,LEC,Y,,3,25,22,CAS A1 407,"1s,2s",N,LBDHUM,,2,180,row
+609782,761,PHLO 11,PHLO,11,Fundamental Approaches to Philosophy,LEC,C,,3,25,19,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609783,761,PHLO 11,PHLO,11,Fundamental Approaches to Philosophy,LEC,T,,3,25,19,CAS A2 203,"1s,2s",N,LBDHUM,,2,180,row
+609786,765,PHLO 110,PHLO,110,Ancient Philosophy,LEC,D,,3,25,18,CAS A2 203,1s,N,LBDHUM,PRE:PHLO 11,2,180,row
+609787,765,PHLO 110,PHLO,110,Ancient Philosophy,LEC,E,,3,25,23,CAS A2 203,1s,N,LBDHUM,PRE:PHLO 11,2,180,row
+609788,767,PHLO 112,PHLO,112,Modern Philosophy,LEC,V,,3,25,18,CAS A1 407,1s,I,LBDHUM,,2,180,row
+609789,767,PHLO 112,PHLO,112,Modern Philosophy,LEC,W,,3,25,15,CAS A1 407,1s,I,LBDHUM,,2,180,row
+609784,762,PHLO 12,PHLO,12,Logic,LEC,U,,3,25,20,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+609785,762,PHLO 12,PHLO,12,Logic,LEC,V,,3,25,21,CAS A2 202,"1s,2s",N,LBDHUM,,2,180,row
+609793,3362,PHLO 151,PHLO,151,Intellectual Vices,LEC,X,,3,25,18,Old GS MPH,1s,N,LBDHUM,,2,180,row
+609795,775,PHLO 173,PHLO,173,Practical Ethics,LEC,A,,3,25,14,CAS A2 202,1s,N,LBDHUM,,2,180,row
+609802,775,PHLO 173,PHLO,173,Practical Ethics,LEC,B,,3,25,24,CAS A2 202,1s,N,LBDHUM,,2,180,row
+609809,776,PHLO 174,PHLO,174,Biomedical Ethics,LEC,G,,3,25,24,CAS A2 202,1s,N,LBDHUM,,2,180,row
+609963,776,PHLO 174,PHLO,174,Biomedical Ethics,LEC,V,,3,25,25,CAS B09,1s,N,LBDHUM,,2,180,row
+609821,778,PHLO 176,PHLO,176,Social and Political Philosophy,LEC,E,,3,25,24,CAS A2 202,1s,N,LBDHUM,,2,180,row
+609822,778,PHLO 176,PHLO,176,Social and Political Philosophy,LEC,F,,3,25,12,CAS A2 202,1s,N,LBDHUM,,2,180,row
+609825,779,PHLO 178,PHLO,178,Environmental Ethics,LEC,X,,3,25,25,CAS A2 202,1s,I,LBDHUM,,2,180,row
+609826,780,PHLO 181,PHLO,181,Aesthetics,LEC,Y,,3,25,20,CAS A2 202,1s,I,LBDHUM,,2,180,row
+610842,3363,PHLO 183,PHLO,183,Philosophy for Children,LEC,C,,3,25,13,CAS A1 Gal 2,2s,N,LBDHUM,,2,180,row
+609828,784,PHLO 190,PHLO,190,Special Problems,LEC,Z,,3,10,3,CAS A2 202,"1s,2s",I,LBDHUM,,2,180,row
+609829,2190,PHLO 195,PHLO,195,Philosophy of Language,LEC,F,,3,25,20,CAS A2 203,--,N,LBDHUM,,2,180,row
+609835,2190,PHLO 195,PHLO,195,Philosophy of Language,LEC,G,,3,25,0,CAS A2 203,--,N,LBDHUM,,2,180,row
+609836,2976,PHLO 197,PHLO,197,Philosophic Problems,LEC,W,,3,25,21,CAS B09,--,I,LBDHUM,,2,180,row
+613687,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AL1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613688,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AL3,,0,10,6,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613689,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AL6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613684,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AS1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613685,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AS3,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613686,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,AS6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613692,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,EB1,,0,10,2,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613693,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,EB3,,0,10,1,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613694,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,EB6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613695,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JC1,,0,10,1,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613696,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JC3,,0,10,3,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613697,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JC6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613698,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JE1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613699,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JE3,,0,10,1,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613700,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JE6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613701,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JP1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613702,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JP3,,0,10,2,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613703,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,JP6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613705,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,KA1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613706,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,KA3,,0,10,3,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613707,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,KA6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613708,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,ML1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613709,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,ML3,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613710,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,ML6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613711,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,MN1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613712,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,MN3,,0,10,1,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613713,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,MN6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613714,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,NP1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613715,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,NP3,,0,10,3,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613716,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,NP6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613717,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RL1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613718,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RL3,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613719,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RL6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
+613720,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RM1,,0,10,0,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613721,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RM3,,0,10,4,TBA,"1s,2s",I,LBDHUM,,0,0,row
+613722,785,PHLO 200,PHLO,200,Undergraduate Thesis,THE,RM6,,0,10,0,TBA,"1s,2s",D,LBDHUM,,0,0,row
 609732,666,PHYS 101,PHYS,101,Newtonian Mechanics,LAB,T1L,609665,4,25,14,PS C-206,"1s,2s",N,LBIoP,,1,180,row
 609862,666,PHYS 101,PHYS,101,Newtonian Mechanics,LAB,T2L,609665,4,25,19,PS C-206,"1s,2s",N,LBIoP,,1,180,row
 609733,666,PHYS 101,PHYS,101,Newtonian Mechanics,LAB,T3L,609665,4,25,22,PS C-206,"1s,2s",N,LBIoP,,1,180,row
@@ -3239,6 +4152,184 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 609383,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Y2,,3,35,34,CAS A2 103,"1s,2s,M",N,LBDSS,,2,180,row
 609384,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Z1,,3,35,34,CAS A1 GAL 1,"1s,2s,M",N,LBDSS,,2,180,row
 609385,828,PI 10,PI,10,The Life and Works of Rizal,LEC,Z2,,3,35,35,CAS A1 409,"1s,2s,M",N,LBDSS,,2,180,row
+608994,829,POSC 10,POSC,10,Principles of Government and Politics,LEC,C,,3,30,27,CAS A1 302,"1s,2s",N,LBDSS,,2,180,row
+608995,829,POSC 10,POSC,10,Principles of Government and Politics,LEC,E,,3,30,26,CAS 102,"1s,2s",N,LBDSS,,2,180,row
+608996,829,POSC 10,POSC,10,Principles of Government and Politics,LEC,T,,3,30,27,CAS 101,"1s,2s",N,LBDSS,,2,180,row
+608997,832,POSC 141,POSC,141,Contemporary Ideologies,LEC,F,,3,30,26,CAS 103,1s,N,LBDSS,,2,180,row
+608998,834,POSC 165,POSC,165,Contemporary Philippine Politics,LEC,W,,3,30,8,CAS 102,1s,I,LBDSS,PRE:(POSC 10),2,180,row
+608999,835,POSC 180,POSC,180,Global Politics,LEC,C,,3,30,26,CAS A1 303,1s,I,LBDSS,PRE:(POSC 10),2,180,row
+608965,836,PSY 10,PSY,10,Foundations of Psychology,LEC,D,,3,30,30,CAS B08,"1s,2s",N,LBDSS,,2,180,row
+608966,836,PSY 10,PSY,10,Foundations of Psychology,LEC,T,,3,30,28,CAS 104,"1s,2s",N,LBDSS,,2,180,row
+608967,836,PSY 10,PSY,10,Foundations of Psychology,LEC,U,,3,30,26,CAS A2 102,"1s,2s",N,LBDSS,,2,180,row
+608970,837,PSY 101,PSY,101,Filipino Psychology,LEC,C,,3,30,28,CAS A2 102,1s,I,LBDSS,,2,180,row
+608971,837,PSY 101,PSY,101,Filipino Psychology,LEC,W,,3,30,27,CAS A2 102,1s,I,LBDSS,,2,180,row
+608975,838,PSY 140,PSY,140,Psychology of Learning,LEC,F,,3,30,30,CAS A1 GAL 1,1s,N,LBDSS,,2,180,row
+608976,838,PSY 140,PSY,140,Psychology of Learning,LEC,U,,3,30,29,CAS 103,1s,N,LBDSS,,2,180,row
+608979,839,PSY 148,PSY,148,Cognitive Psychology,LEC,E,,3,10,10,CAS 101,2s,N,LBDSS,,2,180,row
+609874,844,SOC 10,SOC,10,General Principles of Sociology,LEC,B,,3,30,30,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+609875,844,SOC 10,SOC,10,General Principles of Sociology,LEC,T,,3,30,28,CAS A1 303,"1s,2s",N,LBDSS,,2,180,row
+609876,844,SOC 10,SOC,10,General Principles of Sociology,LEC,U,,3,30,28,CAS A1 304,"1s,2s",N,LBDSS,,2,180,row
+609877,846,SOC 107,SOC,107,Gender Relations,LEC,E,,3,30,29,CAS A1 303,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609878,846,SOC 107,SOC,107,Gender Relations,LEC,X,,3,30,28,CAS 104,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609879,849,SOC 114,SOC,114,Sociology of Economic Life,LEC,D,,3,30,29,CAS A1 302,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609880,849,SOC 114,SOC,114,Sociology of Economic Life,LEC,V,,3,30,29,CAS A1 GAL1,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609881,849,SOC 114,SOC,114,Sociology of Economic Life,LEC,X,,3,30,24,CAS A1 302,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609882,851,SOC 116,SOC,116,Sociology of Religion,LEC,D,,3,30,30,CAS A1 GAL1,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609883,851,SOC 116,SOC,116,Sociology of Religion,LEC,W,,3,30,27,CAS A1 GAL1,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609884,853,SOC 130,SOC,130,Social Psychology,LEC,E,,3,30,9,CAS A2 103,"1s,2s",I,LBDSS,PRE:(SOC 10),2,180,row
+609885,853,SOC 130,SOC,130,Social Psychology,LEC,X,,3,30,25,CAS A1 409,"1s,2s",I,LBDSS,PRE:(SOC 10),2,180,row
+609893,855,SOC 140,SOC,140,Introduction to Demography,LEC,B,,3,30,30,CAS A1 302,"1s,2s",I,LBDSS,PRE:(SOC 10),2,180,row
+609894,855,SOC 140,SOC,140,Introduction to Demography,LEC,E,,3,30,30,CAS A1 302,"1s,2s",I,LBDSS,PRE:(SOC 10),2,180,row
+609895,855,SOC 140,SOC,140,Introduction to Demography,LEC,W,,3,30,30,CAS A1 302,"1s,2s",I,LBDSS,PRE:(SOC 10),2,180,row
+609902,856,SOC 151,SOC,151,Classical Sociological Theories,LEC,B,,3,30,30,CAS 1 A2 101,1s,I,LBDSS,PRE:SOC 10,2,180,row
+609903,856,SOC 151,SOC,151,Classical Sociological Theories,LEC,U,,3,30,30,CAS A1 303,1s,I,LBDSS,PRE:SOC 10,2,180,row
+609904,860,SOC 166,SOC,166,Social Program Evaluation,LEC,E,,3,30,26,CAS A2 101,2s,I,LBDSS,PRE:(SOC 10),2,180,row
+609905,860,SOC 166,SOC,166,Social Program Evaluation,LEC,T,,3,30,22,CAS A2 101,2s,I,LBDSS,PRE:(SOC 10),2,180,row
+609908,863,SOC 180,SOC,180,Collective Behavior,LEC,B,,3,30,25,CAS A2 102,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609909,863,SOC 180,SOC,180,Collective Behavior,LEC,U,,3,30,30,CAS A2 101,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609910,863,SOC 180,SOC,180,Collective Behavior,LEC,X,,3,30,28,CAS A1 304,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609913,864,SOC 191,SOC,191,Special Topics,LEC,C,,0,25,24,CAS A1 304,1s,I,LBDSS,,2,180,row
+609911,864,SOC 191,SOC,191,Special Topics,LEC,G,,0,25,25,CAS A2 103,1s,I,LBDSS,,2,180,row
+609912,864,SOC 191,SOC,191,Special Topics,LEC,T,,0,25,20,CAS A1 304,1s,I,LBDSS,,2,180,row
+609914,865,SOC 192,SOC,192,Introduction to Qualitative Social Research,LEC,U,,3,30,13,CAS A2 103,1s,I,LBDSS,PRE:(SOC 10),2,180,row
+609916,866,SOC 195,SOC,195,Research Methodologies in the Social Sciences,LEC,ST,,2,30,17,CAS A1 302,"1s,2s",I,LBDSS,PRE:(STAT 166); PRE:(SOC 195.1),1,120,row
+609915,866,SOC 195,SOC,195,Research Methodologies in the Social Sciences,LEC,YZ,,2,30,30,CAS A1 302,"1s,2s",I,LBDSS,PRE:(STAT 166); PRE:(SOC 195.1),1,120,row
+609917,867,SOC 195.1,SOC,195.1,Research Methodologies in the Social Sciences Laboratory,LAB,GH,,1,15,14,CAS A1 410,"1s,2s",I,LBDSS,PRE:(STAT 166); PRE:(SOC 195),1,180,row
+609918,867,SOC 195.1,SOC,195.1,Research Methodologies in the Social Sciences Laboratory,LAB,ST,,1,15,15,CAS A1 410,"1s,2s",I,LBDSS,PRE:(STAT 166); PRE:(SOC 195),1,180,row
+609919,867,SOC 195.1,SOC,195.1,Research Methodologies in the Social Sciences Laboratory,LAB,YZ,,1,15,15,CAS A1 410,"1s,2s",I,LBDSS,PRE:(STAT 166); PRE:(SOC 195),1,180,row
+614744,868,SOC 198,SOC,198,Internship,PRA,A,,3,15,3,CAS B08,M,I,LBDSS,,2,180,row
+609930,869,SOC 199,SOC,199,Undergraduate Seminar,SEM,H,,1,30,14,CAS A1 304,"1s,2s",I,LBDSS,,1,60,row
+609931,869,SOC 199,SOC,199,Undergraduate Seminar,SEM,W,,1,30,24,CAS A1 303,"1s,2s",I,LBDSS,,1,60,row
+609932,869,SOC 199,SOC,199,Undergraduate Seminar,SEM,X,,1,30,27,CAS A1 303,"1s,2s",I,LBDSS,,1,60,row
+610888,870,SOC 200,SOC,200,Undergraduate Thesis,THE,AIMA,,0,15,3,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610889,870,SOC 200,SOC,200,Undergraduate Thesis,THE,AIMC,,0,15,6,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610890,870,SOC 200,SOC,200,Undergraduate Thesis,THE,AIMD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610900,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ALBA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610901,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ALBC,,0,15,3,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610902,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ALBD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610885,870,SOC 200,SOC,200,Undergraduate Thesis,THE,APEA,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610886,870,SOC 200,SOC,200,Undergraduate Thesis,THE,APEC,,0,15,9,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610887,870,SOC 200,SOC,200,Undergraduate Thesis,THE,APED,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610891,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ASNA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610892,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ASNC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610893,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ASND,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610936,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATCA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610937,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATCC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610938,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATCD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610873,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATMA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610874,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATMC,,0,15,3,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610875,870,SOC 200,SOC,200,Undergraduate Thesis,THE,ATMD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610927,870,SOC 200,SOC,200,Undergraduate Thesis,THE,BMAA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610928,870,SOC 200,SOC,200,Undergraduate Thesis,THE,BMAC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610929,870,SOC 200,SOC,200,Undergraduate Thesis,THE,BMAD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610921,870,SOC 200,SOC,200,Undergraduate Thesis,THE,DBLA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610922,870,SOC 200,SOC,200,Undergraduate Thesis,THE,DBLC,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610923,870,SOC 200,SOC,200,Undergraduate Thesis,THE,DBLD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610939,870,SOC 200,SOC,200,Undergraduate Thesis,THE,EPCA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610940,870,SOC 200,SOC,200,Undergraduate Thesis,THE,EPCC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610941,870,SOC 200,SOC,200,Undergraduate Thesis,THE,EPCD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610951,870,SOC 200,SOC,200,Undergraduate Thesis,THE,GEMA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610952,870,SOC 200,SOC,200,Undergraduate Thesis,THE,GEMC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610953,870,SOC 200,SOC,200,Undergraduate Thesis,THE,GEMD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610945,870,SOC 200,SOC,200,Undergraduate Thesis,THE,HCGA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610946,870,SOC 200,SOC,200,Undergraduate Thesis,THE,HCGC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610947,870,SOC 200,SOC,200,Undergraduate Thesis,THE,HCGD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610933,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JCBA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610934,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JCBC,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610935,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JCBD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610903,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JODA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610904,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JODC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610905,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JODD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610906,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JSFA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610907,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JSFC,,0,15,4,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610908,870,SOC 200,SOC,200,Undergraduate Thesis,THE,JSFD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610861,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KDCA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610862,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KDCC,,0,15,6,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610863,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KDCD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+614743,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KDMC,,0,15,1,,"1s,2s,M",N,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610897,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KRAA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610898,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KRAC,,0,15,4,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610899,870,SOC 200,SOC,200,Undergraduate Thesis,THE,KRAD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610882,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LGAA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610883,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LGAC,,0,15,5,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610884,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LGAD,,0,15,1,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610876,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LPJA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610877,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LPJC,,0,15,4,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610878,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LPJD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610924,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LSRA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610925,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LSRC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610926,870,SOC 200,SOC,200,Undergraduate Thesis,THE,LSRD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610942,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MEGA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610943,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MEGC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610944,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MEGD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610915,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MGAA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610916,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MGAC,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610917,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MGAD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610864,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MJEA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610865,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MJEC,,0,15,4,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610866,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MJED,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610870,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MSLA,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610871,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MSLC,,0,15,3,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610872,870,SOC 200,SOC,200,Undergraduate Thesis,THE,MSLD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610912,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NCMA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610913,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NCMC,,0,15,6,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610914,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NCMD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610867,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NMLA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610868,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NMLC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610869,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NMLD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610918,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NZFA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610919,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NZFC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610920,870,SOC 200,SOC,200,Undergraduate Thesis,THE,NZFD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610858,870,SOC 200,SOC,200,Undergraduate Thesis,THE,PRAA,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610859,870,SOC 200,SOC,200,Undergraduate Thesis,THE,PRAC,,0,15,8,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610860,870,SOC 200,SOC,200,Undergraduate Thesis,THE,PRAD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610930,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RABA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610931,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RABC,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610932,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RABD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610948,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RCJA,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610949,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RCJC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610950,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RCJD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610957,870,SOC 200,SOC,200,Undergraduate Thesis,THE,REPA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610958,870,SOC 200,SOC,200,Undergraduate Thesis,THE,REPC,,0,15,3,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610959,870,SOC 200,SOC,200,Undergraduate Thesis,THE,REPD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610954,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RYPA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610955,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RYPC,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610956,870,SOC 200,SOC,200,Undergraduate Thesis,THE,RYPD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610909,870,SOC 200,SOC,200,Undergraduate Thesis,THE,SDLA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610910,870,SOC 200,SOC,200,Undergraduate Thesis,THE,SDLC,,0,15,2,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610911,870,SOC 200,SOC,200,Undergraduate Thesis,THE,SDLD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610879,870,SOC 200,SOC,200,Undergraduate Thesis,THE,TCVA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610880,870,SOC 200,SOC,200,Undergraduate Thesis,THE,TCVC,,0,15,6,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610881,870,SOC 200,SOC,200,Undergraduate Thesis,THE,TCVD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610894,870,SOC 200,SOC,200,Undergraduate Thesis,THE,VCRA,,0,15,0,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610895,870,SOC 200,SOC,200,Undergraduate Thesis,THE,VCRC,,0,15,1,,"1s,2s,M",I,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+610896,870,SOC 200,SOC,200,Undergraduate Thesis,THE,VCRD,,0,15,0,,"1s,2s,M",D,LBDSS,PRE:SOC 192 and SOC 195 and SOC 195.1,0,0,row
+611118,1418,SOC 205,SOC,205,Formal Organizations,LEC,GH,,3,15,7,,1s,I,LBDSS,PRE:(SOC 100),1,180,row
+611113,1421,SOC 242,SOC,242,Population Studies,LEC,TV,,3,15,6,,1s,I,LBDSS,,1,180,row
+611116,1426,SOC 291,SOC,291,Special Topics,STO,GH,,0,15,4,,--,N,LBDSS,,1,180,row
+611121,1427,SOC 292,SOC,292,Qualitative Social Research,LEC,YZ,,3,15,11,,1s,I,LBDSS,PRE:(SOC 250),1,180,row
+614738,1429,SOC 299,SOC,299,Graduate Seminar,SEM,Y,,0,10,1,,"1s,2s",N,LBDSS,,1,60,row
+611126,1430,SOC 300,SOC,300,Master's Thesis,THE,LPJA,,0,15,2,,--,N,LBDSS,,0,0,row
+611127,1430,SOC 300,SOC,300,Master's Thesis,THE,LPJB,,0,15,1,,--,N,LBDSS,,0,0,row
+611128,1430,SOC 300,SOC,300,Master's Thesis,THE,LPJC,,0,15,2,,--,N,LBDSS,,0,0,row
+611129,1430,SOC 300,SOC,300,Master's Thesis,THE,MSLA,,0,15,2,,--,N,LBDSS,,0,0,row
+611130,1430,SOC 300,SOC,300,Master's Thesis,THE,MSLB,,0,15,0,,--,N,LBDSS,,0,0,row
+611131,1430,SOC 300,SOC,300,Master's Thesis,THE,MSLC,,0,15,0,,--,N,LBDSS,,0,0,row
+614737,1430,SOC 300,SOC,300,Master's Thesis,THE,PRAC,,0,10,1,,--,N,LBDSS,,0,0,row
+609518,789,SPCM 101,SPCM,101,Rhetoric,LEC,X,,3,25,19,CAS B04,"1s,2s",N,LBDHUM,PRE:COMA 101,2,180,row
+609521,790,SPCM 102,SPCM,102,Voice and Diction,LEC,A,,3,25,22,LITE ROOM 4,"1s,2s",N,LBDHUM,,2,180,row
+609522,790,SPCM 102,SPCM,102,Voice and Diction,LEC,B,,3,25,19,LITE ROOM 4,"1s,2s",N,LBDHUM,,2,180,row
+609523,790,SPCM 102,SPCM,102,Voice and Diction,LEC,S,,3,25,22,CAS A1 408,"1s,2s",N,LBDHUM,,2,180,row
+609524,790,SPCM 102,SPCM,102,Voice and Diction,LEC,U,,3,25,21,CAS A2 200,"1s,2s",N,LBDHUM,,2,180,row
+609525,791,SPCM 104,SPCM,104,Occasional Speeches,LEC,E,,3,25,18,CAS B06,"1s,2s",N,LBDHUM,PRE:(SPCM 102),2,180,row
+609526,791,SPCM 104,SPCM,104,Occasional Speeches,LEC,W,,3,25,23,CAS B06,"1s,2s",N,LBDHUM,PRE:(SPCM 102),2,180,row
+609527,793,SPCM 152,SPCM,152,Philippine Public Address,LEC,Y,,3,25,20,CAS B06,"1s,2s",N,LBDHUM,PRE:(SPCM 104),2,180,row
+609529,794,SPCM 153,SPCM,153,Group Discussion and Leadership,LEC,C,,3,25,25,CAS A2 200,1s,N,LBDHUM,PRE:(SPCM 102),2,180,row
+609533,797,SPCM 156,SPCM,156,Speech Communication Strategies for Classroom Instruction,LEC,G,,3,28,28,LITE Room 4,1s,N,LBDHUM,,2,180,row
+609534,797,SPCM 156,SPCM,156,Speech Communication Strategies for Classroom Instruction,LEC,S,,3,25,25,CAS B04,1s,N,LBDHUM,,2,180,row
+609535,799,SPCM 158,SPCM,158,Speech Communication in Conflict Resolution,LEC,B,,3,25,25,CAS A1 408,1s,N,LBDHUM,PRE:COMA 102,2,180,row
+609536,799,SPCM 158,SPCM,158,Speech Communication in Conflict Resolution,LEC,W,,3,25,24,CAS B04,1s,N,LBDHUM,PRE:COMA 102,2,180,row
+609540,800,SPCM 159,SPCM,159,Nonverbal Communication,LEC,D,,3,25,25,CAS A1 408,1s,N,LBDHUM,PRE:COMA 102,2,180,row
 607704,692,STAT 101,STAT,101,Statistical Methods,LAB,CD1L,607583,3,16,15,PS C-312,"1s,2s",D,LBINSTAT,,1,180,row
 607705,692,STAT 101,STAT,101,Statistical Methods,LAB,CD2L,607583,3,16,16,PS C-306,"1s,2s",D,LBINSTAT,,1,180,row
 607706,692,STAT 101,STAT,101,Statistical Methods,LAB,CD3L,607583,3,16,14,PS C-312,"1s,2s",D,LBINSTAT,,1,180,row
@@ -3510,6 +4601,15 @@ class_id,course_id,course_code,subject,course_number,title,type,section,parent_c
 609780,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z2,,3,35,31,CAS A1 404,"1s,2s",N,LBDSS,,2,180,row
 609781,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z3,,3,35,30,CAS A1 403,"1s,2s",N,LBDSS,,2,180,row
 612008,841,STS 1,STS,1,"(GE). Science, Technology, and Society",LEC,Z4,,3,25,23,AAVLH Lecture Hall,"1s,2s",N,LBDSS,,2,180,row
+609541,801,THEA 101,THEA,101,History of the Theater,LEC,Y,,3,25,25,CAS A2 200,"1s,2s",N,LBDHUM,PRE:(ENG 100),2,180,row
+609542,801,THEA 101,THEA,101,History of the Theater,LEC,Z,,3,25,25,CAS A2 201,"1s,2s",N,LBDHUM,PRE:(ENG 100),2,180,row
+609545,802,THEA 102,THEA,102,Theater Communication,LEC,D,,3,25,25,CAS A1 GAL 2,"1s,2s",N,LBDHUM,PRE:ENG 100,2,180,row
+609546,802,THEA 102,THEA,102,Theater Communication,LEC,E,,3,25,25,CAS A2 201,"1s,2s",N,LBDHUM,PRE:ENG 100,2,180,row
+609549,803,THEA 103,THEA,103,Philippine Theatre,LEC,U,,3,25,22,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+609550,803,THEA 103,THEA,103,Philippine Theatre,LEC,V,,3,25,23,CAS B02,"1s,2s",N,LBDHUM,,2,180,row
+609552,804,THEA 151,THEA,151,Acting,LEC,GH2,,3,15,15,CAS A1 GAL 2,1s,N,LBDHUM,PRE:(THEA 102); PRE:(SPCM 151),1,180,row
+609553,806,THEA 153,THEA,153,Asian Theatre,LEC,GH,,3,25,23,CAS A1 GAL 2,1s,N,LBDHUM,PRE:THEA 101,1,180,row
+609554,808,THEA 155,THEA,155,Theatre Space and Stage Design,LEC,YZ,,3,25,13,CAS A1 GAL 2,1s,N,LBDHUM,PRE:THEA 101,1,180,row
 607078,1344,VEPI 221,VEPI,221,Veterinary Epidemiological Methods,LAB,TU1L,606832,3,10,2,,1s,I,LBDVPS,,1,180,row
 606832,1344,VEPI 221,VEPI,221,Veterinary Epidemiological Methods,LEC,TU,,3,10,,,1s,I,LBDVPS,,1,120,embedded_parent
 607080,1345,VEPI 222,VEPI,222,Veterinary Surveillance,LAB,ST1L,606701,3,10,0,,"1s,M",N,LBDVPS,,1,180,row

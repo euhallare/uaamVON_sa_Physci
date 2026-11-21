@@ -40,7 +40,7 @@ DELAY = (1.0, 2.0)              # random pause (seconds) between requests - be g
 
 SUBJECT_SETS = {
     "small": ["CMSC"],
-    "cs": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
+    "cmsc": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
            "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
 
     "amat": ["AMAT", "MATH", "STAT", "BIO", "CHEM", "PHYS", "HK", "NSTP",
