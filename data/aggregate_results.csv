@@ -1,13 +1,13 @@
 degree_program,year,term,track,method,instance,n_vars,nodes_explored,steps,time_seconds,pruned_values,solution_found
-cmsc,1,FS,SP,Backtracking,Y1 FS SP,5,41,,0.015234699996653944,,True
-cmsc,1,FS,SP,Forward Checking,Y1 FS SP,5,5,,0.00025949999690055847,61,True
-cmsc,1,FS,SP,Min-Conflicts,Y1 FS SP,5,,2,0.00017289999959757552,,True
-cmsc,1,FS,SP,Simulated Annealing,Y1 FS SP,5,,38,0.0006916999991517514,,True
-cmsc,2,FS,SP,Backtracking,Y2 FS SP,6,15,,0.0033015000008163042,,True
-cmsc,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.0001505999971413985,29,True
-cmsc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,3,0.0001444000008632429,,True
-cmsc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,30,0.00018950000230688602,,True
-cmsc,3,FS,SP,Backtracking,Y3 FS SP,6,11,,0.007168600001023151,,True
-cmsc,3,FS,SP,Forward Checking,Y3 FS SP,6,6,,0.00028369999927235767,56,True
-cmsc,3,FS,SP,Min-Conflicts,Y3 FS SP,6,,2,0.00012730000162264332,,True
-cmsc,3,FS,SP,Simulated Annealing,Y3 FS SP,6,,22,0.00028590000147232786,,True
+agch,1,FS,SP,Backtracking,Y1 FS SP,6,29,,0.05500120000215247,,True
+agch,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0004972000024281442,63,True
+agch,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,6.959999882383272e-05,,True
+agch,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,4.7599998652003706e-05,,True
+agch,2,FS,SP,Backtracking,Y2 FS SP,7,24,,0.009421800001291558,,True
+agch,2,FS,SP,Forward Checking,Y2 FS SP,7,7,,0.00023350000265054405,63,True
+agch,2,FS,SP,Min-Conflicts,Y2 FS SP,7,,2,8.800000068731606e-05,,True
+agch,2,FS,SP,Simulated Annealing,Y2 FS SP,7,,4,7.339999865507707e-05,,True
+agch,3,FS,SP,Backtracking,Y3 FS SP,5,8,,0.004078300000401214,,True
+agch,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.0001486000037402846,43,True
+agch,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,2,5.5000004067551345e-05,,True
+agch,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,77,0.0004847000018344261,,True
