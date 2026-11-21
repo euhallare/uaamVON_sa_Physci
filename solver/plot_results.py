@@ -21,6 +21,7 @@ Output: saves PNG figures to ../figures/<deg_prog>/ (created if needed).
 """
 
 import argparse
+import csv
 import os
 import sys
 import matplotlib
@@ -41,6 +42,10 @@ import simulated_annealing
 BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
 SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
 MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
+
+# Path for the shared aggregate results CSV
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RESULTS_CSV = os.path.join(PROJECT_ROOT, "data", "aggregate_results.csv")
 
 METHOD_NAMES = [
     "Backtracking\n(MRV+LCV)",
@@ -209,6 +214,87 @@ def solved_heatmap(all_results: list, instance_labels: list,
     plt.close()
     print(f"  Saved: {out}")
 
+# ----------------------------------------------------------------- aggregation helper
+def save_results_csv(all_results, instances, deg_prog, term, track):
+
+    fieldnames = [
+        "degree_program",
+        "year",
+        "term",
+        "track",
+        "method",
+        "instance",
+        "n_vars",
+        "nodes_explored",
+        "steps",
+        "time_seconds",
+        "pruned_values",
+        "solution_found"
+    ]
+
+    method_names = [
+        "Backtracking",
+        "Forward Checking",
+        "Min-Conflicts",
+        "Simulated Annealing"
+    ]
+
+    # Read existing records, if the CSV already exists
+    existing_rows = {}
+
+    if os.path.exists(RESULTS_CSV):
+        with open(RESULTS_CSV, "r", newline="") as file:
+            reader = csv.DictReader(file)
+
+            for row in reader:
+                key = (
+                    row["degree_program"],
+                    row["year"],
+                    row["term"],
+                    row["track"],
+                    row["method"]
+                )
+
+                existing_rows[key] = row
+
+    # Add or update the current program's results
+    for instance_results, cfg in zip(all_results, instances):
+
+        for i, result in enumerate(instance_results):
+
+            row = {
+                "degree_program": deg_prog,
+                "year": cfg["year"],
+                "term": term,
+                "track": track,
+                "method": method_names[i],
+                "instance": cfg["label"],
+                "n_vars": result.get("n_vars", ""),
+                "nodes_explored": result.get("nodes_explored", ""),
+                "steps": result.get("steps", ""),
+                "time_seconds": result.get("time_seconds", ""),
+                "pruned_values": result.get("pruned_values", ""),
+                "solution_found": result.get("solution") is not None
+            }
+
+            key = (
+                deg_prog,
+                str(cfg["year"]),
+                term,
+                track,
+                method_names[i]
+            )
+
+            existing_rows[key] = row
+
+    # Rewrite the CSV with the updated records
+    with open(RESULTS_CSV, "w", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerows(existing_rows.values())
+
+    print(f"\nResults saved to: {RESULTS_CSV}")
 
 # ----------------------------------------------------------------- main
 
@@ -249,13 +335,25 @@ def main():
 
     all_results     = []
     instance_labels = []
+    valid_instances = []
 
     for cfg in instances:
+
         results = run_instance(cfg, args.deg_prog, allow_consent=args.allow_consent)
+
         if results:
             all_results.append(results)
             instance_labels.append(cfg["label"])
+            valid_instances.append(cfg)
 
+    save_results_csv(
+        all_results,
+        valid_instances,
+        args.deg_prog,
+        args.term,
+        args.track
+    )
+    
     if not all_results:
         print("\nNo valid instances found. Check your data paths.")
         return
