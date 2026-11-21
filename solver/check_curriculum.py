@@ -1,13 +1,12 @@
-
-
 import csv
 import os
 import sys
+from csp import DEG_PROG_MAP
 
 BASE = os.path.join(os.path.dirname(__file__), "..", "data")
 SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
 
-PROGRAMS = ["cmsc","mst", "soc", "phlo", "coma"]
+PROGRAMS = list(DEG_PROG_MAP.keys())
 COLUMNS = ["year", "term", "slot", "options", "kind", "prereqs", "track", "note"]
 KINDS = ["CORE", "GE", "PE", "NSTP", "ELECTIVE"]
 TERMS = ["FS", "SS", "MY"]
@@ -125,5 +124,6 @@ def main():
     if bad:
         sys.exit(1)
 
-
-main()
+#guard
+if __name__ == "__main__":
+    main()
