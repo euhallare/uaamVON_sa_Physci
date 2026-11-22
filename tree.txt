@@ -339,13 +339,18 @@
 ├── auth.py
 ├── build_datasets.py
 ├── data
+│   ├── aggregate_results.csv
 │   ├── curriculum_agch.csv
 │   ├── curriculum_amat.csv
 │   ├── curriculum_ap.csv
 │   ├── curriculum_bio.csv
 │   ├── curriculum_chem.csv
 │   ├── curriculum_cmsc.csv
+│   ├── curriculum_coma.csv
 │   ├── curriculum_math.csv
+│   ├── curriculum_mst.csv
+│   ├── curriculum_phlo.csv
+│   ├── curriculum_soc.csv
 │   ├── curriculum_stat.csv
 │   ├── datasets
 │   │   ├── term_1252
@@ -797,6 +802,12 @@
 │           │   ├── page_0002.json
 │           │   ├── page_0003.json
 │           │   └── page_0004.json
+│           ├── ACHEM
+│           │   └── page_0001.json
+│           ├── AERS
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   └── page_0003.json
 │           ├── AGCH
 │           │   └── page_0001.json
 │           ├── AGRI
@@ -812,6 +823,13 @@
 │           │   ├── page_0010.json
 │           │   └── page_0011.json
 │           ├── AMAT
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
+│           ├── ANTH
+│           │   └── page_0001.json
+│           ├── APHY
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
 │           │   ├── page_0003.json
@@ -888,6 +906,22 @@
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
 │           │   └── page_0003.json
+│           ├── DEVC
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   ├── page_0011.json
+│           │   ├── page_0012.json
+│           │   ├── page_0013.json
+│           │   ├── page_0014.json
+│           │   └── page_0015.json
 │           ├── ECON
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
@@ -899,6 +933,8 @@
 │           │   ├── page_0008.json
 │           │   ├── page_0009.json
 │           │   └── page_0010.json
+│           ├── EDUC
+│           │   └── page_0001.json
 │           ├── ENG
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
@@ -917,6 +953,11 @@
 │           │   └── page_0003.json
 │           ├── GEOL
 │           │   └── page_0001.json
+│           ├── HFDS
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
 │           ├── HIST
 │           │   ├── page_0001.json
 │           │   └── page_0002.json
@@ -931,6 +972,18 @@
 │           │   ├── page_0008.json
 │           │   ├── page_0009.json
 │           │   └── page_0010.json
+│           ├── HUM
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   ├── page_0008.json
+│           │   ├── page_0009.json
+│           │   ├── page_0010.json
+│           │   └── page_0011.json
 │           ├── KAS
 │           │   ├── page_0001.json
 │           │   └── page_0002.json
@@ -954,12 +1007,24 @@
 │           │   ├── page_0004.json
 │           │   ├── page_0005.json
 │           │   └── page_0006.json
+│           ├── MST
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   └── page_0006.json
 │           ├── NSTP
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
 │           │   ├── page_0003.json
 │           │   ├── page_0004.json
 │           │   └── page_0005.json
+│           ├── PHLO
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   └── page_0004.json
 │           ├── PHYS
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
@@ -970,6 +1035,21 @@
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
 │           │   └── page_0003.json
+│           ├── POSC
+│           │   └── page_0001.json
+│           ├── PSY
+│           │   └── page_0001.json
+│           ├── SOC
+│           │   ├── page_0001.json
+│           │   ├── page_0002.json
+│           │   ├── page_0003.json
+│           │   ├── page_0004.json
+│           │   ├── page_0005.json
+│           │   ├── page_0006.json
+│           │   ├── page_0007.json
+│           │   └── page_0008.json
+│           ├── SPCM
+│           │   └── page_0001.json
 │           ├── STAT
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
@@ -985,19 +1065,108 @@
 │           ├── STS
 │           │   ├── page_0001.json
 │           │   └── page_0002.json
+│           ├── THEA
+│           │   └── page_0001.json
 │           ├── ZOO
 │           │   ├── page_0001.json
 │           │   ├── page_0002.json
 │           │   └── page_0003.json
 │           └── meta.json
 ├── figures
-│   ├── fig1_nodes_explored.png
-│   ├── fig1b_steps.png
-│   ├── fig2_time.png
-│   ├── fig3_backtracks.png
-│   ├── fig3_pruned_values.png
-│   ├── fig4_solved.png
-│   └── fig5_overview.png
+│   ├── agch
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── aggregate_figures
+│   │   ├── aggregate_01_nodes_explored.png
+│   │   ├── aggregate_02_local_search_steps.png
+│   │   ├── aggregate_03_execution_time.png
+│   │   ├── aggregate_04_pruned_values.png
+│   │   ├── aggregate_05_solution_success.png
+│   │   ├── aggregate_06_overview.png
+│   │   ├── aggregate_07_overall_performance.png
+│   │   ├── aggregate_08_pruning_intensity.png
+│   │   └── aggregate_pruning_summary.csv
+│   ├── amat
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── ap
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── bio
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── chem
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── cmsc
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── coma
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── math
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── mst
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── phlo
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   ├── soc
+│   │   ├── fig1_nodes_explored.png
+│   │   ├── fig1b_steps.png
+│   │   ├── fig2_time.png
+│   │   ├── fig3_pruned_values.png
+│   │   ├── fig4_solved.png
+│   │   └── fig5_overview.png
+│   └── stat
+│       ├── fig1_nodes_explored.png
+│       ├── fig1b_steps.png
+│       ├── fig2_time.png
+│       ├── fig3_pruned_values.png
+│       ├── fig4_solved.png
+│       └── fig5_overview.png
 ├── scrape.py
 ├── solver
 │   ├── __pycache__
@@ -1006,7 +1175,9 @@
 │   │   ├── forward_checking.cpython-312.pyc
 │   │   ├── min_conflicts.cpython-312.pyc
 │   │   └── simulated_annealing.cpython-312.pyc
+│   ├── aggregate_results.py
 │   ├── backtracking.py
+│   ├── check_curriculum.py
 │   ├── csp.py
 │   ├── evaluate.py
 │   ├── forward_checking.py
@@ -1016,4 +1187,4 @@
 ├── tasklog.md
 └── tree.txt
 
-242 directories, 775 files
+270 directories, 918 files
