@@ -101,6 +101,7 @@
 - Wrote and pushed `check_curriculum.py` to audit remaining unscraped courses
 - Developing the GitHub Pages site for the project
 - Implemented `index.html` and `schedule.html`
+- Helped in writing the content in Milestone 4
 
 **Jiro:**
 - Scraped course offerings for the newly added degree programs (COMA, MST, PHLO, and SOC)
