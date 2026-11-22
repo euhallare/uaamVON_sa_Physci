@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "deg_prog": "STAT",
+    "year": 3,
+    "term": "FS",
+    "term_label": "1st Semester",
+    "track": "SP",
+    "n_vars": 5,
+    "courses": {
+      "Y3FS-1": "COMM 10",
+      "Y3FS-3": "STAT 146",
+      "Y3FS-4": "STAT 173",
+      "Y3FS-5": "STAT 175",
+      "Y3FS-6": "STAT 181"
+    }
+  },
+  "results": [
+    {
+      "method": "Backtracking (MRV + LCV)",
+      "solved": true,
+      "time_seconds": 0.0018,
+      "nodes_explored": 7,
+      "backtracks": 0,
+      "accepted_worse": null,
+      "pruned_values": null,
+      "entries": [
+        {
+          "day": "W",
+          "time": "8:30-10:00",
+          "courseCode": "COMM 10",
+          "section": "B1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "F",
+          "time": "8:30-10:00",
+          "courseCode": "COMM 10",
+          "section": "B1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "T",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T6R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T6R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "F",
+          "time": "7:00-8:00",
+          "courseCode": "STAT 146",
+          "section": "T+T6R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST3L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST3L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "T",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST3L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "M",
+          "time": "13:00-16:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "F",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "M",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        }
+      ]
+    },
+    {
+      "method": "Forward Checking (MRV + FC)",
+      "solved": true,
+      "time_seconds": 0.0001,
+      "nodes_explored": 5,
+      "backtracks": 0,
+      "accepted_worse": null,
+      "pruned_values": 29,
+      "entries": [
+        {
+          "day": "W",
+          "time": "7:00-8:30",
+          "courseCode": "COMM 10",
+          "section": "A1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "F",
+          "time": "7:00-8:30",
+          "courseCode": "COMM 10",
+          "section": "A1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "T",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "T",
+          "time": "10:00-13:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "M",
+          "time": "13:00-16:00",
+          "courseCode": "STAT 175",
+          "section": "D+D1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "F",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "M",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 181",
+          "section": "C+C1L",
+          "room": "",
+          "slot": "Y3FS-6"
+        }
+      ]
+    },
+    {
+      "method": "Min-Conflicts",
+      "solved": true,
+      "time_seconds": 0.0002,
+      "nodes_explored": 2,
+      "backtracks": 0,
+      "accepted_worse": null,
+      "pruned_values": null,
+      "entries": [
+        {
+          "day": "W",
+          "time": "8:30-10:00",
+          "courseCode": "COMM 10",
+          "section": "B1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "F",
+          "time": "8:30-10:00",
+          "courseCode": "COMM 10",
+          "section": "B1",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "T",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 146",
+          "section": "T+T1R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "T",
+          "time": "10:00-13:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D3L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D3L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "13:00-16:00",
+          "courseCode": "STAT 175",
+          "section": "D+D3L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "F",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "W",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        }
+      ]
+    },
+    {
+      "method": "Simulated Annealing",
+      "solved": true,
+      "time_seconds": 0.0,
+      "nodes_explored": 1,
+      "backtracks": 0,
+      "accepted_worse": 0,
+      "pruned_values": null,
+      "entries": [
+        {
+          "day": "W",
+          "time": "14:30-16:00",
+          "courseCode": "COMM 10",
+          "section": "F4",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "F",
+          "time": "14:30-16:00",
+          "courseCode": "COMM 10",
+          "section": "F4",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "T",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T4R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "9:00-10:00",
+          "courseCode": "STAT 146",
+          "section": "T+T4R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "F",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 146",
+          "section": "T+T4R",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST2L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "8:00-9:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST2L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "T",
+          "time": "13:00-16:00",
+          "courseCode": "STAT 173",
+          "section": "ST+ST2L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D5L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "12:00-13:00",
+          "courseCode": "STAT 175",
+          "section": "D+D5L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 175",
+          "section": "D+D5L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "F",
+          "time": "10:00-11:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "W",
+          "time": "16:00-19:00",
+          "courseCode": "STAT 181",
+          "section": "C+C2L",
+          "room": "",
+          "slot": "Y3FS-6"
+        }
+      ]
+    }
+  ]
+}
