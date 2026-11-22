@@ -1,7 +1,7 @@
 # AMIS Student Schedule Builder — CMSC 170 Project
 
-A **Constraint Satisfaction Problem (CSP)** that builds a conflict-free weekly
-class schedule for a UPLB student, using data scraped from AMIS.
+A **Constraint Satisfaction Problem (CSP)** solver that builds a conflict-free weekly
+class schedule for a UPLB student, using data scraped from AMIS across **12 degree programs**.
 
 **Four methods implemented and benchmarked:**
 
@@ -22,70 +22,136 @@ class schedule for a UPLB student, using data scraped from AMIS.
 | **Domain** | All LEC+LAB bundles for that course that are open and require no consent |
 | **Constraint** | No two assigned bundles may have overlapping meeting times |
 
-The solver targets **Year 2, First Semester, SP track** by default
-(change `year` and `term` in `evaluate.py`).
+The solver targets **Year 3, First Semester, SP track** by default
+(change `--deg-prog`, `--year`, `--term`, and `--track` in `evaluate.py`).
 
 ---
 
-## Repository layout
+## Degree Programs Supported
+
+The solver covers **12 degree programs** from the UPLB BS curriculum (2018):
+
+| Key | Program |
+|---|---|
+| `cmsc` | BS Computer Science |
+| `stat` | BS Statistics |
+| `math` | BS Mathematics |
+| `amat` | BS Applied Mathematics |
+| `ap` | BS Applied Physics |
+| `chem` | BS Chemistry |
+| `agch` | BS Agricultural Chemistry |
+| `bio` | BS Biology |
+| `coma` | BS Community Arts (Communication Arts) |
+| `mst` | BS Management Science and Technology |
+| `phlo` | BS Philosophy |
+| `soc` | BS Sociology |
+
+Each program maps to a `data/curriculum_<deg_prog>.csv` file describing the BS curriculum flowchart.
+
+---
+
+## Dataset Summary (Term 1261)
+
+Drawn from `data/datasets/term_1261/summary.json`:
+
+| Item | Count |
+|---|---|
+| Total sections (including embedded LEC parents) | 4,719 |
+| LEC sections | 3,891 |
+| LAB sections | 828 |
+| Sections with no meeting times (SP/thesis/practicum) | 1,997 |
+| Instructors | 771 |
+| Student bundles (total / usable) | 4,466 / 2,475 |
+| Curriculum instances (year-term combinations) | 10 |
+| Subjects covered | 44 |
+
+Courses without an offering this term (excluded from the CSP):
+`CMSC 23`, `CMSC 57`, `CMSC 127`, `CMSC 128`, `CMSC 131`, `CMSC 137`,
+`CMSC 173`, `CMSC 180`, `HK 13`
+
+---
+
+## Repository Layout
 
 ```
 .
+├── README.md
+├── auth.py                          Grabs a Bearer token via a live browser session (Playwright)
+├── scrape.py                        READ-ONLY AMIS collector (Playwright + requests)
+├── build_datasets.py                Turns raw AMIS JSON → clean CSV/JSON datasets (stdlib only)
 ├── data/
-│   ├── curriculum.csv               BS CS 2018 flowchart (SP + Thesis tracks)
-│   ├── raw/term_1261/               Raw JSON pages from AMIS (read-only scrape)
-│   └── datasets/term_1261/
-│       ├── sections.csv             One row per class section (LEC or LAB)
-│       ├── meetings.csv             One row per (section, day); times in minutes after midnight
-│       ├── summary.json             Counts for the project page
-│       ├── faculty/                 Dataset A — faculty load (not used for this project)
-│       └── student/                 Dataset B — student scheduler
-│           ├── bundles.csv          LEC+LAB bundles a student can enlist in
-│           ├── coverage.csv         Which curriculum courses are offered this term
-│           └── instances.json       One CSP instance per curriculum term
+│   ├── curriculum_<deg_prog>.csv    BS curriculum flowcharts for all 12 programs
+│   ├── aggregate_results.csv        Shared benchmark results across all programs and years
+│   ├── datasets/term_1261/
+│   │   ├── sections.csv             One row per class section (LEC or LAB)
+│   │   ├── meetings.csv             One row per (section, day); times in minutes after midnight
+│   │   ├── summary.json             Dataset counts for the project page
+│   │   ├── faculty/                 Dataset A — faculty load (reference only)
+│   │   │   ├── assignments.csv
+│   │   │   ├── instructors.csv
+│   │   │   └── instance.json
+│   │   └── student/                 Dataset B — student scheduler (used by the solver)
+│   │       ├── bundles.csv          LEC+LAB bundles a student can enlist in
+│   │       ├── coverage.csv         Which curriculum courses are offered this term
+│   │       └── instances.json       One CSP instance per curriculum term
+│   └── raw/term_1261/               Raw JSON pages from AMIS (read-only scrape)
 ├── solver/
 │   ├── csp.py                       CSP class: loads data, builds domains, checks constraints
 │   ├── backtracking.py              Method 1 — MRV + LCV backtracking
 │   ├── forward_checking.py          Method 2 — MRV + Forward Checking
 │   ├── min_conflicts.py             Method 3 — Min-Conflicts local search
 │   ├── simulated_annealing.py       Method 4 — Simulated Annealing
-│   └── evaluate.py                  Runs all four methods and prints a comparison table
-├── scrape.py                        READ-ONLY AMIS collector (Playwright + requests)
-├── build_datasets.py                Turns raw JSON → CSV datasets (stdlib only)
-├── auth.py                          Grabs a Bearer token from a live browser session
-└── README.md
+│   ├── evaluate.py                  Runs all four methods and prints a comparison table
+│   ├── plot_results.py              Generates per-program bar charts and saves a results CSV
+│   ├── aggregate_results.py         Aggregates results across all programs into summary figures
+│   ├── export_schedule.py           Runs all solvers and writes docs/schedules.json for the web viewer
+│   └── check_curriculum.py          Audits curriculum CSVs for format errors and missing course coverage
+├── docs/
+│   ├── index.html                   GitHub Pages project page
+│   ├── Schedule.html                Interactive schedule viewer
+│   ├── schedules.json               Solver output for the web viewer (committed after export_schedule.py)
+│   └── scheda/scheda.js             Schedule rendering library
+├── figures/
+│   ├── <deg_prog>/                  Per-program figures (fig1–fig5)
+│   └── aggregate_figures/           Aggregate comparison figures across all programs
+├── tasklog.md                       Member contribution log → [view →](tasklog.md)
+└── tree.txt                         Full directory tree snapshot
 ```
 
 ---
 
-## Reproducing the results
+## Reproducing the Results
 
 ### Prerequisites
 
 ```
 Python 3.11+
-numpy          (arrays only — required by the solver)
-matplotlib     (plots — required if you generate figures)
+numpy          (arrays — required by the solver)
+matplotlib     (plots — required for figure generation)
 ```
 
-The solver (`solver/`) uses **only** the Python standard library, NumPy, and
-Matplotlib. `requests` and `playwright` are only needed to re-scrape AMIS data,
+The solver (`solver/`) uses **only** the Python standard library, NumPy, and Matplotlib.
+`requests` and `playwright` are only needed to re-scrape AMIS data,
 which you should not need to do — the processed CSVs are already in the repo.
 
-Install the solver dependencies:
+Install solver dependencies:
 
 ```bash
 pip install numpy matplotlib
 ```
 
-### Run the benchmark
+---
+
+### Run a Single Benchmark (one program, one year)
 
 ```bash
 cd solver
-python evaluate.py
+python evaluate.py                                    # defaults: CMSC, Year 3, FS, SP
+python evaluate.py --deg-prog stat --allow-consent
+python evaluate.py --deg-prog math --year 2 --term SS --track TH --allow-consent
 ```
 
-This prints a schedule for each method and a side-by-side comparison table:
+This prints the schedule found by each method and a side-by-side comparison table:
 
 ```
   Method                              Nodes/Steps  BT/Restarts  Uphill    Time(s)  Solved
@@ -99,18 +165,75 @@ This prints a schedule for each method and a side-by-side comparison table:
 
 | Parameter | Default | Meaning |
 |---|---|---|
-| `year` | `3` | Curriculum year (1–4) |
-| `term` | `"FS"` | First Semester (`FS`) or Second Semester (`SS`) |
-| `track` | `"SP"` | `SP` (Special Problem) or `TH` (Thesis) |
-| `require_open_slot` | `False` | `True` = only bundles with available seats |
-| `allow_consent` | `False` | `True` = include sections requiring D/I consent |
+| `--deg-prog` | `cmsc` | Degree program key (see table above) |
+| `--year` | `3` | Curriculum year (1–4) |
+| `--term` | `FS` | First Semester (`FS`) or Second Semester (`SS`) |
+| `--track` | `SP` | `SP` (Special Problem) or `TH` (Thesis) |
+| `--allow-consent` | off | Include sections requiring D/I consent |
 
 ---
 
-## Data collection (optional — skip if CSVs are already in the repo)
+### Generate Per-Program Figures and Save Results
 
-The processed data is committed. You only need this section if you want to
-re-scrape or collect additional subjects.
+```bash
+cd solver
+python plot_results.py                              # CMSC, all years
+python plot_results.py --deg-prog stat --allow-consent
+```
+
+Figures are saved to `figures/<deg_prog>/`. Results are appended to
+`data/aggregate_results.csv` so you can run programs one at a time and accumulate results.
+
+---
+
+### Generate Aggregate Figures
+
+After running `plot_results.py` for all programs:
+
+```bash
+cd solver
+python aggregate_results.py
+```
+
+Output goes to `figures/aggregate_figures/`. This produces:
+
+- `aggregate_01_nodes_explored.png` — mean nodes explored (exact methods)
+- `aggregate_02_local_search_steps.png` — mean steps (local search)
+- `aggregate_03_execution_time.png` — mean wall-clock time per method
+- `aggregate_05_solution_success.png` — solution success rate
+- `aggregate_07_overall_performance.png` — combined dual-axis overview
+- `aggregate_08_pruning_intensity.png` — Forward Checking pruning per program
+- `aggregate_pruning_summary.csv` — pruning summary table
+
+---
+
+### Update the Web Schedule Viewer
+
+```bash
+cd solver
+python export_schedule.py                               # defaults: CMSC Y3 FS SP
+python export_schedule.py --deg-prog stat --allow-consent
+```
+
+This writes `docs/schedules.json`. Commit that file to update the schedule on GitHub Pages.
+
+---
+
+### Audit Curriculum Files
+
+```bash
+cd solver
+python check_curriculum.py
+```
+
+Checks all 12 `curriculum_<prog>.csv` files for format errors and reports which course codes
+are not found in `sections.csv` (i.e., not offered this term or not yet scraped).
+
+---
+
+## Data Collection (Optional — Skip If CSVs Are Already in the Repo)
+
+The processed dataset is committed. You only need this section to re-scrape or add subjects.
 
 ### Setup (Windows + WSL2)
 
@@ -156,8 +279,11 @@ python scrape.py --probe
 # CMSC only (267 sections, 6 pages):
 python scrape.py --items 50
 
-# All curriculum subjects (CMSC, MATH, STAT, HK, NSTP, GEs):
-python scrape.py --set curriculum --items 50
+# All curriculum subjects for a specific program, e.g. BS CS:
+python scrape.py --set cs --items 50
+
+# All available subjects (large — confirm before running):
+python scrape.py --set all_curricula --items 50
 ```
 
 Raw pages are saved to `data/raw/term_1261/<SUBJECT>/page_NNNN.json`.
@@ -174,32 +300,14 @@ Output goes to `data/datasets/term_1261/`. Requires stdlib only.
 
 ---
 
-## Dataset summary (term 1261, CMSC only)
-
-| Item | Count |
-|---|---|
-| Raw rows scraped | 267 |
-| Total sections (incl. embedded LEC parents) | 294 |
-| LEC / LAB | 179 / 115 |
-| Sections with no meeting times (SP/thesis/practicum) | 130 |
-| Schedulable sections | 164 |
-| Instructors | 40 |
-| Student bundles (total / usable) | 267 / 137 |
-| Curriculum instances (year-term combinations) | 10 |
-
-The 130 sections with no meetings are CMSC 190, 198, 200, 300, 400
-(research/practicum). They have no fixed time and are excluded from the CSP.
-
----
-
-## Libraries used and why
+## Libraries Used and Why
 
 | Library | Where | Why |
 |---|---|---|
-| `requests`, `playwright` | `scrape.py`, `auth.py` | HTTP requests and browser login to AMIS (data collection only) |
-| `csv`, `json`, `os`, `time`, `random`, `math` | everything else | Python stdlib — allowed by the project rules |
-| `numpy` | solver (future plots) | Arrays and linear algebra — allowed |
-| `matplotlib` | evaluation plots | Figures — allowed |
+| `requests`, `playwright` | `scrape.py`, `auth.py` | HTTP requests and browser-based login to AMIS (data collection only) |
+| `csv`, `json`, `os`, `time`, `random`, `math` | everything else | Python stdlib — allowed by project rules |
+| `numpy` | solver, plotting | Arrays and linear algebra — allowed |
+| `matplotlib` | `plot_results.py`, `aggregate_results.py` | Figures — allowed |
 
 `pandas`, `scikit-learn`, `tensorflow`, `pytorch`, `keras`, and similar
 ML/stats libraries are **not used anywhere** in the solver or preprocessing.
@@ -208,25 +316,45 @@ ML/stats libraries are **not used anywhere** in the solver or preprocessing.
 
 ## Privacy
 
-Instructor names and user IDs are removed in `scrape.py` before anything is
-saved. Only the numeric `faculty_id` is kept in the data.
+Instructor names and user IDs are removed in `scrape.py` before anything is saved to disk.
+Only the numeric `faculty_id` is retained.
 
-**Never commit** `amis_session*/`, any Bearer token, or personal enlistment
-scripts. These are covered by `.gitignore`:
+**Never commit** `amis_session*/`, any Bearer token, or personal enlistment scripts.
+These are covered by `.gitignore`:
 
 ```
 amis_session*/
 main.py
 __pycache__/
 .venv/
-*.token
+*token*
 ```
+
+---
+
+## Task Log
+
+A full record of each member's contributions per milestone is maintained in
+**[tasklog.md](tasklog.md)**.
 
 ---
 
 ## Authors
 
-- Hallare, Eu Dasein B.
-- Hernandez, John Denmark G.
-- Gevaña, Maria Eliza P.
-- Tipan, Jiro Kristofer T.
+| Name | Role |
+|---|---|
+| Hallare, Eu Dasein B. | Project Manager & Tech Lead |
+| Gevaña, Maria Eliza P. | Research & QA Lead |
+| Hernandez, John Denmark G. | Frontend & Web Lead |
+| Tipan, Jiro Kristofer T. | Data Engineering & Analytics Lead |
+
+---
+
+## AI Tool Disclosure
+
+Claude (Anthropic) was used during development as a debugging aid and to help generate boilerplate
+code for `export_schedule.py`, `Schedule.html`, and portions of the project page. All core solver
+logic — `csp.py`, `backtracking.py`, `forward_checking.py`, `min_conflicts.py`, and
+`simulated_annealing.py` — was written by the group, with Claude occasionally consulted for
+debugging assistance. Every line of code, whether written by the team or reviewed after generation,
+was understood and verified by team members and can be explained during Q&A.
