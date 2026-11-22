@@ -1,138 +1,163 @@
 {
   "meta": {
-    "deg_prog": "STAT",
+    "deg_prog": "CMSC",
     "year": 3,
     "term": "FS",
     "term_label": "1st Semester",
     "track": "SP",
-    "n_vars": 5,
+    "n_vars": 6,
     "courses": {
-      "Y3FS-1": "COMM 10",
-      "Y3FS-3": "STAT 146",
-      "Y3FS-4": "STAT 173",
-      "Y3FS-5": "STAT 175",
-      "Y3FS-6": "STAT 181"
+      "Y3FS-1": "CMSC 124",
+      "Y3FS-2": "CMSC 125",
+      "Y3FS-3": "CMSC 141",
+      "Y3FS-4": "CMSC 170",
+      "Y3FS-5": "CMSC 132",
+      "Y3FS-6": "COMM 10"
     }
   },
   "results": [
     {
       "method": "Backtracking (MRV + LCV)",
       "solved": true,
-      "time_seconds": 0.0018,
-      "nodes_explored": 7,
+      "time_seconds": 0.0033,
+      "nodes_explored": 11,
       "backtracks": 0,
       "accepted_worse": null,
       "pruned_values": null,
       "entries": [
         {
-          "day": "W",
-          "time": "8:30-10:00",
-          "courseCode": "COMM 10",
-          "section": "B1",
+          "day": "T",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
           "room": "",
           "slot": "Y3FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "W",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
+          "room": "",
+          "slot": "Y3FS-2"
         },
         {
           "day": "F",
-          "time": "8:30-10:00",
-          "courseCode": "COMM 10",
-          "section": "B1",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
           "room": "",
-          "slot": "Y3FS-1"
+          "slot": "Y3FS-2"
+        },
+        {
+          "day": "M",
+          "time": "10:00-13:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
+          "room": "",
+          "slot": "Y3FS-2"
         },
         {
           "day": "T",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T6R",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-2L",
           "room": "",
           "slot": "Y3FS-3"
         },
         {
           "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T6R",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-2L",
           "room": "",
           "slot": "Y3FS-3"
+        },
+        {
+          "day": "M",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-2L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-4L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-4L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "F",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-4L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
+          "room": "",
+          "slot": "Y3FS-5"
         },
         {
           "day": "F",
           "time": "7:00-8:00",
-          "courseCode": "STAT 146",
-          "section": "T+T6R",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
           "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST3L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST3L",
-          "room": "",
-          "slot": "Y3FS-4"
+          "slot": "Y3FS-5"
         },
         {
           "day": "T",
           "time": "16:00-19:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST3L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "W",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "F",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "M",
-          "time": "13:00-16:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
           "room": "",
           "slot": "Y3FS-5"
         },
         {
           "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
+          "time": "10:00-11:30",
+          "courseCode": "COMM 10",
+          "section": "C1",
           "room": "",
           "slot": "Y3FS-6"
         },
         {
           "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
-          "room": "",
-          "slot": "Y3FS-6"
-        },
-        {
-          "day": "M",
-          "time": "16:00-19:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
+          "time": "10:00-11:30",
+          "courseCode": "COMM 10",
+          "section": "C1",
           "room": "",
           "slot": "Y3FS-6"
         }
@@ -142,120 +167,144 @@
       "method": "Forward Checking (MRV + FC)",
       "solved": true,
       "time_seconds": 0.0001,
-      "nodes_explored": 5,
+      "nodes_explored": 6,
       "backtracks": 0,
       "accepted_worse": null,
-      "pruned_values": 29,
+      "pruned_values": 56,
       "entries": [
         {
-          "day": "W",
-          "time": "7:00-8:30",
-          "courseCode": "COMM 10",
-          "section": "A1",
+          "day": "T",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-1L",
           "room": "",
           "slot": "Y3FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-1L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "13:00-16:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-1L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "W",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-2L",
+          "room": "",
+          "slot": "Y3FS-2"
         },
         {
           "day": "F",
-          "time": "7:00-8:30",
-          "courseCode": "COMM 10",
-          "section": "A1",
-          "room": "",
-          "slot": "Y3FS-1"
-        },
-        {
-          "day": "T",
           "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
+          "courseCode": "CMSC 125",
+          "section": "B+B-2L",
           "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
-          "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "Th",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
-          "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
-          "room": "",
-          "slot": "Y3FS-4"
+          "slot": "Y3FS-2"
         },
         {
           "day": "T",
           "time": "10:00-13:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
+          "courseCode": "CMSC 125",
+          "section": "B+B-2L",
+          "room": "",
+          "slot": "Y3FS-2"
+        },
+        {
+          "day": "W",
+          "time": "11:00-12:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "F",
+          "time": "11:00-12:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "13:00-16:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "M",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 170",
+          "section": "EF+EF-1L",
           "room": "",
           "slot": "Y3FS-4"
         },
         {
           "day": "W",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 170",
+          "section": "EF+EF-1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "M",
+          "time": "10:00-13:00",
+          "courseCode": "CMSC 170",
+          "section": "EF+EF-1L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
           "room": "",
           "slot": "Y3FS-5"
         },
         {
           "day": "F",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
           "room": "",
           "slot": "Y3FS-5"
         },
         {
-          "day": "M",
-          "time": "13:00-16:00",
-          "courseCode": "STAT 175",
-          "section": "D+D1L",
+          "day": "T",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-2L",
           "room": "",
           "slot": "Y3FS-5"
         },
         {
           "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
+          "time": "16:00-17:30",
+          "courseCode": "COMM 10",
+          "section": "DC10",
           "room": "",
           "slot": "Y3FS-6"
         },
         {
           "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
-          "room": "",
-          "slot": "Y3FS-6"
-        },
-        {
-          "day": "M",
-          "time": "16:00-19:00",
-          "courseCode": "STAT 181",
-          "section": "C+C1L",
+          "time": "16:00-17:30",
+          "courseCode": "COMM 10",
+          "section": "DC10",
           "room": "",
           "slot": "Y3FS-6"
         }
@@ -264,121 +313,145 @@
     {
       "method": "Min-Conflicts",
       "solved": true,
-      "time_seconds": 0.0002,
+      "time_seconds": 0.0001,
       "nodes_explored": 2,
       "backtracks": 0,
       "accepted_worse": null,
       "pruned_values": null,
       "entries": [
         {
-          "day": "W",
-          "time": "8:30-10:00",
-          "courseCode": "COMM 10",
-          "section": "B1",
+          "day": "T",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
           "room": "",
           "slot": "Y3FS-1"
         },
         {
-          "day": "F",
-          "time": "8:30-10:00",
-          "courseCode": "COMM 10",
-          "section": "B1",
+          "day": "Th",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
           "room": "",
           "slot": "Y3FS-1"
         },
         {
-          "day": "T",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
-          "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
           "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
-          "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "Th",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 146",
-          "section": "T+T1R",
-          "room": "",
-          "slot": "Y3FS-3"
-        },
-        {
-          "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "T",
-          "time": "10:00-13:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST1L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "W",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D3L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "F",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D3L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "W",
-          "time": "13:00-16:00",
-          "courseCode": "STAT 175",
-          "section": "D+D3L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
-          "room": "",
-          "slot": "Y3FS-6"
-        },
-        {
-          "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
-          "room": "",
-          "slot": "Y3FS-6"
-        },
-        {
-          "day": "W",
           "time": "16:00-19:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
+          "courseCode": "CMSC 124",
+          "section": "S+S-2L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "W",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
+          "room": "",
+          "slot": "Y3FS-2"
+        },
+        {
+          "day": "F",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
+          "room": "",
+          "slot": "Y3FS-2"
+        },
+        {
+          "day": "M",
+          "time": "10:00-13:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-1L",
+          "room": "",
+          "slot": "Y3FS-2"
+        },
+        {
+          "day": "T",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "14:00-15:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "M",
+          "time": "13:00-16:00",
+          "courseCode": "CMSC 141",
+          "section": "WX+WX-1L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "T",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-5L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-5L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "F",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-5L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-4L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "7:00-8:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-4L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "13:00-16:00",
+          "courseCode": "CMSC 132",
+          "section": "A+A-4L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "W",
+          "time": "11:30-13:00",
+          "courseCode": "COMM 10",
+          "section": "D3",
+          "room": "",
+          "slot": "Y3FS-6"
+        },
+        {
+          "day": "F",
+          "time": "11:30-13:00",
+          "courseCode": "COMM 10",
+          "section": "D3",
           "room": "",
           "slot": "Y3FS-6"
         }
@@ -387,121 +460,145 @@
     {
       "method": "Simulated Annealing",
       "solved": true,
-      "time_seconds": 0.0,
-      "nodes_explored": 1,
+      "time_seconds": 0.0001,
+      "nodes_explored": 22,
       "backtracks": 0,
-      "accepted_worse": 0,
+      "accepted_worse": 1,
       "pruned_values": null,
       "entries": [
         {
+          "day": "T",
+          "time": "8:00-9:00",
+          "courseCode": "CMSC 124",
+          "section": "ST+ST-1L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "8:00-9:00",
+          "courseCode": "CMSC 124",
+          "section": "ST+ST-1L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
+          "day": "M",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 124",
+          "section": "ST+ST-1L",
+          "room": "",
+          "slot": "Y3FS-1"
+        },
+        {
           "day": "W",
-          "time": "14:30-16:00",
-          "courseCode": "COMM 10",
-          "section": "F4",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-3L",
           "room": "",
-          "slot": "Y3FS-1"
+          "slot": "Y3FS-2"
         },
         {
           "day": "F",
-          "time": "14:30-16:00",
-          "courseCode": "COMM 10",
-          "section": "F4",
+          "time": "9:00-10:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-3L",
           "room": "",
-          "slot": "Y3FS-1"
+          "slot": "Y3FS-2"
         },
         {
           "day": "T",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T4R",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 125",
+          "section": "B+B-3L",
           "room": "",
-          "slot": "Y3FS-3"
+          "slot": "Y3FS-2"
         },
         {
-          "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "STAT 146",
-          "section": "T+T4R",
+          "day": "W",
+          "time": "11:00-12:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-3L",
           "room": "",
           "slot": "Y3FS-3"
         },
         {
           "day": "F",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 146",
-          "section": "T+T4R",
+          "time": "11:00-12:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-3L",
+          "room": "",
+          "slot": "Y3FS-3"
+        },
+        {
+          "day": "W",
+          "time": "16:00-19:00",
+          "courseCode": "CMSC 141",
+          "section": "CD+CD-3L",
           "room": "",
           "slot": "Y3FS-3"
         },
         {
           "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST2L",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-3L",
           "room": "",
           "slot": "Y3FS-4"
         },
         {
           "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST2L",
+          "time": "13:00-14:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-3L",
           "room": "",
           "slot": "Y3FS-4"
         },
         {
-          "day": "T",
+          "day": "Th",
+          "time": "10:00-13:00",
+          "courseCode": "CMSC 170",
+          "section": "W+W-3L",
+          "room": "",
+          "slot": "Y3FS-4"
+        },
+        {
+          "day": "W",
+          "time": "8:00-9:00",
+          "courseCode": "CMSC 132",
+          "section": "AB+AB-1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "F",
+          "time": "8:00-9:00",
+          "courseCode": "CMSC 132",
+          "section": "AB+AB-1L",
+          "room": "",
+          "slot": "Y3FS-5"
+        },
+        {
+          "day": "M",
           "time": "13:00-16:00",
-          "courseCode": "STAT 173",
-          "section": "ST+ST2L",
-          "room": "",
-          "slot": "Y3FS-4"
-        },
-        {
-          "day": "W",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D5L",
+          "courseCode": "CMSC 132",
+          "section": "AB+AB-1L",
           "room": "",
           "slot": "Y3FS-5"
         },
         {
-          "day": "F",
-          "time": "12:00-13:00",
-          "courseCode": "STAT 175",
-          "section": "D+D5L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "F",
-          "time": "16:00-19:00",
-          "courseCode": "STAT 175",
-          "section": "D+D5L",
-          "room": "",
-          "slot": "Y3FS-5"
-        },
-        {
-          "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
+          "day": "T",
+          "time": "14:30-16:00",
+          "courseCode": "COMM 10",
+          "section": "X1",
           "room": "",
           "slot": "Y3FS-6"
         },
         {
-          "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
-          "room": "",
-          "slot": "Y3FS-6"
-        },
-        {
-          "day": "W",
-          "time": "16:00-19:00",
-          "courseCode": "STAT 181",
-          "section": "C+C2L",
+          "day": "Th",
+          "time": "14:30-16:00",
+          "courseCode": "COMM 10",
+          "section": "X1",
           "room": "",
           "slot": "Y3FS-6"
         }
