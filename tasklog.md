@@ -79,7 +79,7 @@
 
 ---
 
-## Milestone 4 *(In Progress)*
+## Milestone 4
 
 **Eu:**
 - Fixed formatting issues in `curriculum.csv` for AGCH, AMAT, AP, BIO, CHEM, MATH, and STAT
