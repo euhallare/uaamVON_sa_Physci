@@ -5,7 +5,7 @@ Aggregate the existing per-degree-program CSP figures' measurements.
 Expected input: aggregate_data.csv.
 One row = one degree program + one year-level instance.
 
-Expected output: six figures of overall results
+Expected output: Figures of overall results
 """
 
 from pathlib import Path
@@ -55,6 +55,7 @@ NUMERIC_COLUMNS = [
     "time_backtracking", "time_forward_checking",
     "time_min_conflicts", "time_simulated_annealing",
     "pruned_values_forward_checking",
+    # "original_domain_values",
 ]
 SOLVED_COLUMNS = [
     "solved_backtracking", "solved_forward_checking",
@@ -68,6 +69,7 @@ def load_data(path):
     # Check whether the CSV has the expected columns
     required = [
         "degree_program", "year", "term", "track", "method",
+        "n_vars", "original_domain_values",
         "nodes_explored", "steps", "time_seconds",
         "pruned_values", "solution_found"
     ]
@@ -100,6 +102,43 @@ def load_data(path):
         ].to_dict("records")
 
         raise ValueError(f"Duplicate program/year/method records: {duplicates}")
+
+    # Convert original domain values to numeric.
+    df["original_domain_values"] = pd.to_numeric(
+        df["original_domain_values"],
+        errors="coerce"
+    )
+
+    # Every method should have the same original domain size for the same CSP instance.
+    original_counts = (
+        df.groupby(["degree_program", "year_level"])["original_domain_values"]
+        .nunique()
+    )
+
+    inconsistent = original_counts[original_counts > 1]
+
+    if not inconsistent.empty:
+        raise ValueError(
+            "Inconsistent original domain values between methods:\n"
+            + inconsistent.to_string()
+        )
+
+    # Every instance needs a valid original domain size.
+    missing_original = df[
+        df["original_domain_values"].isna()
+        | (df["original_domain_values"] <= 0)
+    ]
+
+    if not missing_original.empty:
+        missing_instances = missing_original[
+            ["degree_program", "year_level", "method"]
+        ].to_dict("records")
+
+        raise ValueError(
+            "Missing or invalid original_domain_values. "
+            "Rerun these instances using the updated plot_results.py:\n"
+            + str(missing_instances)
+        )
 
     # Create one row per degree program and year level
     wide_df = df[["degree_program", "year_level"]].drop_duplicates()
@@ -145,6 +184,21 @@ def load_data(path):
     for col in NUMERIC_COLUMNS:
         wide_df[col] = pd.to_numeric(wide_df[col], errors="coerce")
 
+    # Store the original domain size once per CSP instance.
+    original_domain_sizes = (
+        df.groupby(["degree_program", "year_level"])["original_domain_values"]
+        .first()
+    )
+
+    wide_df["original_domain_values"] = original_domain_sizes
+
+    # Calculate Forward Checking's pruning intensity.
+    # This uses cumulative pruning events, not unique domain entries.
+    wide_df["pruning_intensity_pct"] = (
+        wide_df["pruned_values_forward_checking"]
+        / wide_df["original_domain_values"]
+    ) * 100
+
     # Convert solution - results into 1 (solved) and 0 (not solved)
     def parse_bool(value):
         if pd.isna(value):
@@ -171,6 +225,36 @@ def mean_by_program(df, column):
               .mean()
               .reindex(PROGRAM_ORDER))
 
+def create_pruning_summary(df):
+    """
+    Create a per-degree-program summary of Forward Checking's
+    original domain values and cumulative pruning events.
+    """
+
+    summary = (
+        df.groupby("degree_program")
+        .agg(
+            instances=("year_level", "nunique"),
+            total_original_domain_values=(
+                "original_domain_values", "sum"
+            ),
+            total_pruned_values=(
+                "pruned_values_forward_checking", "sum"
+            ),
+            average_pruning_intensity_pct=(
+                "pruning_intensity_pct", "mean"
+            ),
+        )
+        .reindex(PROGRAM_ORDER)
+    )
+
+    # Calculate the weighted overall pruning intensity.
+    summary["overall_pruning_intensity_pct"] = (
+        summary["total_pruned_values"]
+        / summary["total_original_domain_values"]
+    ) * 100
+
+    return summary.reset_index()
 
 def save_figures(df, output_dir):
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -280,82 +364,7 @@ def save_figures(df, output_dir):
     fig.savefig(output_dir / "aggregate_03_execution_time.png")
     plt.close(fig)
 
-    # ===================== Figure 4 — Pruned values =====================
-
-    fig, ax = plt.subplots(figsize=(14, 7))
-
-    programs = sorted(df["degree_program"].unique())
-    year_levels = ["Y1", "Y2", "Y3"]
-
-    x = np.arange(len(programs))
-    width = 0.25
-
-    year_colors = {
-        "Y1": "#A5D6A7",
-        "Y2": "#55A868",
-        "Y3": "#276749",
-    }
-
-    for i, year in enumerate(year_levels):
-
-        # Get the pruned-values results for this year level
-        year_data = (
-            df[df["year_level"] == year]
-            .set_index("degree_program")["pruned_values_forward_checking"]
-            .reindex(programs)
-        )
-
-        # Position each year's bars beside one another
-        positions = x + (i - 1) * width
-
-        bars = ax.bar(
-            positions,
-            year_data,
-            width,
-            label=year,
-            color=year_colors[year]
-        )
-
-        # Display values above each bar with alternating vertical offsets
-        for j, bar in enumerate(bars):
-            height = bar.get_height()
-
-            if np.isfinite(height):
-                ax.annotate(
-                    f"{height:.4f}",
-                    xy=(bar.get_x() + bar.get_width() / 2, height),
-                    xytext=(0, 5 + (i * 12)),
-                    textcoords="offset points",
-                    ha="center",
-                    va="bottom",
-                    fontsize=8
-                )
-
-    # Calculate and display the overall mean
-    overall_mean = df["pruned_values_forward_checking"].dropna().mean()
-
-    ax.axhline(
-        y=overall_mean,
-        color="black",
-        linestyle="--",
-        linewidth=1.5,
-        label=f"Overall Mean: {overall_mean:.4f}"
-    )
-
-    ax.set_title("Pruned Values by Degree Program and Year Level")
-    ax.set_xlabel("Degree Program")
-    ax.set_ylabel("Pruned Values")
-    ax.set_xticks(x)
-    ax.set_xticklabels(programs)
-
-    format_chart(ax)
-    ax.legend(title="Year Level")
-
-    fig.tight_layout()
-    fig.savefig(output_dir / "aggregate_04_pruned_values.png")
-    plt.close(fig)
-
-    # ===================== Figure 5 — Solution success rate =====================
+    # ===================== Figure 4 — Solution success rate =====================
 
     labels = list(METHODS.keys())
     columns = [info["solved"] for info in METHODS.values()]
@@ -382,88 +391,7 @@ def save_figures(df, output_dir):
     fig.savefig(output_dir / "aggregate_05_solution_success.png")
     plt.close(fig)
 
-    # ===================== Figure 6 — Overview =====================
-    fig, ax = plt.subplots(figsize=(16, 8))
-
-    # Calculate the average result per degree program.
-    program_means = (
-        df.groupby("degree_program")
-        .mean(numeric_only=True)
-        .sort_index()
-    )
-
-    programs = program_means.index.tolist()
-    x = np.arange(len(programs))
-
-    # Display numerical values above each bar
-    def add_overview_labels(ax, bars, series_index):
-        for bar in bars:
-            height = bar.get_height()
-
-            if np.isfinite(height) and height > 0:
-                ax.annotate(
-                    f"{height:.4f}",
-                    xy=(bar.get_x() + bar.get_width() / 2, height),
-                    xytext=(0, 5 + (series_index * 8)),
-                    textcoords="offset points",
-                    ha="center",
-                    va="bottom",
-                    fontsize=7
-                )
-
-    # SEARCH EFFORT
-    search_columns = [
-        "nodes_backtracking",
-        "nodes_forward_checking",
-        "steps_min_conflicts",
-        "steps_simulated_annealing"
-    ]
-
-    search_labels = [
-        "Backtracking (MRV+LCV)",
-        "Forward Checking",
-        "Min-Conflicts",
-        "Simulated Annealing"
-    ]
-
-    width = 0.2
-
-    for i, (column, label) in enumerate(zip(search_columns, search_labels)):
-
-        values = program_means[column].reindex(programs)
-
-        positions = x + (i - 1.5) * width
-
-        bars = ax.bar(
-            positions,
-            values,
-            width,
-            label=label,
-            color=METHOD_COLORS[label]
-        )
-
-        add_overview_labels(ax, bars, i)
-
-    ax.set_ylabel("Average Count")
-    ax.set_xticks(x)
-    ax.set_xticklabels(programs)
-
-    format_chart(ax)
-    ax.legend(ncol=2)
-
-    fig.suptitle(
-        "AMIS Student Schedule Builder - Overall CSP Search Effort",
-        fontsize=16,
-        fontweight="bold"
-    )
-
-    fig.tight_layout(rect=[0, 0, 1, 0.96])
-
-    fig.savefig(output_dir / "aggregate_06_overview.png")
-    plt.close(fig)
-
-
-    # ===================== Figure 7 — Overall CSP Performance =====================
+    # ===================== Figure 5 — Overall CSP Performance =====================
 
     # Calculate the overall average across all degree programs and year levels.
     overall_means = df.mean(numeric_only=True)
@@ -578,6 +506,77 @@ def save_figures(df, output_dir):
     fig.savefig(output_dir / "aggregate_07_overall_performance.png")
     plt.close(fig)
 
+    # ===================== Figure 6 — Forward Checking Pruning Summary =====================
+
+    pruning_summary = create_pruning_summary(df)
+
+    programs = pruning_summary["degree_program"]
+
+    original_values = pruning_summary["total_original_domain_values"]
+    pruned_values = pruning_summary["total_pruned_values"]
+    overall_percentages = pruning_summary["overall_pruning_intensity_pct"]
+
+    total_original = original_values.sum()
+    total_pruned = pruned_values.sum()
+
+    overall_percentage = (
+        total_pruned / total_original
+    ) * 100 if total_original > 0 else 0
+
+    fig, ax = plt.subplots(figsize=(14, 7))
+
+    # Background bars: total original domain values
+    original_bars = ax.bar(
+        programs,
+        original_values,
+        color="#DDEEDC",
+        edgecolor="white",
+        label="Original Domain Values"
+    )
+
+    # Foreground bars: cumulative values pruned
+    pruned_bars = ax.bar(
+        programs,
+        pruned_values,
+        color="#55A868",
+        edgecolor="white",
+        label="Cumulative Pruned Values"
+    )
+
+    # Display integer values on both sets of bars
+    ax.bar_label(
+        original_bars,
+        fmt="%.0f",
+        padding=3,
+        fontsize=8
+    )
+
+    ax.bar_label(
+        pruned_bars,
+        fmt="%.0f",
+        padding=3,
+        fontsize=8
+    )
+
+    ax.set_xlabel("Degree Program")
+    ax.set_ylabel("Number of Domain Values")
+    ax.set_title(
+        "Forward Checking: Original Domain Values vs. Cumulative Pruned Values",
+        fontsize=16,
+        fontweight="bold"
+    )
+
+    ax.text(0.98, 0.95, f"Overall Pruning Intensity: {overall_percentage:.2f}%",
+            transform=ax.transAxes, ha="right", va="top", fontsize=11, fontweight="bold"
+    )
+
+    ax.legend()
+
+    format_chart(ax)
+
+    fig.tight_layout()
+    fig.savefig(output_dir / "aggregate_08_pruning_intensity.png")
+    plt.close(fig)
 
 
 def main():
@@ -598,8 +597,31 @@ def main():
     print("Instances per degree program:")
     print(df.groupby("degree_program").size().reindex(PROGRAM_ORDER).fillna(0).astype(int).to_string())
 
-    save_figures(df, Path(args.output))
-    print(f"\nCreated six aggregate figures in: {args.output}")
+    output_dir = Path(args.output)
+
+    save_figures(df, output_dir)
+
+    # Generate and save the pruning summary.
+    pruning_summary = create_pruning_summary(df)
+
+    summary_path = output_dir / "aggregate_pruning_summary.csv"
+    pruning_summary.to_csv(summary_path, index=False)
+
+    print("\nFORWARD CHECKING PRUNING SUMMARY")
+    print("=" * 90)
+
+    print(
+        pruning_summary.to_string(
+            index=False,
+            formatters={
+                "average_pruning_intensity_pct": "{:.2f}%".format,
+                "overall_pruning_intensity_pct": "{:.2f}%".format,
+            }
+        )
+    )
+
+    print(f"\nPruning summary saved to: {summary_path}")
+    print(f"Created eight aggregate figures in: {output_dir}")
 
 if __name__ == "__main__":
     main()
