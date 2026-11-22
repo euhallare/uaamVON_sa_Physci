@@ -8,6 +8,12 @@ If any domain is wiped out, backtrack immediately without going deeper.
 
 This is strictly stronger than Method 1: it detects dead-ends earlier.
 
+Soft constraints:
+  Within each slot's (pruned) domain, bundles are sorted by score_bundle()
+  before the solver tries them.  This means Forward Checking tries
+  time/day-preferred bundles first, so the first valid solution found
+  tends to be a higher-quality one — without any extra backtracking cost.
+
 Metrics collected:
   - nodes_explored  : (slot, bundle) pairs tried
   - backtracks      : failed assignments
@@ -16,49 +22,18 @@ Metrics collected:
 """
 
 import time
-import copy
 from csp import SchedulerCSP
 
 
 def select_unassigned_variable(csp: SchedulerCSP, assignment: dict,
                                 current_domains: dict) -> str:
-    #MRV on the *current* (pruned) domains, not the original ones.
+    """MRV on the *current* (pruned) domains, not the original ones."""
     unassigned = [v for v in csp.variables if v not in assignment]
     return min(unassigned, key=lambda v: len(current_domains[v]))
 
 
-def forward_check(csp: SchedulerCSP, slot: str, bundle: dict,
-                  assignment: dict, current_domains: dict) -> tuple[bool, dict]:
-
-    #For every unassigned neighbor of `slot`, remove any bundle that
-    #conflicts with the just-assigned bundle
-
-    #Returns (consistent: bool, new_domains: dict)
-    #If consistent is False, one neighbor's domain was wiped so we backtrack
-    new_domains = copy.deepcopy(current_domains)
-    pruned = 0
-
-    for neighbor in csp.neighbors[slot]:
-        if neighbor in assignment:
-            continue
-        new_domains[neighbor] = [
-            nb for nb in new_domains[neighbor]
-            if not (
-                #would this neighbor bundle conflict with the new assignment?
-                any(True for _ in [None]
-                    if __import__("csp").meetings_overlap(nb["meetings"], bundle["meetings"]))
-            )
-        ]
-        pruned += len(current_domains[neighbor]) - len(new_domains[neighbor])
-
-        if len(new_domains[neighbor]) == 0:
-            return False, new_domains, pruned
-
-    return True, new_domains, pruned
-
-
-#cleaner version without the ugly import trick
 def _prune_domains(bundle: dict, neighbor_domain: list) -> list:
+    """Remove bundles from neighbor_domain that conflict with bundle."""
     from csp import meetings_overlap
     return [nb for nb in neighbor_domain
             if not meetings_overlap(nb["meetings"], bundle["meetings"])]
@@ -72,13 +47,18 @@ def fc_backtrack(csp: SchedulerCSP, assignment: dict,
 
     slot = select_unassigned_variable(csp, assignment, current_domains)
 
-    for bundle in current_domains[slot]:
+    # Sort current domain by soft preference before trying bundles.
+    # score_bundle() uses LEC meetings only, so this never disadvantages
+    # courses that have forced Tuesday/Thursday lab days.
+    ordered = sorted(current_domains[slot], key=lambda b: csp.score_bundle(b))
+
+    for bundle in ordered:
         stats["nodes_explored"] += 1
 
         if not csp.is_consistent(slot, bundle, assignment):
             continue
 
-        #Forward check: build pruned domains
+        # Forward check: build pruned domains for all unassigned neighbors
         new_domains = {
             v: (list(current_domains[v]) if v != slot else [bundle])
             for v in csp.variables
@@ -111,20 +91,33 @@ def fc_backtrack(csp: SchedulerCSP, assignment: dict,
 
 
 def solve(csp: SchedulerCSP) -> dict:
-    #Returns a result dict with solution and metrics.
+    """
+    Returns a result dict:
+      {
+        "solution":       {slot: bundle} or None,
+        "nodes_explored": int,
+        "backtracks":     int,
+        "pruned_values":  int,
+        "soft_score":     dict  (time_day, load_stddev, total) or None,
+        "time_seconds":   float,
+        "method":         str,
+      }
+    """
     stats = {"nodes_explored": 0, "backtracks": 0, "pruned_values": 0}
-    #Start with full original domains
     current_domains = {v: list(csp.domains[v]) for v in csp.variables}
 
     t0 = time.perf_counter()
     solution = fc_backtrack(csp, {}, current_domains, stats)
     elapsed = time.perf_counter() - t0
 
+    soft = csp.score_assignment(solution) if solution is not None else None
+
     return {
         "solution":       solution,
         "nodes_explored": stats["nodes_explored"],
         "backtracks":     stats["backtracks"],
         "pruned_values":  stats["pruned_values"],
+        "soft_score":     soft,
         "time_seconds":   elapsed,
         "method":         "Forward Checking (MRV + FC)",
     }
