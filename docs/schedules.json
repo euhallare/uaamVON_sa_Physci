@@ -1,542 +1,478 @@
 {
   "meta": {
-    "deg_prog": "CMSC",
-    "year": 2,
+    "deg_prog": "CHEM",
+    "year": 1,
     "term": "FS",
     "term_label": "1st Semester",
     "track": "SP",
     "n_vars": 6,
     "courses": {
-      "Y2FS-1": "CMSC 22",
-      "Y2FS-2": "CMSC 150",
-      "Y2FS-3": "CMSC 123",
-      "Y2FS-4": "CMSC 130",
-      "Y2FS-5": "PI 10",
-      "Y2FS-7": "NSTP 1"
+      "Y1FS-1": "CHEM 18",
+      "Y1FS-2": "ARTS 1",
+      "Y1FS-3": "MCB 11",
+      "Y1FS-4": "MATH 27",
+      "Y1FS-5": "ETHICS 1",
+      "Y1FS-6": "KAS 1/HIST 1"
     }
   },
   "results": [
     {
       "method": "Backtracking (MRV + LCV)",
       "solved": true,
-      "time_seconds": 0.0041,
-      "nodes_explored": 15,
+      "time_seconds": 0.0216,
+      "nodes_explored": 29,
       "backtracks": 0,
       "accepted_worse": null,
       "pruned_values": null,
       "entries": [
         {
           "day": "W",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-2L",
+          "time": "13:00-14:30",
+          "courseCode": "CHEM 18",
+          "section": "E",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "F",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-2L",
+          "time": "13:00-14:30",
+          "courseCode": "CHEM 18",
+          "section": "E",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "W",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-2L",
+          "time": "17:30-19:00",
+          "courseCode": "ARTS 1",
+          "section": "H1",
           "room": "",
-          "slot": "Y2FS-1"
-        },
-        {
-          "day": "W",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
-          "room": "",
-          "slot": "Y2FS-2"
+          "slot": "Y1FS-2"
         },
         {
           "day": "F",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
+          "time": "17:30-19:00",
+          "courseCode": "ARTS 1",
+          "section": "H1",
           "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "M",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
-          "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
-          "room": "",
-          "slot": "Y2FS-3"
-        },
-        {
-          "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
-          "room": "",
-          "slot": "Y2FS-3"
-        },
-        {
-          "day": "M",
-          "time": "10:00-13:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
-          "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-2"
         },
         {
           "day": "T",
-          "time": "9:00-10:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
+          "time": "12:00-13:00",
+          "courseCode": "MCB 11",
+          "section": "V+V1L",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-3"
         },
         {
           "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
+          "time": "12:00-13:00",
+          "courseCode": "MCB 11",
+          "section": "V+V1L",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-3"
+        },
+        {
+          "day": "M",
+          "time": "7:00-10:00",
+          "courseCode": "MCB 11",
+          "section": "V+V1L",
+          "room": "",
+          "slot": "Y1FS-3"
         },
         {
           "day": "T",
-          "time": "13:00-16:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
+          "time": "16:00-17:30",
+          "courseCode": "MATH 27",
+          "section": "Y1",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "16:00-17:30",
+          "courseCode": "MATH 27",
+          "section": "Y1",
+          "room": "",
+          "slot": "Y1FS-4"
+        },
+        {
+          "day": "W",
+          "time": "8:30-10:00",
+          "courseCode": "ETHICS 1",
+          "section": "B1",
+          "room": "",
+          "slot": "Y1FS-5"
+        },
+        {
+          "day": "F",
+          "time": "8:30-10:00",
+          "courseCode": "ETHICS 1",
+          "section": "B1",
+          "room": "",
+          "slot": "Y1FS-5"
         },
         {
           "day": "W",
           "time": "7:00-8:30",
-          "courseCode": "PI 10",
+          "courseCode": "KAS 1",
           "section": "A1",
           "room": "",
-          "slot": "Y2FS-5"
+          "slot": "Y1FS-6"
         },
         {
           "day": "F",
           "time": "7:00-8:30",
-          "courseCode": "PI 10",
+          "courseCode": "KAS 1",
           "section": "A1",
           "room": "",
-          "slot": "Y2FS-5"
-        },
-        {
-          "day": "S",
-          "time": "8:00-12:00",
-          "courseCode": "NSTP 1",
-          "section": "RO1A",
-          "room": "",
-          "slot": "Y2FS-7"
+          "slot": "Y1FS-6"
         }
       ]
     },
     {
       "method": "Forward Checking (MRV + FC)",
       "solved": true,
-      "time_seconds": 0.0001,
+      "time_seconds": 0.0002,
       "nodes_explored": 6,
       "backtracks": 0,
       "accepted_worse": null,
-      "pruned_values": 29,
+      "pruned_values": 63,
       "entries": [
         {
           "day": "W",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-1L",
+          "time": "8:30-10:00",
+          "courseCode": "CHEM 18",
+          "section": "B",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "F",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-1L",
+          "time": "8:30-10:00",
+          "courseCode": "CHEM 18",
+          "section": "B",
           "room": "",
-          "slot": "Y2FS-1"
-        },
-        {
-          "day": "T",
-          "time": "10:00-13:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-1L",
-          "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "W",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
+          "time": "11:30-13:00",
+          "courseCode": "ARTS 1",
+          "section": "D1",
           "room": "",
-          "slot": "Y2FS-2"
+          "slot": "Y1FS-2"
         },
         {
           "day": "F",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
+          "time": "11:30-13:00",
+          "courseCode": "ARTS 1",
+          "section": "D1",
           "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "M",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
-          "room": "",
-          "slot": "Y2FS-2"
+          "slot": "Y1FS-2"
         },
         {
           "day": "W",
           "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
+          "courseCode": "MCB 11",
+          "section": "C+C1L",
           "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
         },
         {
           "day": "F",
           "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
+          "courseCode": "MCB 11",
+          "section": "C+C1L",
           "room": "",
-          "slot": "Y2FS-3"
-        },
-        {
-          "day": "M",
-          "time": "10:00-13:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-1L",
-          "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
         },
         {
           "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-1L",
+          "time": "7:00-10:00",
+          "courseCode": "MCB 11",
+          "section": "C+C1L",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-3"
         },
         {
-          "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-1L",
+          "day": "W",
+          "time": "14:30-16:00",
+          "courseCode": "MATH 27",
+          "section": "F1",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-4"
         },
         {
-          "day": "T",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-1L",
+          "day": "F",
+          "time": "14:30-16:00",
+          "courseCode": "MATH 27",
+          "section": "F1",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-4"
+        },
+        {
+          "day": "W",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E1",
+          "room": "",
+          "slot": "Y1FS-5"
+        },
+        {
+          "day": "F",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E1",
+          "room": "",
+          "slot": "Y1FS-5"
         },
         {
           "day": "W",
           "time": "7:00-8:30",
-          "courseCode": "PI 10",
+          "courseCode": "KAS 1",
           "section": "A1",
           "room": "",
-          "slot": "Y2FS-5"
+          "slot": "Y1FS-6"
         },
         {
           "day": "F",
           "time": "7:00-8:30",
-          "courseCode": "PI 10",
+          "courseCode": "KAS 1",
           "section": "A1",
           "room": "",
-          "slot": "Y2FS-5"
-        },
-        {
-          "day": "S",
-          "time": "8:00-12:00",
-          "courseCode": "NSTP 1",
-          "section": "RO1A",
-          "room": "",
-          "slot": "Y2FS-7"
+          "slot": "Y1FS-6"
         }
       ]
     },
     {
       "method": "Min-Conflicts",
       "solved": true,
-      "time_seconds": 0.0002,
-      "nodes_explored": 4,
+      "time_seconds": 0.0001,
+      "nodes_explored": 1,
       "backtracks": 0,
       "accepted_worse": null,
       "pruned_values": null,
       "entries": [
         {
           "day": "T",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "UV+UV-4L",
+          "time": "14:30-16:00",
+          "courseCode": "CHEM 18",
+          "section": "X",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "Th",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "UV+UV-4L",
+          "time": "14:30-16:00",
+          "courseCode": "CHEM 18",
+          "section": "X",
           "room": "",
-          "slot": "Y2FS-1"
-        },
-        {
-          "day": "Th",
-          "time": "13:00-16:00",
-          "courseCode": "CMSC 22",
-          "section": "UV+UV-4L",
-          "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
         },
         {
           "day": "W",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
+          "time": "10:00-11:30",
+          "courseCode": "ARTS 1",
+          "section": "C3",
           "room": "",
-          "slot": "Y2FS-2"
+          "slot": "Y1FS-2"
         },
         {
           "day": "F",
-          "time": "13:00-14:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
+          "time": "10:00-11:30",
+          "courseCode": "ARTS 1",
+          "section": "C3",
           "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "M",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 150",
-          "section": "E+E-1L",
-          "room": "",
-          "slot": "Y2FS-2"
+          "slot": "Y1FS-2"
         },
         {
           "day": "W",
-          "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-5L",
+          "time": "9:00-10:00",
+          "courseCode": "MCB 11",
+          "section": "B+B1L",
           "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
         },
         {
           "day": "F",
-          "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-5L",
+          "time": "9:00-10:00",
+          "courseCode": "MCB 11",
+          "section": "B+B1L",
           "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
+        },
+        {
+          "day": "Th",
+          "time": "7:00-10:00",
+          "courseCode": "MCB 11",
+          "section": "B+B1L",
+          "room": "",
+          "slot": "Y1FS-3"
+        },
+        {
+          "day": "T",
+          "time": "10:00-11:30",
+          "courseCode": "MATH 27",
+          "section": "U5",
+          "room": "",
+          "slot": "Y1FS-4"
+        },
+        {
+          "day": "Th",
+          "time": "10:00-11:30",
+          "courseCode": "MATH 27",
+          "section": "U5",
+          "room": "",
+          "slot": "Y1FS-4"
+        },
+        {
+          "day": "W",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E3",
+          "room": "",
+          "slot": "Y1FS-5"
         },
         {
           "day": "F",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 123",
-          "section": "C+C-5L",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E3",
           "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-5"
         },
         {
           "day": "T",
-          "time": "9:00-10:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
+          "time": "11:30-13:00",
+          "courseCode": "KAS 1",
+          "section": "V1",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-6"
         },
         {
           "day": "Th",
-          "time": "9:00-10:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
+          "time": "11:30-13:00",
+          "courseCode": "KAS 1",
+          "section": "V1",
           "room": "",
-          "slot": "Y2FS-4"
-        },
-        {
-          "day": "T",
-          "time": "13:00-16:00",
-          "courseCode": "CMSC 130",
-          "section": "T+T-1L",
-          "room": "",
-          "slot": "Y2FS-4"
-        },
-        {
-          "day": "T",
-          "time": "17:30-19:00",
-          "courseCode": "PI 10",
-          "section": "Z2",
-          "room": "",
-          "slot": "Y2FS-5"
-        },
-        {
-          "day": "Th",
-          "time": "17:30-19:00",
-          "courseCode": "PI 10",
-          "section": "Z2",
-          "room": "",
-          "slot": "Y2FS-5"
-        },
-        {
-          "day": "S",
-          "time": "8:00-12:00",
-          "courseCode": "NSTP 1",
-          "section": "RO1B",
-          "room": "",
-          "slot": "Y2FS-7"
+          "slot": "Y1FS-6"
         }
       ]
     },
     {
       "method": "Simulated Annealing",
       "solved": true,
-      "time_seconds": 0.0002,
-      "nodes_explored": 30,
+      "time_seconds": 0.0,
+      "nodes_explored": 1,
       "backtracks": 0,
-      "accepted_worse": 5,
+      "accepted_worse": 0,
       "pruned_values": null,
       "entries": [
         {
-          "day": "W",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-3L",
+          "day": "T",
+          "time": "8:30-10:00",
+          "courseCode": "CHEM 18",
+          "section": "T",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-1"
+        },
+        {
+          "day": "Th",
+          "time": "8:30-10:00",
+          "courseCode": "CHEM 18",
+          "section": "T",
+          "room": "",
+          "slot": "Y1FS-1"
+        },
+        {
+          "day": "W",
+          "time": "17:30-19:00",
+          "courseCode": "ARTS 1",
+          "section": "H2",
+          "room": "",
+          "slot": "Y1FS-2"
         },
         {
           "day": "F",
-          "time": "11:00-12:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-3L",
+          "time": "17:30-19:00",
+          "courseCode": "ARTS 1",
+          "section": "H2",
           "room": "",
-          "slot": "Y2FS-1"
+          "slot": "Y1FS-2"
         },
         {
           "day": "W",
-          "time": "13:00-16:00",
-          "courseCode": "CMSC 22",
-          "section": "CD+CD-3L",
-          "room": "",
-          "slot": "Y2FS-1"
-        },
-        {
-          "day": "T",
-          "time": "12:00-13:00",
-          "courseCode": "CMSC 150",
-          "section": "V+V-4L",
-          "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "Th",
-          "time": "12:00-13:00",
-          "courseCode": "CMSC 150",
-          "section": "V+V-4L",
-          "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "Th",
-          "time": "13:00-16:00",
-          "courseCode": "CMSC 150",
-          "section": "V+V-4L",
-          "room": "",
-          "slot": "Y2FS-2"
-        },
-        {
-          "day": "T",
           "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "U+U-4L",
+          "courseCode": "MCB 11",
+          "section": "C+C3L",
           "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
         },
         {
-          "day": "Th",
+          "day": "F",
           "time": "10:00-11:00",
-          "courseCode": "CMSC 123",
-          "section": "U+U-4L",
+          "courseCode": "MCB 11",
+          "section": "C+C3L",
           "room": "",
-          "slot": "Y2FS-3"
-        },
-        {
-          "day": "Th",
-          "time": "16:00-19:00",
-          "courseCode": "CMSC 123",
-          "section": "U+U-4L",
-          "room": "",
-          "slot": "Y2FS-3"
+          "slot": "Y1FS-3"
         },
         {
           "day": "T",
-          "time": "8:00-9:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-4L",
-          "room": "",
-          "slot": "Y2FS-4"
-        },
-        {
-          "day": "Th",
-          "time": "8:00-9:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-4L",
-          "room": "",
-          "slot": "Y2FS-4"
-        },
-        {
-          "day": "F",
           "time": "13:00-16:00",
-          "courseCode": "CMSC 130",
-          "section": "ST+ST-4L",
+          "courseCode": "MCB 11",
+          "section": "C+C3L",
           "room": "",
-          "slot": "Y2FS-4"
+          "slot": "Y1FS-3"
         },
         {
           "day": "W",
-          "time": "7:00-8:30",
-          "courseCode": "PI 10",
-          "section": "A1",
+          "time": "16:00-17:30",
+          "courseCode": "MATH 27",
+          "section": "G3",
           "room": "",
-          "slot": "Y2FS-5"
+          "slot": "Y1FS-4"
         },
         {
           "day": "F",
-          "time": "7:00-8:30",
-          "courseCode": "PI 10",
-          "section": "A1",
+          "time": "16:00-17:30",
+          "courseCode": "MATH 27",
+          "section": "G3",
           "room": "",
-          "slot": "Y2FS-5"
+          "slot": "Y1FS-4"
         },
         {
-          "day": "S",
-          "time": "8:00-12:00",
-          "courseCode": "NSTP 1",
-          "section": "RO1D",
+          "day": "W",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E2",
           "room": "",
-          "slot": "Y2FS-7"
+          "slot": "Y1FS-5"
+        },
+        {
+          "day": "F",
+          "time": "13:00-14:30",
+          "courseCode": "ETHICS 1",
+          "section": "E2",
+          "room": "",
+          "slot": "Y1FS-5"
+        },
+        {
+          "day": "T",
+          "time": "11:30-13:00",
+          "courseCode": "KAS 1",
+          "section": "V2",
+          "room": "",
+          "slot": "Y1FS-6"
+        },
+        {
+          "day": "Th",
+          "time": "11:30-13:00",
+          "courseCode": "KAS 1",
+          "section": "V2",
+          "room": "",
+          "slot": "Y1FS-6"
         }
       ]
     }
