@@ -32,10 +32,8 @@ def select_unassigned_variable(csp: SchedulerCSP, assignment: dict) -> str:
 
 
 def order_domain_values(csp: SchedulerCSP, slot: str, assignment: dict) -> list:
-    """
-    LCV: order bundles by how many choices they eliminate for neighbors.
-    Lower = less constraining = preferred.
-    """
+    #LCV: order bundles by how many choices they eliminate for neighbors
+    #Lower = less constraining = preferred
     def conflicts_caused(bundle):
         total = 0
         for neighbor in csp.neighbors[slot]:
@@ -71,16 +69,15 @@ def backtrack(csp: SchedulerCSP, assignment: dict, stats: dict) -> dict | None:
 
 
 def solve(csp: SchedulerCSP) -> dict:
-    """
-    Returns a result dict:
-      {
-        "solution":       {slot: bundle} or None,
-        "nodes_explored": int,
-        "backtracks":     int,
-        "time_seconds":   float,
-        "method":         "Backtracking (MRV + LCV)",
-      }
-    """
+    
+    #Returns a result dict:
+    #  {
+    #   "solution":       {slot: bundle} or None,
+    #   "nodes_explored": int,
+    #   "backtracks":     int,
+    #   "time_seconds":   float,
+    #   "method":         "Backtracking (MRV + LCV)",
+    # }
     stats = {"nodes_explored": 0, "backtracks": 0}
     t0 = time.perf_counter()
     solution = backtrack(csp, {}, stats)

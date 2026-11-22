@@ -29,13 +29,12 @@ def select_unassigned_variable(csp: SchedulerCSP, assignment: dict,
 
 def forward_check(csp: SchedulerCSP, slot: str, bundle: dict,
                   assignment: dict, current_domains: dict) -> tuple[bool, dict]:
-    """
-    For every unassigned neighbor of `slot`, remove any bundle that
-    conflicts with the just-assigned bundle.
 
-    Returns (consistent: bool, new_domains: dict).
-    If consistent is False, one neighbor's domain was wiped — backtrack.
-    """
+    #For every unassigned neighbor of `slot`, remove any bundle that
+    #conflicts with the just-assigned bundle
+
+    #Returns (consistent: bool, new_domains: dict)
+    #If consistent is False, one neighbor's domain was wiped so we backtrack
     new_domains = copy.deepcopy(current_domains)
     pruned = 0
 

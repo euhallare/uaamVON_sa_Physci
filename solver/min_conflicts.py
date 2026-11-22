@@ -25,7 +25,7 @@ from csp import SchedulerCSP
 
 
 def count_total_conflicts(csp: SchedulerCSP, assignment: dict) -> int:
-    #count total conflict pairs in the current assignment.
+    #count total conflict pairs in the current assignment
     from csp import meetings_overlap
     total = 0
     slots = list(assignment.keys())
@@ -39,7 +39,7 @@ def count_total_conflicts(csp: SchedulerCSP, assignment: dict) -> int:
 
 
 def conflicted_slots(csp: SchedulerCSP, assignment: dict) -> list:
-    #Return all slots involved in at least one conflict.
+    #Return all slots involved in at least one conflict
     from csp import meetings_overlap
     bad = set()
     slots = list(assignment.keys())
@@ -57,7 +57,7 @@ def solve(csp: SchedulerCSP,
           max_steps: int = 10_000,
           max_restarts: int = 20,
           seed: int = 42) -> dict:
-    #Returns a result dict with solution and metrics.
+    #Returns a result dict with solution and metrics
     rng = random.Random(seed)
     stats = {"steps": 0, "restarts": 0, "final_conflicts": 0}
     t0 = time.perf_counter()
