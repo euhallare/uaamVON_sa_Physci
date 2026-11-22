@@ -649,6 +649,107 @@
 │           │   ├── page_0002.json
 │           │   └── page_0003.json
 │           └── meta.json
+├── docs
+│   ├── Schedule.html
+│   ├── figures
+│   │   ├── agch
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── aggregate_figures
+│   │   │   ├── aggregate_01_nodes_explored.png
+│   │   │   ├── aggregate_02_local_search_steps.png
+│   │   │   ├── aggregate_03_execution_time.png
+│   │   │   ├── aggregate_04_pruned_values.png
+│   │   │   ├── aggregate_05_solution_success.png
+│   │   │   ├── aggregate_06_overview.png
+│   │   │   ├── aggregate_07_overall_performance.png
+│   │   │   ├── aggregate_08_pruning_intensity.png
+│   │   │   └── aggregate_pruning_summary.csv
+│   │   ├── amat
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── ap
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── bio
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── chem
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── cmsc
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── coma
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── math
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── mst
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── phlo
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   ├── soc
+│   │   │   ├── fig1_nodes_explored.png
+│   │   │   ├── fig1b_steps.png
+│   │   │   ├── fig2_time.png
+│   │   │   ├── fig3_pruned_values.png
+│   │   │   ├── fig4_solved.png
+│   │   │   └── fig5_overview.png
+│   │   └── stat
+│   │       ├── fig1_nodes_explored.png
+│   │       ├── fig1b_steps.png
+│   │       ├── fig2_time.png
+│   │       ├── fig3_pruned_values.png
+│   │       ├── fig4_solved.png
+│   │       └── fig5_overview.png
+│   ├── index.html
+│   ├── scheda
+│   │   └── scheda.js
+│   └── schedules.json
 ├── figures
 │   ├── agch
 │   │   ├── fig1_nodes_explored.png
@@ -757,6 +858,7 @@
 │   ├── check_curriculum.py
 │   ├── csp.py
 │   ├── evaluate.py
+│   ├── export_schedule.py
 │   ├── forward_checking.py
 │   ├── min_conflicts.py
 │   ├── plot_results.py
@@ -764,4 +866,4 @@
 ├── tasklog.md
 └── tree.txt
 
-126 directories, 639 files
+142 directories, 725 files
