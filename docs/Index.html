@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMIS Student Schedule Builder — CMSC 170</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:       #00838F;
+      --green-dark:  #005F6B;
+      --green-lite:  #E0F4F6;
+      --green-mid:   #B2DFDB;
+      --bg:          #F4F6F7;
+      --white:       #FFFFFF;
+      --text:        #1C2229;
+      --text-soft:   #5A6472;
+      --rule:        #DDE1E4;
+      --radius:      6px;
+      --shadow:      0 2px 8px rgba(0,0,0,.07);
+      --mono:        'Courier New', monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --green:      #26A69A;
+        --green-dark: #00796B;
+        --green-lite: #1A2F2E;
+        --green-mid:  #2D4A48;
+        --bg:         #0D1117;
+        --white:      #161B22;
+        --text:       #E6EDF3;
+        --text-soft:  #8B949E;
+        --rule:       #2D333B;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* ── nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--green-dark);
+      z-index: 100;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    nav::-webkit-scrollbar { display: none; }
+    nav a {
+      color: rgba(255,255,255,.75);
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 500;
+      padding: 12px 14px;
+      white-space: nowrap;
+      transition: color .15s, background .15s;
+    }
+    nav a:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+    /* ── hero ── */
+    .hero {
+      background: var(--green);
+      color: #fff;
+      padding: 56px 32px 48px;
+    }
+    .hero-inner { max-width: 800px; margin: 0 auto; }
+    .hero-label {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      opacity: .7;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+      margin-bottom: 14px;
+    }
+    .hero p {
+      font-size: 1rem;
+      opacity: .9;
+      max-width: 620px;
+      margin-bottom: 28px;
+      color: #fff;
+    }
+    .hero-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 9px 20px;
+      border-radius: var(--radius);
+      font-size: .875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+    .btn:hover { opacity: .88; }
+    .btn-white { background: #fff; color: var(--green-dark); }
+    .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
+
+    /* ── members strip ── */
+    .members-strip {
+      background: var(--green-dark);
+      padding: 14px 32px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .member {
+      color: rgba(255,255,255,.8);
+      font-size: .82rem;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .member-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--green-mid);
+      flex-shrink: 0;
+    }
+
+    /* ── content ── */
+    .content { max-width: 920px; margin: 0 auto; padding: 0 24px 80px; }
+    .section { padding: 48px 0 0; }
+    .section-anchor { display: block; height: 72px; margin-top: -72px; visibility: hidden; }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--green);
+      letter-spacing: -.01em;
+    }
+    h3 { font-size: 1rem; font-weight: 700; margin: 24px 0 8px; }
+    p { margin-bottom: 12px; font-size: .95rem; }
+    p:last-child { margin-bottom: 0; }
+    ul.plain { padding-left: 20px; margin-bottom: 12px; font-size: .95rem; }
+    ul.plain li { margin-bottom: 4px; }
+
+    /* ── cards ── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { margin-top: 0; }
+
+    /* ── method grid ── */
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 4px;
+    }
+    .method-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .method-num {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      border-radius: 4px;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+    .method-card h3 { margin: 0 0 6px; font-size: .95rem; }
+    .method-card p  { font-size: .85rem; color: var(--text-soft); margin: 0; }
+
+    /* ── stat cards ── */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+      margin: 16px 0 8px;
+    }
+    .stat {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-top: 3px solid var(--green);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+    .stat .big { font-size: 1.6rem; font-weight: 800; color: var(--green); line-height: 1.1; }
+    .stat .lbl { font-size: .8rem; color: var(--text-soft); margin-top: 4px; }
+
+    /* ── tables ── */
+    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .85rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    thead { background: var(--green); color: #fff; }
+    th { padding: 10px 14px; text-align: left; font-weight: 600; }
+    td { padding: 9px 14px; border-top: 1px solid var(--rule); vertical-align: top; }
+    tbody tr:nth-child(even) { background: var(--bg); }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.total td { font-weight: 700; background: var(--green-lite); }
+    .table-note { font-size: .8rem; color: var(--text-soft); margin-top: 6px; }
+    .table-cap { font-size: .85rem; color: var(--text-soft); margin: 18px 0 4px; }
+
+    code {
+      font-family: var(--mono);
+      font-size: .82em;
+      background: var(--green-lite);
+      color: var(--green-dark);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    @media (prefers-color-scheme: dark) { code { color: var(--green); } }
+
+    .highlight {
+      background: var(--green-lite);
+      border-left: 3px solid var(--green);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: .9rem;
+    }
+
+    .schedule-cta {
+      background: var(--green);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: var(--shadow);
+    }
+    .schedule-cta h3 { color: #fff; margin: 0 0 4px; font-size: 1.05rem; }
+    .schedule-cta p  { color: rgba(255,255,255,.85); margin: 0; font-size: .88rem; }
+
+    /* ── figures ── */
+    figure {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      margin: 18px 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 3px;
+    }
+    figcaption { font-size: .82rem; color: var(--text-soft); margin-top: 10px; text-align: left; }
+    figure.narrow img { max-width: 640px; }
+
+    /* ── curriculum explorer ── */
+    .explorer-bar {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      margin: 14px 0 6px;
+    }
+    .explorer-bar label { font-size: .85rem; font-weight: 600; }
+    .explorer-bar select {
+      font: inherit; font-size: .9rem;
+      padding: 7px 10px;
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      background: var(--white);
+      color: var(--text);
+      min-width: 280px;
+    }
+    .fig-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .fig-grid figure { margin: 0; padding: 10px; }
+    .fig-grid figure.wide { grid-column: 1 / -1; }
+    .fig-grid a { display: block; }
+    @media (max-width: 520px) { .fig-grid { grid-template-columns: 1fr; } }
+
+    ol.refs { padding-left: 20px; }
+    ol.refs li { font-size: .88rem; margin-bottom: 8px; color: var(--text-soft); word-break: break-word; }
+    ol.refs a  { color: var(--green); }
+
+    footer {
+      background: var(--green-dark);
+      color: rgba(255,255,255,.65);
+      text-align: center;
+      padding: 20px;
+      font-size: .78rem;
+    }
+    footer a { color: rgba(255,255,255,.85); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#problem">Problem</a>
+  <a href="#dataset">Dataset</a>
+  <a href="#methods">Methods</a>
+  <a href="#setup">Setup</a>
+  <a href="#results">Results</a>
+  <a href="#curricula">By Curriculum</a>
+  <a href="#discussion">Discussion</a>
+  <a href="#conclusion">Conclusion</a>
+  <a href="#references">References</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="hero-label">CMSC 170 — Introduction to Artificial Intelligence</p>
+    <h1>AMIS Student Schedule Builder</h1>
+    <p>A comparative analysis of four Constraint Satisfaction Problem–solving methods —
+       Backtracking, Forward Checking, Min-Conflicts, and Simulated Annealing — that
+       build conflict-free weekly class schedules from real UPLB AMIS data, all
+       implemented from scratch.</p>
+    <div class="hero-links">
+      <a class="btn btn-white" href="Schedule.html">View Schedules</a>
+      <a class="btn btn-outline" href="https://github.com/euhallare/uaamVON_sa_Physci" target="_blank" rel="noopener">GitHub Repository</a>
+      <!-- TODO: replace # with the link to the presentation slides -->
+      <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Presentation Slides</a>
+    </div>
+  </div>
+</div>
+
+<div class="members-strip">
+  <div class="member"><span class="member-dot"></span>Gevaña, Maria Eliza P.</div>
+  <div class="member"><span class="member-dot"></span>Hallare, Eu Dasein B.</div>
+  <div class="member"><span class="member-dot"></span>Hernandez, John Denmark G.</div>
+  <div class="member"><span class="member-dot"></span>Tipan, Jiro Kristofer T.</div>
+</div>
+
+<div class="content">
+
+  <!-- 1. Problem -->
+  <div class="section">
+    <span class="section-anchor" id="problem"></span>
+    <h2>Problem Statement &amp; Motivation</h2>
+    <p>Creating a university class schedule is challenging because students must consider many
+       factors at once: the available class sections for each course, lecture and laboratory
+       schedules, overlapping meeting times, curriculum requirements, and course eligibility.
+       Selecting sections by hand is tedious and error-prone, especially when several courses
+       each have many possible section combinations.</p>
+    <p>We formulate student class scheduling as a <strong>Constraint Satisfaction Problem
+       (CSP)</strong>: given a curriculum for a particular year and semester, assign one class
+       bundle (a LEC+LAB pair) to each required course slot so that no two bundles have
+       overlapping meeting times.</p>
+    <h3>Objectives</h3>
+    <ul class="plain">
+      <li>Automate the generation of student class schedules.</li>
+      <li>Reduce the tedious process of manually identifying compatible class sections.</li>
+      <li>Explore how different AI search techniques solve the same scheduling problem.</li>
+      <li>Determine which algorithm gives the best balance of solution quality, speed, and efficiency.</li>
+    </ul>
+    <div class="highlight">
+      The goal is not just to find <em>a</em> valid schedule. It is to compare how efficiently
+      four fundamentally different AI methods reach that goal, and to understand why each
+      behaves the way it does.
+    </div>
+  </div>
+
+  <!-- 2. Dataset -->
+  <div class="section">
+    <span class="section-anchor" id="dataset"></span>
+    <h2>Dataset</h2>
+    <div class="card">
+      <h3>Source and scraping</h3>
+      <p>Raw class data was collected from the UPLB Academic Management Information System
+         (AMIS) through its student-facing REST API using <strong>GET requests only</strong>;
+         no enlistment or modification of any data was performed. Instructor names and user IDs
+         were stripped at scrape time, and only the numeric <code>faculty_id</code> was kept to
+         comply with privacy requirements.</p>
+    </div>
+
+    <h3>Curricula covered</h3>
+    <p>BS Agricultural Chemistry, BS Applied Mathematics, BS Applied Physics, BS Biology,
+       BS Chemistry, BS Computer Science (2018), BA Communication Arts, BS Mathematics,
+       BS Mathematics &amp; Science Teaching, BA Philosophy, BA Sociology, and BS Statistics.
+       Academic term: <strong>1261 (First Semester, A.Y. 2026–2027)</strong>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Item</th><th class="num">Value</th></tr></thead>
+        <tbody>
+          <tr><td>Raw scraped class sections</td><td class="num">4,719 across 44 subjects</td></tr>
+          <tr><td>Section types</td><td class="num">3,891 LEC / 828 LAB</td></tr>
+          <tr><td>Sections without meeting times (excluded)</td><td class="num">1,997</td></tr>
+          <tr><td>Bundles constructed</td><td class="num">4,466</td></tr>
+          <tr><td>Usable bundles (schedulable, no TBA, no self-conflict)</td><td class="num">2,475</td></tr>
+          <tr><td>CSP instances (year–term combinations)</td><td class="num">42</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>CSP formulation</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Element</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Variable</strong></td><td>A curriculum slot (e.g. <code>Y3FS-1 → CMSC 124</code>)</td></tr>
+          <tr><td><strong>Domain</strong></td><td>All usable LEC+LAB bundles for that course (after the runtime filters below)</td></tr>
+          <tr><td><strong>Constraint</strong></td><td>No two assigned bundles may have overlapping meeting times</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Preprocessing</h3>
+    <p>The raw JSON pages were processed by <code>build_datasets.py</code> using only the Python
+       standard library. Each class row was parsed into one of two section types: LEC
+       (standalone) or LAB (paired with a parent LEC). Meeting times were converted from
+       12-hour clock strings to integer minutes after midnight to simplify overlap checking.
+       A LEC+LAB pair was bundled into a single schedulable unit, and standalone LEC sections
+       without a LAB were treated as their own bundle. Bundles were marked unusable if they had
+       no meeting times (TBA), contained an internal time conflict between their own LEC and
+       LAB blocks, or required instructor or dean consent. The solvers operate only on usable
+       bundles and filter further at runtime using the <code>require_open_slot</code> and
+       <code>allow_consent</code> flags in <code>evaluate.py</code>.</p>
+  </div>
+
+  <!-- 3. Methods -->
+  <div class="section">
+    <span class="section-anchor" id="methods"></span>
+    <h2>Methods</h2>
+    <p>Two complete (systematic) methods and two local search methods, all written from scratch
+       with the Python standard library.</p>
+    <div class="method-grid">
+
+      <div class="method-card">
+        <span class="method-num">Method 1</span>
+        <h3>Backtracking with MRV + LCV</h3>
+        <p>A complete search that recursively assigns values to variables and undoes assignments
+           when a constraint is violated (Russell &amp; Norvig, 2021). <strong>MRV</strong>
+           (Minimum Remaining Values) picks the most constrained slot first to expose dead ends
+           early. <strong>LCV</strong> (Least Constraining Value) tries the bundle that rules out
+           the fewest options for the remaining slots.</p>
+      </div>
+
+      <div class="method-card">
+        <span class="method-num">Method 2</span>
+        <h3>Forward Checking (MRV + FC)</h3>
+        <p>Extends backtracking by removing conflicting values from the domains of unassigned
+           neighbor variables after each assignment (Williams, 2010). If any domain becomes
+           empty it backtracks immediately, so failures are detected sooner than in plain
+           backtracking.</p>
+      </div>
+
+      <div class="method-card">
+        <span class="method-num">Method 3</span>
+        <h3>Min-Conflicts</h3>
+        <p>A local search repair heuristic. It starts from a complete random assignment and
+           repeatedly reassigns a conflicted slot to the bundle that causes the fewest conflicts,
+           breaking ties randomly (Minton et al., 1992). Very fast on highly satisfiable
+           instances, but it can get stuck in local minima on tightly constrained ones.</p>
+      </div>
+
+      <div class="method-card">
+        <span class="method-num">Method 4</span>
+        <h3>Simulated Annealing</h3>
+        <p>A stochastic local search that also starts from a random complete assignment, but
+           accepts worse moves with probability <em>e<sup>−Δ/T</sup></em> while the temperature
+           T cools geometrically (CP-Algorithms, 2026). Because of this randomness, different
+           runs on the same input can give different outcomes.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 4. Experimental Setup -->
+  <div class="section">
+    <span class="section-anchor" id="setup"></span>
+    <h2>Experimental Setup</h2>
+
+    <div class="card">
+      <h3>Hardware and software</h3>
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><td>Operating system</td><td>Windows 11 (version 26H2, build 26300.9974)</td></tr>
+            <tr><td>Processor</td><td>13th Gen Intel Core i5-13420H (2.10 GHz)</td></tr>
+            <tr><td>RAM</td><td>16.0 GB</td></tr>
+            <tr><td>Python</td><td>3.12.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Problem instances</h3>
+      <p>The four methods were evaluated on CSP instances from 12 curricula within CAS. Each
+         instance is one year level of the First Semester (Year 1, 2 or 3), so instances differ
+         in the number of curriculum slots and the size of their domains, which allows a
+         controlled comparison across problem scales. For example, the BS Computer Science
+         (2018 curriculum) SP track gives:</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Instance</th><th>Year</th><th>Term</th></tr></thead>
+          <tbody>
+            <tr><td>Y1 FS SP</td><td>Year 1</td><td>1261 – First Semester</td></tr>
+            <tr><td>Y2 FS SP</td><td>Year 2</td><td>1261 – First Semester</td></tr>
+            <tr><td>Y3 FS SP</td><td>Year 3</td><td>1261 – First Semester</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Settings applied uniformly to every run:</p>
+      <ul class="plain">
+        <li><code>require_open_slot = False</code>: sections with no available seats stay in the domain.</li>
+        <li><code>allow_consent = False</code>: sections requiring instructor or dean consent are excluded.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Data splits and reproducibility</h3>
+      <p>Scheduling is a CSP, so no model is trained and there is no train/test split. Each run is a
+         single solve attempt on a complete instance. Backtracking and Forward Checking are
+         deterministic and were run once per instance. The local search methods used fixed random
+         seeds, <strong>42</strong> for Min-Conflicts and <strong>99</strong> for Simulated
+         Annealing, so results can be reproduced.</p>
+    </div>
+
+    <div class="card">
+      <h3>Evaluation metrics (implemented from scratch)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Metric</th><th>What it measures</th><th>Applies to</th></tr></thead>
+          <tbody>
+            <tr><td>Nodes explored</td><td>(slot, bundle) assignments tried</td><td>Backtracking, Forward Checking</td></tr>
+            <tr><td>Steps taken</td><td>Re-assignment iterations</td><td>Min-Conflicts, Simulated Annealing</td></tr>
+            <tr><td>Domain values pruned</td><td>Entries removed by forward checking</td><td>Forward Checking</td></tr>
+            <tr><td>Wall-clock time</td><td>End-to-end solve time via <code>time.perf_counter()</code></td><td>All methods</td></tr>
+            <tr><td>Solution found</td><td>Whether a conflict-free schedule was produced (YES/NO)</td><td>All methods</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Hyperparameters</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Method</th><th>Parameter</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Min-Conflicts</td><td>max_steps / max_restarts / seed</td><td>50,000 / 30 / 42</td></tr>
+            <tr><td>Simulated Annealing</td><td>T_start / alpha / T_min</td><td>1.0 / 0.9995 / 0.001</td></tr>
+            <tr><td>Simulated Annealing</td><td>max_steps / max_restarts / seed</td><td>50,000 / 20 / 99</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Results -->
+  <div class="section">
+    <span class="section-anchor" id="results"></span>
+    <h2>Results</h2>
+    <p>Each method was measured on whether it found a solution, how much search effort it needed
+       (nodes explored or steps taken), and its wall-clock time. All values below are means over
+       the evaluated instances.</p>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="big">100%</div><div class="lbl">instances solved by every method</div></div>
+      <div class="stat"><div class="big">−66.47%</div><div class="lbl">nodes explored, Forward Checking vs Backtracking</div></div>
+      <div class="stat"><div class="big">−79.01%</div><div class="lbl">steps taken, Min-Conflicts vs Simulated Annealing</div></div>
+      <div class="stat"><div class="big">33.69%</div><div class="lbl">of domain values pruned by Forward Checking</div></div>
+    </div>
+
+    <div class="schedule-cta">
+      <div>
+        <h3>Interactive schedule viewer</h3>
+        <p>See the actual weekly timetable produced by each of the four methods, rendered in the style of AMIS.</p>
+      </div>
+      <a class="btn btn-white" href="Schedule.html">Open Schedule Viewer</a>
+    </div>
+
+    <h3>Solution found</h3>
+    <figure class="narrow">
+      <img src="figures/aggregate_figures/aggregate_05_solution_success.png" alt="Overall solution success rate: 100% for all four methods" loading="lazy" />
+      <figcaption><strong>Figure 1.</strong> Percentage of solutions found per method across all instances.</figcaption>
+    </figure>
+    <p>All four methods produced a valid schedule for every instance. The scheduling problem for
+       the 12 tested curricula is therefore highly satisfiable given the available section
+       offerings, and no method failed on any instance.</p>
+
+    <h3>Domain values pruned by Forward Checking</h3>
+    <figure>
+      <img src="figures/aggregate_figures/aggregate_08_pruning_intensity.png" alt="Forward Checking original domain values versus cumulative pruned values per degree program" loading="lazy" />
+      <figcaption><strong>Figure 2.</strong> Original domain values versus cumulative pruned values per degree program. Overall pruning intensity: 33.69%.</figcaption>
+    </figure>
+    <p>Forward Checking removed a substantial share of inconsistent values before backtracking
+       became necessary. Summing the per-program bars in Figure 2 gives 1,127 pruned values out of
+       3,345 original domain values, or <strong>33.69%</strong>. Pruning was heaviest for
+       Agricultural Chemistry (169 values) and lightest for Applied Mathematics (29) and
+       Mathematics (38).</p>
+    <figure>
+      <img src="figures/aggregate_figures/aggregate_04_pruned_values.png" alt="Pruned values by degree program and year level" loading="lazy" />
+      <figcaption><strong>Figure 3.</strong> Pruned values by degree program and year level.</figcaption>
+    </figure>
+
+    <h3>Nodes explored and steps taken</h3>
+    <figure class="narrow">
+      <img src="figures/aggregate_figures/aggregate_01_nodes_explored.png" alt="Mean nodes explored: Backtracking 15.3529, Forward Checking 5.1471" loading="lazy" />
+      <figcaption><strong>Figure 4.</strong> Mean nodes explored by the complete search methods.</figcaption>
+    </figure>
+    <p>Among the complete methods, Forward Checking explored fewer nodes than Backtracking, about
+       <strong>66.47% fewer</strong> on average:</p>
+    <p style="text-align:center"><code>(15.3529 − 5.1471) / 15.3529 × 100 ≈ 66.47%</code></p>
+
+    <figure class="narrow">
+      <img src="figures/aggregate_figures/aggregate_02_local_search_steps.png" alt="Mean steps taken: Min-Conflicts 2.1176, Simulated Annealing 10.0882" loading="lazy" />
+      <figcaption><strong>Figure 5.</strong> Mean steps taken by the local search methods.</figcaption>
+    </figure>
+    <p>Among the local search methods, Min-Conflicts needed <strong>79.01% fewer steps</strong>
+       than Simulated Annealing on average:</p>
+    <p style="text-align:center"><code>(10.0882 − 2.1176) / 10.0882 × 100 ≈ 79.01%</code></p>
+
+    <h3>Wall-clock time</h3>
+    <figure class="narrow">
+      <img src="figures/aggregate_figures/aggregate_03_execution_time.png" alt="Mean execution time per method" loading="lazy" />
+      <figcaption><strong>Figure 6.</strong> Mean execution time of each method across all instances.</figcaption>
+    </figure>
+    <p>Backtracking with MRV + LCV had the highest execution time (about 10.9 ms on average).
+       Min-Conflicts and Simulated Annealing were the fastest (about 0.1 ms), with Forward
+       Checking very close behind (about 0.2 ms).</p>
+
+    <p class="table-cap"><strong>Table 1.</strong> Speedup of each method relative to Backtracking
+       (Backtracking time ÷ method time).</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Curriculum</th><th class="num">Forward Checking</th><th class="num">Min-Conflicts</th><th class="num">Simulated Annealing</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Agricultural Chemistry</td><td class="num">79.8x</td><td class="num">111.8x</td><td class="num">62.1x</td></tr>
+          <tr><td>Applied Mathematics</td><td class="num">15.6x</td><td class="num">—*</td><td class="num">78.0x</td></tr>
+          <tr><td>Applied Physics</td><td class="num">27.1x</td><td class="num">38.7x</td><td class="num">90.3x</td></tr>
+          <tr><td>Biology</td><td class="num">64.7x</td><td class="num">64.7x</td><td class="num">56.6x</td></tr>
+          <tr><td>Chemistry</td><td class="num">46.2x</td><td class="num">254x</td><td class="num">254x</td></tr>
+          <tr><td>Computer Science</td><td class="num">26.7x</td><td class="num">58.8x</td><td class="num">22.6x</td></tr>
+          <tr><td>Communication Arts</td><td class="num">104.6x</td><td class="num">523x</td><td class="num">523x</td></tr>
+          <tr><td>Mathematics</td><td class="num">11.4x</td><td class="num">26.7x</td><td class="num">—*</td></tr>
+          <tr><td>Mathematics &amp; Science Teaching (Math track)</td><td class="num">20.7x</td><td class="num">23.3x</td><td class="num">17.0x</td></tr>
+          <tr><td>Philosophy</td><td class="num">55.2x</td><td class="num">331.0x</td><td class="num">331.0x</td></tr>
+          <tr><td>Sociology</td><td class="num">54.7x</td><td class="num">255.3x</td><td class="num">255.3x</td></tr>
+          <tr><td>Statistics</td><td class="num">39.0x</td><td class="num">46.8x</td><td class="num">468.0x</td></tr>
+          <tr class="total"><td>Overall</td><td class="num">54.5x</td><td class="num">109.0x</td><td class="num">109.0x</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">*Instances marked “—” ran in under 0.0001 s, so the runtime was not recorded and the speedup cannot be computed.</p>
+  </div>
+
+  <!-- 5b. Per-curriculum explorer -->
+  <div class="section">
+    <span class="section-anchor" id="curricula"></span>
+    <h2>Results by Curriculum</h2>
+    <p>Choose a curriculum to see the per-instance figures for each of the four methods.
+       Click a figure to open it at full size.</p>
+
+    <div class="explorer-bar">
+      <label for="prog-select">Curriculum</label>
+      <select id="prog-select"></select>
+    </div>
+    <p class="table-note" id="prog-note"></p>
+
+    <div class="fig-grid" id="fig-grid"></div>
+  </div>
+
+  <!-- 6. Discussion -->
+  <div class="section">
+    <span class="section-anchor" id="discussion"></span>
+    <h2>Discussion</h2>
+
+    <h3>Why Forward Checking beats plain Backtracking</h3>
+    <p>Forward Checking prunes the domains of unassigned slots after every assignment, so it
+       detects dead ends before descending into them. That is why it explored about two thirds
+       fewer nodes on average. In several instances (for example Applied Mathematics Y2 and Y3,
+       and Communication Arts Y2) the two methods explored the same number of nodes. In those
+       instances the first choices already led to a solution, so there was little to prune.</p>
+
+    <h3>Why Backtracking is the slowest</h3>
+    <p>Backtracking pays for both MRV and LCV at every step. LCV in particular has to count how
+       many options each candidate bundle would remove from the other slots, and that work grows
+       with the domain size. On these small, easy instances the extra ordering effort is not
+       repaid by a smaller search, which explains why it recorded the highest execution time.</p>
+
+    <h3>Why local search is so fast here</h3>
+    <p>Min-Conflicts and Simulated Annealing start from a complete assignment and repair it, so they
+       avoid the exponential worst case of systematic search. Because every instance is highly
+       satisfiable, a random starting assignment is often only a few moves from a valid one.
+       Min-Conflicts was more efficient than Simulated Annealing on average because it always
+       repairs a conflicted slot with its best available bundle. Simulated Annealing instead
+       proposes moves at random and may accept worse ones while the temperature is high, which
+       costs extra steps. On individual instances this was not always the case: Simulated Annealing
+       needed fewer steps than Min-Conflicts in a few of them, as the per-curriculum figures show.</p>
+
+    <h3>Limitations</h3>
+    <ul class="plain">
+      <li>Every method solved every instance, so the experiment cannot show where the methods break down. Differences are limited to speed and search effort.</li>
+      <li>Local search is incomplete. Its 100% success rate here reflects how easy the instances are, not a guarantee.</li>
+      <li>The CSP encodes only hard time-conflict constraints. Preferences such as instructors, travel time, or free periods are not modeled.</li>
+      <li>Runtimes are tens of microseconds to milliseconds, so timing is sensitive to machine noise. Local search used a single fixed seed per method, not many runs.</li>
+      <li>Only term 1261 and the First Semester of Years 1–3 were evaluated.</li>
+    </ul>
+
+    <h3>Possible improvements</h3>
+    <p>Test tighter instances, for example requiring open seats only, so that the methods differ in
+       robustness. Run the local search methods over many seeds and report the mean and spread.
+       Add arc consistency (AC-3) before search, and encode preferences such as preferred time
+       slots, minimum free periods, or load balancing across days as soft constraints in an
+       optimization objective.</p>
+  </div>
+
+  <!-- 7. Conclusion -->
+  <div class="section">
+    <span class="section-anchor" id="conclusion"></span>
+    <h2>Conclusion</h2>
+    <p>This project formulated UPLB student class scheduling as a Constraint Satisfaction Problem
+       and implemented four AI search methods from scratch (Backtracking with MRV + LCV, Forward
+       Checking with MRV + FC, Min-Conflicts, and Simulated Annealing) to generate conflict-free
+       weekly schedules from real AMIS data.</p>
+    <p>All four methods found a valid schedule for every instance, confirming that scheduling for
+       the 12 tested CAS curricula is highly satisfiable given the available section offerings.
+       Among the complete methods, Forward Checking explored on average 66.47% fewer nodes than
+       Backtracking. Among the local search methods, Min-Conflicts needed on average 79.01% fewer
+       steps than Simulated Annealing. Backtracking was the slowest in wall-clock time, while
+       Min-Conflicts and Simulated Annealing were the fastest, often finishing in under 0.1 ms.</p>
+    <p>For well-satisfiable instances like these, Forward Checking is the most suitable complete
+       method, since it keeps the guarantee of finding a solution while greatly reducing the
+       search. Min-Conflicts is the best local search method, although its lack of completeness
+       means it may not find a solution on harder, more tightly constrained instances. We have
+       not yet found an instance where any method failed, so testing on tighter instances is the
+       natural next step.</p>
+  </div>
+
+  <!-- 8. References -->
+  <div class="section">
+    <span class="section-anchor" id="references"></span>
+    <h2>References</h2>
+    <ol class="refs">
+      <li>Berkeley CS 188. (n.d.). <em>2.4 Ordering. Introduction to Artificial Intelligence.</em> University of California, Berkeley. <a href="https://inst.eecs.berkeley.edu/~cs188/textbook/csp/ordering.html" target="_blank" rel="noopener">inst.eecs.berkeley.edu/~cs188/textbook/csp/ordering.html</a></li>
+      <li>CP-Algorithms. (2026, May 24). <em>Simulated annealing.</em> Algorithms for Competitive Programming. <a href="https://cp-algorithms.com/num_methods/simulated_annealing.html" target="_blank" rel="noopener">cp-algorithms.com/num_methods/simulated_annealing.html</a></li>
+      <li>GitHub – ravenjohn/scheda.js: Draw a weeklong schedule using HTML5 canvas. (n.d.). MIT License. <a href="https://github.com/ravenjohn/scheda.js" target="_blank" rel="noopener">github.com/ravenjohn/scheda.js</a>. Used for the schedule visualization on this project page.</li>
+      <li>Kurz University Computer Science. (2026, September 6). <em>Backtracking search and forward checking.</em> Kurz University. <a href="https://university.kurz.fyi/computer-science/ai-theory/artificial-intelligence/backtracking-search-and-forward-checking" target="_blank" rel="noopener">university.kurz.fyi/…/backtracking-search-and-forward-checking</a></li>
+      <li>Minton, S., Johnston, M. D., Philips, A. B., &amp; Laird, P. (1992). Minimizing conflicts: A heuristic repair method for constraint satisfaction and scheduling problems. <em>Artificial Intelligence, 58</em>(1–3), 161–205. <a href="https://doi.org/10.1016/0004-3702(92)90007-K" target="_blank" rel="noopener">doi.org/10.1016/0004-3702(92)90007-K</a></li>
+      <li>Norvig, P. &amp; Russell, S. (2021). <em>Artificial intelligence: A modern approach</em> (4th ed.). <a href="https://aima.cs.berkeley.edu/" target="_blank" rel="noopener">aima.cs.berkeley.edu</a></li>
+      <li>Williams, B. C. (2010, September 27). <em>16.410 lecture 06: Solving constraint programs using backtrack search and forward checking</em> [Lecture slides]. MIT OpenCourseWare. <a href="https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/7434ba1355d03e83bfac5effa7edd1d0_MIT16_410F10_lec06.pdf" target="_blank" rel="noopener">ocw.mit.edu/courses/16-410-…/MIT16_410F10_lec06.pdf</a></li>
+      <li>UPLB Academic Management Information System (AMIS). Class section data for term 1261, collected with read-only GET requests.</li>
+      <li><strong>AI tool disclosure:</strong> Claude (Anthropic) was used to assist with debugging and with generating boilerplate code for <code>export_schedule.py</code>, <code>Schedule.html</code>, and this project page. All solver logic (<code>csp.py</code>, <code>backtracking.py</code>, <code>forward_checking.py</code>, <code>min_conflicts.py</code>, <code>simulated_annealing.py</code>) was written by the group. Every line of generated code was reviewed and can be explained by team members.</li>
+    </ol>
+  </div>
+
+</div>
+
+<footer>
+  CMSC 170 — Introduction to Artificial Intelligence &nbsp;·&nbsp;
+  UPLB Institute of Computer Science &nbsp;·&nbsp;
+  <a href="https://github.com/euhallare/uaamVON_sa_Physci" target="_blank" rel="noopener">GitHub Repository</a>
+</footer>
+
+<script>
+  var PROGRAMS = [
+    { key: 'agch', label: 'BS Agricultural Chemistry' },
+    { key: 'amat', label: 'BS Applied Mathematics' },
+    { key: 'ap',   label: 'BS Applied Physics' },
+    { key: 'bio',  label: 'BS Biology' },
+    { key: 'chem', label: 'BS Chemistry' },
+    { key: 'cmsc', label: 'BS Computer Science' },
+    { key: 'coma', label: 'BA Communication Arts' },
+    { key: 'math', label: 'BS Mathematics' },
+    { key: 'mst',  label: 'BS Mathematics & Science Teaching', note: 'Only the Year 1 FS SP instance is plotted for this curriculum.' },
+    { key: 'phlo', label: 'BA Philosophy' },
+    { key: 'soc',  label: 'BA Sociology' },
+    { key: 'stat', label: 'BS Statistics' }
+  ];
+
+  var FIGS = [
+    { file: 'fig5_overview',      title: 'Method comparison',        wide: true },
+    { file: 'fig4_solved',        title: 'Solution found per instance and method' },
+    { file: 'fig3_pruned_values', title: 'Domain values pruned by Forward Checking' },
+    { file: 'fig1_nodes_explored', title: 'Nodes explored per method' },
+    { file: 'fig1b_steps',        title: 'Steps taken by local search' },
+    { file: 'fig2_time',          title: 'Wall-clock time per method' }
+  ];
+
+  var select = document.getElementById('prog-select');
+  var grid   = document.getElementById('fig-grid');
+  var note   = document.getElementById('prog-note');
+
+  PROGRAMS.forEach(function (p) {
+    var opt = document.createElement('option');
+    opt.value = p.key;
+    opt.textContent = p.label;
+    select.appendChild(opt);
+  });
+
+  function render(key) {
+    var prog = PROGRAMS.filter(function (p) { return p.key === key; })[0];
+    note.textContent = prog.note || '';
+    grid.innerHTML = '';
+    FIGS.forEach(function (f, i) {
+      var src = 'figures/' + key + '/' + f.file + '.png';
+      var fig = document.createElement('figure');
+      if (f.wide) { fig.className = 'wide'; }
+
+      var a = document.createElement('a');
+      a.href = src;
+      a.target = '_blank';
+      a.rel = 'noopener';
+
+      var img = document.createElement('img');
+      img.src = src;
+      img.loading = 'lazy';
+      img.alt = f.title + ' (' + prog.label + ')';
+      a.appendChild(img);
+
+      var cap = document.createElement('figcaption');
+      cap.textContent = f.title + ' — ' + prog.label;
+
+      fig.appendChild(a);
+      fig.appendChild(cap);
+      grid.appendChild(fig);
+    });
+  }
+
+  select.addEventListener('change', function () { render(select.value); });
+  render(PROGRAMS[0].key);
+</script>
+
+</body>
+</html>
