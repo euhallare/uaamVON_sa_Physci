@@ -72,6 +72,7 @@ Denmark
 - helped write the report in milestone 3
 
 Eliza
+- interpreted the initial results of cmsc figures
 - led the group in writing the report in milestone 3 primarily
 
 Jiro
@@ -96,9 +97,11 @@ Eliza
 - ran the results for the figures in each degprog: agch, amat, ap, bio, chem, math, stat, coma, mst, phlo, and soc
 - helped in making the PPT presentation
 - added and pushed aggregate_results.py 
+- interpret results of the graphs and figures
 
 Jiro
 - scraped the courses of the last degprogs we added: coma, mst, phlo, and soc
 - helped in making the PPT presentation
+- interpret results of the graphs and figures
 
 ---
