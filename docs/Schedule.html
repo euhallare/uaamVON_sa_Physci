@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule Viewer — AMIS Scheduler CSP</title>
+
+  <!--
+    scheda.js — MIT License — https://github.com/ravenjohn/scheda.js
+    Forked and included with credit to @ravenjohn (Raven John Orongan).
+    Copy scheda.js from your fork into docs/scheda/scheda.js
+  -->
+  <script src="scheda/scheda.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:      #00838F;
+      --green-dark: #005F6B;
+      --green-lite: #E0F4F6;
+      --grey-bg:    #F4F6F7;
+      --grey-rule:  #DDE1E4;
+      --text:       #1C2229;
+      --text-soft:  #5A6472;
+      --white:      #FFFFFF;
+      --radius:     6px;
+      --shadow:     0 2px 8px rgba(0,0,0,.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --green:      #26A69A;
+        --green-dark: #00796B;
+        --green-lite: #1A2F2E;
+        --grey-bg:    #161B22;
+        --grey-rule:  #2D333B;
+        --text:       #E6EDF3;
+        --text-soft:  #8B949E;
+        --white:      #1C2229;
+        --shadow:     0 2px 10px rgba(0,0,0,.3);
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--grey-bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── header ── */
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 20px 32px 18px;
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      line-height: 1.2;
+    }
+    header p {
+      font-size: .82rem;
+      opacity: .82;
+      margin-top: 3px;
+    }
+    .header-badge {
+      margin-left: auto;
+      background: rgba(255,255,255,.18);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: .78rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* ── main layout ── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 24px 60px;
+    }
+
+    /* ── tabs ── */
+    .tab-bar {
+      display: flex;
+      gap: 4px;
+      border-bottom: 2px solid var(--grey-rule);
+      margin-bottom: 24px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tab-bar::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      padding: 9px 18px;
+      border: none;
+      background: none;
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      white-space: nowrap;
+      transition: color .15s, border-color .15s;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+    .tab-btn:hover { color: var(--green); background: var(--green-lite); }
+    .tab-btn.active {
+      color: var(--green);
+      border-bottom-color: var(--green);
+      font-weight: 600;
+    }
+    .tab-btn.failed { color: #C0392B; }
+    .tab-btn.failed.active { border-bottom-color: #C0392B; }
+
+    /* ── tab panels ── */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── stats row ── */
+    .stats-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .stat-pill {
+      background: var(--white);
+      border: 1px solid var(--grey-rule);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: .8rem;
+      color: var(--text-soft);
+      box-shadow: var(--shadow);
+    }
+    .stat-pill strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .stat-pill.solved strong { color: var(--green); }
+    .stat-pill.failed strong { color: #C0392B; }
+
+    /* ── canvas wrapper ── */
+    .canvas-wrap {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--grey-rule);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      overflow-x: auto;
+    }
+
+    canvas { display: block; }
+
+    .no-solution {
+      padding: 48px 24px;
+      text-align: center;
+      color: var(--text-soft);
+      font-size: .95rem;
+    }
+    .no-solution span {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    /* ── comparison table ── */
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--grey-rule);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .85rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    thead { background: var(--green); color: #fff; }
+    th { padding: 10px 14px; text-align: left; font-weight: 600; }
+    td { padding: 9px 14px; border-top: 1px solid var(--grey-rule); }
+    tbody tr:hover { background: var(--green-lite); }
+    .badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+    .badge.yes { background: #D4EFDF; color: #1E8449; }
+    .badge.no  { background: #FADBD8; color: #C0392B; }
+
+    /* ── back link ── */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: .85rem;
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    /* ── loading / error ── */
+    #loading {
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--text-soft);
+    }
+    #error-msg {
+      display: none;
+      background: #FADBD8;
+      color: #922B21;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      font-size: .875rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>AMIS Schedule Viewer</h1>
+    <p id="header-sub">Loading schedule data…</p>
+  </div>
+  <span class="header-badge" id="header-badge">CSP Project</span>
+</header>
+
+<main>
+  <a class="back-link" href="index.html">← Back to project page</a>
+
+  <div id="error-msg"></div>
+  <div id="loading">Loading schedules.json…</div>
+  <div id="app" style="display:none">
+
+    <!-- tabs -->
+    <div class="tab-bar" id="tab-bar"></div>
+
+    <!-- panels injected by JS -->
+    <div id="panels"></div>
+
+    <!-- comparison table -->
+    <p class="section-title">Method Comparison</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Solved</th>
+          <th>Time (s)</th>
+          <th>Nodes / Steps</th>
+          <th>Backtracks / Restarts</th>
+          <th>Uphill moves</th>
+          <th>Pruned values</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+  </div>
+</main>
+
+<script>
+
+// one color per slot index — matches the Python plot colors for consistency
+const COURSE_COLORS = [
+  '#4C72B0','#DD8452','#55A868','#C44E52',
+  '#8172B2','#937860','#DA8BC3','#8C8C8C',
+  '#CCB974','#64B5CD','#E377C2','#2ecc71',
+];
+
+// ── helpers ─────────────────────────────────────────────────────────────────
+function dash(val) {
+  return (val === null || val === undefined) ? '—' : val;
+}
+
+function makeCanvas(id) {
+  const c = document.createElement('canvas');
+  c.id = id;
+  return c;
+}
+
+// ── render one scheda canvas ─────────────────────────────────────────────────
+function renderScheda(canvasId, entries, courseOrder) {
+  scheda.init(canvasId);
+
+  courseOrder.forEach((code, idx) => {
+    const color = COURSE_COLORS[idx % COURSE_COLORS.length];
+    entries.forEach(e => {
+      if (e.courseCode === code) {
+        scheda.drawCourse(e.day, e.time, e.courseCode, e.section, e.room || '', color);
+      }
+    });
+  });
+}
+
+// ── build tabs & panels ──────────────────────────────────────────────────────
+function buildUI(data) {
+  const { meta, results } = data;
+
+  // header
+  document.getElementById('header-sub').textContent =
+    `${meta.deg_prog} · Year ${meta.year} · ${meta.term_label} · ${meta.track} track`;
+  document.getElementById('header-badge').textContent =
+    `${meta.n_vars} course slot${meta.n_vars !== 1 ? 's' : ''}`;
+
+  const tabBar  = document.getElementById('tab-bar');
+  const panels  = document.getElementById('panels');
+  const tbody   = document.getElementById('table-body');
+
+  // unique ordered course codes from CSP slot order
+  const courseOrder = Object.values(meta.courses).map(c => c.split('/')[0].trim());
+
+  results.forEach((r, i) => {
+    const panelId  = `panel-${i}`;
+    const canvasId = `scheda-${i}`;
+
+    // ── tab button ──
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (r.solved ? '' : ' failed') + (i === 0 ? ' active' : '');
+    btn.textContent = r.method + (r.solved ? '' : ' ✗');
+    btn.dataset.panel = panelId;
+    btn.addEventListener('click', () => switchTab(btn, panelId));
+    tabBar.appendChild(btn);
+
+    // ── panel ──
+    const panel = document.createElement('div');
+    panel.id        = panelId;
+    panel.className = 'tab-panel' + (i === 0 ? ' active' : '');
+
+    // stats pills
+    const statsRow = document.createElement('div');
+    statsRow.className = 'stats-row';
+
+    const pills = [
+      { label: 'Status',  val: r.solved ? 'Solved ✓' : 'No solution ✗', cls: r.solved ? 'solved' : 'failed' },
+      { label: 'Time',    val: r.time_seconds + 's' },
+      { label: 'Nodes / Steps', val: dash(r.nodes_explored) },
+      { label: 'Backtracks / Restarts', val: dash(r.backtracks) },
+    ];
+    if (r.accepted_worse !== null && r.accepted_worse !== undefined)
+      pills.push({ label: 'Uphill moves', val: r.accepted_worse });
+    if (r.pruned_values !== null && r.pruned_values !== undefined)
+      pills.push({ label: 'Pruned values', val: r.pruned_values });
+
+    pills.forEach(p => {
+      const pill = document.createElement('span');
+      pill.className = 'stat-pill' + (p.cls ? ' ' + p.cls : '');
+      pill.innerHTML = `${p.label}: <strong>${p.val}</strong>`;
+      statsRow.appendChild(pill);
+    });
+    panel.appendChild(statsRow);
+
+    // canvas or no-solution message
+    const wrap = document.createElement('div');
+    wrap.className = 'canvas-wrap';
+
+    if (r.solved && r.entries.length > 0) {
+      const canvas = makeCanvas(canvasId);
+      wrap.appendChild(canvas);
+      panel.appendChild(wrap);
+      panels.appendChild(panel);
+
+      // render after the element is in the DOM
+      requestAnimationFrame(() => renderScheda(canvasId, r.entries, courseOrder));
+    } else {
+      wrap.innerHTML = `
+        <div class="no-solution">
+          <span>📭</span>
+          ${r.method} did not find a conflict-free schedule for this instance.
+        </div>`;
+      panel.appendChild(wrap);
+      panels.appendChild(panel);
+    }
+
+    // ── table row ──
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${r.method}</strong></td>
+      <td><span class="badge ${r.solved ? 'yes' : 'no'}">${r.solved ? 'YES' : 'NO'}</span></td>
+      <td>${r.time_seconds}</td>
+      <td>${dash(r.nodes_explored)}</td>
+      <td>${dash(r.backtracks)}</td>
+      <td>${dash(r.accepted_worse)}</td>
+      <td>${dash(r.pruned_values)}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display     = 'block';
+}
+
+function switchTab(btn, panelId) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+
+// ── load data ────────────────────────────────────────────────────────────────
+fetch('schedules.json')
+  .then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  })
+  .then(buildUI)
+  .catch(err => {
+    document.getElementById('loading').style.display = 'none';
+    const el = document.getElementById('error-msg');
+    el.style.display = 'block';
+    el.textContent =
+      'Could not load schedules.json. Run export_schedule.py first, then commit the file. (' + err.message + ')';
+  });
+</script>
+</body>
+</html>
