@@ -21,11 +21,9 @@ Denmark
 - helped brainstorm dataset and method ideas
 - wrote milestone 1 docs
 
-
 Eliza
 - helped brainstorm dataset and method ideas
 - wrote milestone 1 docs
-
 
 Jiro
 - helped brainstorm dataset and method ideas
@@ -89,6 +87,7 @@ Eu
 Denmark
 - added the curriculum.csvs of coma, mst, phlo, and soc
 - wrote and pushed the check_curriculum.py to check which courses are still needed to be scraped. 
+- writing the Github Page for this project.
 
 Eliza
 - ran the results for the figures in each degprog: agch, amat, ap, bio, chem, math, stat, coma, mst, phlo, and soc
