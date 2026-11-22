@@ -3,11 +3,14 @@
 **Project:** AMIS Student Schedule Builder — CMSC 170 Project  
 **Description:** A Constraint Satisfaction Problem (CSP) that builds a conflict-free weekly class schedule for a UPLB student, using data scraped from AMIS.
 
-**Roles:**  
-Eu Hallare: Project Manager & Tech Lead
-Eliza Gevaña: Research & QA Lead  
-John Denmark Hernandez: Frontend & Web Lead  
-Jiro Tipan: Data Engineering & Scraping Lead    
+## Team & Roles
+
+| Member | Role | Core Responsibilities |
+| :--- | :--- | :--- |
+| **Eu Hallare** | Project Manager & Tech Lead | System architecture, core integration, Git workflow, and project timeline |
+| **Eliza Gevaña** | Research & QA Lead | Domain research, algorithm/logic design, edge-case testing, and validation |
+| **John Denmark Hernandez** | Frontend & Web Lead | User interface (UI/UX), client-side logic, and web deployment |
+| **Jiro Tipan** | Data Engineering & Scraping Lead | Data extraction/scraping, cleaning pipelines, and schema formatting |
 
 ## Milestone 1
 
