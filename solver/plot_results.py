@@ -79,9 +79,17 @@ def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
         print(f"    No schedulable variables — skipping.")
         return []
 
+    # Calculate the total number of values in the initial domains.
+    original_domain_values = sum(
+        len(csp.domains[v])
+        for v in csp.variables
+    )
+
     domain_sizes = [len(csp.domains[v]) for v in csp.variables]
     avg_domain   = sum(domain_sizes) / len(domain_sizes) if domain_sizes else 0
+
     print(f"    Variables: {n_vars}, avg domain size: {avg_domain:.1f}")
+    print(f"    Original domain values: {original_domain_values}")
 
     results = []
 
@@ -112,6 +120,10 @@ def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
     r4["n_vars"]   = n_vars
     results.append(r4)
     print(f"      {'SOLVED' if r4['solution'] else 'NO SOLUTION'} — {r4['time_seconds']:.4f}s")
+
+    # Store the original domain size for every method.
+    for result in results:
+        result["original_domain_values"] = original_domain_values
 
     return results
 
@@ -225,6 +237,7 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
         "method",
         "instance",
         "n_vars",
+        "original_domain_values",
         "nodes_explored",
         "steps",
         "time_seconds",
@@ -270,6 +283,7 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
                 "method": method_names[i],
                 "instance": cfg["label"],
                 "n_vars": result.get("n_vars", ""),
+                "original_domain_values": result.get("original_domain_values", ""),
                 "nodes_explored": result.get("nodes_explored", ""),
                 "steps": result.get("steps", ""),
                 "time_seconds": result.get("time_seconds", ""),
