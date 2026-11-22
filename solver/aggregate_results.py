@@ -73,7 +73,7 @@ SOLVED_COLUMNS = [
 #helpers
 
 def _to_float(value):
-    """Convert a string to float; return None on failure."""
+    #convert a string to float; return None on failure.
     if value is None:
         return None
     try:
@@ -83,7 +83,7 @@ def _to_float(value):
 
 
 def _parse_bool(value):
-    """'yes'/'true'/'1' -> 1.0, 'no'/'false'/'0' -> 0.0, else None."""
+    #'<value>'/'true'/'1' -> 1.0, 'no'/'false'/'0' -> 0.0, else None.
     if value is None:
         return None
     s = str(value).strip().lower()
@@ -95,7 +95,7 @@ def _parse_bool(value):
 
 
 def _col_mean(rows, col):
-    """Mean of a named column, skipping None/NaN."""
+    #Mean of a named column, skipping None/NaN.
     vals = [r[col] for r in rows if r.get(col) is not None and not _isnan(r[col])]
     return sum(vals) / len(vals) if vals else float("nan")
 
@@ -119,11 +119,8 @@ def _nunique(rows, col):
 #loader
 
 def load_data(path):
-    """
-    Read the long-format aggregate CSV and return a list of wide-format
-    dicts — one dict per (degree_program, year_level) instance.
-    Uses only csv and stdlib; no pandas.
-    """
+    #read the long-format aggregate CSV and return a list of wide-format
+    #dicts — one dict per (degree_program, year_level) instance.
     required = [
         "degree_program", "year", "term", "track", "method",
         "n_vars", "original_domain_values",
@@ -211,7 +208,7 @@ def load_data(path):
         )
 
     #pivot to wide format (one dict per instance)
-    # Collect all (prog, year_level) pairs in insertion order
+    #collect all (prog, year_level) pairs in insertion order
     instance_keys = []
     seen_keys = set()
     for r in long_rows:
@@ -290,15 +287,13 @@ def load_data(path):
 #aggregation helpers
 
 def overall_mean(rows, col):
-    """Mean of `col` across all wide rows, skipping None/NaN."""
+    #Mean of `col` across all wide rows, skipping None/NaN.
     return _col_mean(rows, col)
 
 
 def create_pruning_summary(rows):
-    """
-    Return a list of dicts, one per degree program in PROGRAM_ORDER,
-    with pruning totals and intensity.
-    """
+    #return a list of dicts, one per degree program in PROGRAM_ORDER,
+    #with pruning totals and intensity.
     from collections import defaultdict
     by_prog = defaultdict(list)
     for r in rows:

@@ -43,7 +43,7 @@ BASE     = os.path.join(os.path.dirname(__file__), "..", "data")
 SECTIONS = os.path.join(BASE, "datasets", "term_1261", "sections.csv")
 MEETINGS = os.path.join(BASE, "datasets", "term_1261", "meetings.csv")
 
-# Path for the shared aggregate results CSV
+#path for the shared aggregate results CSV
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_CSV = os.path.join(PROJECT_ROOT, "data", "aggregate_results.csv")
 
@@ -57,8 +57,7 @@ METHOD_NAMES = [
 COLORS = ["#4C72B0", "#55A868", "#C44E52", "#8172B2"]
 
 
-# ----------------------------------------------------------------- runners
-
+#runners
 def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
     """Run all 4 methods on one problem instance. Returns list of result dicts."""
     print(f"\n  Loading: {cfg['label']}")
@@ -79,7 +78,7 @@ def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
         print(f"    No schedulable variables — skipping.")
         return []
 
-    # Calculate the total number of values in the initial domains.
+    #calculate the total number of values in the initial domains.
     original_domain_values = sum(
         len(csp.domains[v])
         for v in csp.variables
@@ -127,9 +126,7 @@ def run_instance(cfg: dict, deg_prog: str, allow_consent: bool = False) -> list:
 
     return results
 
-
-# ----------------------------------------------------------------- chart helpers
-
+#chart helpers
 def collect_metric(all_results: list, metric: str, fallback=0):
     data = {i: [] for i in range(4)}
     for instance_results in all_results:
@@ -190,7 +187,7 @@ def bar_chart(all_results: list, instance_labels: list,
     plt.close()
     print(f"  Saved: {out}")
 
-
+#final heatmap of solved/not solved
 def solved_heatmap(all_results: list, instance_labels: list,
                    filename: str, figures_dir: str):
     n_instances = len(instance_labels)
@@ -226,7 +223,7 @@ def solved_heatmap(all_results: list, instance_labels: list,
     plt.close()
     print(f"  Saved: {out}")
 
-# ----------------------------------------------------------------- aggregation helper
+#aggregation helper
 def save_results_csv(all_results, instances, deg_prog, term, track):
 
     fieldnames = [
@@ -252,7 +249,7 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
         "Simulated Annealing"
     ]
 
-    # Read existing records, if the CSV already exists
+    #read existing records, if the CSV already exists
     existing_rows = {}
 
     if os.path.exists(RESULTS_CSV):
@@ -270,7 +267,7 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
 
                 existing_rows[key] = row
 
-    # Add or update the current program's results
+    #add or update the current program's results
     for instance_results, cfg in zip(all_results, instances):
 
         for i, result in enumerate(instance_results):
@@ -301,7 +298,7 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
 
             existing_rows[key] = row
 
-    # Rewrite the CSV with the updated records
+    #rewrite the CSV with the updated records
     with open(RESULTS_CSV, "w", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
 
@@ -310,11 +307,12 @@ def save_results_csv(all_results, instances, deg_prog, term, track):
 
     print(f"\nResults saved to: {RESULTS_CSV}")
 
-# ----------------------------------------------------------------- main
-
+#main function
 def main():
+    #argparse setup
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    #arguments
     ap.add_argument("--deg-prog", default="cmsc",
                     choices=list(DEG_PROG_MAP),
                     help="Degree program (default: cmsc)")
@@ -333,11 +331,11 @@ def main():
     print(f"  allow_consent={args.allow_consent}")
     print("=" * 55)
 
-    # figures go into figures/<deg_prog>/
+    #figures go into figures/<deg_prog>/
     figures_dir = os.path.join(os.path.dirname(__file__), "..", "figures", args.deg_prog)
     os.makedirs(figures_dir, exist_ok=True)
 
-    # instances to test: vary year across the same term/track
+    #instances to test: vary year across the same term/track
     instances = [
         {"year": 1, "term": args.term, "track": args.track,
          "label": f"Y1 {args.term} {args.track}"},
@@ -406,7 +404,7 @@ def main():
                    filename="fig4_solved.png",
                    figures_dir=figures_dir)
 
-    # Combined overview
+    #combined overview
     fig, axes = plt.subplots(1, 2, figsize=(12, 5))
     fig.suptitle(f"AMIS Scheduler CSP — Method Comparison ({deg})",
                  fontsize=14, fontweight="bold")

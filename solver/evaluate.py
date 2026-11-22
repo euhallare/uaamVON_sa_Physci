@@ -42,7 +42,7 @@ DAY_ORDER = {"M": 0, "T": 1, "W": 2, "Th": 3, "F": 4, "S": 5}
 
 
 def fmt_meetings(meetings: list) -> str:
-    """Format meeting blocks as a compact string, e.g. 'MWF 10:00-13:00'."""
+    #format meeting blocks as a compact string, e.g. 'MWF 10:00-13:00'.
     if not meetings:
         return "TBA"
     groups: dict = {}
@@ -89,7 +89,7 @@ def print_comparison(results: list):
         print(f"  {r['method']:<35} {str(nodes):>11} {str(backs):>12} {str(uphill):>7} {t:>9} {solved:>7}")
     print(f"{'='*80}\n")
 
-    #Recommendation
+    #recommendation
     print("  RECOMMENDATION")
     print(f"  {'-'*60}")
 
@@ -172,7 +172,7 @@ def main():
 
     results = []
 
-    # Method 1: Backtracking (MRV + LCV)
+    #Method 1: Backtracking (MRV + LCV)
     print("Running Method 1: Backtracking (MRV + LCV)...")
     r1 = backtracking.solve(csp)
     results.append(r1)
@@ -180,7 +180,7 @@ def main():
           f"{'SOLVED' if r1['solution'] else 'NO SOLUTION'}")
     print_solution(csp, r1["solution"])
 
-    # Method 2: Forward Checking
+    #Method 2: Forward Checking
     print("\nRunning Method 2: Forward Checking (MRV + FC)...")
     r2 = forward_checking.solve(csp)
     results.append(r2)
@@ -188,7 +188,7 @@ def main():
           f"{'SOLVED' if r2['solution'] else 'NO SOLUTION'}")
     print_solution(csp, r2["solution"])
 
-    # Method 3: Min-Conflicts
+    #Method 3: Min-Conflicts
     print("\nRunning Method 3: Min-Conflicts (Local Search)...")
     r3 = min_conflicts.solve(csp, max_steps=50_000, max_restarts=30)
     results.append(r3)
@@ -197,7 +197,7 @@ def main():
           f"{'SOLVED' if r3['solution'] else f'NO SOLUTION ({fc} conflicts remain)'}")
     print_solution(csp, r3["solution"])
 
-    # Method 4: Simulated Annealing
+    #Method 4: Simulated Annealing
     print("\nRunning Method 4: Simulated Annealing...")
     r4 = simulated_annealing.solve(csp, max_steps=50_000, max_restarts=20)
     results.append(r4)
