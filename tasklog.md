@@ -3,6 +3,12 @@
 **Project:** AMIS Student Schedule Builder — CMSC 170 Project  
 **Description:** A Constraint Satisfaction Problem (CSP) that builds a conflict-free weekly class schedule for a UPLB student, using data scraped from AMIS.
 
+**Roles:**  
+Eu: Tech Lead & Project Manager  
+Eliza: Research & QA Lead  
+Denmark: Frontend & Web Lead  
+Jiro: Data Engineering & Scraping Lead    
+
 ## Milestone 1
 
 Eu
@@ -78,10 +84,11 @@ Jiro
 Eu 
 - fixed the issues in the curriculum.csv of agch, amat, ap, bio, chem, math, and stat
 - fixed and updated the csp, evaluate, and plotr_results.py to match the added degree programs
+- updated the aggregate figures for all degprogs
 
 Denmark
 - added the curriculum.csvs of coma, mst, phlo, and soc
-- wrote and pushed the check_curriculum.py
+- wrote and pushed the check_curriculum.py to check which courses are still needed to be scraped. 
 
 Eliza
 - ran the results for the figures in each degprog: agch, amat, ap, bio, chem, math, stat, coma, mst, phlo, and soc
