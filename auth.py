@@ -10,45 +10,45 @@ def get_fresh_bearer_token(session_name="amis_session"):
     e.g. get_fresh_bearer_token("amis_session_myacc2"), so each account
     keeps its own saved login instead of overwriting the other.
     """
-    print("🕵️  Launching browser to intercept Bearer Token...")
+    print("Launching browser to intercept Bearer Token...")
     token = None
     
     with sync_playwright() as p:
-        #Launch a persistent context. 
-        #It creates a folder to remember your Google Login for this account.
+        #launch a persistent context
+        #it creates a folder to remember your Google Login for this account
         context = p.chromium.launch_persistent_context(
             user_data_dir=f"./{session_name}",
-            #executable_path="/usr/bin/chromium",
-            headless=False,  #Keep this False so you can see it and log in if necessary
+            #executable_path="/usr/bin/chromium"
+            headless=False,  #keep this False so you can see it and log in if necessary
             args=["--disable-blink-features=AutomationControlled"]
         )
         page = context.new_page()
 
         def intercept_request(request):
             nonlocal token
-            #Look for API requests to the UPLB AMIS backend
+            #look for API requests to the UPLB AMIS backend
             if "api-amis.uplb.edu.ph/api" in request.url:
                 auth_header = request.headers.get("authorization", "")
                 if "Bearer " in auth_header:
                     token = auth_header.split("Bearer ")[1]
 
-        #Attach the network listener to the page
+        #attach the network listener to the page
         page.on("request", intercept_request)
 
-        #Navigate to the UPLB AMIS login page
+        #navigate to the UPLB AMIS login page
         page.goto("https://amis.uplb.edu.ph/") 
         
         try:
-            #Wait for the page to load and trigger the initial API calls
+            #wait for the page to load and trigger the initial API calls
             page.wait_for_load_state("networkidle", timeout=15000)
         except Exception:
             pass 
 
-        #If token isn't found immediately, it means you need to log in manually.
+        #if token isn't found immediately, it means you need to log in manually
         if token is None:
             print("⚠️ Token not found. You likely need to log in.")
             print("⏳ Waiting up to 10 seconds... Please complete the login in the browser window.")
-            #Poll every 500ms for up to 60 seconds so we return as soon as token is captured
+            #poll every 500ms for up to 60 seconds so we return as soon as token is captured
 
 
             #range(x) = seconds/2 so 120/2 = 60 seconds
