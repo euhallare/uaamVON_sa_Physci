@@ -1,4 +1,6 @@
 """
+DOCUMENTATION: solver/simulated_annealing.py
+
 simulated_annealing.py — Method 4: Simulated Annealing
 Local search method that starts with a random complete assignment and iteratively improves it.
 
@@ -23,11 +25,9 @@ import random
 import time
 from csp import SchedulerCSP, meetings_overlap
 
-
-
 #helpers
 def total_conflicts(assignment: dict) -> int:
-    """Count the number of conflicting (slot_a, slot_b) pairs."""
+    #count the number of conflicting (slot_a, slot_b) pairs.
     slots = list(assignment.keys())
     count = 0
     for i in range(len(slots)):
@@ -37,7 +37,7 @@ def total_conflicts(assignment: dict) -> int:
                 count += 1
     return count
 
-
+#for a given slot, count how many other slots conflict with its assigned bundle.
 def conflicts_for_slot(slot: str, bundle: dict, assignment: dict) -> int:
     #Count how many other slots conflict with this (slot, bundle) pair.
     count = 0
@@ -48,16 +48,14 @@ def conflicts_for_slot(slot: str, bundle: dict, assignment: dict) -> int:
             count += 1
     return count
 
-
 #core SA solver
-
 def sa_run(csp: SchedulerCSP, rng: random.Random,
            T_start: float, alpha: float, T_min: float,
            max_steps: int, stats: dict) -> dict | None:
-    """
-    One SA run from a fresh random start.
-    Returns the assignment if solved (0 conflicts), else None.
-    """
+
+    #One SA run from a fresh random start.
+    #Returns the assignment if solved (0 conflicts), else None.
+ 
     #random complete initial assignment
     assignment = {v: rng.choice(csp.domains[v]) for v in csp.variables}
     current_cost = total_conflicts(assignment)
@@ -68,7 +66,7 @@ def sa_run(csp: SchedulerCSP, rng: random.Random,
         stats["steps"] += 1
 
         if current_cost == 0:
-            return assignment  # solved
+            return assignment  #solved
 
         #cool down
         if T > T_min:
@@ -94,9 +92,7 @@ def sa_run(csp: SchedulerCSP, rng: random.Random,
                 current_cost += delta
                 stats["accepted_worse"] += 1
 
-    return None  # did not converge in this run
-
-
+    return None  #did not converge in this run
 
 #public interface
 def solve(csp: SchedulerCSP,
@@ -106,9 +102,7 @@ def solve(csp: SchedulerCSP,
           max_steps: int  = 50_000,
           max_restarts: int = 20,
           seed: int       = 99) -> dict:
-    """
-    Returns a result dict with solution and metrics.
-    """
+    #returns a result dict with solution and metrics.
     rng = random.Random(seed)
     stats = {"steps": 0, "restarts": 0,
              "accepted_worse": 0, "final_conflicts": 0}
