@@ -35,10 +35,11 @@ import time
 import requests
 
 BASE_URL = "https://api-amis.uplb.edu.ph/api/students/classes"
-DEFAULT_TERM_ID = 1261          # current term; change with --term
-DELAY = (1.0, 2.0)              # random pause (seconds) between requests - be gentle
+DEFAULT_TERM_ID = 1261          # current term; change with --term (only 1261 works rn)
+DELAY = (1.0, 2.0)              # random pause (seconds) between requests
 
 SUBJECT_SETS = {
+    # choose what to scrape, based on yung ibang curriculums and such
     "small": ["CMSC"],
     "cmsc": ["CMSC", "MATH", "STAT", "HK", "NSTP", "ETHICS", "STS",
            "ARTS", "KAS", "HIST", "PI", "COMM", "ENG"],
@@ -85,7 +86,7 @@ STRIP_KEYS = {"first_name", "middle_name", "last_name", "formatted_name",
 
 
 def scrub(obj):
-    """Recursively drop personal-identity keys. faculty_id (a number) stays."""
+    # remove some keys to protect others privacy
     if isinstance(obj, dict):
         return {k: scrub(v) for k, v in obj.items() if k not in STRIP_KEYS}
     if isinstance(obj, list):
@@ -94,7 +95,7 @@ def scrub(obj):
 
 
 class AmisSession:
-    """requests session that knows how to refresh its Bearer token."""
+    # requests session that can refresh its Bearer token
 
     def __init__(self):
         self.http = requests.Session()
@@ -105,7 +106,6 @@ class AmisSession:
         self.refresh_token()
 
     def refresh_token(self):
-        # imported here so scrub()/build tools can be tested without Playwright
         from auth import get_fresh_bearer_token
         token = get_fresh_bearer_token()
         if not token:
@@ -115,7 +115,7 @@ class AmisSession:
         print("  token OK")
 
     def get_json(self, params):
-        """GET one page. Retries on network errors / 5xx / 429; refreshes on 401."""
+        # GET one page. Retries on network errors / 5xx / 429; refreshes on 401
         for attempt in range(5):
             try:
                 resp = self.http.get(BASE_URL, params=params, timeout=30)
@@ -197,7 +197,6 @@ def scrape_subject(sess, subject, term_id, out_root, items, section_like,
 
 
 def probe(sess, term_id, subject):
-    """A few cheap requests that answer the open questions about the API."""
     def show(label, params):
         try:
             block = (sess.get_json(params) or {}).get("classes") or {}
