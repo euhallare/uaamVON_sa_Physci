@@ -1,145 +1,145 @@
-degree_program,year,term,track,method,instance,n_vars,nodes_explored,steps,time_seconds,pruned_values,solution_found
-agch,1,FS,SP,Backtracking,Y1 FS SP,6,29,,0.05500120000215247,,True
-agch,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0004972000024281442,63,True
-agch,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,6.959999882383272e-05,,True
-agch,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,4.7599998652003706e-05,,True
-agch,2,FS,SP,Backtracking,Y2 FS SP,7,24,,0.009421800001291558,,True
-agch,2,FS,SP,Forward Checking,Y2 FS SP,7,7,,0.00023350000265054405,63,True
-agch,2,FS,SP,Min-Conflicts,Y2 FS SP,7,,2,8.800000068731606e-05,,True
-agch,2,FS,SP,Simulated Annealing,Y2 FS SP,7,,4,7.339999865507707e-05,,True
-agch,3,FS,SP,Backtracking,Y3 FS SP,5,8,,0.004078300000401214,,True
-agch,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.0001486000037402846,43,True
-agch,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,2,5.5000004067551345e-05,,True
-agch,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,77,0.0004847000018344261,,True
-amat,1,FS,SP,Backtracking,Y1 FS SP,4,15,,0.007732599995506462,,True
-amat,1,FS,SP,Forward Checking,Y1 FS SP,4,4,,0.00023569999757455662,19,True
-amat,1,FS,SP,Min-Conflicts,Y1 FS SP,4,,1,4.3600004573818296e-05,,True
-amat,1,FS,SP,Simulated Annealing,Y1 FS SP,4,,1,4.069999704370275e-05,,True
-amat,2,FS,SP,Backtracking,Y2 FS SP,5,5,,0.000552199999219738,,True
-amat,2,FS,SP,Forward Checking,Y2 FS SP,5,5,,0.00012089999654563144,1,True
-amat,2,FS,SP,Min-Conflicts,Y2 FS SP,5,,1,3.839999408228323e-05,,True
-amat,2,FS,SP,Simulated Annealing,Y2 FS SP,5,,16,0.00019179999799234793,,True
-amat,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.0008407999994233251,,True
-amat,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,0.00010589999874355271,9,True
-amat,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,1,2.6900001103058457e-05,,True
-amat,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,5,3.5400000342633575e-05,,True
-ap,1,FS,SP,Backtracking,Y1 FS SP,5,22,,0.019904699998733122,,True
-ap,1,FS,SP,Forward Checking,Y1 FS SP,5,5,,0.0003634000022429973,47,True
-ap,1,FS,SP,Min-Conflicts,Y1 FS SP,5,,2,0.00032220000139204785,,True
-ap,1,FS,SP,Simulated Annealing,Y1 FS SP,5,,2,8.309999975608662e-05,,True
-ap,2,FS,SP,Backtracking,Y2 FS SP,5,5,,0.000770799997553695,,True
-ap,2,FS,SP,Forward Checking,Y2 FS SP,5,5,,9.919999865815043e-05,27,True
-ap,2,FS,SP,Min-Conflicts,Y2 FS SP,5,,2,0.00011209999502170831,,True
-ap,2,FS,SP,Simulated Annealing,Y2 FS SP,5,,1,1.2700002116616815e-05,,True
-ap,3,FS,SP,Backtracking,Y3 FS SP,6,20,,0.007288799999514595,,True
-ap,3,FS,SP,Forward Checking,Y3 FS SP,6,6,,0.00031519999902229756,39,True
-ap,3,FS,SP,Min-Conflicts,Y3 FS SP,6,,2,0.00036669999826699495,,True
-ap,3,FS,SP,Simulated Annealing,Y3 FS SP,6,,10,0.00019079999765381217,,True
-bio,1,FS,SP,Backtracking,Y1 FS SP,6,34,,0.050902000002679415,,True
-bio,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.00034440000308677554,61,True
-bio,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,3,0.00028530000417958945,,True
-bio,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,3.619999915827066e-05,,True
-bio,2,FS,SP,Backtracking,Y2 FS SP,6,9,,0.0017192000013892539,,True
-bio,2,FS,SP,Forward Checking,Y2 FS SP,6,7,,0.00013609999587060884,36,True
-bio,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,7,0.00017870000010589138,,True
-bio,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,45,0.0002858000007108785,,True
-bio,3,FS,SP,Backtracking,Y3 FS SP,5,28,,0.009512600001471583,,True
-bio,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.000523599999723956,52,True
-bio,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,1,5.579999560723081e-05,,True
-bio,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,9,0.00015929999790387228,,True
-chem,1,FS,SP,Backtracking,Y1 FS SP,6,29,,0.04564589999790769,,True
-chem,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0005289000037009828,63,True
-chem,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,5.1700000767596066e-05,,True
-chem,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,3.149999974993989e-05,,True
-chem,2,FS,SP,Backtracking,Y2 FS SP,4,7,,0.00026500000240048394,,True
-chem,2,FS,SP,Forward Checking,Y2 FS SP,4,4,,5.059999966761097e-05,9,True
-chem,2,FS,SP,Min-Conflicts,Y2 FS SP,4,,1,1.720000000204891e-05,,True
-chem,2,FS,SP,Simulated Annealing,Y2 FS SP,4,,31,0.00013100000069243833,,True
-chem,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.0006147000021883287,,True
-chem,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,7.929999992484227e-05,15,True
-chem,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,5,6.829999620094895e-05,,True
-chem,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,6,2.5199995434377342e-05,,True
-cmsc,1,FS,SP,Backtracking,Y1 FS SP,5,41,,0.008637999999336898,,True
-cmsc,1,FS,SP,Forward Checking,Y1 FS SP,5,5,,0.00016769999638199806,61,True
-cmsc,1,FS,SP,Min-Conflicts,Y1 FS SP,5,,2,8.440000237897038e-05,,True
-cmsc,1,FS,SP,Simulated Annealing,Y1 FS SP,5,,38,0.0002162000018870458,,True
-cmsc,2,FS,SP,Backtracking,Y2 FS SP,6,15,,0.002938099998573307,,True
-cmsc,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.0002900000035879202,29,True
-cmsc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,3,0.0001886000027297996,,True
-cmsc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,30,0.00021579999884124845,,True
-cmsc,3,FS,SP,Backtracking,Y3 FS SP,6,11,,0.009201900000334717,,True
-cmsc,3,FS,SP,Forward Checking,Y3 FS SP,6,6,,0.00029429999995045364,56,True
-cmsc,3,FS,SP,Min-Conflicts,Y3 FS SP,6,,2,0.0002645999993546866,,True
-cmsc,3,FS,SP,Simulated Annealing,Y3 FS SP,6,,22,0.00020759999461006373,,True
-coma,1,FS,SP,Backtracking,Y1 FS SP,6,28,,0.017960300000140705,,True
-coma,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.00037860000020373263,41,True
-coma,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,5.509999982677982e-05,,True
-coma,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,3,7.010000035734265e-05,,True
-coma,2,FS,SP,Backtracking,Y2 FS SP,6,6,,0.0001934000001710956,,True
-coma,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,5.9699999837903306e-05,0,True
-coma,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,1,2.1400000150606502e-05,,True
-coma,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,2,3.0499999866151484e-05,,True
-coma,3,FS,SP,Backtracking,Y3 FS SP,1,1,,2.8699999802483944e-05,,True
-coma,3,FS,SP,Forward Checking,Y3 FS SP,1,1,,9.699999736767495e-06,0,True
-coma,3,FS,SP,Min-Conflicts,Y3 FS SP,1,,1,1.2900000001536682e-05,,True
-coma,3,FS,SP,Simulated Annealing,Y3 FS SP,1,,1,8.999999863590347e-06,,True
-math,1,FS,SP,Backtracking,Y1 FS SP,4,15,,0.008191400000214344,,True
-math,1,FS,SP,Forward Checking,Y1 FS SP,4,4,,0.0002607999999781896,19,True
-math,1,FS,SP,Min-Conflicts,Y1 FS SP,4,,4,0.0005062000000179978,,True
-math,1,FS,SP,Simulated Annealing,Y1 FS SP,4,,1,8.750000006330083e-05,,True
-math,2,FS,SP,Backtracking,Y2 FS SP,4,4,,0.00044079999997848063,,True
-math,2,FS,SP,Forward Checking,Y2 FS SP,4,4,,9.529999988444615e-05,0,True
-math,2,FS,SP,Min-Conflicts,Y2 FS SP,4,,1,3.90000000152213e-05,,True
-math,2,FS,SP,Simulated Annealing,Y2 FS SP,4,,1,2.390000008745119e-05,,True
-math,3,FS,SP,Backtracking,Y3 FS SP,5,7,,0.002707500000269647,,True
-math,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.0002129999998032872,19,True
-math,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,2,7.269999969139462e-05,,True
-math,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,1,3.400000014153193e-05,,True
-phlo,1,FS,SP,Backtracking,Y1 FS SP,6,29,,0.02970720000030269,,True
-phlo,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.00032710000004954054,43,True
-phlo,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,6.189999976413674e-05,,True
-phlo,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,4.859999990003416e-05,,True
-phlo,2,FS,SP,Backtracking,Y2 FS SP,5,7,,0.0016177999996216386,,True
-phlo,2,FS,SP,Forward Checking,Y2 FS SP,5,5,,0.00024450000000797445,13,True
-phlo,2,FS,SP,Min-Conflicts,Y2 FS SP,5,,1,4.579999995257822e-05,,True
-phlo,2,FS,SP,Simulated Annealing,Y2 FS SP,5,,1,3.599999990910874e-05,,True
-phlo,3,FS,SP,Backtracking,Y3 FS SP,4,4,,0.00011750000021493179,,True
-phlo,3,FS,SP,Forward Checking,Y3 FS SP,4,4,,6.660000008196221e-05,1,True
-phlo,3,FS,SP,Min-Conflicts,Y3 FS SP,4,,1,3.4899999718618346e-05,,True
-phlo,3,FS,SP,Simulated Annealing,Y3 FS SP,4,,1,2.9299999823706457e-05,,True
-soc,1,FS,SP,Backtracking,Y1 FS SP,6,26,,0.024498400000084075,,True
-soc,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.0005059000000073866,32,True
-soc,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,1,6.849999999758438e-05,,True
-soc,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,1,7.970000024215551e-05,,True
-soc,2,FS,SP,Backtracking,Y2 FS SP,6,9,,0.009444499999972322,,True
-soc,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.0003501999999571126,53,True
-soc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,4,0.0005492000000231201,,True
-soc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,17,0.00024730000041017774,,True
-soc,3,FS,SP,Backtracking,Y3 FS SP,3,3,,6.639999992330559e-05,,True
-soc,3,FS,SP,Forward Checking,Y3 FS SP,3,3,,3.890000016326667e-05,0,True
-soc,3,FS,SP,Min-Conflicts,Y3 FS SP,3,,1,1.8900000213761814e-05,,True
-soc,3,FS,SP,Simulated Annealing,Y3 FS SP,3,,1,2.0899999981338624e-05,,True
-stat,1,FS,SP,Backtracking,Y1 FS SP,6,37,,0.021504800000002433,,True
-stat,1,FS,SP,Forward Checking,Y1 FS SP,6,6,,0.000324099999943428,74,True
-stat,1,FS,SP,Min-Conflicts,Y1 FS SP,6,,5,0.0004894999997304694,,True
-stat,1,FS,SP,Simulated Annealing,Y1 FS SP,6,,7,8.900000011635711e-05,,True
-stat,2,FS,SP,Backtracking,Y2 FS SP,6,12,,0.0061928999998599465,,True
-stat,2,FS,SP,Forward Checking,Y2 FS SP,6,6,,0.00021030000016253325,43,True
-stat,2,FS,SP,Min-Conflicts,Y2 FS SP,6,,3,0.0004109999999855063,,True
-stat,2,FS,SP,Simulated Annealing,Y2 FS SP,6,,3,4.649999982575537e-05,,True
-stat,3,FS,SP,Backtracking,Y3 FS SP,5,7,,0.003154500000164262,,True
-stat,3,FS,SP,Forward Checking,Y3 FS SP,5,5,,0.00026130000014745747,29,True
-stat,3,FS,SP,Min-Conflicts,Y3 FS SP,5,,3,0.00025629999981902074,,True
-stat,3,FS,SP,Simulated Annealing,Y3 FS SP,5,,1,6.369999982780428e-05,,True
-mst,1,FS,MATH,Backtracking,Y1 FS MATH,6,17,,0.007493658922612667,,True
-mst,1,FS,MATH,Forward Checking,Y1 FS MATH,6,6,,0.00013499194756150246,18,True
-mst,1,FS,MATH,Min-Conflicts,Y1 FS MATH,6,,3,0.00011490215547382832,,True
-mst,1,FS,MATH,Simulated Annealing,Y1 FS MATH,6,,1,2.902117557823658e-05,,True
-mst,2,FS,MATH,Backtracking,Y2 FS MATH,8,9,,0.006909471936523914,,True
-mst,2,FS,MATH,Forward Checking,Y2 FS MATH,8,8,,0.0001952198799699545,32,True
-mst,2,FS,MATH,Min-Conflicts,Y2 FS MATH,8,,3,6.624194793403149e-05,,True
-mst,2,FS,MATH,Simulated Annealing,Y2 FS MATH,8,,21,0.00038151792250573635,,True
-mst,3,FS,MATH,Backtracking,Y3 FS MATH,5,12,,0.0002389419823884964,,True
-mst,3,FS,MATH,Forward Checking,Y3 FS MATH,5,6,,7.208599708974361e-05,17,True
-mst,3,FS,MATH,Min-Conflicts,Y3 FS MATH,5,,4,9.988481178879738e-05,,True
-mst,3,FS,MATH,Simulated Annealing,Y3 FS MATH,5,,86,0.0005133438389748335,,True
+degree_program,year,term,track,method,instance,n_vars,original_domain_values,nodes_explored,steps,time_seconds,pruned_values,solution_found
+agch,1,FS,SP,Backtracking,Y1 FS SP,6,219,29,,0.03885190000073635,,True
+agch,1,FS,SP,Forward Checking,Y1 FS SP,6,219,6,,0.0003483000000414904,63,True
+agch,1,FS,SP,Min-Conflicts,Y1 FS SP,6,219,,1,5.4600001021753997e-05,,True
+agch,1,FS,SP,Simulated Annealing,Y1 FS SP,6,219,,1,3.3299998904112726e-05,,True
+agch,2,FS,SP,Backtracking,Y2 FS SP,7,105,24,,0.013089600000967039,,True
+agch,2,FS,SP,Forward Checking,Y2 FS SP,7,105,7,,0.00023220000002766028,63,True
+agch,2,FS,SP,Min-Conflicts,Y2 FS SP,7,105,,2,0.00010679999832063913,,True
+agch,2,FS,SP,Simulated Annealing,Y2 FS SP,7,105,,4,0.00011210000229766592,,True
+agch,3,FS,SP,Backtracking,Y3 FS SP,5,68,8,,0.0039484000008087605,,True
+agch,3,FS,SP,Forward Checking,Y3 FS SP,5,68,5,,0.00016770000001997687,43,True
+agch,3,FS,SP,Min-Conflicts,Y3 FS SP,5,68,,2,0.00029969999741297215,,True
+agch,3,FS,SP,Simulated Annealing,Y3 FS SP,5,68,,77,0.0008421999991696794,,True
+amat,1,FS,SP,Backtracking,Y1 FS SP,4,104,15,,0.006502600001113024,,True
+amat,1,FS,SP,Forward Checking,Y1 FS SP,4,104,4,,0.00017440000010537915,19,True
+amat,1,FS,SP,Min-Conflicts,Y1 FS SP,4,104,,1,3.510000169626437e-05,,True
+amat,1,FS,SP,Simulated Annealing,Y1 FS SP,4,104,,1,2.8200000087963417e-05,,True
+amat,2,FS,SP,Backtracking,Y2 FS SP,5,18,5,,0.000446999998530373,,True
+amat,2,FS,SP,Forward Checking,Y2 FS SP,5,18,5,,7.650000043213367e-05,1,True
+amat,2,FS,SP,Min-Conflicts,Y2 FS SP,5,18,,1,3.550000110408291e-05,,True
+amat,2,FS,SP,Simulated Annealing,Y2 FS SP,5,18,,16,0.00014350000128615648,,True
+amat,3,FS,SP,Backtracking,Y3 FS SP,4,61,4,,0.000896399997145636,,True
+amat,3,FS,SP,Forward Checking,Y3 FS SP,4,61,4,,0.00016820000018924475,9,True
+amat,3,FS,SP,Min-Conflicts,Y3 FS SP,4,61,,1,2.1199997718213126e-05,,True
+amat,3,FS,SP,Simulated Annealing,Y3 FS SP,4,61,,5,4.310000076657161e-05,,True
+ap,1,FS,SP,Backtracking,Y1 FS SP,5,147,22,,0.01865159999942989,,True
+ap,1,FS,SP,Forward Checking,Y1 FS SP,5,147,5,,0.00035539999953471124,47,True
+ap,1,FS,SP,Min-Conflicts,Y1 FS SP,5,147,,2,0.00023599999985890463,,True
+ap,1,FS,SP,Simulated Annealing,Y1 FS SP,5,147,,2,5.620000229100697e-05,,True
+ap,2,FS,SP,Backtracking,Y2 FS SP,5,60,5,,0.0018686000003071968,,True
+ap,2,FS,SP,Forward Checking,Y2 FS SP,5,60,5,,0.00013830000170855783,27,True
+ap,2,FS,SP,Min-Conflicts,Y2 FS SP,5,60,,9,0.00025769999774638563,,True
+ap,2,FS,SP,Simulated Annealing,Y2 FS SP,5,60,,1,3.4500000765547156e-05,,True
+ap,3,FS,SP,Backtracking,Y3 FS SP,6,91,20,,0.0065458000026410446,,True
+ap,3,FS,SP,Forward Checking,Y3 FS SP,6,91,6,,0.0003102000009675976,39,True
+ap,3,FS,SP,Min-Conflicts,Y3 FS SP,6,91,,2,0.00021879999985685572,,True
+ap,3,FS,SP,Simulated Annealing,Y3 FS SP,6,91,,10,0.00018370000179857016,,True
+bio,1,FS,SP,Backtracking,Y1 FS SP,6,198,34,,0.031701100000645965,,True
+bio,1,FS,SP,Forward Checking,Y1 FS SP,6,198,6,,0.00034389999927952886,61,True
+bio,1,FS,SP,Min-Conflicts,Y1 FS SP,6,198,,3,0.0002716999988479074,,True
+bio,1,FS,SP,Simulated Annealing,Y1 FS SP,6,198,,1,2.6599998818710446e-05,,True
+bio,2,FS,SP,Backtracking,Y2 FS SP,6,45,9,,0.0032215000028372742,,True
+bio,2,FS,SP,Forward Checking,Y2 FS SP,6,45,7,,0.0001784999985829927,36,True
+bio,2,FS,SP,Min-Conflicts,Y2 FS SP,6,45,,9,0.0003414999991946388,,True
+bio,2,FS,SP,Simulated Annealing,Y2 FS SP,6,45,,45,0.0005782999978691805,,True
+bio,3,FS,SP,Backtracking,Y3 FS SP,5,128,28,,0.01035309999861056,,True
+bio,3,FS,SP,Forward Checking,Y3 FS SP,5,128,5,,0.00020650000078603625,52,True
+bio,3,FS,SP,Min-Conflicts,Y3 FS SP,5,128,,1,5.3499999921768904e-05,,True
+bio,3,FS,SP,Simulated Annealing,Y3 FS SP,5,128,,9,0.000152900000102818,,True
+chem,1,FS,SP,Backtracking,Y1 FS SP,6,219,29,,0.04939370000283816,,True
+chem,1,FS,SP,Forward Checking,Y1 FS SP,6,219,6,,0.0005644000011670869,63,True
+chem,1,FS,SP,Min-Conflicts,Y1 FS SP,6,219,,1,6.660000144620426e-05,,True
+chem,1,FS,SP,Simulated Annealing,Y1 FS SP,6,219,,1,4.090000220458023e-05,,True
+chem,2,FS,SP,Backtracking,Y2 FS SP,4,22,7,,0.00036890000046696514,,True
+chem,2,FS,SP,Forward Checking,Y2 FS SP,4,22,4,,5.8900001022266224e-05,9,True
+chem,2,FS,SP,Min-Conflicts,Y2 FS SP,4,22,,1,4.480000279727392e-05,,True
+chem,2,FS,SP,Simulated Annealing,Y2 FS SP,4,22,,31,0.0001827000014600344,,True
+chem,3,FS,SP,Backtracking,Y3 FS SP,4,61,4,,0.0010450999980093911,,True
+chem,3,FS,SP,Forward Checking,Y3 FS SP,4,61,4,,9.659999705036171e-05,15,True
+chem,3,FS,SP,Min-Conflicts,Y3 FS SP,4,61,,5,0.0001111999990826007,,True
+chem,3,FS,SP,Simulated Annealing,Y3 FS SP,4,61,,6,4.389999958220869e-05,,True
+cmsc,1,FS,SP,Backtracking,Y1 FS SP,5,142,41,,0.01370139999926323,,True
+cmsc,1,FS,SP,Forward Checking,Y1 FS SP,5,142,5,,0.00024899999698391184,61,True
+cmsc,1,FS,SP,Min-Conflicts,Y1 FS SP,5,142,,2,8.97999998414889e-05,,True
+cmsc,1,FS,SP,Simulated Annealing,Y1 FS SP,5,142,,38,0.0002727999999478925,,True
+cmsc,2,FS,SP,Backtracking,Y2 FS SP,6,75,15,,0.004999900000257185,,True
+cmsc,2,FS,SP,Forward Checking,Y2 FS SP,6,75,6,,0.00021999999808031134,29,True
+cmsc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,75,,4,0.0001860999982454814,,True
+cmsc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,75,,30,0.0006353999997372739,,True
+cmsc,3,FS,SP,Backtracking,Y3 FS SP,6,98,11,,0.010676199999579694,,True
+cmsc,3,FS,SP,Forward Checking,Y3 FS SP,6,98,6,,0.0006960000027902424,56,True
+cmsc,3,FS,SP,Min-Conflicts,Y3 FS SP,6,98,,2,0.00017099999968195334,,True
+cmsc,3,FS,SP,Simulated Annealing,Y3 FS SP,6,98,,22,0.00044999999954598024,,True
+coma,1,FS,SP,Backtracking,Y1 FS SP,6,164,28,,0.05192650000026333,,True
+coma,1,FS,SP,Forward Checking,Y1 FS SP,6,164,6,,0.0003825000021606684,41,True
+coma,1,FS,SP,Min-Conflicts,Y1 FS SP,6,164,,1,7.410000034724362e-05,,True
+coma,1,FS,SP,Simulated Annealing,Y1 FS SP,6,164,,3,5.5500000598840415e-05,,True
+coma,2,FS,SP,Backtracking,Y2 FS SP,6,15,6,,0.0004358000005595386,,True
+coma,2,FS,SP,Forward Checking,Y2 FS SP,6,15,6,,7.890000051702373e-05,0,True
+coma,2,FS,SP,Min-Conflicts,Y2 FS SP,6,15,,1,3.569999898900278e-05,,True
+coma,2,FS,SP,Simulated Annealing,Y2 FS SP,6,15,,2,4.8499998229090124e-05,,True
+coma,3,FS,SP,Backtracking,Y3 FS SP,1,3,1,,2.8300000849412754e-05,,True
+coma,3,FS,SP,Forward Checking,Y3 FS SP,1,3,1,,1.3199998647905886e-05,0,True
+coma,3,FS,SP,Min-Conflicts,Y3 FS SP,1,3,,1,2.0800001948373392e-05,,True
+coma,3,FS,SP,Simulated Annealing,Y3 FS SP,1,3,,1,9.999999747378752e-06,,True
+math,1,FS,SP,Backtracking,Y1 FS SP,4,103,15,,0.00555990000066231,,True
+math,1,FS,SP,Forward Checking,Y1 FS SP,4,103,4,,0.0002700000004551839,19,True
+math,1,FS,SP,Min-Conflicts,Y1 FS SP,4,103,,2,0.00017579999985173345,,True
+math,1,FS,SP,Simulated Annealing,Y1 FS SP,4,103,,1,1.880000127130188e-05,,True
+math,2,FS,SP,Backtracking,Y2 FS SP,4,16,4,,0.0005291000015859026,,True
+math,2,FS,SP,Forward Checking,Y2 FS SP,4,16,4,,9.579999823472463e-05,0,True
+math,2,FS,SP,Min-Conflicts,Y2 FS SP,4,16,,1,3.6299999919719994e-05,,True
+math,2,FS,SP,Simulated Annealing,Y2 FS SP,4,16,,1,2.59000007645227e-05,,True
+math,3,FS,SP,Backtracking,Y3 FS SP,5,69,7,,0.001857199997175485,,True
+math,3,FS,SP,Forward Checking,Y3 FS SP,5,69,5,,0.0002898999991884921,19,True
+math,3,FS,SP,Min-Conflicts,Y3 FS SP,5,69,,2,6.919999941601418e-05,,True
+math,3,FS,SP,Simulated Annealing,Y3 FS SP,5,69,,1,3.3200001780642197e-05,,True
+phlo,1,FS,SP,Backtracking,Y1 FS SP,6,193,29,,0.031580599999870174,,True
+phlo,1,FS,SP,Forward Checking,Y1 FS SP,6,193,6,,0.00045759999920846894,43,True
+phlo,1,FS,SP,Min-Conflicts,Y1 FS SP,6,193,,1,6.880000000819564e-05,,True
+phlo,1,FS,SP,Simulated Annealing,Y1 FS SP,6,193,,1,7.089999780873768e-05,,True
+phlo,2,FS,SP,Backtracking,Y2 FS SP,5,62,7,,0.0013633999988087453,,True
+phlo,2,FS,SP,Forward Checking,Y2 FS SP,5,62,5,,0.00013240000043879263,13,True
+phlo,2,FS,SP,Min-Conflicts,Y2 FS SP,5,62,,1,3.930000093532726e-05,,True
+phlo,2,FS,SP,Simulated Annealing,Y2 FS SP,5,62,,1,2.779999704216607e-05,,True
+phlo,3,FS,SP,Backtracking,Y3 FS SP,4,6,4,,8.140000136336312e-05,,True
+phlo,3,FS,SP,Forward Checking,Y3 FS SP,4,6,4,,3.909999941242859e-05,1,True
+phlo,3,FS,SP,Min-Conflicts,Y3 FS SP,4,6,,1,3.550000110408291e-05,,True
+phlo,3,FS,SP,Simulated Annealing,Y3 FS SP,4,6,,1,2.3699998564552516e-05,,True
+soc,1,FS,SP,Backtracking,Y1 FS SP,6,145,26,,0.066947600000276,,True
+soc,1,FS,SP,Forward Checking,Y1 FS SP,6,145,6,,0.0010493000008864328,32,True
+soc,1,FS,SP,Min-Conflicts,Y1 FS SP,6,145,,1,0.00012380000043776818,,True
+soc,1,FS,SP,Simulated Annealing,Y1 FS SP,6,145,,1,0.00017189999925903976,,True
+soc,2,FS,SP,Backtracking,Y2 FS SP,6,106,9,,0.009558499998092884,,True
+soc,2,FS,SP,Forward Checking,Y2 FS SP,6,106,6,,0.00035600000046542846,53,True
+soc,2,FS,SP,Min-Conflicts,Y2 FS SP,6,106,,4,0.00024900000062189065,,True
+soc,2,FS,SP,Simulated Annealing,Y2 FS SP,6,106,,17,0.00013499999840860255,,True
+soc,3,FS,SP,Backtracking,Y3 FS SP,3,6,3,,8.290000187116675e-05,,True
+soc,3,FS,SP,Forward Checking,Y3 FS SP,3,6,3,,4.499999704421498e-05,0,True
+soc,3,FS,SP,Min-Conflicts,Y3 FS SP,3,6,,1,2.680000034160912e-05,,True
+soc,3,FS,SP,Simulated Annealing,Y3 FS SP,3,6,,1,2.13999992411118e-05,,True
+stat,1,FS,SP,Backtracking,Y1 FS SP,6,190,37,,0.03114120000100229,,True
+stat,1,FS,SP,Forward Checking,Y1 FS SP,6,190,6,,0.00037150000207475387,74,True
+stat,1,FS,SP,Min-Conflicts,Y1 FS SP,6,190,,5,0.0004133000002184417,,True
+stat,1,FS,SP,Simulated Annealing,Y1 FS SP,6,190,,7,0.00011789999916800298,,True
+stat,2,FS,SP,Backtracking,Y2 FS SP,6,96,12,,0.012223699999594828,,True
+stat,2,FS,SP,Forward Checking,Y2 FS SP,6,96,6,,0.0006265000010898802,43,True
+stat,2,FS,SP,Min-Conflicts,Y2 FS SP,6,96,,3,0.0002725000013015233,,True
+stat,2,FS,SP,Simulated Annealing,Y2 FS SP,6,96,,3,4.980000085197389e-05,,True
+stat,3,FS,SP,Backtracking,Y3 FS SP,5,73,7,,0.003532500002620509,,True
+stat,3,FS,SP,Forward Checking,Y3 FS SP,5,73,5,,0.00018740000086836517,29,True
+stat,3,FS,SP,Min-Conflicts,Y3 FS SP,5,73,,2,0.0002610000010463409,,True
+stat,3,FS,SP,Simulated Annealing,Y3 FS SP,5,73,,1,3.2199997804127634e-05,,True
+mst,1,FS,MATH,Backtracking,Y1 FS MATH,6,117,17,,0.010246899997582659,,True
+mst,1,FS,MATH,Forward Checking,Y1 FS MATH,6,117,6,,0.0003696999992826022,18,True
+mst,1,FS,MATH,Min-Conflicts,Y1 FS MATH,6,117,,3,0.0002724999976635445,,True
+mst,1,FS,MATH,Simulated Annealing,Y1 FS MATH,6,117,,1,0.00017360000128974207,,True
+mst,2,FS,MATH,Backtracking,Y2 FS MATH,8,96,9,,0.008054699999775039,,True
+mst,2,FS,MATH,Forward Checking,Y2 FS MATH,8,96,8,,0.00033070000063162297,32,True
+mst,2,FS,MATH,Min-Conflicts,Y2 FS MATH,8,96,,3,0.00013480000052368268,,True
+mst,2,FS,MATH,Simulated Annealing,Y2 FS MATH,8,96,,21,0.0003483000000414904,,True
+mst,3,FS,MATH,Backtracking,Y3 FS MATH,5,24,12,,0.00041149999742629007,,True
+mst,3,FS,MATH,Forward Checking,Y3 FS MATH,5,24,6,,0.0001747999995131977,17,True
+mst,3,FS,MATH,Min-Conflicts,Y3 FS MATH,5,24,,8,0.00044350000098347664,,True
+mst,3,FS,MATH,Simulated Annealing,Y3 FS MATH,5,24,,86,0.0006391999995685183,,True
