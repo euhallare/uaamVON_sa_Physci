@@ -87,6 +87,7 @@
 - Updated aggregate figures across all degree programs
 - Helped in writing the content in Milestone 4
 - Updated `aggregate_results.py` to match the guidelines properly
+- Updated documentation of some files
 
 **Eliza:**
 - Generated result figures across all 11 degree programs (AGCH, AMAT, AP, BIO, CHEM, MATH, STAT, COMA, MST, PHLO, and SOC)
@@ -106,3 +107,4 @@
 - Interpreted aggregate graphs and figures
 - Co-created the final presentation slides
 - Primarily wrote the content for Milestone 4
+- Updated documentation of some files
