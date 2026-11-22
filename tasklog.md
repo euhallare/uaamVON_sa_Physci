@@ -86,6 +86,7 @@
 - Updated `csp.py`, `evaluate.py`, and `plot_results.py` to support the newly added degree programs
 - Updated aggregate figures across all degree programs
 - Helped in writing the content in Milestone 4
+- Updated `aggregate_results.py` to match the guidelines properly
 
 **Eliza:**
 - Generated result figures across all 11 degree programs (AGCH, AMAT, AP, BIO, CHEM, MATH, STAT, COMA, MST, PHLO, and SOC)
