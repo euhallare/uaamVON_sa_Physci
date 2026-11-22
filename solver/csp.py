@@ -11,6 +11,14 @@ Terminology used throughout:
 Degree programs supported (--deg-prog / deg_prog parameter):
   cmsc, stat, math, amat, ap, chem, agch, bio
 Each maps to data/curriculum_<deg_prog>.csv.
+
+Soft constraints (optional, guide value ordering and score final schedules):
+  - Time preference : penalise bundles that start too early or too late
+  - Day preference  : penalise bundles that meet on avoided days, reward
+                      bundles that meet on preferred days
+  - Load balancing  : post-hoc metric only — measures how evenly class
+                      minutes are spread across the week (not used to
+                      guide search, only reported after solving)
 """
 
 import csv
@@ -108,6 +116,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
         "lec_section":   str,
         "lab_section":   str | None,
         "meetings":      [(day, s, e), ...],   # combined LEC + LAB meeting blocks
+        "lec_meetings":  [(day, s, e), ...],   # LEC-only blocks (for day penalty)
         "has_open_slot": bool,
         "consent":       str,                  # 'N', 'D', or 'I'
         "units":         int,
@@ -154,6 +163,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
                 "lec_section":   lec["section"],
                 "lab_section":   sec["section"],
                 "meetings":      combined,
+                "lec_meetings":  lec_meetings,   # kept separate for day-preference scoring
                 "has_open_slot": lab_open,
                 "consent":       consent,
                 "units":         sec["units"],
@@ -161,7 +171,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
             bundles.setdefault(course, []).append(bundle)
 
         elif sec["type"] not in ("LAB", "RCT", "CPT") and sec["parent_class_id"] is None:
-            #Standalone bundle (LEC, SEM, etc.) — skip non-schedulable types
+            # Standalone bundle (LEC, SEM, etc.) — skip non-schedulable types
             if sec["type"] in ("THE", "SPR", "PRA", "DSR", "STO"):
                 continue
             lec_meetings = meetings.get(cid, [])
@@ -174,6 +184,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
                 "lec_section":   sec["section"],
                 "lab_section":   None,
                 "meetings":      lec_meetings,
+                "lec_meetings":  lec_meetings,
                 "has_open_slot": lec_open,
                 "consent":       consent,
                 "units":         sec["units"],
@@ -183,7 +194,7 @@ def build_bundles(sections: dict, meetings: dict) -> dict:
     return bundles
 
 
-#conflict checker
+# ----------------------------------------------------------------- conflict checker
 
 def meetings_overlap(m1: list, m2: list) -> bool:
     """
@@ -198,7 +209,8 @@ def meetings_overlap(m1: list, m2: list) -> bool:
     return False
 
 
-#CSP class
+# ----------------------------------------------------------------- CSP class
+
 class SchedulerCSP:
     """
     Variables  : curriculum slot names for the target year/term/track
@@ -207,18 +219,39 @@ class SchedulerCSP:
     Domains    : for each variable, a list of valid bundles
                  (open, no consent, correct course code)
 
-    Constraints: binary — no two assigned bundles may have overlapping meetings
+    Hard constraint : no two assigned bundles may have overlapping meetings
+
+    Soft constraints (optional — guide value ordering, scored post-hoc):
+      time  — penalise bundles whose LEC starts before time_prefer_after
+               or starts at/after time_penalty_after (minutes after midnight)
+      day   — penalise LEC meetings on avoid_days; reward meetings on
+               preferred_days (LAB days are intentionally not penalised
+               because students rarely control which lab section they enter)
+      load  — post-hoc only: std-dev of per-day class minutes across the week;
+               lower = more evenly spread schedule
 
     Parameters
     ----------
-    sections_path   : path to datasets/term_XXXX/sections.csv
-    meetings_path   : path to datasets/term_XXXX/meetings.csv
-    curriculum_path : explicit path to a curriculum CSV (takes priority over deg_prog)
-    deg_prog        : degree program key, e.g. 'cmsc', 'stat', 'math' — used to
-                      auto-resolve the curriculum path when curriculum_path is None.
-                      Requires data_dir to be set correctly.
-    data_dir        : root data/ directory; used only when deg_prog is given
-                      (default: two levels up from this file, i.e. ../data/)
+    sections_path      : path to datasets/term_XXXX/sections.csv
+    meetings_path      : path to datasets/term_XXXX/meetings.csv
+    curriculum_path    : explicit path to a curriculum CSV (overrides deg_prog)
+    deg_prog           : degree program key, e.g. 'cmsc', 'stat', 'math'
+    data_dir           : root data/ directory (used only with deg_prog)
+    year / term / track: which curriculum slice to solve
+    require_open_slot  : if True, only bundles with available seats
+    allow_consent      : if True, include D/I consent sections
+
+    Soft-constraint parameters (all optional — set to None to disable):
+    time_prefer_after  : minutes after midnight; prefer classes that start
+                         at or after this time (default 7*60 = 7 AM)
+    time_penalty_after : minutes after midnight; penalise classes starting
+                         at or after this time (default 17*60 = 5 PM)
+    avoid_days         : set of day codes to penalise on LEC meetings
+                         (default {"S"} — avoid Saturday)
+    preferred_days     : set of day codes to reward on LEC meetings
+                         (default None — no preference)
+    soft_weights       : dict with keys "time" and "day" controlling penalty
+                         magnitudes (default {"time": 1.0, "day": 1.0})
     """
 
     def __init__(
@@ -234,43 +267,52 @@ class SchedulerCSP:
         completed_courses: Optional[set] = None,
         require_open_slot: bool = True,
         allow_consent: bool = False,
+        # --- soft constraint parameters ---
+        time_prefer_after: Optional[int]  = 7 * 60,    # 7 AM
+        time_penalty_after: Optional[int] = 17 * 60,   # 5 PM
+        avoid_days: Optional[set]         = None,       # filled below
+        preferred_days: Optional[set]     = None,
+        soft_weights: Optional[dict]      = None,
     ):
-        self.year = year
-        self.term = term
+        self.year  = year
+        self.term  = term
         self.track = track
-        self.completed = completed_courses or set()
+        self.completed    = completed_courses or set()
         self.require_open = require_open_slot
         self.allow_consent = allow_consent
 
-        #non-CMSC programs require dept consent for their own core courses.
-        #auto-enable so users don't need --allow-consent every time.
+        # non-CMSC programs require dept consent for their own core courses
         self.deg_prog = (deg_prog or "").lower()
         if not allow_consent and self.deg_prog not in ("cmsc", ""):
             allow_consent = True
             self.allow_consent = True
 
-        #resolve curriculum path
+        # soft constraint config
+        self.time_prefer_after  = time_prefer_after   # start >= this is good
+        self.time_penalty_after = time_penalty_after  # start >= this is bad
+        self.avoid_days     = avoid_days if avoid_days is not None else {"S"}
+        self.preferred_days = preferred_days or set()
+        self.soft_weights   = soft_weights or {"time": 1.0, "day": 1.0}
+
+        # resolve curriculum path
         if curriculum_path is None:
             if deg_prog is None:
-                raise ValueError(
-                    "Provide either curriculum_path or deg_prog."
-                )
+                raise ValueError("Provide either curriculum_path or deg_prog.")
             if data_dir is None:
-                #default: data/folder two levels above this file
                 data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
             curriculum_path = resolve_curriculum_path(deg_prog, data_dir)
 
         self.curriculum_path = curriculum_path
 
-        #load raw data
-        sections = load_sections(sections_path)
-        meetings = load_meetings(meetings_path)
+        # load raw data
+        sections   = load_sections(sections_path)
+        meetings   = load_meetings(meetings_path)
         curriculum = load_curriculum(curriculum_path)
         all_bundles = build_bundles(sections, meetings)
 
-        #Build variables and domains
-        self.variables: list = []
-        self.domains: dict = {}       # slot_name -> [bundle, ...]
+        # build variables and domains
+        self.variables: list   = []
+        self.domains: dict     = {}   # slot_name -> [bundle, ...]
         self.slot_courses: dict = {}  # slot_name -> course_code (for display)
 
         for row in curriculum:
@@ -281,18 +323,14 @@ class SchedulerCSP:
             if row["track"] not in ("ALL", track):
                 continue
 
-            slot = row["slot"]
-            #options can be "CMSC 124" or "HK 12|HK 13" (pick any)
+            slot    = row["slot"]
             options = [o.strip() for o in row["options"].split("|")]
 
-            #Skip GE / ELECTIVE / NSTP slots — not in dataset
             if any(o in ("GE", "ELECTIVE", "NSTP") for o in options):
                 continue
-            #Skip PE slots (HK courses)
             if row["kind"] == "PE":
                 continue
 
-            #Gather all bundles for this slot across all option codes
             valid_bundles = []
             for course_code in options:
                 for b in all_bundles.get(course_code, []):
@@ -304,23 +342,21 @@ class SchedulerCSP:
 
             if valid_bundles:
                 self.variables.append(slot)
-                self.domains[slot] = valid_bundles
-                self.slot_courses[slot] = "/".join(options)
+                self.domains[slot]       = valid_bundles
+                self.slot_courses[slot]  = "/".join(options)
 
-        #Pre-compute neighbors (fully connected — any two courses can conflict)
+        # pre-compute neighbors (fully connected)
         self.neighbors: dict = {
             v: [u for u in self.variables if u != v]
             for v in self.variables
         }
 
-        #Keep curriculum rows for diagnostics in summary()
         self._curriculum_rows = curriculum
 
+    # ----------------------------------------------------------------- hard constraint
+
     def is_consistent(self, slot: str, bundle: dict, assignment: dict) -> bool:
-        """
-        Returns True if assigning `bundle` to `slot` doesn't conflict
-        with any already-assigned bundle.
-        """
+        """True if assigning bundle to slot doesn't conflict with any assigned bundle."""
         for other_slot, other_bundle in assignment.items():
             if other_slot == slot:
                 continue
@@ -329,10 +365,7 @@ class SchedulerCSP:
         return True
 
     def num_conflicts(self, slot: str, bundle: dict, assignment: dict) -> int:
-        """
-        Returns the number of currently assigned bundles that conflict
-        with `bundle`.  Used by min-conflicts.
-        """
+        """Number of assigned bundles that conflict with bundle. Used by min-conflicts."""
         count = 0
         for other_slot, other_bundle in assignment.items():
             if other_slot == slot:
@@ -341,12 +374,109 @@ class SchedulerCSP:
                 count += 1
         return count
 
+    #soft constraints
+
+    def score_bundle(self, bundle: dict) -> float:
+        """
+        Soft penalty for a single bundle (lower = better, 0 = ideal).
+
+        Applies time and day preferences to LEC meetings only.
+        LAB meeting days are intentionally excluded because students
+        generally cannot choose which lab section they get — penalising
+        LAB days would unfairly disadvantage courses that have
+        Tuesday/Thursday labs with no MWF alternative.
+
+        Time penalty rules:
+          - If time_prefer_after is set, every LEC meeting that starts
+            before it adds a proportional penalty.
+          - If time_penalty_after is set, every LEC meeting that starts
+            at or after it adds a proportional penalty.
+
+        Day penalty rules:
+          - LEC meeting on an avoided day  → +2.0 * w["day"] per block
+          - LEC meeting not on a preferred day (when preferred_days is set)
+            → +0.5 * w["day"] per block
+        """
+        penalty = 0.0
+        wt = self.soft_weights.get("time", 1.0)
+        wd = self.soft_weights.get("day",  1.0)
+
+        for day, start, _end in bundle.get("lec_meetings", bundle["meetings"]):
+            #time preference
+            if self.time_prefer_after is not None and start < self.time_prefer_after:
+                #penalise by how many minutes too early (per hour)
+                penalty += wt * (self.time_prefer_after - start) / 60.0
+
+            if self.time_penalty_after is not None and start >= self.time_penalty_after:
+                #penalise by how many minutes past the threshold (per hour)
+                penalty += wt * (start - self.time_penalty_after) / 60.0
+
+            #day preference
+            if self.avoid_days and day in self.avoid_days:
+                penalty += wd * 2.0
+
+            if self.preferred_days and day not in self.preferred_days:
+                penalty += wd * 0.5
+
+        return penalty
+
+    def score_assignment(self, assignment: dict) -> dict:
+        """
+        Score a complete assignment on all soft dimensions.
+        Returns a dict so callers can report individual components.
+
+        Keys returned:
+          "time_day"    — sum of score_bundle() across all assigned slots
+          "load_stddev" — std-dev of per-day class minutes (lower = more balanced)
+          "total"       — time_day + load_stddev (normalised to same scale)
+
+        Call this only on a complete (solved) assignment.
+        Passing None raises ValueError so callers must guard.
+        """
+        if assignment is None:
+            raise ValueError("score_assignment called with None assignment.")
+
+        #time + day component
+        time_day = sum(self.score_bundle(b) for b in assignment.values())
+
+        #load balancing: std-dev of class minutes per day across the week
+        day_minutes: dict = {}
+        for bundle in assignment.values():
+            for day, start, end in bundle["meetings"]:
+                day_minutes[day] = day_minutes.get(day, 0) + (end - start)
+
+        if day_minutes:
+            vals  = list(day_minutes.values())
+            mean  = sum(vals) / len(vals)
+            variance = sum((v - mean) ** 2 for v in vals) / len(vals)
+            load_stddev = variance ** 0.5 / 60.0   # convert to hours for readability
+        else:
+            load_stddev = 0.0
+
+        return {
+            "time_day":    round(time_day,    4),
+            "load_stddev": round(load_stddev, 4),
+            "total":       round(time_day + load_stddev, 4),
+        }
+
+    #diagnostics
+
     def summary(self):
         deg = f" ({self.deg_prog.upper()})" if self.deg_prog else ""
-        print(f"\n{'='*55}")
+        print(f"\n{'='*60}")
         print(f"  AMIS Scheduler CSP{deg}  —  Year {self.year}, Term {self.term}, Track {self.track}")
         print(f"  allow_consent={self.allow_consent}")
-        print(f"{'='*55}")
+        print(f"  Soft constraints:")
+        print(f"    time_prefer_after  = {self.time_prefer_after} min  "
+              f"({self.time_prefer_after//60}:{self.time_prefer_after%60:02d} AM/PM)"
+              if self.time_prefer_after is not None else "    time_prefer_after  = disabled")
+        print(f"    time_penalty_after = {self.time_penalty_after} min  "
+              f"({self.time_penalty_after//60}:{self.time_penalty_after%60:02d} AM/PM)"
+              if self.time_penalty_after is not None else "    time_penalty_after = disabled")
+        print(f"    avoid_days         = {self.avoid_days or 'none'}")
+        print(f"    preferred_days     = {self.preferred_days or 'none'}")
+        print(f"    soft_weights       = {self.soft_weights}")
+        print(f"{'='*60}")
         print(f"  Variables : {len(self.variables)}")
         for v in self.variables:
             d = self.domains[v]
@@ -378,4 +508,4 @@ class SchedulerCSP:
             print("  Fix: correct the course code in the curriculum CSV,")
             print("       or scrape + rebuild datasets for the missing subject.")
 
-        print(f"{'='*55}\n")
+        print(f"{'='*60}\n")
