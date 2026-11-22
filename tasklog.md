@@ -4,10 +4,10 @@
 **Description:** A Constraint Satisfaction Problem (CSP) that builds a conflict-free weekly class schedule for a UPLB student, using data scraped from AMIS.
 
 **Roles:**  
-Eu: Project Manager & Tech Lead
-Eliza: Research & QA Lead  
-Denmark: Frontend & Web Lead  
-Jiro: Data Engineering & Scraping Lead    
+Eu Hallare: Project Manager & Tech Lead
+Eliza Gevaña: Research & QA Lead  
+John Denmark Hernandez: Frontend & Web Lead  
+Jiro Tipan: Data Engineering & Scraping Lead    
 
 ## Milestone 1
 
