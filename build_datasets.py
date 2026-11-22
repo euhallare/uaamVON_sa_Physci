@@ -33,9 +33,9 @@ DAYS = [("mon", "M"), ("tue", "T"), ("wed", "W"), ("thu", "Th"), ("fri", "F"), (
 FORBIDDEN_KEYS = {"first_name", "middle_name", "last_name", "formatted_name", "user_id", "user"}
 
 
-# ----------------------------------------------------------------- helpers
+# helper functions
 def parse_time(text):
-    """'07:00 AM' -> minutes after midnight (420).  Returns None if unreadable."""
+    # makes time into mins after 0:00
     m = re.match(r"^\s*(\d{1,2}):(\d{2})\s*([AaPp][Mm])\s*$", text or "")
     if not m:
         return None
@@ -83,9 +83,8 @@ def write_json(path, obj):
         json.dump(obj, f, indent=1)
 
 
-# ----------------------------------------------------------------- loading
 def load_rows(term_dir):
-    """Read every page file; return {class_id: row}.  Duplicates collapse on id."""
+    # read every page file
     files = sorted(glob.glob(os.path.join(term_dir, "*", "page_*.json")))
     if not files:
         raise SystemExit(f"No page files found under {term_dir}. Run scrape.py first.")
@@ -105,7 +104,7 @@ def load_rows(term_dir):
 
 
 def meetings_of(row):
-    """list of (day_code, start_min, end_min) plus a flag if something was unreadable."""
+    # list of (day_code, start_min, end_min)
     out, bad = [], False
     for cd in row.get("class_dates") or []:
         s, e = parse_time(cd.get("start_time")), parse_time(cd.get("end_time"))
@@ -163,7 +162,7 @@ def make_section(row, source):
 
 def build_sections(rows):
     secs = {rid: make_section(r, "row") for rid, r in rows.items()}
-    # A LAB row carries its LEC inside "parent"; keep it if the LEC was not scraped itself.
+    # A LAB row carries its LEC inside parent, keep it if the LEC wasnt scraped
     for r in rows.values():
         p = r.get("parent")
         if isinstance(p, dict) and p.get("id") not in secs:
@@ -174,7 +173,6 @@ def build_sections(rows):
     return secs
 
 
-# ----------------------------------------------------------------- shared tables
 def write_sections_and_meetings(out, secs):
     hdr = ["class_id", "course_id", "course_code", "subject", "course_number", "title", "type",
            "section", "parent_class_id", "units", "max_size", "active_size", "facility_id",
@@ -200,7 +198,6 @@ def overlap(a, b):
     return False
 
 
-# ----------------------------------------------------------------- dataset A: faculty
 def build_faculty(out, secs):
     fdir = os.path.join(out, "faculty")
     assign, load = [], defaultdict(lambda: {"classes": 0, "minutes": 0, "courses": set(), "subjects": set()})
@@ -260,7 +257,7 @@ def build_faculty(out, secs):
             "faculty_baseline_conflicts": base_conf}
 
 
-# ----------------------------------------------------------------- dataset B: student
+# students
 def build_bundles(secs):
     by_course = defaultdict(list)
     for s in secs.values():
@@ -368,7 +365,6 @@ def build_student(out, secs, curriculum):
             "curriculum_options_without_offering": sorted(k for k, v in cov.items() if v == 0)}
 
 
-# ----------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
