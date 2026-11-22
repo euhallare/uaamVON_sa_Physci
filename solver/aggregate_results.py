@@ -383,7 +383,7 @@ def save_figures(df, output_dir):
     plt.close(fig)
 
     # ===================== Figure 6 — Overview =====================
-    fig, axes = plt.subplots(2, 1, figsize=(16, 12))
+    fig, ax = plt.subplots(figsize=(16, 8))
 
     # Calculate the average result per degree program.
     program_means = (
@@ -395,9 +395,23 @@ def save_figures(df, output_dir):
     programs = program_means.index.tolist()
     x = np.arange(len(programs))
 
-    # PANEL 1: SEARCH EFFORT
-    ax = axes[0]
+    # Display numerical values above each bar
+    def add_overview_labels(ax, bars, series_index):
+        for bar in bars:
+            height = bar.get_height()
 
+            if np.isfinite(height) and height > 0:
+                ax.annotate(
+                    f"{height:.4f}",
+                    xy=(bar.get_x() + bar.get_width() / 2, height),
+                    xytext=(0, 5 + (series_index * 8)),
+                    textcoords="offset points",
+                    ha="center",
+                    va="bottom",
+                    fontsize=7
+                )
+
+    # SEARCH EFFORT
     search_columns = [
         "nodes_backtracking",
         "nodes_forward_checking",
@@ -420,7 +434,7 @@ def save_figures(df, output_dir):
 
         positions = x + (i - 1.5) * width
 
-        ax.bar(
+        bars = ax.bar(
             positions,
             values,
             width,
@@ -428,16 +442,45 @@ def save_figures(df, output_dir):
             color=METHOD_COLORS[label]
         )
 
-    ax.set_title("Search Effort")
+        add_overview_labels(ax, bars, i)
+
     ax.set_ylabel("Average Count")
     ax.set_xticks(x)
-    ax.set_xticklabels(programs, rotation=35, ha="right")
+    ax.set_xticklabels(programs)
 
     format_chart(ax)
     ax.legend(ncol=2)
 
-    # PANEL 2: EXECUTION TIME
-    ax = axes[1]
+    fig.suptitle(
+        "AMIS Student Schedule Builder - Overall CSP Search Effort",
+        fontsize=16,
+        fontweight="bold"
+    )
+
+    fig.tight_layout(rect=[0, 0, 1, 0.96])
+
+    fig.savefig(output_dir / "aggregate_06_overview.png")
+    plt.close(fig)
+
+
+    # ===================== Figure 7 — Overall CSP Performance =====================
+
+    # Calculate the overall average across all degree programs and year levels.
+    overall_means = df.mean(numeric_only=True)
+
+    # Create the figure and primary axis.
+    fig, ax1 = plt.subplots(figsize=(12, 8))
+
+    # Create the secondary Y-axis for execution time.
+    ax2 = ax1.twinx()
+
+    # Algorithm names and corresponding columns.
+    search_columns = [
+        "nodes_backtracking",
+        "nodes_forward_checking",
+        "steps_min_conflicts",
+        "steps_simulated_annealing"
+    ]
 
     time_columns = [
         "time_backtracking",
@@ -446,36 +489,83 @@ def save_figures(df, output_dir):
         "time_simulated_annealing"
     ]
 
-    time_labels = [
+    labels = [
         "Backtracking (MRV+LCV)",
         "Forward Checking",
         "Min-Conflicts",
         "Simulated Annealing"
     ]
 
-    for i, (column, label) in enumerate(zip(time_columns, time_labels)):
+    # Positions of the four algorithms.
+    x = np.arange(len(labels))
+    width = 0.3
 
-        values = program_means[column].reindex(programs)
+    # Display numerical values above each bar.
+    def add_overall_labels(ax, bars, offset=5):
+        for bar in bars:
+            height = bar.get_height()
 
-        positions = x + (i - 1.5) * width
+            if np.isfinite(height) and height > 0:
+                ax.annotate(
+                    f"{height:.4f}",
+                    xy=(bar.get_x() + bar.get_width() / 2, height),
+                    xytext=(0, offset),
+                    textcoords="offset points",
+                    ha="center",
+                    va="bottom",
+                    fontsize=9
+                )
 
-        ax.bar(
-            positions,
-            values,
-            width,
-            label=label,
-            color=METHOD_COLORS[label]
-        )
+    # SEARCH EFFORT — LEFT Y-AXIS
+    search_values = [
+        overall_means[column] for column in search_columns
+    ]
 
-    ax.set_title("Execution Time")
-    ax.set_ylabel("Average Execution Time (seconds)")
-    ax.set_xticks(x)
-    ax.set_xticklabels(programs, rotation=35, ha="right")
+    search_bars = ax1.bar(
+        x - width / 2,
+        search_values,
+        width,
+        label="Search Effort",
+        color="#55A868"
+    )
 
-    ax.set_yscale("log")
+    add_overall_labels(ax1, search_bars)
 
-    format_chart(ax)
-    ax.legend(ncol=4)
+    # EXECUTION TIME — RIGHT Y-AXIS
+    time_values = [
+        overall_means[column] for column in time_columns
+    ]
+
+    time_bars = ax2.bar(
+        x + width / 2,
+        time_values,
+        width,
+        label="Execution Time",
+        color="#4C72B0"
+    )
+
+    add_overall_labels(ax2, time_bars)
+
+    # Chart formatting.
+    ax1.set_ylabel("Average Search Effort (Nodes / Steps)", labelpad=15)
+    ax2.set_ylabel("Average Execution Time (Seconds)", labelpad=15)
+
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(labels)
+
+    ax1.set_title("Overall Search Effort and Execution Time")
+
+    format_chart(ax1)
+
+    # Combine both legends.
+    handles1, labels1 = ax1.get_legend_handles_labels()
+    handles2, labels2 = ax2.get_legend_handles_labels()
+
+    ax1.legend(
+        handles1 + handles2,
+        labels1 + labels2,
+        loc="upper right"
+    )
 
     fig.suptitle(
         "AMIS Student Schedule Builder - Overall CSP Performance",
@@ -485,8 +575,9 @@ def save_figures(df, output_dir):
 
     fig.tight_layout(rect=[0, 0, 1, 0.96])
 
-    fig.savefig(output_dir / "aggregate_06_overview.png")
+    fig.savefig(output_dir / "aggregate_07_overall_performance.png")
     plt.close(fig)
+
 
 
 def main():
