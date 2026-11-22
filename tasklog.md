@@ -1,102 +1,107 @@
-# Task Log:
+# Task Log
 
 **Project:** AMIS Student Schedule Builder — CMSC 170 Project  
-**Description:** A Constraint Satisfaction Problem (CSP) that builds a conflict-free weekly class schedule for a UPLB student, using data scraped from AMIS.
+**Description:** A Constraint Satisfaction Problem (CSP) solver that builds conflict-free weekly class schedules for UPLB students using data scraped from AMIS.
 
-## Team & Roles:
+## Team & Roles
 
 | Member | Role | Core Responsibilities |
 | :--- | :--- | :--- |
-| **Eu Hallare** | Project Manager & Tech Lead | System architecture, core integration, Git workflow, and project timeline |
+| **Eu Hallare** | Project Manager & Tech Lead | System architecture, core CSP solver integration, evaluation and visualization pipelines, Git workflow, and project timeline |
 | **Eliza Gevaña** | Research & QA Lead | Domain research, algorithm/logic design, edge-case testing, and validation |
 | **John Denmark Hernandez** | Frontend & Web Lead | User interface (UI/UX), client-side logic, and web deployment |
-| **Jiro Tipan** | Data Engineering & Scraping Lead | Data extraction/scraping, cleaning pipelines, and schema formatting |
+| **Jiro Tipan** | Data Engineering & Analytics Lead | Data extraction/scraping, cleaning pipelines, benchmark evaluation, and results interpretation |
 
-## Milestone 1:
+---
 
-Eu:
-- helped brainstorm dataset and method ideas
-- wrote milestone 1 docs
-- created repo
-- scraped the data for term 1261 (cmsc only so far) in amis using api and get request
+## Milestone 1
 
-Denmark:
-- helped brainstorm dataset and method ideas
-- wrote milestone 1 docs
+**Eu:**
+- Brainstormed dataset and CSP methodology ideas
+- Co-authored Milestone 1 documentation
+- Initialized the GitHub repository
+- Scraped Term 1261 course data (CMSC courses) from AMIS via API GET requests
 
-Eliza:
-- helped brainstorm dataset and method ideas
-- wrote milestone 1 docs
+**Eliza:**
+- Brainstormed dataset and CSP methodology ideas
+- Co-authored Milestone 1 documentation
 
-Jiro:
-- helped brainstorm dataset and method ideas
-- wrote milestone 1 docs
+**Denmark:**
+- Brainstormed dataset and CSP methodology ideas
+- Co-authored Milestone 1 documentation
 
+**Jiro:**
+- Brainstormed dataset and CSP methodology ideas
+- Co-authored Milestone 1 documentation
 
-## Milestone 2:
+---
 
-Eu: 
-- pushed backtracking.py 
-- pushed csp.py
-- pushed evaluate.py
-- wrote updated README.md with instructions and guidelines
-- initial results code block
+## Milestone 2
 
-Denmark:
-- pushed min_conflicts.py
-- helped writing the milestone 2 docs
-- explanation for Train/test split or cross-validation plan
+**Eu:**
+- Implemented and pushed `backtracking.py`, `csp.py`, and `evaluate.py`
+- Updated `README.md` with setup instructions and usage guidelines
+- Added the initial results code block
 
-Eliza:
-- pushed simulated_annealing.py
-- started the milestone 2 docs
-- explanation of the Current Methods
-- explanation of Data Loading & Preprocessing Code
+**Eliza:**
+- Implemented and pushed `simulated_annealing.py`
+- Initiated Milestone 2 documentation
+- Documented the Current Methods and Data Loading & Preprocessing code
 
-Jiro:
-- pushed forward_checking.py
-- scraped data for terms 1252-1260 (although not completely yet)
-- scraped data for GEs and HK
-- added recommendation section on evaluate.py
+**Denmark:**
+- Implemented and pushed `min_conflicts.py`
+- Co-authored Milestone 2 documentation
+- Wrote the train/test split and cross-validation plan explanation
 
+**Jiro:**
+- Implemented and pushed `forward_checking.py`
+- Scraped course data for Terms 1252–1260 (partial dataset) as well as GE and HK courses
+- Added the recommendation section to `evaluate.py`
 
-## Milestone 3:
+---
 
-Eu: 
-- pushed plot_results.py and figures
-- helped write the report in milestone 3
+## Milestone 3
 
-Denmark:
-- helped write the report in milestone 3
+**Eu:**
+- Implemented and pushed `plot_results.py` and generated initial figures
+- Co-authored the Milestone 3 report
 
-Eliza:
-- interpreted the initial results of cmsc figures
-- led the group in writing the report in milestone 3 primarily
+**Eliza:**
+- Led the writing of the Milestone 3 report
+- Interpreted initial result figures for CMSC courses
 
-Jiro:
-- scraped data from AMIS again for other degprogs  (not present yet for this report though)
-- helped write the report in milestone 3
+**Denmark:**
+- Co-authored the Milestone 3 report
 
+**Jiro:**
+- Scraped additional AMIS data for other degree programs (staged for Milestone 4)
+- Co-authored the Milestone 3 report
 
-## Milestone 4: (to be updated...)
+---
 
-Eu: 
-- fixed the issues in the curriculum.csv of agch, amat, ap, bio, chem, math, and stat
-- fixed and updated the csp, evaluate, and plotr_results.py to match the added degree programs
-- updated the aggregate figures for all degprogs
+## Milestone 4 *(In Progress)*
 
-Denmark:
-- added the curriculum.csvs of coma, mst, phlo, and soc
-- wrote and pushed the check_curriculum.py to check which courses are still needed to be scraped. 
-- writing the Github Page for this project.
+**Eu:**
+- Fixed formatting issues in `curriculum.csv` for AGCH, AMAT, AP, BIO, CHEM, MATH, and STAT
+- Updated `csp.py`, `evaluate.py`, and `plot_results.py` to support the newly added degree programs
+- Updated aggregate figures across all degree programs
+- Helped in writing the content in Milestone 4
 
-Eliza:
-- ran the results for the figures in each degprog: agch, amat, ap, bio, chem, math, stat, coma, mst, phlo, and soc
-- helped in making the PPT presentation
-- added and pushed aggregate_results.py 
-- interpret results of the graphs and figures
+**Eliza:**
+- Generated result figures across all 11 degree programs (AGCH, AMAT, AP, BIO, CHEM, MATH, STAT, COMA, MST, PHLO, and SOC)
+- Implemented and pushed `aggregate_results.py`
+- Interpreted aggregate graphs and figures
+- Co-created the final presentation slides
+- Primarily wrote the content for Milestone 4
 
-Jiro:
-- scraped the courses of the last degprogs we added: coma, mst, phlo, and soc
-- helped in making the PPT presentation
-- interpret results of the graphs and figures
+**Denmark:**
+- Added `curriculum.csv` files for COMA, MST, PHLO, and SOC
+- Wrote and pushed `check_curriculum.py` to audit remaining unscraped courses
+- Developing the GitHub Pages site for the project
+- Implemented `index.html` and `schedule.html`
+
+**Jiro:**
+- Scraped course offerings for the newly added degree programs (COMA, MST, PHLO, and SOC)
+- Interpreted aggregate graphs and figures
+- Co-created the final presentation slides
+- Primarily wrote the content for Milestone 4
