@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AMIS Student Schedule Builder — CMSC 170</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -17,9 +20,10 @@
       --text:        #1C2229;
       --text-soft:   #5A6472;
       --rule:        #DDE1E4;
-      --radius:      6px;
-      --shadow:      0 2px 8px rgba(0,0,0,.07);
+      --radius:      8px;
+      --shadow:      0 2px 10px rgba(0,0,0,.07);
       --mono:        'Courier New', monospace;
+      --font:        'Inter', 'Segoe UI', system-ui, sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -38,7 +42,7 @@
 
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-family: var(--font);
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
@@ -49,33 +53,100 @@
       position: sticky;
       top: 0;
       background: var(--green-dark);
-      z-index: 100;
-      padding: 0 32px;
+      z-index: 200;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .nav-links {
       display: flex;
       align-items: center;
       gap: 2px;
       overflow-x: auto;
       scrollbar-width: none;
+      flex: 1;
     }
-    nav::-webkit-scrollbar { display: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+
     nav a {
       color: rgba(255,255,255,.75);
       text-decoration: none;
       font-size: .8rem;
       font-weight: 500;
-      padding: 12px 14px;
+      padding: 13px 13px;
       white-space: nowrap;
       transition: color .15s, background .15s;
+      border-bottom: 2px solid transparent;
     }
     nav a:hover { color: #fff; background: rgba(255,255,255,.08); }
+    nav a.nav-active { color: #fff; border-bottom-color: var(--green-mid); }
+
+    /* hamburger — mobile only */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 4px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #fff;
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: transform .2s, opacity .2s;
+    }
+
+    @media (max-width: 640px) {
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        background: var(--green-dark);
+        padding: 8px 0 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,.2);
+        overflow: visible;
+      }
+      .nav-links.open { display: flex; }
+      nav a { padding: 12px 24px; border-bottom: none; }
+      nav a.nav-active { background: rgba(255,255,255,.08); }
+    }
 
     /* ── hero ── */
     .hero {
       background: var(--green);
       color: #fff;
       padding: 56px 32px 48px;
+      position: relative;
+      overflow: hidden;
     }
-    .hero-inner { max-width: 800px; margin: 0 auto; }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(0,0,0,.12) 0%, transparent 60%),
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 18px,
+          rgba(255,255,255,.025) 18px,
+          rgba(255,255,255,.025) 19px
+        );
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
     .hero-label {
       font-size: .78rem;
       font-weight: 700;
@@ -91,6 +162,7 @@
       line-height: 1.15;
       letter-spacing: -.02em;
       margin-bottom: 14px;
+      text-shadow: 0 2px 12px rgba(0,0,0,.18);
     }
     .hero p {
       font-size: 1rem;
@@ -102,14 +174,15 @@
     .hero-links { display: flex; gap: 10px; flex-wrap: wrap; }
     .btn {
       display: inline-block;
-      padding: 9px 20px;
+      padding: 10px 22px;
       border-radius: var(--radius);
       font-size: .875rem;
       font-weight: 600;
       text-decoration: none;
-      transition: opacity .15s;
+      transition: opacity .15s, transform .1s;
     }
-    .btn:hover { opacity: .88; }
+    .btn:hover { opacity: .88; transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
     .btn-white { background: #fff; color: var(--green-dark); }
     .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
 
@@ -118,7 +191,7 @@
       background: var(--green-dark);
       padding: 14px 32px;
       display: flex;
-      gap: 24px;
+      gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -130,16 +203,27 @@
       gap: 7px;
     }
     .member-dot {
-      width: 7px; height: 7px;
+      width: 8px; height: 8px;
       border-radius: 50%;
       background: var(--green-mid);
       flex-shrink: 0;
     }
 
     /* ── content ── */
-    .content { max-width: 920px; margin: 0 auto; padding: 0 24px 80px; }
+    .content { max-width: 920px; margin: 0 auto; padding: 0 20px 80px; }
     .section { padding: 48px 0 0; }
-    .section-anchor { display: block; height: 72px; margin-top: -72px; visibility: hidden; }
+    .section-anchor { display: block; height: 80px; margin-top: -80px; visibility: hidden; }
+
+    /* ── scroll fade-in ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .45s ease, transform .45s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
 
     h2 {
       font-size: 1.25rem;
@@ -169,7 +253,7 @@
     /* ── method grid ── */
     .method-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 14px;
       margin-top: 4px;
     }
@@ -179,6 +263,11 @@
       border-radius: var(--radius);
       padding: 18px 20px;
       box-shadow: var(--shadow);
+      transition: box-shadow .2s, transform .2s;
+    }
+    .method-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,.12);
+      transform: translateY(-2px);
     }
     .method-num {
       display: inline-block;
@@ -196,7 +285,7 @@
     /* ── stat cards ── */
     .stat-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 14px;
       margin: 16px 0 8px;
     }
@@ -208,11 +297,16 @@
       padding: 14px 16px;
       box-shadow: var(--shadow);
     }
-    .stat .big { font-size: 1.6rem; font-weight: 800; color: var(--green); line-height: 1.1; }
+    .stat .big {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1.1;
+    }
     .stat .lbl { font-size: .8rem; color: var(--text-soft); margin-top: 4px; }
 
     /* ── tables ── */
-    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; -webkit-overflow-scrolling: touch; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -226,6 +320,7 @@
     th { padding: 10px 14px; text-align: left; font-weight: 600; }
     td { padding: 9px 14px; border-top: 1px solid var(--rule); vertical-align: top; }
     tbody tr:nth-child(even) { background: var(--bg); }
+    tbody tr:hover { background: var(--green-lite); transition: background .15s; }
     td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
     tr.total td { font-weight: 700; background: var(--green-lite); }
     .table-note { font-size: .8rem; color: var(--text-soft); margin-top: 6px; }
@@ -275,7 +370,10 @@
       padding: 14px;
       margin: 18px 0;
       text-align: center;
+      transition: box-shadow .2s;
     }
+    figure:hover { box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+    figure a { display: block; overflow: hidden; border-radius: 4px; }
     figure img {
       max-width: 100%;
       height: auto;
@@ -283,7 +381,9 @@
       margin: 0 auto;
       background: #fff;
       border-radius: 3px;
+      transition: transform .3s ease;
     }
+    figure a:hover img { transform: scale(1.015); }
     figcaption { font-size: .82rem; color: var(--text-soft); margin-top: 10px; text-align: left; }
     figure.narrow img { max-width: 640px; }
 
@@ -295,23 +395,25 @@
     .explorer-bar label { font-size: .85rem; font-weight: 600; }
     .explorer-bar select {
       font: inherit; font-size: .9rem;
-      padding: 7px 10px;
+      padding: 8px 12px;
       border: 1px solid var(--rule);
       border-radius: var(--radius);
       background: var(--white);
       color: var(--text);
-      min-width: 280px;
+      min-width: 220px;
+      max-width: 100%;
+      cursor: pointer;
     }
     .fig-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 14px;
       margin-top: 12px;
     }
     .fig-grid figure { margin: 0; padding: 10px; }
     .fig-grid figure.wide { grid-column: 1 / -1; }
     .fig-grid a { display: block; }
-    @media (max-width: 520px) { .fig-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .fig-grid { grid-template-columns: 1fr; } }
 
     ol.refs { padding-left: 20px; }
     ol.refs li { font-size: .88rem; margin-bottom: 8px; color: var(--text-soft); word-break: break-word; }
@@ -321,24 +423,42 @@
       background: var(--green-dark);
       color: rgba(255,255,255,.65);
       text-align: center;
-      padding: 20px;
+      padding: 24px 20px;
       font-size: .78rem;
     }
     footer a { color: rgba(255,255,255,.85); }
+
+    /* ── responsive tweaks ── */
+    @media (max-width: 600px) {
+      .hero { padding: 40px 20px 36px; }
+      .members-strip { padding: 12px 20px; gap: 12px; }
+      .content { padding: 0 16px 60px; }
+      .schedule-cta { padding: 20px; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 380px) {
+      .stat-grid { grid-template-columns: 1fr; }
+      .method-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="#problem">Problem</a>
-  <a href="#dataset">Dataset</a>
-  <a href="#methods">Methods</a>
-  <a href="#setup">Setup</a>
-  <a href="#results">Results</a>
-  <a href="#curricula">By Curriculum</a>
-  <a href="#discussion">Discussion</a>
-  <a href="#conclusion">Conclusion</a>
-  <a href="#references">References</a>
+<nav id="main-nav">
+  <div class="nav-links" id="nav-links">
+    <a href="#problem">Problem</a>
+    <a href="#dataset">Dataset</a>
+    <a href="#methods">Methods</a>
+    <a href="#setup">Setup</a>
+    <a href="#results">Results</a>
+    <a href="#curricula">By Curriculum</a>
+    <a href="#discussion">Discussion</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#references">References</a>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <div class="hero">
@@ -368,7 +488,7 @@
 <div class="content">
 
   <!-- 1. Problem -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="problem"></span>
     <h2>Problem Statement &amp; Motivation</h2>
     <p>Creating a university class schedule is challenging because students must consider many
@@ -395,7 +515,7 @@
   </div>
 
   <!-- 2. Dataset -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="dataset"></span>
     <h2>Dataset</h2>
     <div class="card">
@@ -453,7 +573,7 @@
   </div>
 
   <!-- 3. Methods -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="methods"></span>
     <h2>Methods</h2>
     <p>Two complete (systematic) methods and two local search methods, all written from scratch
@@ -501,7 +621,7 @@
   </div>
 
   <!-- 4. Experimental Setup -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="setup"></span>
     <h2>Experimental Setup</h2>
 
@@ -584,7 +704,7 @@
   </div>
 
   <!-- 5. Results -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="results"></span>
     <h2>Results</h2>
     <p>Each method was measured on whether it found a solution, how much search effort it needed
@@ -608,7 +728,9 @@
 
     <h3>Solution found</h3>
     <figure class="narrow">
-      <img src="figures/aggregate_figures/aggregate_05_solution_success.png" alt="Overall solution success rate: 100% for all four methods" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_05_solution_success.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_05_solution_success.png" alt="Overall solution success rate: 100% for all four methods" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 1.</strong> Percentage of solutions found per method across all instances.</figcaption>
     </figure>
     <p>All four methods produced a valid schedule for every instance. The scheduling problem for
@@ -617,7 +739,9 @@
 
     <h3>Domain values pruned by Forward Checking</h3>
     <figure>
-      <img src="figures/aggregate_figures/aggregate_08_pruning_intensity.png" alt="Forward Checking original domain values versus cumulative pruned values per degree program" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_08_pruning_intensity.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_08_pruning_intensity.png" alt="Forward Checking original domain values versus cumulative pruned values per degree program" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 2.</strong> Original domain values versus cumulative pruned values per degree program. Overall pruning intensity: 33.69%.</figcaption>
     </figure>
     <p>Forward Checking removed a substantial share of inconsistent values before backtracking
@@ -626,13 +750,17 @@
        Agricultural Chemistry (169 values) and lightest for Applied Mathematics (29) and
        Mathematics (38).</p>
     <figure>
-      <img src="figures/aggregate_figures/aggregate_04_pruned_values.png" alt="Pruned values by degree program and year level" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_04_pruned_values.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_04_pruned_values.png" alt="Pruned values by degree program and year level" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 3.</strong> Pruned values by degree program and year level.</figcaption>
     </figure>
 
     <h3>Nodes explored and steps taken</h3>
     <figure class="narrow">
-      <img src="figures/aggregate_figures/aggregate_01_nodes_explored.png" alt="Mean nodes explored: Backtracking 15.3529, Forward Checking 5.1471" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_01_nodes_explored.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_01_nodes_explored.png" alt="Mean nodes explored: Backtracking 15.3529, Forward Checking 5.1471" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 4.</strong> Mean nodes explored by the complete search methods.</figcaption>
     </figure>
     <p>Among the complete methods, Forward Checking explored fewer nodes than Backtracking, about
@@ -640,7 +768,9 @@
     <p style="text-align:center"><code>(15.3529 − 5.1471) / 15.3529 × 100 ≈ 66.47%</code></p>
 
     <figure class="narrow">
-      <img src="figures/aggregate_figures/aggregate_02_local_search_steps.png" alt="Mean steps taken: Min-Conflicts 2.1176, Simulated Annealing 10.0882" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_02_local_search_steps.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_02_local_search_steps.png" alt="Mean steps taken: Min-Conflicts 2.1176, Simulated Annealing 10.0882" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 5.</strong> Mean steps taken by the local search methods.</figcaption>
     </figure>
     <p>Among the local search methods, Min-Conflicts needed <strong>79.01% fewer steps</strong>
@@ -649,7 +779,9 @@
 
     <h3>Wall-clock time</h3>
     <figure class="narrow">
-      <img src="figures/aggregate_figures/aggregate_03_execution_time.png" alt="Mean execution time per method" loading="lazy" />
+      <a href="figures/aggregate_figures/aggregate_03_execution_time.png" target="_blank" rel="noopener">
+        <img src="figures/aggregate_figures/aggregate_03_execution_time.png" alt="Mean execution time per method" loading="lazy" />
+      </a>
       <figcaption><strong>Figure 6.</strong> Mean execution time of each method across all instances.</figcaption>
     </figure>
     <p>Backtracking with MRV + LCV had the highest execution time (about 10.9 ms on average).
@@ -680,11 +812,11 @@
         </tbody>
       </table>
     </div>
-    <p class="table-note">*Instances marked “—” ran in under 0.0001 s, so the runtime was not recorded and the speedup cannot be computed.</p>
+    <p class="table-note">*Instances marked "—" ran in under 0.0001 s, so the runtime was not recorded and the speedup cannot be computed.</p>
   </div>
 
   <!-- 5b. Per-curriculum explorer -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="curricula"></span>
     <h2>Results by Curriculum</h2>
     <p>Choose a curriculum to see the per-instance figures for each of the four methods.
@@ -700,7 +832,7 @@
   </div>
 
   <!-- 6. Discussion -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="discussion"></span>
     <h2>Discussion</h2>
 
@@ -745,7 +877,7 @@
   </div>
 
   <!-- 7. Conclusion -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="conclusion"></span>
     <h2>Conclusion</h2>
     <p>This project formulated UPLB student class scheduling as a Constraint Satisfaction Problem
@@ -767,7 +899,7 @@
   </div>
 
   <!-- 8. References -->
-  <div class="section">
+  <div class="section fade-in">
     <span class="section-anchor" id="references"></span>
     <h2>References</h2>
     <ol class="refs">
@@ -792,6 +924,50 @@
 </footer>
 
 <script>
+  /* ── hamburger toggle ── */
+  var toggle = document.getElementById('nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  toggle.addEventListener('click', function () {
+    var open = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  /* close menu when a link is clicked on mobile */
+  navLinks.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── active nav on scroll ── */
+  var sections = document.querySelectorAll('.section-anchor');
+  var navAnchors = document.querySelectorAll('.nav-links a');
+  function updateNav() {
+    var scrollY = window.scrollY + 100;
+    var current = '';
+    sections.forEach(function (s) {
+      if (s.offsetTop <= scrollY) current = s.id;
+    });
+    navAnchors.forEach(function (a) {
+      a.classList.toggle('nav-active', a.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+  /* ── fade-in on scroll ── */
+  var fadeEls = document.querySelectorAll('.fade-in');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.07 });
+  fadeEls.forEach(function (el) { observer.observe(el); });
+
+  /* ── curriculum explorer ── */
   var PROGRAMS = [
     { key: 'agch', label: 'BS Agricultural Chemistry' },
     { key: 'amat', label: 'BS Applied Mathematics' },
@@ -831,7 +1007,7 @@
     var prog = PROGRAMS.filter(function (p) { return p.key === key; })[0];
     note.textContent = prog.note || '';
     grid.innerHTML = '';
-    FIGS.forEach(function (f, i) {
+    FIGS.forEach(function (f) {
       var src = 'figures/' + key + '/' + f.file + '.png';
       var fig = document.createElement('figure');
       if (f.wide) { fig.className = 'wide'; }
