@@ -253,7 +253,7 @@
     /* ── method grid ── */
     .method-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 14px;
       margin-top: 4px;
     }
@@ -435,6 +435,7 @@
       .content { padding: 0 16px 60px; }
       .schedule-cta { padding: 20px; }
       .stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .method-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 380px) {
       .stat-grid { grid-template-columns: 1fr; }
